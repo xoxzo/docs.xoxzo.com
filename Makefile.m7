@@ -1,0 +1,20 @@
+clean:
+	rm -rf .env .installed.cfg .mr.developer.cfg
+	rm -rf parts eggs develop-eggs bin externals-src
+
+build: clean
+	python3 bootstrap.py
+	./bin/buildout -v
+
+translate-ja:
+	make gettext
+	./bin/sphinx-intl -c source/conf.py update -l ja -p appengine/public/locale
+
+translate: translate-ja
+	make html-ja
+
+view:
+	bash -c 'cd appengine/public && ../../bin/python -m http.server'
+
+build-full: build translate
+

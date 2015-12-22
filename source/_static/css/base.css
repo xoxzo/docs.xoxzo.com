@@ -1,0 +1,134 @@
+
+body {
+  /* background-color: #DCDCDC;  /* Gainsboro */
+  background-color: #FFFFFF;  /* White */
+}
+
+.h3o-navbar-bg {
+  background: #000000;  /* Black */
+}
+
+.h3o-div-bg {
+  /* background: #FEFEFA;  /* Ghost White */
+  background: #F5F5F5;  /* Whitesmoke */
+}
+
+.h3o-action-title {
+  font-size: 1.5em;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #38708F;
+}
+
+.h3o-font-01 {
+  font-weight: bold;
+  font-size: 1.5em;
+  line-height: 1.5;
+}
+
+.h3o-footer-title {
+  font-family: Helvetica, Arial, sans-serif!important;
+  font-size: 1.2em;
+}
+
+.h3o-footer-list {
+  padding: 0 0 10px 0;
+}
+
+.h3o-footer {
+  font-size: 0.8em;
+  background: #F8F8F8;
+}
+
+.h3o-you-main {
+  font-size: 0.8em;
+  padding: 10px 10px 2px 10px;
+  background: #FEFEFA;
+}
+
+.h3o-bordered-main-section {
+  border-top: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
+  border-left: 1px solid #ccc;
+  border-right: 1px solid #ccc;
+  padding: 20px 10px 10px 10px;
+  margin-bottom: 20px;
+}
+
+/* FONTS */
+.h3o-bigger-font {
+  font-size: 150%;
+}
+
+.h3o-much-bigger-font {
+  font-size: 200%;
+}
+
+h1.h3o-legal-page-header-font {
+  font-size: 300%;
+  font-weight: 900;
+  text-transform: uppercase;
+  padding-top: 10px;
+  padding-bottom: 20px;
+}
+
+h1.h3o-page-header-font {
+  font-size: 350%;
+  font-weight: 900;
+  text-transform: uppercase;
+  border-top: 3px solid #ccc;
+  border-bottom: 3px solid #ccc;
+}
+
+h2.h3o-about-panel-title-font {
+  font-size: 200%;
+  text-transform: uppercase;
+}
+
+h3.h3o-about-panel-title-font {
+  font-size: 130%;
+  text-transform: uppercase;
+}
+
+h2.h3o-about-sections {
+  font-size: 200%;
+}
+
+h3.h3o-about-sections {
+  font-size: 140%;
+}
+
+tr.h3o-coverage-font {
+  font-family: "OpenSansLight", sans-serif!important;
+  font-size: 18px;
+  line-height: 1.1;
+}
+
+/* Background */
+
+.h3o-about-panel-heading-bg {
+  background: #F9F9F9;
+}
+
+.h3o-white-bg {
+  background: #FFFFFF;
+}
+
+/* Paddings and margins */
+
+.h3o_top_padding_10 {
+  padding: 10px 0 0 0;
+}
+
+.h3o_top_margin_40 {
+  margin: 40px 0 0 0;
+}
+
+.h3o_topbottom_small_padding_b {
+  padding: 5px 0 15px 0;
+}
+
+.h3o_bottom_small_padding_b {
+  padding: 0 0 10px 0;
+}
+

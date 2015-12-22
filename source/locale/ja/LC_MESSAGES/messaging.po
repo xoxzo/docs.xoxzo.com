@@ -1,0 +1,138 @@
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Heylo API Documentation 1.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2015-08-12 13:27+0900\n"
+"PO-Revision-Date: 2015-10-24 07:29+0900\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: ja\n"
+"X-Generator: Poedit 1.8.5\n"
+
+#: ../../../source/messaging.rst:2
+msgid "Messaging API"
+msgstr "メッセージ送信API"
+
+#: ../../../source/messaging.rst:5
+msgid "Sending Message"
+msgstr "メッセージを送信する"
+
+#: ../../../source/messaging.rst:6
+msgid "To send SMS, make a POST request to the endpoint::"
+msgstr "SMSを送信するには、POSTリクエストをエンドポイントに作成してください。"
+
+#: ../../../source/messaging.rst:10
+msgid "with the following parameters:"
+msgstr "下記のパラメーターを併用してください。"
+
+#: ../../../source/messaging.rst:13
+msgid "Name"
+msgstr "名称"
+
+#: ../../../source/messaging.rst:13
+msgid "Description"
+msgstr "詳細"
+
+#: ../../../source/messaging.rst:13
+msgid "Required"
+msgstr "必要性"
+
+#: ../../../source/messaging.rst:15
+msgid "message"
+msgstr "message"
+
+#: ../../../source/messaging.rst:15
+msgid "Message body"
+msgstr "メッセージ本文"
+
+#: ../../../source/messaging.rst:15 ../../../source/messaging.rst:16
+#: ../../../source/messaging.rst:17
+msgid "Yes"
+msgstr "○"
+
+#: ../../../source/messaging.rst:16
+msgid "recipient"
+msgstr "recipient"
+
+#: ../../../source/messaging.rst:16
+msgid "Message recipient"
+msgstr "メッセージ受信者"
+
+#: ../../../source/messaging.rst:17
+msgid "sender"
+msgstr "sender"
+
+#: ../../../source/messaging.rst:17
+msgid "Sender ID"
+msgstr "送信者ID"
+
+#: ../../../source/messaging.rst:20 ../../../source/messaging.rst:104
+msgid "Below is an example request using CURL::"
+msgstr "下記は、CURLを使用したリクエストの例です。"
+
+#: ../../../source/messaging.rst:24
+msgid ""
+"The response would be a JSON structure, returned with HTTP ``201 CREATED`` "
+"status code::"
+msgstr ""
+"レスポンスは、JSON構造となり、ステータスコード　HTTP ``201 CREATED``　にて返"
+"されます。"
+
+#: ../../../source/messaging.rst:40
+msgid ""
+"If there's invalid parameters given, HTTP ``400 BAD REQUEST`` status code "
+"will be returned. For example, if the ``message`` parameter is missing, the "
+"HTTP response should be like this::"
+msgstr ""
+"間違ったバラメーターが与えられた場合には、ステータスコード　HTTP ``400 BAD "
+"REQUEST``　が返されます。例えば、もし``message``　パラメーターがなかった場"
+"合、HTTPからの返答はこのようになります。"
+
+#: ../../../source/messaging.rst:59
+msgid "Other Errors"
+msgstr "その他のエラー"
+
+#: ../../../source/messaging.rst:62
+msgid "Not Enough Credits"
+msgstr "クレジットが不足しています。"
+
+#: ../../../source/messaging.rst:80
+msgid "Country Not Allowed"
+msgstr "この国は、許可されていません。"
+
+#: ../../../source/messaging.rst:98
+msgid "Checking Message Status"
+msgstr "メッセージのステータスをチェック中"
+
+#: ../../../source/messaging.rst:100
+msgid ""
+"To check message status, make a GET request to the endpoint followed by "
+"``<msgid>``::"
+msgstr ""
+"メッセージのステータスをチェックするには、 ``<msgid>``に続いてGETリクエスト"
+"をエンドポイントに作成してください。"
+
+#: ../../../source/messaging.rst:108
+msgid ""
+"The response would be a JSON structure, returned with HTTP ``200 OK`` "
+"status code::"
+msgstr ""
+"レスポンスは、JSON構造となり、ステータスコード　HTTP``200 OK``　にて返されま"
+"す。"
+
+#: ../../../source/messaging.rst:132
+msgid "Other Message Status"
+msgstr "ほかのメッセージのステータス"
+
+#: ../../../source/messaging.rst:135
+msgid "Delivering"
+msgstr "配信中"
+
+#: ../../../source/messaging.rst:149
+msgid "Fail"
+msgstr "失敗"

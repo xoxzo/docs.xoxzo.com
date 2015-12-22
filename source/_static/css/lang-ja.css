@@ -1,0 +1,8 @@
+/** Base font for the whole site, overriding Bootstrap **/
+body, h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
+  font-family: "LogoTypeJP", sans-serif!important;
+  /*font-size: 1.3em;*/
+  line-height: 1.1;
+  font-weight: normal;
+}
+

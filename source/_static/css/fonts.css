@@ -1,0 +1,32 @@
+@font-face {
+  font-family: 'OpenSansLight';
+  src: url('../fonts/OpenSans-CondLight.ttf');
+}
+
+@font-face {
+  font-family: 'OpenSansBold';
+  src: url('../fonts/OpenSans-CondBold.ttf');
+}
+
+@font-face {
+  font-family: 'OpenSansItalic';
+  src: url('../fonts/OpenSans-CondLightItalic.ttf');
+}
+
+@font-face {
+  font-family: 'LogoTypeJP';
+  src: url('../fonts/logotypejp_mp_m_1.ttf');
+}
+
+@font-face {
+  font-family: 'LogoTypeJPBold';
+  src: url('../fonts/logotypejp_mp_b_1.ttf');
+}
+
+/*
+@font-face {
+  font-family: 'NotoSansCJKjp';
+  src: url('../fonts/NotoSansCJKjp-Light.otf') format("opentype");
+}
+*/
+

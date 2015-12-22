@@ -1,0 +1,100 @@
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Xoxzo API Docs 1.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2015-10-12 13:09+0900\n"
+"PO-Revision-Date: 2015-10-22 12:30+0900\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: ja\n"
+"X-Generator: Poedit 1.8.5\n"
+
+#: ../../../source/errors.rst:3
+msgid "Error List"
+msgstr "エラー情報の一覧"
+
+#: ../../../source/errors.rst:5
+msgid ""
+"This page lists sample error responses and describes in more details the "
+"errors that you might encounter when using the API."
+msgstr ""
+"APIのご利用に際し、よくあるエラーについて、エラーレスポンスの例を、詳細と合"
+"わせて一覧にしました。"
+
+#: ../../../source/errors.rst:9
+msgid "Sample error responses"
+msgstr "エラーレスポンスの例"
+
+#: ../../../source/errors.rst:12
+msgid "Invalid parameters"
+msgstr "無効なパラメーター"
+
+#: ../../../source/errors.rst:25
+msgid "Invalid SID/Token"
+msgstr "無効な SID/トークン"
+
+#: ../../../source/errors.rst:36
+msgid "Not Enough Credits"
+msgstr "クレジットが不足しています。"
+
+#: ../../../source/errors.rst:50
+msgid "Error list"
+msgstr "エラー情報の一覧"
+
+#: ../../../source/errors.rst:52
+msgid ""
+"These are some of the common errors which you might encounter when using "
+"the API:"
+msgstr "こちらはAPIを利用することにあたってよく見られるエラーの一例です。"
+
+#: ../../../source/errors.rst:56
+msgid "Error message"
+msgstr "エラーメッセージ"
+
+#: ../../../source/errors.rst:56
+msgid "Description"
+msgstr "説明"
+
+#: ../../../source/errors.rst:58
+msgid "Country not allowed"
+msgstr "許可されていない国"
+
+#: ../../../source/errors.rst:58
+msgid ""
+"Your account is not allowed to send to this country. Please contact "
+"help@xoxzo.com for more details."
+msgstr ""
+"ご利用のアカウントより、こちらの国への送信は、許可されていません。詳しくは、"
+"help@xoxzo.comまでお問い合わせください。"
+
+#: ../../../source/errors.rst:60
+msgid "Invalid sid/token"
+msgstr "無効な SID/トークン"
+
+#: ../../../source/errors.rst:60
+msgid "The sid or token you're using is invalid."
+msgstr "ご利用のSIDまたはトークンは、無効です。"
+
+#: ../../../source/errors.rst:61
+msgid "Not enough credits"
+msgstr "クレジットが不足しています。"
+
+#: ../../../source/errors.rst:61
+msgid "Your account doesn't have sufficient credits to use the API"
+msgstr "APIをお使いになるには、アカウントのクレジットが不足しています。"
+
+#: ../../../source/errors.rst:63
+msgid "This field is required"
+msgstr "こちらのフィールドは、必須です。"
+
+#: ../../../source/errors.rst:63
+msgid ""
+"A parameter which is required for the API is missing. Please check your "
+"request again."
+msgstr ""
+"APIを利用するための必須パラメータが不足しています。リクエストを再度確認して"
+"くだだい。"
