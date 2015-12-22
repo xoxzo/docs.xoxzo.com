@@ -30,17 +30,9 @@ msgstr ""
 "<a href=\"http://sphinx-doc.org/\">Sphinx</a> %(sphinx_version)s　"
 "を利用して作製しました。"
 
-#: ../../../source/_templates/layout.html:73
-msgid "Xoxzo Cloud Telephony Platform"
-msgstr "Xoxzo クラウド・テレフォニー・プラットフォーム"
-
 #: ../../../source/_templates/layout.html:76
 msgid "SMS Delivery Service [EZSMS]"
 msgstr "SMS配信サービス[EZSMS]"
-
-#: ../../../source/_templates/layout.html:79
-msgid "[MARITEX] International SMS Service"
-msgstr "[MARITEX]国際SMSサービス"
 
 #: ../../../source/_templates/layout.html:47
 msgid "Back to top"
@@ -49,4 +41,14 @@ msgstr "上に戻る"
 #: ../../../source/_templates/layout.html:62
 msgid "&copy; Copyright %(copyright)s"
 msgstr "&copy; Copyright %(copyright)s"
+
+#: ../../../source/_templates/layout.html:73
+msgid "<a href=\"https://www.xoxzo.com/en/\">Xoxzo Cloud Telephony Platform</a>"
+msgstr "<a href=\"https://www.xoxzo.com/ja/\">Xoxzo クラウド・テレフォニー・プラットフォーム</a>"
+
+#: ../../../source/_templates/layout.html:79
+msgid ""
+"<a href=\"http://www.maritex.jp/en/\">[MARITEX] International SMS "
+"Service</a>"
+msgstr "<a href=\"http://www.maritex.jp/ja/\">[MARITEX]国際SMSサービス</a>"
 

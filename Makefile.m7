@@ -12,6 +12,7 @@ translate-ja:
 
 translate: translate-ja
 	make html-ja
+	make html-en
 
 view:
 	bash -c 'cd appengine/public && ../../bin/python -m http.server'

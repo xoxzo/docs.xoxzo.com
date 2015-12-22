@@ -15,6 +15,21 @@ Run buildout to get all dependencies:-
 For details on how to make document translation using Sphinx, read:
 http://sphinx-doc.org/latest/intl.html
 
+The quick way
+======================
+
+You can just run
+
+    $ make -f Makefile.m7 translate-ja
+    $ make -f Makefile.m7 translate
+    $ make -f Makefile.m7 view
+
+which will run gettext, generate the corresponding .po files, translate them and run the test server so you can
+check the generated html.
+
+The slower way
+======================
+
 Make changes to the text, let say `index.rst` and then run the following command to generate translation template:-
 
     $ make gettext 
