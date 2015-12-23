@@ -5,11 +5,11 @@ msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2015-08-12 13:27+0900\n"
 "PO-Revision-Date: 2015-10-22 00:13+0900\n"
+"Last-Translator: \n"
+"Language-Team: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Last-Translator: \n"
-"Language-Team: \n"
 "Language: ja\n"
 "X-Generator: Poedit 1.8.5\n"
 
@@ -21,19 +21,19 @@ msgstr "概要"
 msgid "Contents:"
 msgstr "目次"
 
-#: ../../../source/index.rst:31
+#: ../../../source/index.rst:32
 msgid "Indices and tables"
 msgstr "索引と検索"
 
-#: ../../../source/index.rst:33
+#: ../../../source/index.rst:34
 msgid ":ref:`genindex`"
 msgstr ":ref:`genindex`"
 
-#: ../../../source/index.rst:34
+#: ../../../source/index.rst:35
 msgid ":ref:`modindex`"
 msgstr ":ref:`modindex`"
 
-#: ../../../source/index.rst:35
+#: ../../../source/index.rst:36
 msgid ":ref:`search`"
 msgstr ":ref:`search`"
 
@@ -47,10 +47,8 @@ msgid ""
 "applications. You can use any HTTP client in any programming language or "
 "even your browser to interact with the API."
 msgstr ""
-"Xoxzo APIは、ご自分のアプリケーションにつなぐのが容易な、HTTPメソッドに基づ"
-"いています。お使いのプログラミング言語で、お好みのHTTPクライアントにてご利用"
-"いただいても、お使いのブラウザ上でも、XoxzoのAPIをご利用いただくことができま"
-"す。"
+"Xoxzo "
+"APIは、ご自分のアプリケーションにつなぐのが容易な、HTTPメソッドに基づいています。お使いのプログラミング言語で、お好みのHTTPクライアントにてご利用いただいても、お使いのブラウザ上でも、XoxzoのAPIをご利用いただくことができます。"
 
 #~ msgid "Welcome to Xoxzo Web Telephony API's documentation!"
 #~ msgstr "Xoxzo クラウド・テレフォニー・APIドキュメンテーションよこそ"
@@ -60,6 +58,6 @@ msgstr ""
 #~ "applications. You can use any HTTP client in any programming language or "
 #~ "even your browser to interact with the API."
 #~ msgstr ""
-#~ "Xoxzo APIは、それが簡単に書くことにするHTTPメソッドに基づいています アプ"
-#~ "リケーション。あなたは、任意のプログラミング言語で任意のHTTPクライアント"
-#~ "を使用することができますか でも、お使いのブラウザでは、APIと対話します。"
+#~ "Xoxzo APIは、それが簡単に書くことにするHTTPメソッドに基づいています "
+#~ "アプリケーション。あなたは、任意のプログラミング言語で任意のHTTPクライアントを使用することができますか "
+#~ "でも、お使いのブラウザでは、APIと対話します。"

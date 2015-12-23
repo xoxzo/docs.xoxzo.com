@@ -33,7 +33,7 @@ The additonal parameters below are for JP specific usage and recipients:
     jp-kddi-sender  Sender ID for au    No          Numeric             Min:10, Max:12              0312341234
     ==============  ==================  ========    =================== =========================== ===================
 
-Please refer to our K-Premium Service FAQ http://help.xoxzo.com/customer/en/portal/articles/2264921--sms-api-the-k-premium-service for more information on the K-Premium Service.
+Please refer to our `K-Premium Service FAQ <http://help.xoxzo.com/customer/en/portal/articles/2264921--sms-api-the-k-premium-service>`_ for more information on the K-Premium Service.
 
 .. note::
    Notes on the **recipient** parameter:
