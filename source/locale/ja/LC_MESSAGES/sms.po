@@ -13,10 +13,6 @@ msgstr ""
 "Language: sms\n"
 "X-Generator: Poedit 1.8.5\n"
 
-#: ../../../source/sms.rst:3
-msgid "SMS API"
-msgstr "SMS配信API"
-
 #: ../../../source/sms.rst:5
 msgid ""
 "The SMS API allows you to send SMS to supported carriers via beautiful HTTP "
@@ -35,17 +31,18 @@ msgstr "SMSメッセージを送信するには、 ``POST`` リクエストを�
 msgid "with the following parameters:"
 msgstr "下記のパラメーターを併記してください。"
 
-#: ../../../source/sms.rst:16 ../../../source/sms.rst:80
-#: ../../../source/sms.rst:150
+#: ../../../source/sms.rst:16 ../../../source/sms.rst:30
+#: ../../../source/sms.rst:94 ../../../source/sms.rst:164
 msgid "Name"
 msgstr "名称"
 
-#: ../../../source/sms.rst:16 ../../../source/sms.rst:80
-#: ../../../source/sms.rst:150 ../../../source/sms.rst:167
+#: ../../../source/sms.rst:16 ../../../source/sms.rst:30
+#: ../../../source/sms.rst:94 ../../../source/sms.rst:164
+#: ../../../source/sms.rst:181
 msgid "Description"
 msgstr "詳細"
 
-#: ../../../source/sms.rst:16
+#: ../../../source/sms.rst:16 ../../../source/sms.rst:30
 msgid "Required"
 msgstr "必須"
 
@@ -62,7 +59,7 @@ msgstr "メッセージ本文"
 msgid "Yes"
 msgstr "○"
 
-#: ../../../source/sms.rst:19 ../../../source/sms.rst:155
+#: ../../../source/sms.rst:19 ../../../source/sms.rst:169
 msgid "recipient"
 msgstr "recipient"
 
@@ -70,7 +67,7 @@ msgstr "recipient"
 msgid "Message recipient"
 msgstr "メッセージの受信者"
 
-#: ../../../source/sms.rst:21 ../../../source/sms.rst:156
+#: ../../../source/sms.rst:21 ../../../source/sms.rst:170
 msgid "sender"
 msgstr "sender"
 
@@ -78,15 +75,15 @@ msgstr "sender"
 msgid "Sender ID"
 msgstr "送信元ID"
 
-#: ../../../source/sms.rst:57 ../../../source/sms.rst:109
+#: ../../../source/sms.rst:71 ../../../source/sms.rst:123
 msgid "Examples"
 msgstr "例"
 
-#: ../../../source/sms.rst:111
+#: ../../../source/sms.rst:125
 msgid "Below is an example request using CURL::"
 msgstr "下記は、CURLを使ったリクエストの例です。"
 
-#: ../../../source/sms.rst:85
+#: ../../../source/sms.rst:99
 msgid ""
 "If there's invalid parameters given, HTTP ``400 BAD REQUEST`` status code "
 "will be returned. For example, if the ``message`` parameter is missing, the "
@@ -95,57 +92,57 @@ msgstr ""
 "間違ったバラメーターが与えられた場合には、ステータスコード　HTTP ``400 BAD REQUEST``　が返されます。例えば、もし "
 "``message`` パラメーターがなかった場合、HTTPからの返答はこのようになります。"
 
-#: ../../../source/sms.rst:99
+#: ../../../source/sms.rst:113
 msgid "Check SMS status API"
 msgstr "SMSの配信状態を確認するAPI"
 
-#: ../../../source/sms.rst:101
+#: ../../../source/sms.rst:115
 msgid ""
 "To check a message status, make a GET request to the endpoint followed by "
 "``<msgid>``::"
 msgstr "メッセージの状態を調べるには、 ``<msgid>`` をつけた、GETリクエストをエンドポイントに行ってください。"
 
-#: ../../../source/sms.rst:115
+#: ../../../source/sms.rst:129
 msgid ""
 "The response would be a JSON structure, returned with HTTP ``200 OK`` status"
 " code::"
 msgstr "レスポンスは、JSON構造となり、ステータスコード　HTTP ``200 OK`` にて返されます。"
 
-#: ../../../source/sms.rst:130
+#: ../../../source/sms.rst:144
 msgid ""
 "Below is a sample of a response for a message that failed to be delivered, "
 "returned with a HTTP ``200 OK`` status code::"
 msgstr "下記は、メッセージが配信失敗し、ステータスコード　HTTP ``200 OK`` が返された場合の例です。"
 
-#: ../../../source/sms.rst:162
+#: ../../../source/sms.rst:176
 msgid "Common message statuses"
 msgstr "よくあるメッセージ配信ステータス"
 
-#: ../../../source/sms.rst:167
+#: ../../../source/sms.rst:181
 msgid "Message status"
 msgstr "メッセージステータス"
 
-#: ../../../source/sms.rst:169
+#: ../../../source/sms.rst:183
 msgid "OK"
 msgstr "OK"
 
-#: ../../../source/sms.rst:170
+#: ../../../source/sms.rst:184
 msgid "DELIVERING"
 msgstr "DELIVERING"
 
-#: ../../../source/sms.rst:171
+#: ../../../source/sms.rst:185
 msgid "FAIL"
 msgstr "FAIL"
 
-#: ../../../source/sms.rst:16
+#: ../../../source/sms.rst:16 ../../../source/sms.rst:30
 msgid "Data Type"
 msgstr "データタイプ"
 
-#: ../../../source/sms.rst:16
+#: ../../../source/sms.rst:16 ../../../source/sms.rst:30
 msgid "Max Length"
 msgstr "最大の長さ"
 
-#: ../../../source/sms.rst:16
+#: ../../../source/sms.rst:16 ../../../source/sms.rst:30
 msgid "Example"
 msgstr "例"
 
@@ -181,11 +178,11 @@ msgstr "15桁または10桁の英数字"
 msgid "Xoxzo1"
 msgstr "Xoxzo1"
 
-#: ../../../source/sms.rst:25
+#: ../../../source/sms.rst:39
 msgid "Notes on the **recipient** parameter:"
 msgstr "**recipient** パラメーターに関する注意"
 
-#: ../../../source/sms.rst:27
+#: ../../../source/sms.rst:41
 msgid ""
 "Xoxzo uses the `E.164 <http://en.wikipedia.org/wiki/E.164>`_ number format "
 "when specifying phone numbers."
@@ -193,7 +190,7 @@ msgstr ""
 "特定の電話番号を指定する場合、Xoxzo は `E.164 <http://en.wikipedia.org/wiki/E.164>`_ "
 "を番号のフォーマットに指定しています。"
 
-#: ../../../source/sms.rst:29
+#: ../../../source/sms.rst:43
 msgid ""
 "`E.164 <http://en.wikipedia.org/wiki/E.164>`_ dictates that phone numbers "
 "must start with the + prefix and country code then followed directly by the "
@@ -202,7 +199,7 @@ msgstr ""
 "`E.164 <http://en.wikipedia.org/wiki/E.164>`_ フォーマットは、電話番号の先頭に + "
 "プレフィックスをつけた後ロカールの **0** 除く携帯の電話番号がくるという順番を定められています。"
 
-#: ../../../source/sms.rst:31
+#: ../../../source/sms.rst:45
 msgid ""
 "Example of a valid recipient is: *+818011234567* with *81* as the Japan "
 "country code and *8011234567* as the mobile number."
@@ -210,15 +207,15 @@ msgstr ""
 "有効な受信者記載例として、 *+818011234567* と挙げられます。 *81* は日本の国番号で、 *8011234567* "
 "は携帯電話番号となります。"
 
-#: ../../../source/sms.rst:35
+#: ../../../source/sms.rst:49
 msgid "Notes on the **sender** parameter:"
 msgstr "**sender** パラメーターに関する注意"
 
-#: ../../../source/sms.rst:37
+#: ../../../source/sms.rst:51
 msgid "The **sender** parameter does not require a + sign prefix."
 msgstr "**sender** パラメーターには、+ を先頭につける必要はありません。"
 
-#: ../../../source/sms.rst:38
+#: ../../../source/sms.rst:52
 msgid ""
 "You can also specify alphanumeric **sender** such as *XOXZO1* or *XOXZO* for"
 " the sender. In this case, the maximum length for the **sender** parameter "
@@ -227,98 +224,98 @@ msgstr ""
 "**sender** に、 送信元として、*XOXZO1* や *XOXZO* といった英数字を指定することができます。この場合、 **sender**"
 " パラメーターの最大の長さは10となります。"
 
-#: ../../../source/sms.rst:40
+#: ../../../source/sms.rst:54
 msgid ""
 "If the **sender** parameter contains only digits, the maximum length is 15."
 msgstr "**sender** パラメーターが、数字のみの場合、最大の長さは、15桁となります。"
 
-#: ../../../source/sms.rst:48
+#: ../../../source/sms.rst:62
 msgid "Notes on the **message** parameter:"
 msgstr "**message** パラメーターに関する注意"
 
-#: ../../../source/sms.rst:50
+#: ../../../source/sms.rst:64
 msgid "This is the main message that you'll be sending to the recipient."
 msgstr "これは、受信者へ送るメッセージの本文になります。"
 
-#: ../../../source/sms.rst:51
+#: ../../../source/sms.rst:65
 msgid "All messages must be encoded in UTF-8"
 msgstr "メッセージはすべて、UTF-8にてコーディングしてください。"
 
-#: ../../../source/sms.rst:52
+#: ../../../source/sms.rst:66
 msgid ""
 "Messages which only contains ASCII based characters will have a maximum "
 "length of 160 characters, while other types of messages will have a maximum "
 "length of 70 characters"
 msgstr "ASCIIに基づいた文字のみの場合、最大の長さは160文字となりますが、そうでない場合は、70文字となります。"
 
-#: ../../../source/sms.rst:77 ../../../source/sms.rst:147
+#: ../../../source/sms.rst:91 ../../../source/sms.rst:161
 msgid "Response data"
 msgstr "レスポンスデータ"
 
-#: ../../../source/sms.rst:82 ../../../source/sms.rst:154
+#: ../../../source/sms.rst:96 ../../../source/sms.rst:168
 msgid "msgid"
 msgstr "msgid"
 
-#: ../../../source/sms.rst:82 ../../../source/sms.rst:154
+#: ../../../source/sms.rst:96 ../../../source/sms.rst:168
 msgid "The unique message id for this message"
 msgstr "このメッセージ固有のメッセージIDになります。"
 
-#: ../../../source/sms.rst:105
+#: ../../../source/sms.rst:119
 msgid ""
 "Every time you send a SMS, you will get a response which contains "
 "``<msgid>``. Use this ``<msgid>`` to check SMS status."
 msgstr ""
 "送信を行うたびに、 ``<msgid>`` を含むレスポンスが得られますので、この ``<msgid>`` を配信状態の確認にご利用ください。"
 
-#: ../../../source/sms.rst:152
+#: ../../../source/sms.rst:166
 msgid "status"
 msgstr "status"
 
-#: ../../../source/sms.rst:152
+#: ../../../source/sms.rst:166
 msgid "The status of the sent message"
 msgstr "送信されたメッセージの状態です。"
 
-#: ../../../source/sms.rst:153
+#: ../../../source/sms.rst:167
 msgid "cost"
 msgstr "cost"
 
-#: ../../../source/sms.rst:155
+#: ../../../source/sms.rst:169
 msgid "The recipient of this message"
 msgstr "このメッセージの受信者です。"
 
-#: ../../../source/sms.rst:156
+#: ../../../source/sms.rst:170
 msgid "The set sender"
 msgstr "設定された送信元です。"
 
-#: ../../../source/sms.rst:157
+#: ../../../source/sms.rst:171
 msgid "sent_time"
 msgstr "sent_time"
 
-#: ../../../source/sms.rst:157
+#: ../../../source/sms.rst:171
 msgid "The sent time of the message in UTC"
 msgstr "送信時間が、UTC（協定世界時）にて返されます。"
 
-#: ../../../source/sms.rst:158
+#: ../../../source/sms.rst:172
 msgid "url"
 msgstr "url"
 
-#: ../../../source/sms.rst:158
+#: ../../../source/sms.rst:172
 msgid "The URL of this message status"
 msgstr "このメッセージステータスのURLです。"
 
-#: ../../../source/sms.rst:164
+#: ../../../source/sms.rst:178
 msgid "This is a list of statuses that you can find in the ``status`` data:"
 msgstr "``status`` データ内にある、ステータスのリスト"
 
-#: ../../../source/sms.rst:169
+#: ../../../source/sms.rst:183
 msgid "Message successfully delivered"
 msgstr "メッセージの配信成功"
 
-#: ../../../source/sms.rst:170
+#: ../../../source/sms.rst:184
 msgid "Sending message in progress"
 msgstr "メッセージの配信中"
 
-#: ../../../source/sms.rst:171
+#: ../../../source/sms.rst:185
 msgid "Failed to send message"
 msgstr "メッセージの配信失敗"
 
@@ -326,15 +323,15 @@ msgstr "メッセージの配信失敗"
 msgid "Min:10, Max:15 (exclude + sign prefix)"
 msgstr "最短10桁、最長15桁（先頭+を除く）"
 
-#: ../../../source/sms.rst:153
+#: ../../../source/sms.rst:167
 msgid "The cost in credits of this message"
 msgstr "このメッセージ送信で消費したクレジットです。"
 
-#: ../../../source/sms.rst:59
+#: ../../../source/sms.rst:73
 msgid "Below is an example request using cURL::"
 msgstr "下記は、CURLを使ったリクエストの例です。"
 
-#: ../../../source/sms.rst:43
+#: ../../../source/sms.rst:57
 msgid ""
 "The **sender** is sent as through a best effort method and is not guaranteed"
 " to be shown on the recipient's mobile as it is and maybe replaced with an "
@@ -345,15 +342,80 @@ msgstr ""
 "**sender** は、最良の方法で発信されますが、それでも、受信者側にそのまま表示される保証はありません。任意の **caller** "
 "に置き換えられることもあります。これは、各キャリアや、ネットワークまたは政府が定めた規定によるもので、リクエストを受け取らない場合もあるからです。"
 
-#: ../../../source/sms.rst:63
+#: ../../../source/sms.rst:77
 msgid ""
 "The ``<message>`` in the above example **must** be encoded in UTF-8 before "
 "sending."
 msgstr "上記の例にある ``<message>`` は **必ず** 送信される前にUTF-8でエンコーディングしてください。"
 
-#: ../../../source/sms.rst:65
+#: ../../../source/sms.rst:79
 msgid ""
 "The response would be a JSON structure, returned with HTTP ``201 CREATED`` "
 "status code::"
 msgstr "レスポンスは、JSON構造となり、ステータスコード　HTTP ``201 CREATED`` にて返されます。"
+
+#: ../../../source/sms.rst:25
+msgid "JP specific optional parameters"
+msgstr "JP向けオプションパラメーター"
+
+#: ../../../source/sms.rst:27
+msgid ""
+"The additonal parameters below are for JP specific usage and recipients:"
+msgstr "下記のパラメーターは、JP向けの受信者に提供されます。"
+
+#: ../../../source/sms.rst:32
+msgid "jp-kp"
+msgstr ""
+
+#: ../../../source/sms.rst:32
+msgid "K-Premium flag"
+msgstr "Kプレミアムフラグ"
+
+#: ../../../source/sms.rst:32 ../../../source/sms.rst:33
+msgid "No"
+msgstr "×"
+
+#: ../../../source/sms.rst:32
+msgid "The string **true**"
+msgstr "**true** の文字列"
+
+#: ../../../source/sms.rst:32
+msgid "N/A"
+msgstr ""
+
+#: ../../../source/sms.rst:32
+msgid "true"
+msgstr ""
+
+#: ../../../source/sms.rst:33
+msgid "jp-kddi-sender"
+msgstr ""
+
+#: ../../../source/sms.rst:33
+msgid "Sender ID for au"
+msgstr "au向けのSender ID"
+
+#: ../../../source/sms.rst:33
+msgid "Numeric"
+msgstr "数字"
+
+#: ../../../source/sms.rst:33
+msgid "Min:10, Max:12"
+msgstr "最短10桁、最長12桁 "
+
+#: ../../../source/sms.rst:33
+msgid "0312341234"
+msgstr ""
+
+#: ../../../source/sms.rst:3
+msgid "SMS API"
+msgstr "SMS配信API"
+
+#: ../../../source/sms.rst:36
+msgid ""
+"Please refer to our `K-Premium Service FAQ "
+"<http://help.xoxzo.com/customer/en/portal/articles/2264921--sms-api-the-k"
+"-premium-service>`_ for more information on the K-Premium Service."
+msgstr ""
+"Kプレミアムの詳細については `KプレミアムのFAQページ <http://help.xoxzo.com/customer/ja/portal/articles/2264921--sms-api-the-k-premium-service>`_ までご確認ください。"
 

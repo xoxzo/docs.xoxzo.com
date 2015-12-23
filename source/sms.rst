@@ -1,4 +1,4 @@
-====================================
+==================================== 
 SMS API
 ====================================
 
@@ -20,6 +20,20 @@ with the following parameters:
                                                                   (exclude + sign prefix)
     sender     Sender ID           Yes       Alphanumeric         15 digit or 10 alphanumeric  Xoxzo1
     =========  ==================  ========  ===================  ===========================  ===================
+
+JP specific optional parameters
+------------------------------------
+
+The additonal parameters below are for JP specific usage and recipients:
+
+    ==============  ==================  ========    =================== =========================== ===================
+    Name            Description         Required    Data Type           Max Length                  Example
+    ==============  ==================  ========    =================== =========================== ===================
+    jp-kp           K-Premium flag      No          The string **true** N/A                         true 
+    jp-kddi-sender  Sender ID for au    No          Numeric             Min:10, Max:12              0312341234
+    ==============  ==================  ========    =================== =========================== ===================
+
+Please refer to our `K-Premium Service FAQ <http://help.xoxzo.com/customer/en/portal/articles/2264921--sms-api-the-k-premium-service>`_ for more information on the K-Premium Service.
 
 .. note::
    Notes on the **recipient** parameter:
