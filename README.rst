@@ -83,7 +83,7 @@ Publish Changes on GitHub Pages
 
 How to publish changes on GitHub Pages.
 
-If you'd like to know how to make changes, please follow our [github flow](https://sites.google.com/a/xoxzo.com/alpha-site/development/git/xoxzo).
+If you'd like to know how to make changes, please follow our github flow: https://sites.google.com/a/xoxzo.com/alpha-site/development/git/xoxzo.
 
 What we need at `gh-pages` branch are the HTML files. So this will be the content of this branch:
 
