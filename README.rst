@@ -83,6 +83,29 @@ Publish Changes on GitHub Pages
 
 How to publish changes on GitHub Pages.
 
+If you'd like to know how to make changes, please follow our [github flow](https://sites.google.com/a/xoxzo.com/alpha-site/development/git/xoxzo).
+
+What we need at `gh-pages` branch are the HTML files. So this will be the content of this branch:
+
+.. code-block:: shell
+
+    labo-a:05:01:14 (gh-pages) ~/github/api-docs$ ls -al
+
+    total 32
+    drwxrwxr-x 5 zaki zaki 4096 Dec 28 04:36 .
+    drwxrwxr-x 8 zaki zaki 4096 Dec 26 04:27 ..
+    -rw-rw-r-- 1 zaki zaki   15 Dec 28 04:36 CNAME
+    drwxrwxr-x 4 zaki zaki 4096 Dec 28 04:36 en
+    drwxrwxr-x 8 zaki zaki 4096 Dec 28 04:52 .git
+    -rw-rw-r-- 1 zaki zaki    6 Dec 28 04:36 .gitignore
+    -rw-rw-r-- 1 zaki zaki  341 Dec 28 04:36 index.html
+    drwxrwxr-x 4 zaki zaki 4096 Dec 28 04:36 ja
+    -rw-rw-r-- 1 zaki zaki    0 Dec 28 04:36 .nojekyll
+
+All of the contents will be at `en` and `ja` folder. And you don't modify these folder manually. After you've finished making changes, follow these steps to publish on GitHub Pages:
+
+...
+
 Issues
 ======================
 If the index contents not generated:-
