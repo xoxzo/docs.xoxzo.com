@@ -85,7 +85,7 @@ How to publish changes on GitHub Pages.
 
 If you'd like to know how to make changes, please follow our github flow: https://sites.google.com/a/xoxzo.com/alpha-site/development/git/xoxzo.
 
-What we need at `gh-pages` branch are the HTML files. So this will be the content of this branch:
+What we need at ``gh-pages`` branch are the HTML files. So this will be the content of this branch:
 
 .. code-block:: shell
 
@@ -102,7 +102,7 @@ What we need at `gh-pages` branch are the HTML files. So this will be the conten
     drwxrwxr-x 4 zaki zaki 4096 Dec 28 04:36 ja
     -rw-rw-r-- 1 zaki zaki    0 Dec 28 04:36 .nojekyll
 
-All of the contents will be at `en` and `ja` folder. And you don't modify these folder manually. You need to generate those folders with these commands: 
+All of the contents will be at ``en`` and ``ja`` folder. And you don't modify these folder manually. You need to generate those folders with these commands: 
 
 .. code-block:: shell
 
@@ -130,9 +130,9 @@ All of the contents will be at `en` and `ja` folder. And you don't modify these 
 
 After you've finished making changes, follow these steps to publish on GitHub Pages:
 
-1. Copy `en` and `ja` folder to `api-docs` `gh-pages` branch public repo.
+1. Copy ``en`` and ``ja`` folder to ``api-docs`` ``gh-pages`` branch public repo.
 
-So make sure you've checked out to `gh-pages` branch before you copy the files.
+So make sure you've checked out to ``gh-pages`` branch before you copy the files.
 
 .. code-block:: shell
 
