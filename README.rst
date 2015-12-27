@@ -81,5 +81,6 @@ To view the generated documentation:-
 Issues
 ======================
 If the index contents not generated:-
-    >A common gotcha with directives is that the first line of the content must be indented to the same level as the options are.
+
+    A common gotcha with directives is that the first line of the content must be indented to the same level as the options are.
 
