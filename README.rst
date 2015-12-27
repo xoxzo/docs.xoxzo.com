@@ -102,9 +102,62 @@ What we need at `gh-pages` branch are the HTML files. So this will be the conten
     drwxrwxr-x 4 zaki zaki 4096 Dec 28 04:36 ja
     -rw-rw-r-- 1 zaki zaki    0 Dec 28 04:36 .nojekyll
 
-All of the contents will be at `en` and `ja` folder. And you don't modify these folder manually. After you've finished making changes, follow these steps to publish on GitHub Pages:
+All of the contents will be at `en` and `ja` folder. And you don't modify these folder manually. You need to generate those folders with these commands: 
 
-...
+.. code-block:: shell
+
+    labo-a:05:06:15 (master) ~/github/m7h3oapi-docs$ make html-en
+    ./bin/sphinx-build -b html -d appengine/public/doctrees   source -D language='en' appengine/public/html/en
+    Running Sphinx v1.3.3
+
+    ...
+
+    build succeeded.
+
+    Build finished. The HTML pages are in appengine/public/html/en.
+
+.. code-block:: shell
+
+    labo-a:05:07:06 (master) ~/github/m7h3oapi-docs$ make html-ja
+    ./bin/sphinx-build -b html -d appengine/public/doctrees   source -D language='ja' appengine/public/html/ja
+    Running Sphinx v1.3.3
+
+    ...
+
+    build succeeded.
+
+    Build finished. The HTML pages are in appengine/public/html/ja.
+
+After you've finished making changes, follow these steps to publish on GitHub Pages:
+
+1. Copy `en` and `ja` folder to `api-docs` `gh-pages` branch public repo.
+
+So make sure you've checked out to `gh-pages` branch before you copy the files.
+
+.. code-block:: shell
+
+    labo-a:(master) ~/github/api-docs$ git checkout gh-pages
+    Switched to branch 'gh-pages'
+    Your branch is up-to-date with 'origin/gh-pages'.
+    labo-a:(gh-pages) ~/github/api-docs$
+
+.. code-block:: shell
+
+    labo-a:(master) ~/github/m7h3oapi-docs$ cp -r appengine/public/html/en ../api-docs/
+    labo-a:(master) ~/github/m7h3oapi-docs$ cp -r appengine/public/html/ja ../api-docs/
+
+2. Commit the changes.
+
+.. code-block:: shell
+
+    labo-a:(gh-pages) ~/github/api-docs$ git status
+    labo-a:(gh-pages) ~/github/api-docs$ git add en/
+    labo-a:(gh-pages) ~/github/api-docs$ git add ja/
+    labo-a:(gh-pages) ~/github/api-docs$ git diff HEAD
+    labo-a:(gh-pages) ~/github/api-docs$ git commit
+    labo-a:(gh-pages) ~/github/api-docs$ git push origin gh-pages
+
+Make PR (Pull Requests) if you don't have write access to the repo.
 
 Issues
 ======================
