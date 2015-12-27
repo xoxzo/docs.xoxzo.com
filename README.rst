@@ -78,6 +78,11 @@ To view the generated documentation:-
     # We also need Python 2 since App Engine does not support Python 3
     $ google_appengine/appcfg.py --noauth_local_webserver -A heylodocs update appengine
 
+Publish Changes on GitHub Pages
+===============================
+
+How to publish changes on GitHub Pages.
+
 Issues
 ======================
 If the index contents not generated:-
