@@ -180,7 +180,7 @@ msgstr "Xoxzo1"
 
 #: ../../../source/sms.rst:39
 msgid "Notes on the **recipient** parameter:"
-msgstr "**recipient** パラメーターに関する注意"
+msgstr "**recipient** パラメーターに関する注意点"
 
 #: ../../../source/sms.rst:41
 msgid ""
@@ -209,7 +209,7 @@ msgstr ""
 
 #: ../../../source/sms.rst:49
 msgid "Notes on the **sender** parameter:"
-msgstr "**sender** パラメーターに関する注意"
+msgstr "**sender** パラメーターに関する注意点"
 
 #: ../../../source/sms.rst:51
 msgid "The **sender** parameter does not require a + sign prefix."
@@ -231,7 +231,7 @@ msgstr "**sender** パラメーターが、数字のみの場合、最大の長�
 
 #: ../../../source/sms.rst:62
 msgid "Notes on the **message** parameter:"
-msgstr "**message** パラメーターに関する注意"
+msgstr "**message** パラメーターに関する注意点"
 
 #: ../../../source/sms.rst:64
 msgid "This is the main message that you'll be sending to the recipient."

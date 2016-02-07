@@ -18,7 +18,6 @@ with the following parameters:
     Name           Description               Required  Data Type  Max Length               Example
     =============  ========================  ========  =========  =======================  =============================
     caller         Caller number             Yes       E.164      Min:10, Max:15           +8190123456789
-                                                                  or DID ID                or ytq5rfdgyw
     recipient      Call recipient            Yes       E.164      Min:10, Max:15           +8190123456789
                                                                   (exclude + sign prefix)
     recording_url  URL where your mp3 audio  Yes       URL        200                      http://www.mysite.com/123.mp3
@@ -42,10 +41,6 @@ with the following parameters:
       when specifying phone numbers.
    *  `E.164 <http://en.wikipedia.org/wiki/E.164>`_ dictates that phone numbers must start with the + prefix and country 
       code then followed directly by the mobile number leaving the local **0** prefix.
-   *  Example of a valid recipient is: *+818011234567* with *81* as the Japan country code and *8011234567* 
-      as the mobile number.
-   *  If you're specifying a DID ID for the caller, we will use the DID number as the caller instead
-   *  DID ID will be given to you when you subscribe to an incoming DID number.
 
 .. warning::
    *  The **caller** is sent as through a best effort method and is not guaranteed to be shown on
