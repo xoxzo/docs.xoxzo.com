@@ -31,6 +31,9 @@ You can just run
 which will run gettext, generate the corresponding .po files, translate them and run the test server so you can
 check the generated html.
 
+Before you commit, make sure to change the `version` and `release` numbers in `source/conf.py` to reflect the new docs.
+`version` is the public version shown in the docs, while `release` is the internal version we use.
+
 The slower way
 ======================
 
