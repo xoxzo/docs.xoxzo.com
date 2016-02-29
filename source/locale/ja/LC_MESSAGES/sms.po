@@ -427,4 +427,4 @@ msgstr ""
 
 #: ../../../source/sms.rst:183
 msgid "Message put into queue and will be delivered shortly"
-msgstr ""
+msgstr "配信待ち"
