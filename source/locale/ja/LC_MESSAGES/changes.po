@@ -50,3 +50,15 @@ msgstr ""
 #: ../../../source/changes.rst:9
 msgid "Added k-premium settings"
 msgstr "k-premiumパラメーターの追加"
+
+#: ../../../source/changes.rst:10
+msgid "1.1.1"
+msgstr ""
+
+#: ../../../source/changes.rst:10
+msgid "2016-03-04"
+msgstr ""
+
+#: ../../../source/changes.rst:10
+msgid "Added QUEUED status"
+msgstr "配信待ちのステータス追加"
