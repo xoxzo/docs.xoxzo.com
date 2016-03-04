@@ -180,6 +180,7 @@ This is a list of statuses that you can find in the ``status`` data:
     =================== ===============================
     Message status      Description         
     =================== ===============================
+    QUEUED              Message put into queue and will be delivered shortly
     OK                  Message successfully delivered
     DELIVERING          Sending message in progress
     FAIL                Failed to send message

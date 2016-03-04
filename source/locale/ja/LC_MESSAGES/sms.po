@@ -122,15 +122,15 @@ msgstr "よくあるメッセージ配信ステータス"
 msgid "Message status"
 msgstr "メッセージステータス"
 
-#: ../../../source/sms.rst:183
+#: ../../../source/sms.rst:184
 msgid "OK"
 msgstr "OK"
 
-#: ../../../source/sms.rst:184
+#: ../../../source/sms.rst:185
 msgid "DELIVERING"
 msgstr "DELIVERING"
 
-#: ../../../source/sms.rst:185
+#: ../../../source/sms.rst:186
 msgid "FAIL"
 msgstr "FAIL"
 
@@ -307,15 +307,15 @@ msgstr "このメッセージステータスのURLです。"
 msgid "This is a list of statuses that you can find in the ``status`` data:"
 msgstr "``status`` データ内にある、ステータスのリスト"
 
-#: ../../../source/sms.rst:183
+#: ../../../source/sms.rst:184
 msgid "Message successfully delivered"
 msgstr "メッセージの配信成功"
 
-#: ../../../source/sms.rst:184
+#: ../../../source/sms.rst:185
 msgid "Sending message in progress"
 msgstr "メッセージの配信中"
 
-#: ../../../source/sms.rst:185
+#: ../../../source/sms.rst:186
 msgid "Failed to send message"
 msgstr "メッセージの配信失敗"
 
@@ -417,5 +417,14 @@ msgid ""
 "<http://help.xoxzo.com/customer/en/portal/articles/2264921--sms-api-the-k"
 "-premium-service>`_ for more information on the K-Premium Service."
 msgstr ""
-"Kプレミアムの詳細については `KプレミアムのFAQページ <http://help.xoxzo.com/customer/ja/portal/articles/2264921--sms-api-the-k-premium-service>`_ までご確認ください。"
+"Kプレミアムの詳細については `KプレミアムのFAQページ "
+"<http://help.xoxzo.com/customer/ja/portal/articles/2264921--sms-api-the-k"
+"-premium-service>`_ までご確認ください。"
 
+#: ../../../source/sms.rst:183
+msgid "QUEUED"
+msgstr ""
+
+#: ../../../source/sms.rst:183
+msgid "Message put into queue and will be delivered shortly"
+msgstr "配信待ち"
