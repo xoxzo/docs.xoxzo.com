@@ -51,7 +51,7 @@ msgstr ""
 msgid "Added k-premium settings"
 msgstr "k-premiumパラメーターの追加"
 
-#: ../../../source/changes.rst:10
+#: ../../../source/changes.rst:11
 msgid "1.1.1"
 msgstr ""
 
@@ -62,3 +62,15 @@ msgstr ""
 #: ../../../source/changes.rst:10
 msgid "Added QUEUED status"
 msgstr "配信待ちのステータス追加"
+
+#: ../../../source/changes.rst:10
+msgid "1.1.0"
+msgstr ""
+
+#: ../../../source/changes.rst:11
+msgid "2016-03-29"
+msgstr ""
+
+#: ../../../source/changes.rst:11
+msgid "Return list instead of dictionary for voice call status API"
+msgstr "voice call status APIのレスポンスにてdictionaryからlistに変えて返却"
