@@ -20,7 +20,7 @@ http://sphinx-doc.org/latest/intl.html
 The quick way
 ======================
 
-You can just run
+After making changes to the rst files, you can just run
 
 .. code-block:: shell
 
