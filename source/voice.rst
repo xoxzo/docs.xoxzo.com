@@ -108,19 +108,17 @@ The response would be a JSON structure, returned with HTTP ``200 OK`` status cod
     HTTP/1.0 200 OK
     Content-Type: application/json
 
-    [
-        {
-            "callid": "<callid>",
-            "cost": 10,
-            "duration": 11,
-            "start_time": "2015-09-08 12:50:05",
-            "end_time": "2015-09-08 12:50:16",
-            "status": "ANSWERED",
-            "caller": "<caller>",
-            "recipient": "<recipient>",
-            "url": "https://api.xoxzo.com/voice/simple/playback/<callid>/"
-        }
-    ]
+    {
+        "callid": "<callid>",
+        "cost": 10,
+        "duration": 11,
+        "start_time": "2015-09-08 12:50:05",
+        "end_time": "2015-09-08 12:50:16",
+        "status": "ANSWERED",
+        "caller": "<caller>",
+        "recipient": "<recipient>",
+        "url": "https://api.xoxzo.com/voice/simple/playback/<callid>/"
+    }
 
 Response data
 ------------------------------------
