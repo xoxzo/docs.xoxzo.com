@@ -186,3 +186,18 @@ This is a list of statuses that you can find in the ``status`` data:
     FAIL                Failed to send message
     =================== ===============================
 
+Pull Sent Messages API
+====================================
+To pull sent messages, make a ``GET`` request to the endpoint::
+
+    https://api.xoxzo.com/sms/messages/
+
+with the following parameters:
+
+    =========  ====================================  ========
+    Name       Description                           Required
+    =========  ====================================  ========
+    sent_date  Date when the message was sent with   Yes
+               following format: YYYY-mm-dd.
+               Should be within 90 days from today
+
