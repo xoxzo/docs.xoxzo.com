@@ -58,8 +58,10 @@ API:
    Country not allowed                 Your account is not allowed to send to this country.
                                        Please contact help@xoxzo.com for more details.
    Invalid sid/token                   The sid or token you're using is invalid.
+   Invalid sent_date                   The sent_date should be within 90 days.
+   Invalid sent_date format            The sent_date should use following format: YYYY-mm-dd.
    Not enough credits                  Your account doesn't have sufficient credits to use the
-                                       API
+                                       API.
    This field is required              A parameter which is required for the API
                                        is missing. Please check your request
                                        again.
