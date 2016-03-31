@@ -122,7 +122,7 @@ Use this ``<msgid>`` to check SMS status.
 Examples
 ------------------------------------
 
-Below is an example request using CURL::
+Below is an example request using cURL::
 
     curl -u <SID>:<AUTH_TOKEN> https://api.xoxzo.com/sms/messages/<msgid>/
 
@@ -192,12 +192,133 @@ To pull sent messages, make a ``GET`` request to the endpoint::
 
     https://api.xoxzo.com/sms/messages/
 
-with the following parameters:
+This request will pull sent messages.
+
+Below is an example of request using cURL to pull sent messages::
+
+    curl -u <SID>:<AUTH_TOKEN> https://api.xoxzo.com/sms/messages/
+
+The response would be a JSON structure, returned with HTTP ``200 OK`` status code::
+
+    HTTP/1.0 200 OK
+    Content-Type: application/json
+
+    [
+        {
+           "cost": 0,
+           "msgid": "<msgid>",
+           "recipient": "<recipient>",
+           "sender": "<sender>",
+           "sent_time": null,
+           "status": "QUEUED",
+           "url": "https://api.xoxzo.com/sms/messages/<msgid>"
+        },
+        {
+           "cost": 10,
+           "msgid": "<msgid>",
+           "recipient": "<recipient>",
+           "sender": "<sender>",
+           "sent_time": "2016-03-04 00:00:00",
+           "status": "OK",
+           "url": "https://api.xoxzo.com/sms/messages/<msgid>"
+        },
+    ]
+
+You can also pull sent messages for a specified sent date using
+``sent_date`` parameter followed by an operator and a date.
 
     =========  ====================================  ========
     Name       Description                           Required
     =========  ====================================  ========
     sent_date  Date when the message was sent with   Yes
                following format: YYYY-mm-dd.
-               Should be within 90 days from today
+               Should be within 90 days from today.
+    =========  ====================================  =========
 
+You can use following operator to get a certain date or a
+range of sent dates from the sent messages:
+
+    =========  ===================
+    Operator   Name
+    =========  ===================
+    <=         less than equal
+    <          less than
+    =          equal
+    >          greater than
+    >=         greater than equal
+    =========  ===================
+
+Below is an example of request using cURL to pull sent messages that were sent
+on 4 March 2016::
+
+    curl -u <SID>:<AUTH_TOKEN> https://api.xoxzo.com/sms/messages/?sent_date=2016-03-04
+
+The response would be a JSON structure, returned with HTTP ``200 OK`` status code::
+
+    HTTP/1.0 200 OK
+    Content-Type: application/json
+
+    [
+        {
+           "cost": 10,
+           "msgid": "<msgid>",
+           "recipient": "<recipient>",
+           "sender": "<sender>",
+           "sent_time": "2016-03-04 10:15:00",
+           "status": "OK",
+           "url": "https://api.xoxzo.com/sms/messages/<msgid>"
+        },
+        {
+           "cost": 10,
+           "msgid": "<msgid>",
+           "recipient": "<recipient>",
+           "sender": "<sender>",
+           "sent_time": "2016-03-04 00:00:00",
+           "status": "OK",
+           "url": "https://api.xoxzo.com/sms/messages/<msgid>"
+        },
+    ]
+
+Below is an example of request using cURL to pull sent messages that were sent
+before and on 4 March 2016::
+
+    curl -u <SID>:<AUTH_TOKEN> https://api.xoxzo.com/sms/messages/?sent_date<=2016-03-04
+
+The response would be a JSON structure, returned with HTTP ``200 OK`` status code::
+
+    HTTP/1.0 200 OK
+    Content-Type: application/json
+
+    [
+        {
+           "cost": 10,
+           "msgid": "<msgid>",
+           "recipient": "<recipient>",
+           "sender": "<sender>",
+           "sent_time": "2016-03-04 10:15:00",
+           "status": "OK",
+           "url": "https://api.xoxzo.com/sms/messages/<msgid>"
+        },
+        {
+           "cost": 10,
+           "msgid": "<msgid>",
+           "recipient": "<recipient>",
+           "sender": "<sender>",
+           "sent_time": "2016-03-04 00:00:00",
+           "status": "OK",
+           "url": "https://api.xoxzo.com/sms/messages/<msgid>"
+        },
+        {
+           "cost": 10,
+           "msgid": "<msgid>",
+           "recipient": "<recipient>",
+           "sender": "<sender>",
+           "sent_time": "2016-02-15 11:30:47",
+           "status": "OK",
+           "url": "https://api.xoxzo.com/sms/messages/<msgid>"
+        },
+    ]
+
+.. note::
+   * The maximum amount of sent messages that can be pulled are limited to 5000 messages.
+   * Only sent messages within 90 days ago that can be be pulled.
