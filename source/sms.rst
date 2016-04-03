@@ -322,3 +322,4 @@ The response would be a JSON structure, returned with HTTP ``200 OK`` status cod
 .. note::
    * The maximum amount of sent messages that can be pulled are limited to 5000 messages.
    * Only sent messages within 90 days ago that can be be pulled.
+   * Support only one operator and one specified sent date on each request.
