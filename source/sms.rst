@@ -204,7 +204,7 @@ You can also pull sent messages for a specified sent date using
     sent_date  Date when the message was sent with   Yes
                following format: YYYY-mm-dd.
                Should be within 90 days from today.
-    =========  ====================================  =========
+    =========  ====================================  ========
 
 You can use following operator to get a certain date or a
 range of sent dates from the sent messages:
