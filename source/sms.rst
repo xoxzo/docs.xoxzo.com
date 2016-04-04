@@ -192,8 +192,7 @@ To pull sent messages, make a ``GET`` request to the endpoint::
 
     https://api.xoxzo.com/sms/messages/
 
-This request will pull sent messages. The sent messages results will be
-sorted based on their newest ``sent_time``.
+The sent messages results will be sorted based on their newest ``sent_time``.
 
 You can also pull sent messages for a specified sent date using
 ``sent_date`` parameter followed by an operator and a date.
@@ -232,6 +231,9 @@ as checking checking message status.
 Examples
 --------
 
+Pull all sent messages
+''''''''''''''''''''''
+
 Below is an example of request using cURL to pull sent messages::
 
     curl -u <SID>:<AUTH_TOKEN> https://api.xoxzo.com/sms/messages/
@@ -261,6 +263,9 @@ The response would be a JSON structure, returned with HTTP ``200 OK`` status cod
            "url": "https://api.xoxzo.com/sms/messages/<msgid>"
         },
     ]
+
+Pull sent messages on a specified date
+''''''''''''''''''''''''''''''''''''''
 
 Below is an example of request using cURL to pull sent messages that were sent
 on 4 March 2016::
@@ -333,6 +338,8 @@ The response would be a JSON structure, returned with HTTP ``200 OK`` status cod
         },
     ]
 
+No sent messages on a specified date
+''''''''''''''''''''''''''''''''''''
 
 If there's no sent messages on specified date, empty list with HTTP
 ``200 OK`` status code will be returned.
@@ -349,6 +356,9 @@ list returned with HTTP ``200 OK`` status code::
     Content-Type: application/json
 
     []
+
+Invalid requests example
+''''''''''''''''''''''''
 
 If the specified date is in invalid format, HTTP ``400 BAD REQUEST`` status
 code will be returned.
