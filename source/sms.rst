@@ -192,7 +192,45 @@ To pull sent messages, make a ``GET`` request to the endpoint::
 
     https://api.xoxzo.com/sms/messages/
 
-This request will pull sent messages.
+This request will pull sent messages. The sent messages results will be
+sorted based on their newest ``sent_time``.
+
+You can also pull sent messages for a specified sent date using
+``sent_date`` parameter followed by an operator and a date.
+
+    =========  ====================================  ========
+    Name       Description                           Required
+    =========  ====================================  ========
+    sent_date  Date when the message was sent with   Yes
+               following format: YYYY-mm-dd.
+               Should be within 90 days from today.
+    =========  ====================================  =========
+
+You can use following operator to get a certain date or a
+range of sent dates from the sent messages:
+
+    =========  ===================
+    Operator   Name
+    =========  ===================
+    <=         less than equal
+    <          less than
+    =          equal
+    >          greater than
+    >=         greater than equal
+    =========  ===================
+
+.. note::
+   * The maximum amount of sent messages that can be pulled are limited to 5000 messages.
+   * Only sent messages within 90 days ago that can be be pulled.
+   * Support only one operator and one specified sent date on each request.
+
+Response data
+-------------
+Pulling sent messages response data will have the same response data
+as checking checking message status.
+
+Examples
+--------
 
 Below is an example of request using cURL to pull sent messages::
 
@@ -223,30 +261,6 @@ The response would be a JSON structure, returned with HTTP ``200 OK`` status cod
            "url": "https://api.xoxzo.com/sms/messages/<msgid>"
         },
     ]
-
-You can also pull sent messages for a specified sent date using
-``sent_date`` parameter followed by an operator and a date.
-
-    =========  ====================================  ========
-    Name       Description                           Required
-    =========  ====================================  ========
-    sent_date  Date when the message was sent with   Yes
-               following format: YYYY-mm-dd.
-               Should be within 90 days from today.
-    =========  ====================================  =========
-
-You can use following operator to get a certain date or a
-range of sent dates from the sent messages:
-
-    =========  ===================
-    Operator   Name
-    =========  ===================
-    <=         less than equal
-    <          less than
-    =          equal
-    >          greater than
-    >=         greater than equal
-    =========  ===================
 
 Below is an example of request using cURL to pull sent messages that were sent
 on 4 March 2016::
@@ -319,7 +333,79 @@ The response would be a JSON structure, returned with HTTP ``200 OK`` status cod
         },
     ]
 
-.. note::
-   * The maximum amount of sent messages that can be pulled are limited to 5000 messages.
-   * Only sent messages within 90 days ago that can be be pulled.
-   * Support only one operator and one specified sent date on each request.
+
+If there's no sent messages on specified date, empty list with HTTP
+``200 OK`` status code will be returned.
+
+Below is an example of request using cURL to pull sent messages that were
+sent on 30 January 2016::
+
+    curl -u <SID>:<AUTH_TOKEN> https://api.xoxzo.com/sms/messages/?sent_date=2016-01-30
+
+Since there's no message sent on 30 January 2016, the response would an empty
+list returned with HTTP ``200 OK`` status code::
+
+    HTTP/1.0 200 OK
+    Content-Type: application/json
+
+    []
+
+If the specified date is in invalid format, HTTP ``400 BAD REQUEST`` status
+code will be returned.
+
+Below is an example of request using cURL to pull sent messages with
+invalid sent date format::
+
+    curl -u <SID>:<AUTH_TOKEN> https://api.xoxzo.com/sms/messages/?sent_date=2016-02-30
+
+Since 30 February 2016 is invalid date, HTTP ``400 BAD REQUEST`` status code
+will be returned explaining that the ``sent_date`` format is invalid::
+
+    HTTP/1.0 400 Bad Request
+    Content-Type: application/json
+
+    {
+        "sent_date": [
+            "Invalid sent_date format"
+        ]
+    }
+
+If the specified date is more than 90 days ago, HTTP ``400 BAD REQUEST`` status
+code will be returned.
+
+Below is an example of request using cURL to pull sent messages with
+sent date more than 90 days ago::
+
+    curl -u <SID>:<AUTH_TOKEN> https://api.xoxzo.com/sms/messages/?sent_date=2015-02-28
+
+Since 28 February 2015 is more than 90 days ago, HTTP ``400 BAD REQUEST`` status code
+will be returned asking for a valid ``sent_date``::
+
+    HTTP/1.0 400 Bad Request
+    Content-Type: application/json
+
+    {
+        "sent_date": [
+            "Invalid sent_date"
+        ]
+    }
+
+If the parameter is incorrectly specified, HTTP ``400 BAD REQUEST`` status code
+will be returned.
+
+Below is an example of request using cURL to pull sent messages with
+incorrect parameter::
+
+    curl -u <SID>:<AUTH_TOKEN> https://api.xoxzo.com/sms/messages/?sent_data=2016-02-28
+
+Since ``sent_data`` is not a correct parameter, HTTP ``400 BAD REQUEST`` status code
+will be returned asking for ``sent_date`` parameter::
+
+    HTTP/1.0 400 Bad Request
+    Content-Type: application/json
+
+    {
+        "sent_date": [
+            "This field is required"
+        ]
+    }
