@@ -172,41 +172,30 @@ Response data
     url        The URL of this message status
     =========  ======================================
 
-Common message statuses
+
+Sent Messages List API
 ====================================
-
-This is a list of statuses that you can find in the ``status`` data:
-
-    =================== ===============================
-    Message status      Description         
-    =================== ===============================
-    QUEUED              Message put into queue and will be delivered shortly
-    OK                  Message successfully delivered
-    DELIVERING          Sending message in progress
-    FAIL                Failed to send message
-    =================== ===============================
-
-Pull Sent Messages API
-====================================
-To pull sent messages, make a ``GET`` request to the endpoint::
+You can pull a list of sent messages by making a ``GET`` request to the endpoint::
 
     https://api.xoxzo.com/sms/messages/
 
-The sent messages results will be sorted based on their newest ``sent_time``.
+The sent messages results will be sorted based on their newest ``sent_time``. 
+This API is useful for creating logs.
 
 You can also pull sent messages for a specified sent date using
 ``sent_date`` parameter followed by an operator and a date.
 
-    =========  ====================================  ========
-    Name       Description                           Required
-    =========  ====================================  ========
-    sent_date  Date when the message was sent with   Yes
-               following format: YYYY-mm-dd.
+    =========  ==================================== ========
+    Name       Description                          Required
+    =========  ==================================== ========
+    sent_date  UTC based date when the message      Yes          
+               was sent with following format: 
+               YYYY-mm-dd.
                Should be within 90 days from today.
-    =========  ====================================  ========
+    =========  ==================================== ========
 
-You can use following operator to get a certain date or a
-range of sent dates from the sent messages:
+You can use following operator to get a certain date or a range of sent dates from 
+the sent messages:
 
     =========  ===================
     Operator   Name
@@ -221,15 +210,13 @@ range of sent dates from the sent messages:
 .. note::
    * The maximum amount of sent messages that can be pulled are limited to 5000 messages.
    * Only sent messages within 90 days ago that can be be pulled.
-   * Support only one operator and one specified sent date on each request.
+   * This API supports only one operator and one specified sent date on each request.
+   * All dates are based on UTC.
 
-Response data
--------------
-Pulling sent messages response data will have the same response data
-as checking checking message status.
+Examples of response data
+--------------------------
 
-Examples
---------
+The response data returned by the API is equivalent to what you get from the `Check SMS status API`_
 
 Pull all sent messages
 ''''''''''''''''''''''
@@ -419,3 +406,19 @@ will be returned asking for ``sent_date`` parameter::
             "This field is required"
         ]
     }
+
+
+Common message statuses
+====================================
+
+This is a list of statuses that you can find in the ``status`` data:
+
+    =================== ===============================
+    Message status      Description         
+    =================== ===============================
+    QUEUED              Message put into queue and will be delivered shortly
+    OK                  Message successfully delivered
+    DELIVERING          Sending message in progress
+    FAIL                Failed to send message
+    =================== ===============================
+

@@ -33,16 +33,18 @@ msgstr "下記のパラメーターを併記してください。"
 
 #: ../../../source/sms.rst:16 ../../../source/sms.rst:30
 #: ../../../source/sms.rst:94 ../../../source/sms.rst:164
+#: ../../../source/sms.rst:189 ../../../source/sms.rst:201
 msgid "Name"
 msgstr "名称"
 
 #: ../../../source/sms.rst:16 ../../../source/sms.rst:30
 #: ../../../source/sms.rst:94 ../../../source/sms.rst:164
-#: ../../../source/sms.rst:181
+#: ../../../source/sms.rst:189 ../../../source/sms.rst:417
 msgid "Description"
 msgstr "詳細"
 
 #: ../../../source/sms.rst:16 ../../../source/sms.rst:30
+#: ../../../source/sms.rst:189
 msgid "Required"
 msgstr "必須"
 
@@ -55,7 +57,7 @@ msgid "Message body"
 msgstr "メッセージ本文"
 
 #: ../../../source/sms.rst:18 ../../../source/sms.rst:19
-#: ../../../source/sms.rst:21
+#: ../../../source/sms.rst:21 ../../../source/sms.rst:191
 msgid "Yes"
 msgstr "○"
 
@@ -79,10 +81,6 @@ msgstr "送信元ID"
 msgid "Examples"
 msgstr "例"
 
-#: ../../../source/sms.rst:125
-msgid "Below is an example request using CURL::"
-msgstr "下記は、CURLを使ったリクエストの例です。"
-
 #: ../../../source/sms.rst:99
 msgid ""
 "If there's invalid parameters given, HTTP ``400 BAD REQUEST`` status code "
@@ -102,7 +100,8 @@ msgid ""
 "``<msgid>``::"
 msgstr "メッセージの状態を調べるには、 ``<msgid>`` をつけた、GETリクエストをエンドポイントに行ってください。"
 
-#: ../../../source/sms.rst:129
+#: ../../../source/sms.rst:129 ../../../source/sms.rst:228
+#: ../../../source/sms.rst:262 ../../../source/sms.rst:293
 msgid ""
 "The response would be a JSON structure, returned with HTTP ``200 OK`` status"
 " code::"
@@ -114,23 +113,23 @@ msgid ""
 "returned with a HTTP ``200 OK`` status code::"
 msgstr "下記は、メッセージが配信失敗し、ステータスコード　HTTP ``200 OK`` が返された場合の例です。"
 
-#: ../../../source/sms.rst:176
+#: ../../../source/sms.rst:412
 msgid "Common message statuses"
 msgstr "よくあるメッセージ配信ステータス"
 
-#: ../../../source/sms.rst:181
+#: ../../../source/sms.rst:417
 msgid "Message status"
 msgstr "メッセージステータス"
 
-#: ../../../source/sms.rst:184
+#: ../../../source/sms.rst:420
 msgid "OK"
 msgstr "OK"
 
-#: ../../../source/sms.rst:185
+#: ../../../source/sms.rst:421
 msgid "DELIVERING"
 msgstr "DELIVERING"
 
-#: ../../../source/sms.rst:186
+#: ../../../source/sms.rst:422
 msgid "FAIL"
 msgstr "FAIL"
 
@@ -303,19 +302,19 @@ msgstr "url"
 msgid "The URL of this message status"
 msgstr "このメッセージステータスのURLです。"
 
-#: ../../../source/sms.rst:178
+#: ../../../source/sms.rst:414
 msgid "This is a list of statuses that you can find in the ``status`` data:"
 msgstr "``status`` データ内にある、ステータスのリスト"
 
-#: ../../../source/sms.rst:184
+#: ../../../source/sms.rst:420
 msgid "Message successfully delivered"
 msgstr "メッセージの配信成功"
 
-#: ../../../source/sms.rst:185
+#: ../../../source/sms.rst:421
 msgid "Sending message in progress"
 msgstr "メッセージの配信中"
 
-#: ../../../source/sms.rst:186
+#: ../../../source/sms.rst:422
 msgid "Failed to send message"
 msgstr "メッセージの配信失敗"
 
@@ -327,7 +326,7 @@ msgstr "最短10桁、最長15桁（先頭+を除く）"
 msgid "The cost in credits of this message"
 msgstr "このメッセージ送信で消費したクレジットです。"
 
-#: ../../../source/sms.rst:73
+#: ../../../source/sms.rst:73 ../../../source/sms.rst:125
 msgid "Below is an example request using cURL::"
 msgstr "下記は、CURLを使ったリクエストの例です。"
 
@@ -421,10 +420,235 @@ msgstr ""
 "<http://help.xoxzo.com/customer/ja/portal/articles/2264921--sms-api-the-k"
 "-premium-service>`_ までご確認ください。"
 
-#: ../../../source/sms.rst:183
+#: ../../../source/sms.rst:419
 msgid "QUEUED"
 msgstr ""
 
-#: ../../../source/sms.rst:183
+#: ../../../source/sms.rst:419
 msgid "Message put into queue and will be delivered shortly"
 msgstr "配信待ち"
+
+#: ../../../source/sms.rst:177
+msgid "Sent Messages List API"
+msgstr "送信されたSMSのリストを取得するAPI"
+
+#: ../../../source/sms.rst:178
+msgid ""
+"You can pull a list of sent messages by making a ``GET`` request to the "
+"endpoint::"
+msgstr "以下のエンドポイントに ``GET`` リクエストをすると送信されたメッセージのリストを取得することが可能です。"
+
+#: ../../../source/sms.rst:182
+msgid ""
+"The sent messages results will be sorted based on their newest "
+"``sent_time``. This API is useful for creating logs."
+msgstr "データは ``sent_time`` 新しい順でソートされて取得します。ログなどの作成に便利です。"
+
+#: ../../../source/sms.rst:185
+msgid ""
+"You can also pull sent messages for a specified sent date using "
+"``sent_date`` parameter followed by an operator and a date."
+msgstr "演算子とオペレーターによって特定の日付でリストを取得することもできます。"
+
+#: ../../../source/sms.rst:191
+msgid "sent_date"
+msgstr ""
+
+#: ../../../source/sms.rst:191
+msgid ""
+"UTC based date when the message was sent with following format: YYYY-mm-dd. "
+"Should be within 90 days from today."
+msgstr "YYYY-mm-ddのフォーマットで、メッセージ送信されたUTCベースの日付。過去90日間以内でなければならない。"
+
+#: ../../../source/sms.rst:197
+msgid ""
+"You can use following operator to get a certain date or a range of sent "
+"dates from the sent messages:"
+msgstr "以下の演算子を利用してある期間のメッセージのリスト取得することができます。"
+
+#: ../../../source/sms.rst:201
+msgid "Operator"
+msgstr "演算子"
+
+#: ../../../source/sms.rst:203
+msgid "<="
+msgstr ""
+
+#: ../../../source/sms.rst:203
+msgid "less than equal"
+msgstr "以下"
+
+#: ../../../source/sms.rst:204
+msgid "<"
+msgstr ""
+
+#: ../../../source/sms.rst:204
+msgid "less than"
+msgstr "より小さい"
+
+#: ../../../source/sms.rst:205
+msgid "="
+msgstr ""
+
+#: ../../../source/sms.rst:205
+msgid "equal"
+msgstr "等しい"
+
+#: ../../../source/sms.rst:206
+msgid ">"
+msgstr ""
+
+#: ../../../source/sms.rst:206
+msgid "greater than"
+msgstr "より大きい"
+
+#: ../../../source/sms.rst:207
+msgid ">="
+msgstr ""
+
+#: ../../../source/sms.rst:207
+msgid "greater than equal"
+msgstr "以上"
+
+#: ../../../source/sms.rst:211
+msgid ""
+"The maximum amount of sent messages that can be pulled are limited to 5000 "
+"messages."
+msgstr "一度取得できるメッセージの数は最大5000までです。"
+
+#: ../../../source/sms.rst:212
+msgid "Only sent messages within 90 days ago that can be be pulled."
+msgstr "過去90日間のメッセージしか取得できません。"
+
+#: ../../../source/sms.rst:213
+msgid ""
+"This API supports only one operator and one specified sent date on each "
+"request."
+msgstr "本APIは一度に1つの演算子と1つの日付しか対応していません。"
+
+#: ../../../source/sms.rst:214
+msgid "All dates are based on UTC."
+msgstr "日付はすべてUTC"
+
+#: ../../../source/sms.rst:217
+msgid "Examples of response data"
+msgstr "レスポンスの例"
+
+#: ../../../source/sms.rst:222
+msgid "Pull all sent messages"
+msgstr "送信したメッセージのリストを取得します。"
+
+#: ../../../source/sms.rst:224
+msgid "Below is an example of request using cURL to pull sent messages::"
+msgstr "以下はcURLを使ってメッセージを取得する例です::"
+
+#: ../../../source/sms.rst:255
+msgid "Pull sent messages on a specified date"
+msgstr "指定の日付のメッセージだけ取得します。"
+
+#: ../../../source/sms.rst:257
+msgid ""
+"Below is an example of request using cURL to pull sent messages that were "
+"sent on 4 March 2016::"
+msgstr "以下はcURLを使って2016年3月4日に送信したメッセージを取得しようとする例です::"
+
+#: ../../../source/sms.rst:288
+msgid ""
+"Below is an example of request using cURL to pull sent messages that were "
+"sent before and on 4 March 2016::"
+msgstr "以下はcURLを使って2016年3月4日とその以前送信したメッセージを取得しようとする例です::"
+
+#: ../../../source/sms.rst:329
+msgid "No sent messages on a specified date"
+msgstr "指定された日付にメッセージがありません"
+
+#: ../../../source/sms.rst:331
+msgid ""
+"If there's no sent messages on specified date, empty list with HTTP ``200 "
+"OK`` status code will be returned."
+msgstr "指定された日付に送信したメッセージがない場合、空のリストが返されます。"
+
+#: ../../../source/sms.rst:334
+msgid ""
+"Below is an example of request using cURL to pull sent messages that were "
+"sent on 30 January 2016::"
+msgstr "以下はcURLを使って2016年1月30日に送信したメッセージを取得しようとする例です::"
+
+#: ../../../source/sms.rst:339
+msgid ""
+"Since there's no message sent on 30 January 2016, the response would an "
+"empty list returned with HTTP ``200 OK`` status code::"
+msgstr "2016年1月30日に送信したメッセージがないため、 HTTP ``200 OK`` が返されます。"
+
+#: ../../../source/sms.rst:348
+msgid "Invalid requests example"
+msgstr "不正リクエストの例"
+
+#: ../../../source/sms.rst:350
+msgid ""
+"If the specified date is in invalid format, HTTP ``400 BAD REQUEST`` status "
+"code will be returned."
+msgstr "日付が不正なフォーマットで指定されると HTTP ``400 BAD REQUEST`` が返されます。"
+
+#: ../../../source/sms.rst:353
+msgid ""
+"Below is an example of request using cURL to pull sent messages with invalid"
+" sent date format::"
+msgstr "以下はcURLを使って不正な日付の値でメッセージを取得しようとする例です::"
+
+#: ../../../source/sms.rst:358
+msgid ""
+"Since 30 February 2016 is invalid date, HTTP ``400 BAD REQUEST`` status code"
+" will be returned explaining that the ``sent_date`` format is invalid::"
+msgstr ""
+"2016年2月30日は不正な日付のため、 ``sent_date`` 値が不正ということで HTTP ``400 BAD REQUEST`` "
+"が返されます。"
+
+#: ../../../source/sms.rst:370
+msgid ""
+"If the specified date is more than 90 days ago, HTTP ``400 BAD REQUEST`` "
+"status code will be returned."
+msgstr "指定された日付は過去90日間以上の場合、HTTP ``400 BAD REQUEST`` が返されます。"
+
+#: ../../../source/sms.rst:373
+msgid ""
+"Below is an example of request using cURL to pull sent messages with sent "
+"date more than 90 days ago::"
+msgstr "以下はcURLを使って過去90日間よりも古いでメッセージを取得しようとする例です::"
+
+#: ../../../source/sms.rst:378
+msgid ""
+"Since 28 February 2015 is more than 90 days ago, HTTP ``400 BAD REQUEST`` "
+"status code will be returned asking for a valid ``sent_date``::"
+msgstr ""
+"2015年2月28日は過去90日間以上となるので、正しい ``sent_date`` 求められ HTTP ``400 BAD REQUEST`` "
+"が返されます。"
+
+#: ../../../source/sms.rst:390
+msgid ""
+"If the parameter is incorrectly specified, HTTP ``400 BAD REQUEST`` status "
+"code will be returned."
+msgstr "不正なパラメータ指定された場合、HTTP ``400 BAD REQUEST`` が返されます。"
+
+#: ../../../source/sms.rst:393
+msgid ""
+"Below is an example of request using cURL to pull sent messages with "
+"incorrect parameter::"
+msgstr "以下はcURLを使って不正なパラメータでメッセージを取得しようとする例です::"
+
+#: ../../../source/sms.rst:398
+msgid ""
+"Since ``sent_data`` is not a correct parameter, HTTP ``400 BAD REQUEST`` "
+"status code will be returned asking for ``sent_date`` parameter::"
+msgstr ""
+"``sent_data`` が不正なため、正しい ``sent_date`` 求められ HTTP ``400 BAD REQUEST`` が返されます。"
+
+#: ../../../source/sms.rst:219
+msgid ""
+"The response data returned by the API is equivalent to what you get from the"
+" `Check SMS status API`_"
+msgstr "このAPIで返されるjson構成とデータ種類は `SMSの配信状態を確認するAPI`_ と同じものになります。"
+
+#~ msgid "Below is an example request using CURL::"
+#~ msgstr "下記は、CURLを使ったリクエストの例です。"
+
