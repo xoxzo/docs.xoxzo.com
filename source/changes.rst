@@ -9,4 +9,5 @@ CHANGES
     1.1         2015-12-24          Added k-premium settings
     1.1.0       2016-03-04          Added QUEUED status
     1.1.1       2016-03-29          Return list instead of dictionary for voice call status API
+    1.1.2       2016-04-04          Add Sent Messages List API documentation
     =========   ==================  ===============================================================================================

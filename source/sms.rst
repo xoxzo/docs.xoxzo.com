@@ -122,7 +122,7 @@ Use this ``<msgid>`` to check SMS status.
 Examples
 ------------------------------------
 
-Below is an example request using CURL::
+Below is an example request using cURL::
 
     curl -u <SID>:<AUTH_TOKEN> https://api.xoxzo.com/sms/messages/<msgid>/
 
@@ -171,6 +171,242 @@ Response data
     sent_time  The sent time of the message in UTC
     url        The URL of this message status
     =========  ======================================
+
+
+Sent Messages List API
+====================================
+You can pull a list of sent messages by making a ``GET`` request to the endpoint::
+
+    https://api.xoxzo.com/sms/messages/
+
+The sent messages results will be sorted based on their newest ``sent_time``. 
+This API is useful for creating logs.
+
+You can also pull sent messages for a specified sent date using
+``sent_date`` parameter followed by an operator and a date.
+
+    =========  ==================================== ========
+    Name       Description                          Required
+    =========  ==================================== ========
+    sent_date  UTC based date when the message      Yes          
+               was sent with following format: 
+               YYYY-mm-dd.
+               Should be within 90 days from today.
+    =========  ==================================== ========
+
+You can use following operator to get a certain date or a range of sent dates from 
+the sent messages:
+
+    =========  ===================
+    Operator   Name
+    =========  ===================
+    <=         less than equal
+    <          less than
+    =          equal
+    >          greater than
+    >=         greater than equal
+    =========  ===================
+
+.. note::
+   * The maximum amount of sent messages that can be pulled are limited to 5000 messages.
+   * Only sent messages within 90 days ago that can be be pulled.
+   * This API supports only one operator and one specified sent date on each request.
+   * All dates are based on UTC.
+
+Examples of response data
+--------------------------
+
+The response data returned by the API is equivalent to what you get from the `Check SMS status API`_
+
+Pull all sent messages
+''''''''''''''''''''''
+
+Below is an example of request using cURL to pull sent messages::
+
+    curl -u <SID>:<AUTH_TOKEN> https://api.xoxzo.com/sms/messages/
+
+The response would be a JSON structure, returned with HTTP ``200 OK`` status code::
+
+    HTTP/1.0 200 OK
+    Content-Type: application/json
+
+    [
+        {
+           "cost": 0,
+           "msgid": "<msgid>",
+           "recipient": "<recipient>",
+           "sender": "<sender>",
+           "sent_time": null,
+           "status": "QUEUED",
+           "url": "https://api.xoxzo.com/sms/messages/<msgid>"
+        },
+        {
+           "cost": 10,
+           "msgid": "<msgid>",
+           "recipient": "<recipient>",
+           "sender": "<sender>",
+           "sent_time": "2016-03-04 00:00:00",
+           "status": "OK",
+           "url": "https://api.xoxzo.com/sms/messages/<msgid>"
+        },
+    ]
+
+Pull sent messages on a specified date
+''''''''''''''''''''''''''''''''''''''
+
+Below is an example of request using cURL to pull sent messages that were sent
+on 4 March 2016::
+
+    curl -u <SID>:<AUTH_TOKEN> https://api.xoxzo.com/sms/messages/?sent_date=2016-03-04
+
+The response would be a JSON structure, returned with HTTP ``200 OK`` status code::
+
+    HTTP/1.0 200 OK
+    Content-Type: application/json
+
+    [
+        {
+           "cost": 10,
+           "msgid": "<msgid>",
+           "recipient": "<recipient>",
+           "sender": "<sender>",
+           "sent_time": "2016-03-04 10:15:00",
+           "status": "OK",
+           "url": "https://api.xoxzo.com/sms/messages/<msgid>"
+        },
+        {
+           "cost": 10,
+           "msgid": "<msgid>",
+           "recipient": "<recipient>",
+           "sender": "<sender>",
+           "sent_time": "2016-03-04 00:00:00",
+           "status": "OK",
+           "url": "https://api.xoxzo.com/sms/messages/<msgid>"
+        },
+    ]
+
+Below is an example of request using cURL to pull sent messages that were sent
+before and on 4 March 2016::
+
+    curl -u <SID>:<AUTH_TOKEN> https://api.xoxzo.com/sms/messages/?sent_date<=2016-03-04
+
+The response would be a JSON structure, returned with HTTP ``200 OK`` status code::
+
+    HTTP/1.0 200 OK
+    Content-Type: application/json
+
+    [
+        {
+           "cost": 10,
+           "msgid": "<msgid>",
+           "recipient": "<recipient>",
+           "sender": "<sender>",
+           "sent_time": "2016-03-04 10:15:00",
+           "status": "OK",
+           "url": "https://api.xoxzo.com/sms/messages/<msgid>"
+        },
+        {
+           "cost": 10,
+           "msgid": "<msgid>",
+           "recipient": "<recipient>",
+           "sender": "<sender>",
+           "sent_time": "2016-03-04 00:00:00",
+           "status": "OK",
+           "url": "https://api.xoxzo.com/sms/messages/<msgid>"
+        },
+        {
+           "cost": 10,
+           "msgid": "<msgid>",
+           "recipient": "<recipient>",
+           "sender": "<sender>",
+           "sent_time": "2016-02-15 11:30:47",
+           "status": "OK",
+           "url": "https://api.xoxzo.com/sms/messages/<msgid>"
+        },
+    ]
+
+No sent messages on a specified date
+''''''''''''''''''''''''''''''''''''
+
+If there's no sent messages on specified date, empty list with HTTP
+``200 OK`` status code will be returned.
+
+Below is an example of request using cURL to pull sent messages that were
+sent on 30 January 2016::
+
+    curl -u <SID>:<AUTH_TOKEN> https://api.xoxzo.com/sms/messages/?sent_date=2016-01-30
+
+Since there's no message sent on 30 January 2016, the response would an empty
+list returned with HTTP ``200 OK`` status code::
+
+    HTTP/1.0 200 OK
+    Content-Type: application/json
+
+    []
+
+Invalid requests example
+''''''''''''''''''''''''
+
+If the specified date is in invalid format, HTTP ``400 BAD REQUEST`` status
+code will be returned.
+
+Below is an example of request using cURL to pull sent messages with
+invalid sent date format::
+
+    curl -u <SID>:<AUTH_TOKEN> https://api.xoxzo.com/sms/messages/?sent_date=2016-02-30
+
+Since 30 February 2016 is invalid date, HTTP ``400 BAD REQUEST`` status code
+will be returned explaining that the ``sent_date`` format is invalid::
+
+    HTTP/1.0 400 Bad Request
+    Content-Type: application/json
+
+    {
+        "sent_date": [
+            "Invalid sent_date format"
+        ]
+    }
+
+If the specified date is more than 90 days ago, HTTP ``400 BAD REQUEST`` status
+code will be returned.
+
+Below is an example of request using cURL to pull sent messages with
+sent date more than 90 days ago::
+
+    curl -u <SID>:<AUTH_TOKEN> https://api.xoxzo.com/sms/messages/?sent_date=2015-02-28
+
+Since 28 February 2015 is more than 90 days ago, HTTP ``400 BAD REQUEST`` status code
+will be returned asking for a valid ``sent_date``::
+
+    HTTP/1.0 400 Bad Request
+    Content-Type: application/json
+
+    {
+        "sent_date": [
+            "Invalid sent_date"
+        ]
+    }
+
+If the parameter is incorrectly specified, HTTP ``400 BAD REQUEST`` status code
+will be returned.
+
+Below is an example of request using cURL to pull sent messages with
+incorrect parameter::
+
+    curl -u <SID>:<AUTH_TOKEN> https://api.xoxzo.com/sms/messages/?sent_data=2016-02-28
+
+Since ``sent_data`` is not a correct parameter, HTTP ``400 BAD REQUEST`` status code
+will be returned asking for ``sent_date`` parameter::
+
+    HTTP/1.0 400 Bad Request
+    Content-Type: application/json
+
+    {
+        "sent_date": [
+            "This field is required"
+        ]
+    }
+
 
 Common message statuses
 ====================================
