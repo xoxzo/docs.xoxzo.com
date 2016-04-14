@@ -36,7 +36,7 @@ Not Enough Credits
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 ::
 
-    HTTP/1.0 200 OK
+    HTTP/1.0 403 FORBIDDEN
     Content-Type: application/json
 
     {
