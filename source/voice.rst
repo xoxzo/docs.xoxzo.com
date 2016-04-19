@@ -103,8 +103,6 @@ Use this ``<callid>`` to check call status.
 
 The response would be a JSON structure, returned with HTTP ``200 OK`` status code::
 
-    #todo: update HTTP Header
-
     HTTP/1.0 200 OK
     Content-Type: application/json
 
