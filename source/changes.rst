@@ -10,4 +10,5 @@ CHANGES
     1.1.0       2016-03-04          Added QUEUED status
     1.1.1       2016-03-29          Return list instead of dictionary for voice call status API
     1.1.2       2016-04-04          Add Sent Messages List API documentation
+    1.1.3       2016-04-22          Update HTTP status on not enough credits error message
     =========   ==================  ===============================================================================================
