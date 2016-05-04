@@ -148,3 +148,39 @@ This is a list of statuses that you can find in the ``status`` data:
    NO ANSWER            The call was not answered by the recipient
    ===================  ==================
 
+DialIN API
+====================================
+This API allow for listing and subscribing to DialIN phone number.
+
+To list available DialIN phone numbers, make a ``GET`` request to::
+
+    https://api.xoxzo.com/voice/dins/
+
+The response would be a JSON structure, returned with HTTP ``200 OK`` status code::
+
+    HTTP/1.1 200 OK
+    Allow: GET, HEAD, OPTIONS
+    Content-Type: application/json
+
+    [
+        {
+            "din_uid": "MYgauYFw7c3ip5Sx"
+        },
+        {
+            "din_uid": "MYgauYFw7b3ip5xy"
+        }
+    ]
+
+To subscribe a DialIN number, send a ``POST`` request like below::
+
+    curl -u <SID>:<AUTH_TOKEN> -d'din_uid=<DIN_UID>' https://api.xoxzo.com/voice/dins/subscription/
+
+``<DIN_UID>`` is the value you got from the previous ``GET`` request.
+
+Each DialIN number can be attached an action that will provide instruction what to do with the call if it was answered::
+
+    curl -u <SID>:<AUTH_TOKEN> -d'action_url=<URL>' https://api.xoxzo.com/voice/dins/subscription/<DIN_UID>/
+
+To unsubscribe::
+
+    curl -XDELETE -u <SID>:<AUTH_TOKEN> https://api.xoxzo.com/voice/dins/subscription/<DIN_UID>/
