@@ -192,12 +192,15 @@ pseudoxml:
 	@echo
 	@echo "Build finished. The pseudo-XML files are in $(BUILDDIR)/pseudoxml."
 
-html-ja:
+cname:
+	cp CNAME $(BUILDDIR)/html/
+
+html-ja: cname
 	$(SPHINXBUILD) -b html $(ALLSPHINXOPTS) -D language='ja' $(BUILDDIR)/html/ja
 	@echo
 	@echo "Build finished. The HTML pages are in $(BUILDDIR)/html/ja."
 
-html-en:
+html-en: cname
 	$(SPHINXBUILD) -b html $(ALLSPHINXOPTS) -D language='en' $(BUILDDIR)/html/en
 	@echo
 	@echo "Build finished. The HTML pages are in $(BUILDDIR)/html/en."
