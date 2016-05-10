@@ -6,7 +6,7 @@ The Voice API allows you to interact with a phone via beautiful HTTP endpoints.
 
 .. warning::
    *  There is a minimum amount of credits which you need to have in order to make a Voice API call, 
-      regardless of the cost of the call itself. Please read our `FAQ <http://bit.ly/1TxHmrR>`_ for more information.
+      regardless of the cost of the call itself. Please refer to the `Help Center <http://bit.ly/1TxHmrR>`_ for more information.
 
 Simple Playback API
 ====================================
