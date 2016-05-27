@@ -54,7 +54,7 @@
     <div class="row h3o_topbottom_small_padding_b">
       <div class="col-md-10 col-md-offset-1">
         <div class="row">
-          <div class="col-md-3 text-center">
+          <div class="col-md-4 text-center">
             {%- if show_copyright %}
               {%- if hasdoc('copyright') %}
                 {% trans path=pathto('copyright'), copyright=copyright|e %}&copy; <a href="{{ path }}">Copyright</a> {{ copyright }}.{% endtrans %}<br/>
@@ -68,16 +68,13 @@
             {%- if show_sphinx %}
               {% trans sphinx_version=sphinx_version|e %}Created using <a href="http://sphinx-doc.org/">Sphinx</a> {{ sphinx_version }}.{% endtrans %}<br/>
             {%- endif %}
-          </div><!-- col-md-3 -->
-          <div class="col-md-3 text-center">
+          </div><!-- col-md-4 -->
+          <div class="col-md-4 text-center">
           {% trans %}<a href="https://www.xoxzo.com/en/">Xoxzo Cloud Telephony Platform</a>{% endtrans %}
-          </div><!-- col-md-3 -->
-          <div class="col-md-3 text-center">
+          </div><!-- col-md-4 -->
+          <div class="col-md-4 text-center">
           <a href="https://www.ezsms.biz/ja/">{% trans %}SMS Delivery Service [EZSMS]{% endtrans %}</a>
-          </div><!-- col-md-3 -->
-          <div class="col-md-3 text-center">
-          {% trans %}<a href="http://www.maritex.jp/en/">[MARITEX] International SMS Service</a>{% endtrans %}
-          </div><!-- col-md-3 -->
+          </div><!-- col-md-4 -->
         </div><!-- row -->
       </div><!-- col-md-8 -->
     </div><!-- row -->
