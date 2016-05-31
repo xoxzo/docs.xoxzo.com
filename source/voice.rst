@@ -175,6 +175,14 @@ The response would be a JSON structure, returned with HTTP ``200 OK`` status cod
         }
     ]
 
+You can filter using a country code or a prefix::
+
+    curl -u <SID>:<AUTH_TOKEN> https://api.xoxzo.com/voice/dins/?country=JP
+
+Or::
+
+    curl -u <SID>:<AUTH_TOKEN> https://api.xoxzo.com/voice/dins/?prefix=813
+
 To subscribe a DialIN number, send a ``POST`` request like below::
 
     curl -u <SID>:<AUTH_TOKEN> -d'din_uid=<DIN_UID>' https://api.xoxzo.com/voice/dins/subscriptions/
