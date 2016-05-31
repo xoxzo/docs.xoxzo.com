@@ -185,6 +185,22 @@ Each DialIN number can be attached an action that will provide instruction what 
 
     curl -u <SID>:<AUTH_TOKEN> -d'action_url=<URL>' https://api.xoxzo.com/voice/dins/subscriptions/<DIN_UID>/
 
+``action_url`` will be called when there is incoming call to your subscribed DialIN number to get a command that will be
+used to handle the call. For now, 2 commands are supported. Your ``action_url`` must return the following output in plain
+text format::
+
+    playback http://example.com/media.mp3
+
+Or::
+
+    transfer +81807181881 --caller=+81900567
+
+2 parameters will be passed to ``action_url``. We'll make a ``GET`` request like::
+
+    GET /command/?caller=+8108910010&recipient=+81050588786
+
+Above, ``caller`` is the caller id of people who make the call and ``recipient`` is your DialIN number.
+
 To unsubscribe::
 
     curl -XDELETE -u <SID>:<AUTH_TOKEN> https://api.xoxzo.com/voice/dins/subscription/<DIN_UID>/
