@@ -177,13 +177,13 @@ The response would be a JSON structure, returned with HTTP ``200 OK`` status cod
 
 To subscribe a DialIN number, send a ``POST`` request like below::
 
-    curl -u <SID>:<AUTH_TOKEN> -d'din_uid=<DIN_UID>' https://api.xoxzo.com/voice/dins/subscription/
+    curl -u <SID>:<AUTH_TOKEN> -d'din_uid=<DIN_UID>' https://api.xoxzo.com/voice/dins/subscriptions/
 
 ``<DIN_UID>`` is the value you got from the previous ``GET`` request.
 
 Each DialIN number can be attached an action that will provide instruction what to do with the call if it was answered::
 
-    curl -u <SID>:<AUTH_TOKEN> -d'action_url=<URL>' https://api.xoxzo.com/voice/dins/subscription/<DIN_UID>/
+    curl -u <SID>:<AUTH_TOKEN> -d'action_url=<URL>' https://api.xoxzo.com/voice/dins/subscriptions/<DIN_UID>/
 
 To unsubscribe::
 
