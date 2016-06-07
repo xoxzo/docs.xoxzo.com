@@ -20,43 +20,43 @@ msgstr ""
 
 #: ../../../source/din.rst:3
 msgid "Dial In Numbers API"
-msgstr ""
+msgstr "ダイアルイン番号API"
 
 #: ../../../source/din.rst:5
 msgid ""
 "The Dial In Numbers API allows you to receive and manipulate phone "
 "numbers and incoming phone calls via easy APIs"
 msgstr ""
-
+"ダイアルイン番号APIを使うと、簡単なAPIで電話の着信とそれに対応する処理を設定することができます。"
 #: ../../../source/din.rst:8
 msgid "Finding a Dial In Number via API"
-msgstr ""
+msgstr "APIによるダイアルイン番号の見つけ方"
 
 #: ../../../source/din.rst:10
 msgid "This API allows for listing and subscribing to a Dial In Number (DIN)."
-msgstr ""
+msgstr "このAPIを使うと、ダイアルイン番号(DIN)一覧の表示と契約をおこなうことができます。"
 
 #: ../../../source/din.rst:12
 msgid "To list available DINs, make a ``GET`` request to::"
-msgstr ""
+msgstr "空いているDINの一覧を得るには、以下の ``GET`` リクエストを発行します。
 
 #: ../../../source/din.rst:16
 msgid ""
 "The response will be a JSON structure, returned with HTTP ``200 OK`` "
 "status code like::"
 msgstr ""
-
+"応答はHTTPステータス  ``200 OK`` で。JSON形式で返されます。"
 #: ../../../source/din.rst:43
 msgid "Response data"
-msgstr ""
+msgstr "応答データ"
 
 #: ../../../source/din.rst:46
 msgid "Name"
-msgstr ""
+msgstr "名前"
 
 #: ../../../source/din.rst:46 ../../../source/din.rst:120
 msgid "Description"
-msgstr ""
+msgstr "説明"
 
 #: ../../../source/din.rst:48
 msgid "country_code"
@@ -64,7 +64,7 @@ msgstr ""
 
 #: ../../../source/din.rst:48
 msgid "The country code for this DIN, dependent on it's country"
-msgstr ""
+msgstr "DINの国コード。"
 
 #: ../../../source/din.rst:49
 msgid "din"
@@ -72,7 +72,7 @@ msgstr ""
 
 #: ../../../source/din.rst:49
 msgid "The E.164 version of the DIN, including country code"
-msgstr ""
+msgstr "E.164形式のDIN。国コードを含む。"
 
 #: ../../../source/din.rst:50
 msgid "din_uid"
@@ -80,7 +80,7 @@ msgstr ""
 
 #: ../../../source/din.rst:50
 msgid "A unique identifier for this particular DIN"
-msgstr ""
+msgstr "DINに対応する、ユニークな識別子。"
 
 #: ../../../source/din.rst:51
 msgid "minute_cost"
@@ -88,7 +88,7 @@ msgstr ""
 
 #: ../../../source/din.rst:51
 msgid "The credit cost per minute when receiving calls to this DIN"
-msgstr ""
+msgstr "DINに着信した場合の、一分間あたりの料金。"
 
 #: ../../../source/din.rst:52
 msgid "monthly_cost"
@@ -96,7 +96,7 @@ msgstr ""
 
 #: ../../../source/din.rst:52
 msgid "The monthly credit cost of subscribing to this DIN"
-msgstr ""
+msgstr "DINを契約したときの、一ヶ月あたりの料金。"
 
 #: ../../../source/din.rst:53
 msgid "prefix"
@@ -104,15 +104,15 @@ msgstr ""
 
 #: ../../../source/din.rst:53
 msgid "The local area prefix for this DIN, without the 0"
-msgstr ""
+msgstr "DINのプリフィックス。先頭の0を除いたもの。"
 
 #: ../../../source/din.rst:57
 msgid "You can also filter using a country code or a prefix::"
-msgstr ""
+msgstr "国コードあるいはプリフィックスでフィルタリングすることもできます。"
 
 #: ../../../source/din.rst:61
 msgid "Or::"
-msgstr ""
+msgstr "または::"
 
 #: ../../../source/din.rst:65
 msgid ""
