@@ -119,38 +119,43 @@ msgid ""
 "filtering using country or prefix will only return you the relevant DINs "
 "based on your filter."
 msgstr ""
+"国コードあるいはプリフィックスでフィルタリングをした場合、条件にマッチしたDINのみが表示されます。"
 
 #: ../../../source/din.rst:68
 msgid "Subscribing to a Dial In Number via API"
-msgstr ""
+msgstr "APIによるダイアルイン番号の契約"
 
 #: ../../../source/din.rst:70
 msgid "To subscribe to a DIN, send a ``POST`` request like::"
-msgstr ""
+msgstr "ダイアルイン番号を契約するには、以下のような ``POST`` リクエストを発行します。"
 
 #: ../../../source/din.rst:74
 msgid ""
 "where ``<din_uid>`` is the value you got from the previous ``GET`` "
 "request for the number you want to subscribe to."
 msgstr ""
+"``<DIN_UID>`` は、以前の ``GET`` リクエストで返された値の中から、契約したい電話番号のUID識別子の値を使います。"
 
 #: ../../../source/din.rst:76
 msgid ""
 "The response will return with HTTP ``201 OK`` to indicate that the "
 "subscription was succesfull."
 msgstr ""
+"契約が成立すると、HTTPステータス ``201 OK`` が返されます。"
 
 #: ../../../source/din.rst:79
 msgid ""
 "Your credits will be charged immediately for the monhtly subscription if "
 "your ``POST`` request succeeds"
 msgstr ""
+"``POST`` リクエストが成功すると、直ちに月額使用料がクレジットから引き落とされます。"
 
 #: ../../../source/din.rst:81
 msgid ""
 "Each Dial In Number can be attached an action that will provide "
 "instruction what to do with the call if it was answered::"
 msgstr ""
+"それぞれのダイアルイン番号に対しては、電話を着信した時にどのような処理をおこなうかが結びつけられます。"
 
 #: ../../../source/din.rst:85
 msgid ""
@@ -158,18 +163,20 @@ msgid ""
 "there is incoming call to your subscribed DialIN number to get a command "
 "that will be used to handle the call."
 msgstr ""
+"契約しているダイアルイン番号に電話があったばあいには、 ``url`` で指定した ``action_url`` に対して"
+" ``GET`` リクエストが発行され、通話処理が行われます。"
 
 #: ../../../source/din.rst:89
 msgid "Unsubscribing to a Dial In Number via API"
-msgstr ""
+msgstr "APIによるダイアルイン番号の契約解除"
 
 #: ../../../source/din.rst:91
 msgid "To unsubscribe::"
-msgstr ""
+msgstr "契約解除のやりかた::"
 
 #: ../../../source/din.rst:97
 msgid "What are Actions?"
-msgstr ""
+msgstr "アクションとは何か？"
 
 #: ../../../source/din.rst:99
 msgid ""
@@ -178,10 +185,13 @@ msgid ""
 "transfering the incoming call to a different number, or playing a music "
 "file."
 msgstr ""
+"アクションとは契約しているダイアルイン番号に電話が着信した時に行う動作のことです。"
+"アクションには着信した通話の転送と、音声ファイルの再生などがあります。"
 
 #: ../../../source/din.rst:102
 msgid "Avaialable Actions are listed at `Available Actions`_"
 msgstr ""
+"使用可能なアクションには、指定可能なアクションがリストされています。"
 
 #: ../../../source/din.rst:104
 msgid ""
