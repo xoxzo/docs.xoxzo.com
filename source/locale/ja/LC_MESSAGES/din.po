@@ -183,7 +183,7 @@ msgstr "アクションとは契約しているダイアルイン番号に電話
 
 #: ../../../source/din.rst:102
 msgid "Avaialable Actions are listed at `Available Actions`_"
-msgstr "「使用可能なアクション」には、使用可能なアクションの一覧があります。"
+msgstr "`「使用可能なアクション」`_ には、使用可能なアクションの一覧があります。"
 
 #: ../../../source/din.rst:104
 msgid ""
