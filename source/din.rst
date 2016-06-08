@@ -109,7 +109,7 @@ information about the call, like::
 
     GET /command/?caller=+8180123456789&recipient=+8150123456789
 
-where ``caller`` is the caller id of the phone making the call and ``recipient`` is your DIN.
+Where ``caller`` is the caller id of the phone making the call and ``recipient`` is your DIN.
 
 Available Actions
 -------------------------------------------

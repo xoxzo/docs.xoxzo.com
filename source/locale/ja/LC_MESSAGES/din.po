@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Xoxzo API Docs 1.2.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-06-07 16:34+0900\n"
+"POT-Creation-Date: 2016-06-08 09:50+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -44,7 +44,7 @@ msgstr "空いているDINの一覧を得るには、以下の ``GET`` リクエ
 msgid ""
 "The response will be a JSON structure, returned with HTTP ``200 OK`` "
 "status code like::"
-msgstr "応答はHTTPステータス  ``200 OK`` で。JSON形式で返されます。"
+msgstr "応答はHTTPステータス  ``200 OK`` でJSON形式で返されます。"
 
 #: ../../../source/din.rst:43
 msgid "Response data"
@@ -52,7 +52,7 @@ msgstr "応答データ"
 
 #: ../../../source/din.rst:46
 msgid "Name"
-msgstr "名前"
+msgstr "名称"
 
 #: ../../../source/din.rst:46 ../../../source/din.rst:120
 msgid "Description"
@@ -88,7 +88,7 @@ msgstr ""
 
 #: ../../../source/din.rst:51
 msgid "The credit cost per minute when receiving calls to this DIN"
-msgstr "DINに着信した場合の、一分間あたりの料金。"
+msgstr "DINに着信したときの、一分間あたりの料金。"
 
 #: ../../../source/din.rst:52
 msgid "monthly_cost"
@@ -118,7 +118,7 @@ msgstr "または::"
 msgid ""
 "filtering using country or prefix will only return you the relevant DINs "
 "based on your filter."
-msgstr "国コードあるいはプリフィックスでフィルタリングをした場合、条件にマッチしたDINのみが表示されます。"
+msgstr "国コードあるいはプリフィックスでフィルタリングをした場合、条件に一致したDINのみが表示されます。"
 
 #: ../../../source/din.rst:68
 msgid "Subscribing to a Dial In Number via API"
@@ -132,7 +132,7 @@ msgstr "ダイアルイン番号を契約するには、以下のような ``POS
 msgid ""
 "where ``<din_uid>`` is the value you got from the previous ``GET`` "
 "request for the number you want to subscribe to."
-msgstr "``<DIN_UID>`` は、以前の ``GET`` リクエストで返された値の中から、契約したい電話番号のUID識別子の値を使います。"
+msgstr "``<DIN_UID>`` は、以前の ``GET`` リクエストで返された値の中から、契約したい電話番号のUID識別子の値を指定します。"
 
 #: ../../../source/din.rst:76
 msgid ""
@@ -159,7 +159,7 @@ msgid ""
 "that will be used to handle the call."
 msgstr ""
 "契約しているダイアルイン番号に電話があったばあいには、 ``url`` で指定した ``action_url`` に対して ``GET`` "
-"リクエストが発行され、通話処理が行われます。"
+"リクエストが発行され、処理が行われます。"
 
 #: ../../../source/din.rst:89
 msgid "Unsubscribing to a Dial In Number via API"
@@ -179,11 +179,11 @@ msgid ""
 "your subscribed Dial In Number (DIN). These can be things like "
 "transfering the incoming call to a different number, or playing a music "
 "file."
-msgstr "アクションとは契約しているダイアルイン番号に電話が着信した時に行う動作のことです。アクションには着信した通話の転送と、音声ファイルの再生などがあります。"
+msgstr "アクションとは契約しているダイアルイン番号に電話が着信した時に行う動作のことです。アクションには、着信した通話の転送や音声ファイルの再生などがあります。"
 
 #: ../../../source/din.rst:102
 msgid "Avaialable Actions are listed at `Available Actions`_"
-msgstr "「使用可能なアクション」には、指定可能なアクションがリストされています。"
+msgstr "「使用可能なアクション」には、使用可能なアクションの一覧があります。"
 
 #: ../../../source/din.rst:104
 msgid ""
@@ -202,9 +202,9 @@ msgstr "DINに対して着信があると、 ``action_url`` に対して ``GET``
 
 #: ../../../source/din.rst:112
 msgid ""
-"where ``caller`` is the caller id of the phone making the call and "
+"Where ``caller`` is the caller id of the phone making the call and "
 "``recipient`` is your DIN."
-msgstr " ``caller`` は電話をかけてきた人の電話番号です。``recipient`` はあなたのDINです。"
+msgstr "``caller`` は電話をかけてきた人の電話番号です。``recipient`` はあなたのDINです。"
 
 #: ../../../source/din.rst:115
 msgid "Available Actions"
@@ -232,7 +232,7 @@ msgstr ""
 
 #: ../../../source/din.rst:123
 msgid "Transfers the incoming call to another number"
-msgstr "着信した通話を、他の番号に転送"
+msgstr "着信した通話を、他の番号に転送する。"
 
 #: ../../../source/din.rst:128
 msgid "Sample"
@@ -242,31 +242,27 @@ msgstr "例"
 msgid ""
 "Your ``action_url`` must return the following output in plain text "
 "format::"
-msgstr "あなたが指定した ``action_url`` はつぎのようなプレーンテキストを出力しなければいけません。フォーマット::"
+msgstr "あなたが指定した ``action_url`` は、つぎのようなプレーンテキスト形式で出力しなければいけません:"
 
 #: ../../../source/din.rst:134
 msgid ""
 "Where ``playback`` contains a required paramater that points to the URL "
 "of the mp3 file you want to play."
-msgstr ""
- " ``playback`` は再生したいMP3ファイルを指定するURLを含まなけれはいけません。"
+msgstr "``playback`` は再生したい mp3 のURLを指定します。"
 
 #: ../../../source/din.rst:136
 msgid ""
 "For ``transfer``, you'll need to also include a required parameter of the"
 " number you want to transfer to::"
-msgstr ""
- " ``transfer`` は転送先の電話番号を含まなけれはいけません。"
+msgstr "``transfer`` は転送先の電話番号を含まなけれはいけません。"
 
 #: ../../../source/din.rst:140
 msgid ""
 "``caller`` is an optional argument to set the caller id when you transfer"
 " the call."
-msgstr ""
-" ``caller`` はオプションのパラメータで、転送相手に通知される発信者番号です。"
+msgstr "``caller`` はオプションのパラメータで、転送相手に通知される発信者番号です。"
 
 #: ../../../source/din.rst:143
-#, fuzzy
 msgid ""
 "The **caller** is sent as through a best effort method and is not "
 "guaranteed to be shown on the recipient's mobile as it is and maybe "
@@ -274,9 +270,9 @@ msgid ""
 "of the carriers, intermerdiary networks and governments, and they may not"
 " honour your request."
 msgstr ""
-" ``caller`` は相手へできるかぎり通知されるように処理されますが、保証されているわけではなく、"
-"何らかの値に置き換えられる可能性があります。これは、通信キャリア、経由するネットワークや政府の方針依存しており、"
-"必ずしも望んだとおりになるわけではありません。"
+"発信者番号の ``caller`` は、相手へできるかぎりそのまま通知されるように処理されますが、保証されているわけではなく、別の値に置き換えられる可能性があります。"
+"これは、通信キャリア、経由するネットワークや政府の方針依存しており、必ずしも指定したとおりになるわけではありません。"
+
 
 #~ msgid "Actions"
 #~ msgstr ""
