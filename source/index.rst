@@ -15,11 +15,12 @@ You can use any HTTP client in any programming language or even your browser to 
 Contents:
 
 .. toctree::
-    :maxdepth: 2
+    :maxdepth: 3
 
     readme
     sms
     voice
+    din
 
 .. toctree::
     :maxdepth: 1
