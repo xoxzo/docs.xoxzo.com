@@ -192,7 +192,10 @@ pseudoxml:
 	@echo
 	@echo "Build finished. The pseudo-XML files are in $(BUILDDIR)/pseudoxml."
 
-cname:
+mkdirhtml:
+	mkdir -p $(BUILDDIR)/html/
+
+cname: mkdirhtml
 	cp CNAME $(BUILDDIR)/html/
 
 html-ja: cname
