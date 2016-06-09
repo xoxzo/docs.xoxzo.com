@@ -11,7 +11,7 @@ This API allows for listing and subscribing to a Dial In Number (DIN).
 
 To list available DINs, make a ``GET`` request to::
 
-    https://api.xoxzo.com/voice/dins/
+    curl -u <SID>:<AUTH_TOKEN> https://api.xoxzo.com/voice/dins/
 
 The response will be a JSON structure, returned with HTTP ``200 OK`` status code like::
 
