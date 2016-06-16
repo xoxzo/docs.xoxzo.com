@@ -85,6 +85,13 @@ Each Dial In Number can be attached an action that will provide instruction what
 The ``url`` specified for ``action_url`` will be called via ``GET`` when there is incoming call to your subscribed DialIN number to get a command that will be
 used to handle the call. 
 
+Getting the list of subscribed Dial In Numbers via API
+============================================
+
+To get the list of your current subscribed DINs, just make a ``GET`` request like::
+
+   curl -u -u <SID>:<AUTH_TOKEN> https://api.xoxzo.com/voice/dins/subscriptions/
+
 Unsubscribing to a Dial In Number via API
 ============================================
 
