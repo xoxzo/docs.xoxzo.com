@@ -90,7 +90,7 @@ Getting the list of subscribed Dial In Numbers via API
 
 To get the list of your current subscribed DINs, just make a ``GET`` request like::
 
-   curl -u -u <SID>:<AUTH_TOKEN> https://api.xoxzo.com/voice/dins/subscriptions/
+   curl -u <SID>:<AUTH_TOKEN> https://api.xoxzo.com/voice/dins/subscriptions/
 
 Unsubscribing to a Dial In Number via API
 ============================================
