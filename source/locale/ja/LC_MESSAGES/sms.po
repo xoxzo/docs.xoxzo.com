@@ -171,7 +171,7 @@ msgstr "英数字"
 
 #: ../../../source/sms.rst:21
 msgid "15 digit or 10 alphanumeric"
-msgstr "15桁または10桁の英数字"
+msgstr "数字15桁または英数字10桁"
 
 #: ../../../source/sms.rst:21
 msgid "Xoxzo1"
