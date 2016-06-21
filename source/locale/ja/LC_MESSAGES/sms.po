@@ -171,7 +171,7 @@ msgstr "英数字"
 
 #: ../../../source/sms.rst:21
 msgid "15 digit or 10 alphanumeric"
-msgstr "15桁または10桁の英数字"
+msgstr "数字15桁または英数字10桁"
 
 #: ../../../source/sms.rst:21
 msgid "Xoxzo1"
@@ -338,7 +338,7 @@ msgid ""
 "intermerdiary networks and governments, and they may not honour your "
 "request."
 msgstr ""
-"**sender** は、最良の方法で発信されますが、それでも、受信者側にそのまま表示される保証はありません。任意の **caller** "
+"**sender** は、最良の方法で発信されますが、それでも、受信者側にそのまま表示される保証はありません。任意の **sender** "
 "に置き換えられることもあります。これは、各キャリアや、ネットワークまたは政府が定めた規定によるもので、リクエストを受け取らない場合もあるからです。"
 
 #: ../../../source/sms.rst:77
