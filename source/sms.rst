@@ -35,6 +35,12 @@ The additonal parameters below are for JP specific usage and recipients:
 Please refer to our `K-Premium Service FAQ <http://help.xoxzo.com/customer/en/portal/articles/2264921--sms-api-the-k-premium-service>`_ for more information on the K-Premium Service.
 
 .. note::
+   Notes on the **message** parameter:
+
+   * The maximum length for ASCII messages are 160 characters 
+   * For non-ASCII messages, the maximum length is 70 characters
+
+.. note::
    Notes on the **recipient** parameter:
 
    *  Xoxzo uses the `E.164 <http://en.wikipedia.org/wiki/E.164>`_ number format
