@@ -21,9 +21,8 @@ with the following parameters:
     =============  ========================  ========  =========  =======================  =============================
     Name           Description               Required  Data Type  Max Length               Example
     =============  ========================  ========  =========  =======================  =============================
-    caller         Caller number             Yes       E.164      Min:10, Max:15           +8190123456789
-    recipient      Call recipient            Yes       E.164      Min:10, Max:15           +8190123456789
-                                                                  (exclude + sign prefix)
+    caller         Caller number             Yes       Numeric                             +8190123456789
+    recipient      Call recipient            Yes       E.164                               +8190123456789
     recording_url  URL where your mp3 audio  Yes       URL        200                      http://www.mysite.com/123.mp3
                    file is located
     =============  ========================  ========  =========  =======================  =============================

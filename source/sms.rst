@@ -16,8 +16,7 @@ with the following parameters:
     Name       Description         Required  Data Type            Max Length                   Example
     =========  ==================  ========  ===================  ===========================  ===================
     message    Message body        Yes       UTF-8                ASCII: 160, Non-ASCII: 70    こんにちは
-    recipient  Message recipient   Yes       E.164                Min:10, Max:15               +8190123456789
-                                                                  (exclude + sign prefix)
+    recipient  Message recipient   Yes       E.164                                              +8190123456789
     sender     Sender ID           Yes       Alphanumeric         15 digit or 10 alphanumeric  Xoxzo1
     =========  ==================  ========  ===================  ===========================  ===================
 
