@@ -18,15 +18,14 @@ make a ``POST`` request to the endpoint::
 
 with the following parameters:
 
-    =============  ========================  ========  =========  =======================  =============================
-    Name           Description               Required  Data Type  Max Length               Example
-    =============  ========================  ========  =========  =======================  =============================
-    caller         Caller number             Yes       E.164      Min:10, Max:15           +8190123456789
-    recipient      Call recipient            Yes       E.164      Min:10, Max:15           +8190123456789
-                                                                  (exclude + sign prefix)
-    recording_url  URL where your mp3 audio  Yes       URL        200                      http://www.mysite.com/123.mp3
+    =============  ========================  ========  =============  =============================
+    Name           Description               Required  Data Type      Example
+    =============  ========================  ========  =============  =============================
+    caller         Caller number             Yes       Numeric        +8190123456789
+    recipient      Call recipient            Yes       E.164          +8190123456789
+    recording_url  URL where your mp3 audio  Yes       URL            http://www.mysite.com/123.mp3
                    file is located
-    =============  ========================  ========  =========  =======================  =============================
+    =============  ========================  ========  =============  =============================
 
 .. note::
    Notes on the **recipient** parameter:
@@ -73,14 +72,14 @@ The response would be a JSON structure, returned with HTTP ``201 CREATED`` statu
     ]
 
 If there's invalid parameters given, HTTP ``400 BAD REQUEST`` status code will
-be returned. For example, if the ``message``
+be returned. For example, if the ``recording_url``
 parameter is missing, the HTTP response should be like this::
 
     HTTP/1.0 400 BAD REQUEST
     Content-Type: application/json
 
     {
-        "message": [
+        "recording_url": [
             "This field is required."
         ]
     }
