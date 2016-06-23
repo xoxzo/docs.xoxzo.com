@@ -18,14 +18,14 @@ make a ``POST`` request to the endpoint::
 
 with the following parameters:
 
-    =============  ========================  ========  =========  =======================  =============================
-    Name           Description               Required  Data Type  Max Length               Example
-    =============  ========================  ========  =========  =======================  =============================
-    caller         Caller number             Yes       Numeric                             +8190123456789
-    recipient      Call recipient            Yes       E.164                               +8190123456789
-    recording_url  URL where your mp3 audio  Yes       URL        200                      http://www.mysite.com/123.mp3
+    =============  ========================  ========  =============  =============================
+    Name           Description               Required  Data Type      Example
+    =============  ========================  ========  =============  =============================
+    caller         Caller number             Yes       Numeric        +8190123456789
+    recipient      Call recipient            Yes       E.164          +8190123456789
+    recording_url  URL where your mp3 audio  Yes       URL            http://www.mysite.com/123.mp3
                    file is located
-    =============  ========================  ========  =========  =======================  =============================
+    =============  ========================  ========  =============  =============================
 
 .. note::
    Notes on the **recipient** parameter:

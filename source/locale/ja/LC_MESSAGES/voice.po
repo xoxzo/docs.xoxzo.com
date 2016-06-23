@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Heylo API Documentation 1.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-06-23 12:22+0900\n"
+"POT-Creation-Date: 2016-06-23 16:30+0900\n"
 "PO-Revision-Date: 2015-10-24 07:25+0900\n"
 "Last-Translator: \n"
 "Language-Team: \n"
@@ -64,10 +64,6 @@ msgid "Data Type"
 msgstr "データタイプ"
 
 #: ../../../source/voice.rst:22
-msgid "Max Length"
-msgstr "最大の長さ"
-
-#: ../../../source/voice.rst:22
 msgid "Example"
 msgstr "例"
 
@@ -115,10 +111,6 @@ msgstr "mp3 オーディオファイルの場所を示すURL"
 #: ../../../source/voice.rst:26
 msgid "URL"
 msgstr "URL"
-
-#: ../../../source/voice.rst:26
-msgid "200"
-msgstr "200"
 
 #: ../../../source/voice.rst:26
 msgid "http://www.mysite.com/123.mp3"
@@ -329,4 +321,10 @@ msgstr "この発信は、受信側に応答されませんでした。"
 
 #~ msgid "Min:10, Max:15 (exclude + sign prefix)"
 #~ msgstr "最短10桁、最長15桁（先頭+を除く）"
+
+#~ msgid "Max Length"
+#~ msgstr "最大の長さ"
+
+#~ msgid "200"
+#~ msgstr "200"
 

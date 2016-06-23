@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Xoxzo API Docs 1.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-06-23 12:22+0900\n"
+"POT-Creation-Date: 2016-06-23 16:30+0900\n"
 "PO-Revision-Date: 2015-10-24 07:21+0900\n"
 "Last-Translator: \n"
 "Language-Team: \n"
@@ -56,10 +56,6 @@ msgid "Data Type"
 msgstr "データタイプ"
 
 #: ../../../source/sms.rst:16 ../../../source/sms.rst:29
-msgid "Max Length"
-msgstr "最大の長さ"
-
-#: ../../../source/sms.rst:16 ../../../source/sms.rst:29
 msgid "Example"
 msgstr "例"
 
@@ -79,10 +75,6 @@ msgstr "○"
 #: ../../../source/sms.rst:18
 msgid "UTF-8"
 msgstr "UTF-8"
-
-#: ../../../source/sms.rst:18
-msgid "ASCII: 160, Non-ASCII: 70"
-msgstr "ASCI英数字のみ: 160, ASCII以外: 70"
 
 #: ../../../source/sms.rst:18
 msgid "こんにちは"
@@ -117,10 +109,6 @@ msgid "Alphanumeric"
 msgstr "英数字"
 
 #: ../../../source/sms.rst:20
-msgid "15 digit or 10 alphanumeric"
-msgstr "数字15桁または英数字10桁"
-
-#: ../../../source/sms.rst:20
 msgid "Xoxzo1"
 msgstr "Xoxzo1"
 
@@ -149,10 +137,6 @@ msgid "The string **true**"
 msgstr "**true** の文字列"
 
 #: ../../../source/sms.rst:31
-msgid "N/A"
-msgstr ""
-
-#: ../../../source/sms.rst:31
 msgid "true"
 msgstr ""
 
@@ -167,10 +151,6 @@ msgstr "au向けのSender ID"
 #: ../../../source/sms.rst:32
 msgid "Numeric"
 msgstr "数字"
-
-#: ../../../source/sms.rst:32
-msgid "Min:10, Max:12"
-msgstr "最短10桁、最長12桁 "
 
 #: ../../../source/sms.rst:32
 msgid "0312341234"
@@ -650,4 +630,19 @@ msgstr "メッセージの配信失敗"
 
 #~ msgid "Min:10, Max:15 (exclude + sign prefix)"
 #~ msgstr "最短10桁、最長15桁（先頭+を除く）"
+
+#~ msgid "Max Length"
+#~ msgstr "最大の長さ"
+
+#~ msgid "ASCII: 160, Non-ASCII: 70"
+#~ msgstr "ASCI英数字のみ: 160, ASCII以外: 70"
+
+#~ msgid "15 digit or 10 alphanumeric"
+#~ msgstr "数字15桁または英数字10桁"
+
+#~ msgid "N/A"
+#~ msgstr ""
+
+#~ msgid "Min:10, Max:12"
+#~ msgstr "最短10桁、最長12桁 "
 

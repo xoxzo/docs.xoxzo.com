@@ -12,25 +12,25 @@ To send a SMS message, make a ``POST`` request to the endpoint::
 
 with the following parameters:
 
-    =========  ==================  ========  ===================  ===========================  ===================
-    Name       Description         Required  Data Type            Max Length                   Example
-    =========  ==================  ========  ===================  ===========================  ===================
-    message    Message body        Yes       UTF-8                ASCII: 160, Non-ASCII: 70    こんにちは
-    recipient  Message recipient   Yes       E.164                                              +8190123456789
-    sender     Sender ID           Yes       Alphanumeric         15 digit or 10 alphanumeric  Xoxzo1
-    =========  ==================  ========  ===================  ===========================  ===================
+    =========  ==================  ========  ===================  ===================
+    Name       Description         Required  Data Type            Example
+    =========  ==================  ========  ===================  ===================
+    message    Message body        Yes       UTF-8                こんにちは
+    recipient  Message recipient   Yes       E.164                +8190123456789
+    sender     Sender ID           Yes       Alphanumeric         Xoxzo1
+    =========  ==================  ========  ===================  ===================
 
 JP specific optional parameters
 ------------------------------------
 
 The additonal parameters below are for JP specific usage and recipients:
 
-    ==============  ==================  ========    =================== =========================== ===================
-    Name            Description         Required    Data Type           Max Length                  Example
-    ==============  ==================  ========    =================== =========================== ===================
-    jp-kp           K-Premium flag      No          The string **true** N/A                         true 
-    jp-kddi-sender  Sender ID for au    No          Numeric             Min:10, Max:12              0312341234
-    ==============  ==================  ========    =================== =========================== ===================
+    ==============  ==================  ========    =================== ===================
+    Name            Description         Required    Data Type           Example
+    ==============  ==================  ========    =================== ===================
+    jp-kp           K-Premium flag      No          The string **true** true
+    jp-kddi-sender  Sender ID for au    No          Numeric             0312341234
+    ==============  ==================  ========    =================== ===================
 
 Please refer to our `K-Premium Service FAQ <http://help.xoxzo.com/customer/en/portal/articles/2264921--sms-api-the-k-premium-service>`_ for more information on the K-Premium Service.
 
