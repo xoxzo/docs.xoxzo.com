@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Heylo API Documentation 1.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-06-23 16:30+0900\n"
+"POT-Creation-Date: 2016-06-28 11:18+0900\n"
 "PO-Revision-Date: 2015-10-24 07:25+0900\n"
 "Last-Translator: \n"
 "Language-Team: \n"
@@ -181,11 +181,11 @@ msgstr "レスポンスは、JSON構造となり、ステータスコード　HT
 #: ../../../source/voice.rst:74
 msgid ""
 "If there's invalid parameters given, HTTP ``400 BAD REQUEST`` status code"
-" will be returned. For example, if the ``message`` parameter is missing, "
-"the HTTP response should be like this::"
+" will be returned. For example, if the ``recording_url`` parameter is "
+"missing, the HTTP response should be like this::"
 msgstr ""
 "間違ったバラメーターが与えられた場合には、ステータスコード HTTP ``400 BAD REQUEST``　が返されます。例えば、もし "
-"``message`` パラメーターがなかった場合、HTTPからの返答はこのようになります。"
+"``recording_url`` パラメーターがなかった場合、HTTPからの返答はこのようになります。"
 
 #: ../../../source/voice.rst:88 ../../../source/voice.rst:125
 msgid "Response data"
