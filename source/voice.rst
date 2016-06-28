@@ -72,14 +72,14 @@ The response would be a JSON structure, returned with HTTP ``201 CREATED`` statu
     ]
 
 If there's invalid parameters given, HTTP ``400 BAD REQUEST`` status code will
-be returned. For example, if the ``message``
+be returned. For example, if the ``recording_url``
 parameter is missing, the HTTP response should be like this::
 
     HTTP/1.0 400 BAD REQUEST
     Content-Type: application/json
 
     {
-        "message": [
+        "recording_url": [
             "This field is required."
         ]
     }
