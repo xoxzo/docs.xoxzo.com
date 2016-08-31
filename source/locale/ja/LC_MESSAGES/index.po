@@ -3,43 +3,22 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Heylo API Documentation 1.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-08-12 13:27+0900\n"
+"POT-Creation-Date: 2016-08-31 16:03+0900\n"
 "PO-Revision-Date: 2015-10-22 00:13+0900\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Language: ja\n"
-"X-Generator: Poedit 1.8.5\n"
-
-#: ../../../source/index.rst:11
-msgid "Overview"
-msgstr "概要"
-
-#: ../../../source/index.rst:15
-msgid "Contents:"
-msgstr "目次"
-
-#: ../../../source/index.rst:32
-msgid "Indices and tables"
-msgstr "索引と検索"
-
-#: ../../../source/index.rst:34
-msgid ":ref:`genindex`"
-msgstr ":ref:`genindex`"
-
-#: ../../../source/index.rst:35
-msgid ":ref:`modindex`"
-msgstr ":ref:`modindex`"
-
-#: ../../../source/index.rst:36
-msgid ":ref:`search`"
-msgstr ":ref:`search`"
+"Generated-By: Babel 2.3.4\n"
 
 #: ../../../source/index.rst:8
 msgid "Xoxzo Cloud Telephony Platform API"
 msgstr "Xoxzo クラウドテレフォニープラットフォームAPI"
+
+#: ../../../source/index.rst:11
+msgid "Overview"
+msgstr "概要"
 
 #: ../../../source/index.rst:12
 msgid ""
@@ -47,17 +26,32 @@ msgid ""
 "applications. You can use any HTTP client in any programming language or "
 "even your browser to interact with the API."
 msgstr ""
-"Xoxzo "
-"APIは、ご自分のアプリケーションにつなぐのが容易な、HTTPメソッドに基づいています。お使いのプログラミング言語で、お好みのHTTPクライアントにてご利用いただいても、お使いのブラウザ上でも、XoxzoのAPIをご利用いただくことができます。"
+"Xoxzo APIは、アプリケーションからの呼び出しが容易な、HTTPメソッドに基づいています。お好みのプログラム言語のHTTPクライアントでも、"
+"またブラウザでも、XoxzoAPIをご利用いただくことができます。"
+
+
+#: ../../../source/index.rst:15
+msgid "Contents:"
+msgstr "目次"
+
+#: ../../../source/index.rst:33
+msgid "Indices and tables"
+msgstr "索引と検索"
+
+#: ../../../source/index.rst:35
+msgid ":ref:`genindex`"
+msgstr ":ref:`genindex`"
+
+#: ../../../source/index.rst:36
+msgid ":ref:`search`"
+msgstr ":ref:`search`"
 
 #~ msgid "Welcome to Xoxzo Web Telephony API's documentation!"
 #~ msgstr "Xoxzo クラウド・テレフォニー・APIドキュメンテーションよこそ"
 
 #~ msgid ""
-#~ "Xoxzo APIs are based on HTTP methods, which make it easy to write "
-#~ "applications. You can use any HTTP client in any programming language or "
-#~ "even your browser to interact with the API."
 #~ msgstr ""
-#~ "Xoxzo APIは、それが簡単に書くことにするHTTPメソッドに基づいています "
-#~ "アプリケーション。あなたは、任意のプログラミング言語で任意のHTTPクライアントを使用することができますか "
-#~ "でも、お使いのブラウザでは、APIと対話します。"
+
+#~ msgid ":ref:`modindex`"
+#~ msgstr ":ref:`modindex`"
+
