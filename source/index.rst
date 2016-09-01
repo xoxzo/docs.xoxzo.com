@@ -29,8 +29,7 @@ Contents:
     changes
 
 
-Indices and tables
+Search
 ====================================
 
-* :ref:`genindex`
 * :ref:`search`
