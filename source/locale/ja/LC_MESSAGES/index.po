@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Heylo API Documentation 1.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-08-31 16:03+0900\n"
+"POT-Creation-Date: 2016-09-01 08:58+0900\n"
 "PO-Revision-Date: 2015-10-22 00:13+0900\n"
 "Last-Translator: \n"
 "Language-Team: \n"
@@ -26,23 +26,18 @@ msgid ""
 "applications. You can use any HTTP client in any programming language or "
 "even your browser to interact with the API."
 msgstr ""
-"Xoxzo APIは、アプリケーションからの呼び出しが容易な、HTTPメソッドに基づいています。お好みのプログラム言語のHTTPクライアントでも、"
-"またブラウザでも、XoxzoAPIをご利用いただくことができます。"
-
+"Xoxzo "
+"APIは、アプリケーションからの呼び出しが容易な、HTTPメソッドに基づいています。お好みのプログラム言語のHTTPクライアントでも、またブラウザでも、XoxzoAPIをご利用いただくことができます。"
 
 #: ../../../source/index.rst:15
 msgid "Contents:"
 msgstr "目次"
 
 #: ../../../source/index.rst:33
-msgid "Indices and tables"
-msgstr "索引と検索"
+msgid "Search"
+msgstr "検索"
 
 #: ../../../source/index.rst:35
-msgid ":ref:`genindex`"
-msgstr ":ref:`genindex`"
-
-#: ../../../source/index.rst:36
 msgid ":ref:`search`"
 msgstr ":ref:`search`"
 
@@ -54,4 +49,10 @@ msgstr ":ref:`search`"
 
 #~ msgid ":ref:`modindex`"
 #~ msgstr ":ref:`modindex`"
+
+#~ msgid ":ref:`genindex`"
+#~ msgstr ":ref:`genindex`"
+
+#~ msgid "Indices and tables"
+#~ msgstr "索引と検索"
 
