@@ -21,6 +21,7 @@ Contents:
     sms
     voice
     din
+    utils
 
 .. toctree::
     :maxdepth: 1

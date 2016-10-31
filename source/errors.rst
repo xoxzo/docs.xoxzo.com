@@ -52,10 +52,10 @@ Error list
 These are some of the common errors which you might encounter when using the
 API:
 
-   ===========================         =====================================================
+   ===========================         ==================================================================
    Error message                       Description         
-   ===========================         =====================================================
-   Country not allowed                 Your account is not allowed to send to this country.
+   ===========================         ==================================================================
+   Country not allowed                 Your account is not allowed to send or make calls to this country.
                                        Please contact help@xoxzo.com for more details.
    Invalid sid/token                   The sid or token you're using is invalid.
    Invalid sent_date                   The sent_date should be within 90 days.
@@ -65,6 +65,6 @@ API:
    This field is required              A parameter which is required for the API
                                        is missing. Please check your request
                                        again.
-   ===========================         =====================================================
+   ===========================         ==================================================================
 
 
