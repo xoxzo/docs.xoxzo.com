@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Xoxzo API Docs 1.1\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-10-31 16:01+0900\n"
+"POT-Creation-Date: 2016-11-02 16:01+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -105,10 +105,13 @@ msgid "1.3.0"
 msgstr ""
 
 #: ../../../source/changes.rst:14
-msgid "2016-10-31"
+msgid "2016-11-03"
 msgstr ""
 
 #: ../../../source/changes.rst:14
 msgid "New addition of telephony utilities API"
-msgstr ""
+msgstr "テレフォニー・ユーティリティAPIの追加"
+
+#~ msgid "2016-10-31"
+#~ msgstr ""
 

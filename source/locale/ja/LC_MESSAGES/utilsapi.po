@@ -1,0 +1,229 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2016, Xoxzo Inc.
+# This file is distributed under the same license as the Xoxzo API Docs
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2016.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Xoxzo API Docs 1.3.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2016-11-02 11:43+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.3.1\n"
+
+#: ../../../source/utilsapi.rst:3
+msgid "Telephony Utilities API"
+msgstr "テレフォニー・ユーティリティAPI"
+
+#: ../../../source/utilsapi.rst:5
+msgid ""
+"Telephony Utilities API is a collection of APIs which are useful when "
+"dealing with phones and the internet."
+msgstr "テレフォニー・ユーティリティAPIは電話とインターネットの情報操作にいろいろ便利なAPI群です。"
+
+#: ../../../source/utilsapi.rst:8
+msgid "Carrier Lookup"
+msgstr "携帯電話事業者確認"
+
+#: ../../../source/utilsapi.rst:9
+msgid "To do a lookup call, make a ``POST`` request to the endpoint::"
+msgstr "携帯電話事業者確認するには、 ``POST`` リクエストをエンドポイントに行ってください。 ::"
+
+#: ../../../source/utilsapi.rst:13
+msgid "with the following parameters:"
+msgstr "下記のパラメーターを併記してください。"
+
+#: ../../../source/utilsapi.rst:16 ../../../source/utilsapi.rst:80
+msgid "Name"
+msgstr "名称"
+
+#: ../../../source/utilsapi.rst:16 ../../../source/utilsapi.rst:80
+msgid "Description"
+msgstr "詳細"
+
+#: ../../../source/utilsapi.rst:16
+msgid "Required"
+msgstr "必須"
+
+#: ../../../source/utilsapi.rst:16
+msgid "Data Type"
+msgstr "データタイプ"
+
+#: ../../../source/utilsapi.rst:16
+msgid "Example"
+msgstr "例"
+
+#: ../../../source/utilsapi.rst:18 ../../../source/utilsapi.rst:88
+msgid "recipient"
+msgstr ""
+
+#: ../../../source/utilsapi.rst:18
+msgid "The number to lookup"
+msgstr "確認する携帯番号"
+
+#: ../../../source/utilsapi.rst:18
+msgid "Yes"
+msgstr "○"
+
+#: ../../../source/utilsapi.rst:18
+msgid "E.164"
+msgstr ""
+
+#: ../../../source/utilsapi.rst:18
+msgid "+8190123456789"
+msgstr ""
+
+#: ../../../source/utilsapi.rst:22
+msgid "Notes on the **recipient** parameter:"
+msgstr "recipient パラメーターに関する注意点"
+
+#: ../../../source/utilsapi.rst:24
+msgid ""
+"Xoxzo uses the `E.164 <http://en.wikipedia.org/wiki/E.164>`_ number "
+"format when specifying phone numbers."
+msgstr ""
+"特定の電話番号を指定する場合、Xoxzo は `E.164 <http://en.wikipedia.org/wiki/E.164>`_ "
+"を番号のフォーマットに指定しています。"
+
+#: ../../../source/utilsapi.rst:26
+msgid ""
+"`E.164 <http://en.wikipedia.org/wiki/E.164>`_ dictates that phone numbers"
+" must start with the + prefix and country code then followed directly by "
+"the mobile number leaving the local **0** prefix ."
+msgstr ""
+"`E.164 <http://en.wikipedia.org/wiki/E.164>`_ フォーマットは、電話番号の先頭に + "
+"プレフィックスをつけた後ロカールの **0** 除く携帯の電話番号がくるという順番を定められています。"
+
+#: ../../../source/utilsapi.rst:28
+msgid ""
+"Example of a valid recipient is: *+818011234567* with *81* as the Japan "
+"country code and *8011234567* as the mobile number."
+msgstr ""
+"有効な受信者記載例として、 *+818011234567* と挙げられます。 *81* は日本の国番号で、 *8011234567* "
+"は携帯電話番号となります。"
+
+#: ../../../source/utilsapi.rst:32
+msgid "Examples"
+msgstr "例"
+
+#: ../../../source/utilsapi.rst:34
+msgid "Below is an example request using cURL::"
+msgstr "下記は、CURLを使ったリクエストの例です。"
+
+#: ../../../source/utilsapi.rst:38
+msgid ""
+"The response would be a JSON structure, returned with HTTP ``201 "
+"CREATED`` status code::"
+msgstr "レスポンスは、JSON構造となり、ステータスコード　HTTP ``201 CREATED`` にて返されます。"
+
+#: ../../../source/utilsapi.rst:56
+msgid ""
+"If your lookup failed to identify the carrier for your target recipient, "
+"your response data will be something like this::"
+msgstr "携帯電話事業者を特定できなかった場合、以下のようなレスポンスが返されます。 ::"
+
+#: ../../../source/utilsapi.rst:77
+msgid "Response data"
+msgstr "レスポンスデータ"
+
+#: ../../../source/utilsapi.rst:82
+msgid "id"
+msgstr ""
+
+#: ../../../source/utilsapi.rst:82
+msgid "A unique 32 char id to identify this lookup request"
+msgstr "このリクエストを特定するための32文字数のIDです。"
+
+#: ../../../source/utilsapi.rst:83
+msgid "mcc"
+msgstr ""
+
+#: ../../../source/utilsapi.rst:83
+msgid "The country code of the carrier"
+msgstr "モバイル国別コード"
+
+#: ../../../source/utilsapi.rst:84
+msgid "mnc"
+msgstr ""
+
+#: ../../../source/utilsapi.rst:84
+msgid "The network code of the carrier"
+msgstr "モバイルネットワーク別コード"
+
+#: ../../../source/utilsapi.rst:85
+msgid "mccmnc"
+msgstr ""
+
+#: ../../../source/utilsapi.rst:85
+msgid ""
+"The mccmnc code (combination of mcc and mnc) that uniquely identifies "
+"this carrier"
+msgstr "事業者を特定できる mccmnc コード (mccとmncの組み合わせのコード)"
+
+#: ../../../source/utilsapi.rst:86
+msgid "carrier"
+msgstr ""
+
+#: ../../../source/utilsapi.rst:86
+msgid "The carrier name"
+msgstr "携帯電話事業者の商号"
+
+#: ../../../source/utilsapi.rst:87
+msgid "country"
+msgstr ""
+
+#: ../../../source/utilsapi.rst:87
+msgid "ISO Alpha-2 code of the home country of this carrier"
+msgstr "この携帯電話事業者のISO Alpha-2の国コード"
+
+#: ../../../source/utilsapi.rst:88
+msgid "The number being queried"
+msgstr "確認しようとしている携帯番号"
+
+#: ../../../source/utilsapi.rst:89
+msgid "cost"
+msgstr ""
+
+#: ../../../source/utilsapi.rst:89
+msgid "The credits deducted for this API call"
+msgstr "このリクエストで消費したクレジット"
+
+#: ../../../source/utilsapi.rst:93
+msgid "Notes on the **mccmnc** data:"
+msgstr "**mccmnc** データに関する注意点"
+
+#: ../../../source/utilsapi.rst:95
+msgid ""
+"The combination of the MCC and MNC code `MCCMNC "
+"<https://en.wikipedia.org/wiki/Mobile_country_code>`_ uniquely identifies"
+" a certain network operator (carrier) anywhere in the world."
+msgstr "`MCCとMNCの組み合わせ <https://en.wikipedia.org/wiki/Mobile_country_code>`_ で世界のどの携帯事業者でも特定することは可能です。"
+
+#: ../../../source/utilsapi.rst:97
+msgid ""
+"Although the operator business name might change due to buyouts or "
+"management changes, the MCCMNC code very rarely does."
+msgstr "合併などで事業者の商号が変わることがありますが、MCCMNCコードはほとんど変わりません。"
+
+#: ../../../source/utilsapi.rst:98
+msgid ""
+"There are cases where one business entity or operator brand might have "
+"multiple MCCMNC codes assigned to it."
+msgstr "１つの事業者に複数のMCCMNCコードを割り当てられる場合があります。"
+
+#: ../../../source/utilsapi.rst:100
+msgid ""
+"If there's invalid parameters given, HTTP ``400 BAD REQUEST`` status code"
+" will be returned. For example, if the ``recipient`` parameter is "
+"missing, the HTTP response should be like this::"
+msgstr ""
+"間違ったバラメーターが与えられた場合には、ステータスコード　HTTP ``400 BAD REQUEST``　が返されます。例えば、もし "
+"``recipient`` パラメーターがなかった場合、HTTPからの返答はこのようになります。"
+

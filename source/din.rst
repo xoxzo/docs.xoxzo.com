@@ -1,11 +1,11 @@
-============================================
+======================================================
 Dial In Numbers API
-============================================
+======================================================
 
 The Dial In Numbers API allows you to receive and manipulate phone numbers and incoming phone calls via easy APIs
 
 Finding a Dial In Number via API
-============================================
+======================================================
 
 This API allows for listing and subscribing to a Dial In Number (DIN).
 
@@ -65,7 +65,7 @@ Or::
 filtering using country or prefix will only return you the relevant DINs based on your filter.
 
 Subscribing to a Dial In Number via API
-============================================
+======================================================
 
 To subscribe to a DIN, send a ``POST`` request like::
 
@@ -86,14 +86,14 @@ The ``url`` specified for ``action_url`` will be called via ``GET`` when there i
 used to handle the call. 
 
 Getting the list of subscribed Dial In Numbers via API
-============================================
+======================================================
 
 To get the list of your current subscribed DINs, just make a ``GET`` request like::
 
    curl -u <SID>:<AUTH_TOKEN> https://api.xoxzo.com/voice/dins/subscriptions/
 
 Unsubscribing to a Dial In Number via API
-============================================
+======================================================
 
 To unsubscribe::
 
@@ -101,7 +101,7 @@ To unsubscribe::
 
 
 What are Actions?
-============================================
+======================================================
 
 An Action is something that you tell us to do when a call comes in via your subscribed Dial In Number (DIN).
 These can be things like transfering the incoming call to a different number, or playing a music file.
