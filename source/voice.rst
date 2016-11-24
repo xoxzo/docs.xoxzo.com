@@ -54,6 +54,7 @@ with the following parameters:
    Notes on the **recording_url** parameter:
 
    *  The mp3 file specified by the URL **MUST** be publicly accessible.
+   *  The recording URL **MUST** contain only ascii letters and digits.
 
 
 Below is an example request using cURL::
