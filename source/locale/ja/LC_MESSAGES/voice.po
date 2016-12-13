@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Heylo API Documentation 1.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-06-28 11:18+0900\n"
+"POT-Creation-Date: 2016-12-13 15:29+0900\n"
 "PO-Revision-Date: 2015-10-24 07:25+0900\n"
 "Last-Translator: \n"
 "Language-Team: \n"
@@ -45,13 +45,13 @@ msgstr "発信し、相手が電話を取った時にオーディオファイル
 msgid "with the following parameters:"
 msgstr "下記のパラメーターを併記してください。"
 
-#: ../../../source/voice.rst:22 ../../../source/voice.rst:91
-#: ../../../source/voice.rst:128
+#: ../../../source/voice.rst:22 ../../../source/voice.rst:92
+#: ../../../source/voice.rst:129
 msgid "Name"
 msgstr "名称"
 
-#: ../../../source/voice.rst:22 ../../../source/voice.rst:91
-#: ../../../source/voice.rst:128 ../../../source/voice.rst:145
+#: ../../../source/voice.rst:22 ../../../source/voice.rst:92
+#: ../../../source/voice.rst:129 ../../../source/voice.rst:146
 msgid "Description"
 msgstr "詳細"
 
@@ -67,7 +67,7 @@ msgstr "データタイプ"
 msgid "Example"
 msgstr "例"
 
-#: ../../../source/voice.rst:24 ../../../source/voice.rst:135
+#: ../../../source/voice.rst:24 ../../../source/voice.rst:136
 msgid "caller"
 msgstr "caller"
 
@@ -88,7 +88,7 @@ msgstr "数字"
 msgid "+8190123456789"
 msgstr "+8190123456789"
 
-#: ../../../source/voice.rst:25 ../../../source/voice.rst:136
+#: ../../../source/voice.rst:25 ../../../source/voice.rst:137
 msgid "recipient"
 msgstr "recipient"
 
@@ -168,17 +168,21 @@ msgstr "**recording_url** パラメーターに関する注意点"
 msgid "The mp3 file specified by the URL **MUST** be publicly accessible."
 msgstr "URLで指定するmp3ファイルは、だれでもアクセス可能であることが **必要不可欠です。**"
 
-#: ../../../source/voice.rst:59
+#: ../../../source/voice.rst:57
+msgid "The recording URL **MUST** contain only ascii letters and digits."
+msgstr "音声ファイルのURLには、ASCII 文字と数字以外は **決して** 含めないでください。"
+
+#: ../../../source/voice.rst:60
 msgid "Below is an example request using cURL::"
 msgstr "cURLを使ったリクエストの例は下記のとおりです。"
 
-#: ../../../source/voice.rst:63
+#: ../../../source/voice.rst:64
 msgid ""
 "The response would be a JSON structure, returned with HTTP ``201 "
 "CREATED`` status code::"
 msgstr "レスポンスは、JSON構造となり、ステータスコード　HTTP ``201 CREATED`` にて返されます。"
 
-#: ../../../source/voice.rst:74
+#: ../../../source/voice.rst:75
 msgid ""
 "If there's invalid parameters given, HTTP ``400 BAD REQUEST`` status code"
 " will be returned. For example, if the ``recording_url`` parameter is "
@@ -187,23 +191,23 @@ msgstr ""
 "間違ったバラメーターが与えられた場合には、ステータスコード HTTP ``400 BAD REQUEST``　が返されます。例えば、もし "
 "``recording_url`` パラメーターがなかった場合、HTTPからの返答はこのようになります。"
 
-#: ../../../source/voice.rst:88 ../../../source/voice.rst:125
+#: ../../../source/voice.rst:89 ../../../source/voice.rst:126
 msgid "Response data"
 msgstr "レスポンスデータ"
 
-#: ../../../source/voice.rst:93 ../../../source/voice.rst:130
+#: ../../../source/voice.rst:94 ../../../source/voice.rst:131
 msgid "callid"
 msgstr "callid"
 
-#: ../../../source/voice.rst:93 ../../../source/voice.rst:130
+#: ../../../source/voice.rst:94 ../../../source/voice.rst:131
 msgid "The unique call id for this call"
 msgstr "この通話固有のIDです。"
 
-#: ../../../source/voice.rst:97
+#: ../../../source/voice.rst:98
 msgid "Checking Call Status"
 msgstr "プレーバック発信ステータス確認"
 
-#: ../../../source/voice.rst:99
+#: ../../../source/voice.rst:100
 msgid ""
 "To check call status, make a GET request to the endpoint followed by "
 "``<callid>``. An example of using curl is below::"
@@ -211,99 +215,99 @@ msgstr ""
 "通話状態を調べるには、エンドポイントに ``<callid>`` "
 "をつけた、GETリクエストを行ってください。curlを用いた例は次のようになります。"
 
-#: ../../../source/voice.rst:104
+#: ../../../source/voice.rst:105
 msgid ""
 "Every time you make a call, you will get a response containing "
 "``<callid>``. Use this ``<callid>`` to check call status."
 msgstr "発信を行うたびに、 ``<callid>`` を含むレスポンスが得られますので、この ``<callid>`` を通話状態の確認にご利用ください。"
 
-#: ../../../source/voice.rst:107
+#: ../../../source/voice.rst:108
 msgid ""
 "The response would be a JSON structure, returned with HTTP ``200 OK`` "
 "status code::"
 msgstr "レスポンスは、JSON構造となり、ステータスコード HTTP ``200 OK`` にて返されます。"
 
-#: ../../../source/voice.rst:131
+#: ../../../source/voice.rst:132
 msgid "cost"
 msgstr "cost"
 
-#: ../../../source/voice.rst:131
+#: ../../../source/voice.rst:132
 msgid "The cost in credits for this call"
 msgstr "この通話にかかった料金をクレジット数で表示しています。"
 
-#: ../../../source/voice.rst:132
+#: ../../../source/voice.rst:133
 msgid "duration"
 msgstr "duration"
 
-#: ../../../source/voice.rst:132
+#: ../../../source/voice.rst:133
 msgid "The duration of the call"
 msgstr "この通話の時間を表示します。"
 
-#: ../../../source/voice.rst:133
+#: ../../../source/voice.rst:134
 msgid "start_time"
 msgstr "start_time"
 
-#: ../../../source/voice.rst:133
+#: ../../../source/voice.rst:134
 msgid "The time when the call was made (in UTC)"
 msgstr "通話が開始された時間が、UTC（協定世界時）にて表示されます。"
 
-#: ../../../source/voice.rst:134
+#: ../../../source/voice.rst:135
 msgid "end_time"
 msgstr "end_time"
 
-#: ../../../source/voice.rst:134
+#: ../../../source/voice.rst:135
 msgid "The time when the call ended (in UTC)"
 msgstr "通話が終了した時間が、UTC（協定世界時）にて表示されます。"
 
-#: ../../../source/voice.rst:135
+#: ../../../source/voice.rst:136
 msgid "The caller number"
 msgstr "発信元番号"
 
-#: ../../../source/voice.rst:136
+#: ../../../source/voice.rst:137
 msgid "The recipient number"
 msgstr "着信番号"
 
-#: ../../../source/voice.rst:140
+#: ../../../source/voice.rst:141
 msgid "Common call statuses"
 msgstr "よくある通話のステータス"
 
-#: ../../../source/voice.rst:142
+#: ../../../source/voice.rst:143
 msgid "This is a list of statuses that you can find in the ``status`` data:"
 msgstr "``status`` データ内にある、ステータスのリストです。"
 
-#: ../../../source/voice.rst:145
+#: ../../../source/voice.rst:146
 msgid "Call status"
 msgstr "通話状態"
 
-#: ../../../source/voice.rst:147
+#: ../../../source/voice.rst:148
 msgid "ANSWERED"
 msgstr "ANSWERED"
 
-#: ../../../source/voice.rst:147
+#: ../../../source/voice.rst:148
 msgid "The call was answered by the recipient, or was passed to a mailbox"
 msgstr "通話は受信者が応答したか、留守番電話へとつながりました。"
 
-#: ../../../source/voice.rst:149
+#: ../../../source/voice.rst:150
 msgid "FAILED"
 msgstr "FAILED"
 
-#: ../../../source/voice.rst:149
+#: ../../../source/voice.rst:150
 msgid "The call failed to connect to the recipient"
 msgstr "この発信は、受信者へつながりませんでした。"
 
-#: ../../../source/voice.rst:150
+#: ../../../source/voice.rst:151
 msgid "IN PROGRESS"
 msgstr ""
 
-#: ../../../source/voice.rst:150
+#: ../../../source/voice.rst:151
 msgid "The call is still in progress"
 msgstr "現在通話中"
 
-#: ../../../source/voice.rst:151
+#: ../../../source/voice.rst:152
 msgid "NO ANSWER"
 msgstr "NO ANSWER"
 
-#: ../../../source/voice.rst:151
+#: ../../../source/voice.rst:152
 msgid "The call was not answered by the recipient"
 msgstr "この発信は、受信側に応答されませんでした。"
 
