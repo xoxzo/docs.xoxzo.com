@@ -170,7 +170,7 @@ msgstr "URLで指定するmp3ファイルは、だれでもアクセス可能で
 
 #: ../../../source/voice.rst:57
 msgid "The recording URL **MUST** contain only ascii letters and digits."
-msgstr "音声ファイルのURLには、ASCII 文字と数字以外は**決して**含めないでください。"
+msgstr "音声ファイルのURLには、ASCII 文字と数字以外は **決して** 含めないでください。"
 
 #: ../../../source/voice.rst:60
 msgid "Below is an example request using cURL::"
