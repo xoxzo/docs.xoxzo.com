@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Xoxzo API Docs 1.1\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-11-02 16:01+0900\n"
+"POT-Creation-Date: 2016-12-14 15:02+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -111,6 +111,18 @@ msgstr ""
 #: ../../../source/changes.rst:14
 msgid "New addition of telephony utilities API"
 msgstr "テレフォニー・ユーティリティAPIの追加"
+
+#: ../../../source/changes.rst:15
+msgid "1.3.1"
+msgstr ""
+
+#: ../../../source/changes.rst:15
+msgid "2016-12-14"
+msgstr ""
+
+#: ../../../source/changes.rst:15
+msgid "Updated restrictions on playback URL"
+msgstr "音声プレーバックURLの制限アップデート"
 
 #~ msgid "2016-10-31"
 #~ msgstr ""
