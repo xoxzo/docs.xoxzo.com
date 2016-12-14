@@ -50,12 +50,20 @@ with the following parameters:
       the recipient's mobile as it is and maybe replaced with an arbitary **caller**. This is dependent on the 
       policies of the carriers, intermerdiary networks and governments, and they may not honour your request.
 
+.. _playback-usable-url-ref:
+
 .. note::
    Notes on the **recording_url** parameter:
 
    *  The mp3 file specified by the URL **MUST** be publicly accessible.
-   *  The recording URL **MUST** contain only ascii letters and digits.
+   *  The URL can **ONLY** contain ascii letters or digits, underscores, slash or hyphens.
 
+.. note::
+   Samples of valid URL for **recording_url** are as below:
+
+   *  http://a.clyp.it/b3byGhjf.mp3
+   *  http://a.clyp.it/b-byghjf.mp3
+   *  http://a.clyp.it/b-bygh_f.mp3
 
 Below is an example request using cURL::
 

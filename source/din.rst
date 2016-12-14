@@ -140,6 +140,10 @@ Your ``action_url`` must return the following output in plain text format::
 
 Where ``playback`` contains a required paramater that points to the URL of the mp3 file you want to play.
 
+.. note::
+   * For a more detailed explaination of usable URL for the ``playback`` action
+     please see :ref:`simple playback API's recording_url parameter restrictions <playback-usable-url-ref>`
+
 For ``transfer``, you'll need to also include a required parameter of the number you want to transfer to::
 
     transfer +81807181881 --caller=+8190123456789
