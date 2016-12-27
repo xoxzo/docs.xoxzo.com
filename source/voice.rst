@@ -69,6 +69,42 @@ Below is an example request using cURL::
 
     curl -u <SID>:<AUTH_TOKEN> --data-urlencode 'caller=<caller>' --data-urlencode 'recipient=<recipient>' --data-urlencode 'recording_url=<recording_url>' https://api.xoxzo.com/voice/simple/playback/
 
+
+Text to Speech Playback API
+====================================
+
+
+To make a call and playback an text message when your recipient answers the phone,
+make a ``POST`` request to the endpoint::
+
+    https://api.xoxzo.com/voice/simple/playback/
+
+with the following parameters:
+
+    =============  ========================  ========  =============  =============================
+    Name           Description               Required  Data Type      Example
+    =============  ========================  ========  =============  =============================
+    caller         Caller number             Yes       Numeric        +8190123456789
+    recipient      Call recipient            Yes       E.164          +8190123456789
+    tts_message    text to playback          Yes       String         Hello world
+    tts_lang       language of the text      Yes                      ja
+    =============  ========================  ========  =============  =============================
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 The response would be a JSON structure, returned with HTTP ``201 CREATED`` status code::
 
     HTTP/1.0 201 CREATED
