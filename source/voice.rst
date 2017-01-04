@@ -87,22 +87,25 @@ with the following parameters:
     caller         Caller number             Yes       Numeric        +8190123456789
     recipient      Call recipient            Yes       E.164          +8190123456789
     tts_message    text to playback          Yes       String         Hello world
-    tts_lang       language of the text      Yes                      ja
+    tts_lang       language of the text      Yes       ISO 639-1      ja
     =============  ========================  ========  =============  =============================
 
+.. note::
+   Notes on the **caller** parameter:
+   Same restriction will apply as simple voice playback.
 
+.. note::
+   Notes on the **recipient** parameter:
+   Same restriction will apply as simple voice playback.
 
+.. note::
+   Notes on the **tts_message** parameter:
+   Maximum length is 250 characters.
 
-
-
-
-
-
-
-
-
-
-
+.. note::
+   Notes on the **tts_lang** parameter:
+   This paramter must exist when tts_message is provided.
+   Currently, only 'ja' is accepted.
 
 
 The response would be a JSON structure, returned with HTTP ``201 CREATED`` status code::
