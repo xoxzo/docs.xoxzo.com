@@ -65,6 +65,18 @@ with the following parameters:
    *  http://a.clyp.it/b-byghjf.mp3
    *  http://a.clyp.it/b-bygh_f.mp3
 
+Optional parameters
+------------------------------------
+
+The additonal parameters below allows you to utilize special functions
+
+    ==============  ==================      ========    =================== ===================
+    Name            Description             Required    Data Type           Example
+    ==============  ==================      ========    =================== ===================
+    jp-kp           Text To Speech (TTS)    No          The string **true** true
+    jp-kp           Text To Speech (TTS)    No          The string **true** true
+    ==============  ==================      ========    =================== ===================
+
 Below is an example request using cURL::
 
     curl -u <SID>:<AUTH_TOKEN> --data-urlencode 'caller=<caller>' --data-urlencode 'recipient=<recipient>' --data-urlencode 'recording_url=<recording_url>' https://api.xoxzo.com/voice/simple/playback/

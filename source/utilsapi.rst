@@ -111,3 +111,13 @@ the HTTP response should be like this::
     }
 
 
+Text To Speech
+====================================
+Text to speech is an optional functionality that can be used together with our voice call API.
+It is not an API on it's own.
+
+In order to use Text To Speech, you will need to refer to the documentation for the specific
+voice API you would like to use. The APIs will have special parameters which you can use
+to utilize Text To Speech.
+
+
