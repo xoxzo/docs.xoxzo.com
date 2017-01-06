@@ -36,31 +36,34 @@ msgstr "携帯電話事業者確認"
 msgid "To do a lookup call, make a ``POST`` request to the endpoint::"
 msgstr "携帯電話事業者確認するには、 ``POST`` リクエストをエンドポイントに行ってください。 ::"
 
-#: ../../../source/utilsapi.rst:13
+#: ../../../source/utilsapi.rst:13 ../../../source/utilsapi.rst:132
 msgid "with the following parameters:"
 msgstr "下記のパラメーターを併記してください。"
 
 #: ../../../source/utilsapi.rst:16 ../../../source/utilsapi.rst:80
+#: ../../../source/utilsapi.rst:135
 msgid "Name"
 msgstr "名称"
 
 #: ../../../source/utilsapi.rst:16 ../../../source/utilsapi.rst:80
+#: ../../../source/utilsapi.rst:135
 msgid "Description"
 msgstr "詳細"
 
-#: ../../../source/utilsapi.rst:16
+#: ../../../source/utilsapi.rst:16 ../../../source/utilsapi.rst:135
 msgid "Required"
 msgstr "必須"
 
-#: ../../../source/utilsapi.rst:16
+#: ../../../source/utilsapi.rst:16 ../../../source/utilsapi.rst:135
 msgid "Data Type"
 msgstr "データタイプ"
 
-#: ../../../source/utilsapi.rst:16
+#: ../../../source/utilsapi.rst:16 ../../../source/utilsapi.rst:135
 msgid "Example"
 msgstr "例"
 
 #: ../../../source/utilsapi.rst:18 ../../../source/utilsapi.rst:88
+#: ../../../source/utilsapi.rst:138
 msgid "recipient"
 msgstr ""
 
@@ -68,19 +71,22 @@ msgstr ""
 msgid "The number to lookup"
 msgstr "確認する携帯番号"
 
-#: ../../../source/utilsapi.rst:18
+#: ../../../source/utilsapi.rst:18 ../../../source/utilsapi.rst:137
+#: ../../../source/utilsapi.rst:138 ../../../source/utilsapi.rst:139
+#: ../../../source/utilsapi.rst:140
 msgid "Yes"
 msgstr "○"
 
-#: ../../../source/utilsapi.rst:18
+#: ../../../source/utilsapi.rst:18 ../../../source/utilsapi.rst:138
 msgid "E.164"
 msgstr ""
 
-#: ../../../source/utilsapi.rst:18
+#: ../../../source/utilsapi.rst:18 ../../../source/utilsapi.rst:137
+#: ../../../source/utilsapi.rst:138
 msgid "+8190123456789"
 msgstr ""
 
-#: ../../../source/utilsapi.rst:22
+#: ../../../source/utilsapi.rst:22 ../../../source/utilsapi.rst:148
 msgid "Notes on the **recipient** parameter:"
 msgstr "recipient パラメーターに関する注意点"
 
@@ -109,11 +115,11 @@ msgstr ""
 "有効な受信者記載例として、 *+818011234567* と挙げられます。 *81* は日本の国番号で、 *8011234567* "
 "は携帯電話番号となります。"
 
-#: ../../../source/utilsapi.rst:32
+#: ../../../source/utilsapi.rst:32 ../../../source/utilsapi.rst:166
 msgid "Examples"
 msgstr "例"
 
-#: ../../../source/utilsapi.rst:34
+#: ../../../source/utilsapi.rst:34 ../../../source/utilsapi.rst:168
 msgid "Below is an example request using cURL::"
 msgstr "下記は、CURLを使ったリクエストの例です。"
 
@@ -129,7 +135,7 @@ msgid ""
 "your response data will be something like this::"
 msgstr "携帯電話事業者を特定できなかった場合、以下のようなレスポンスが返されます。 ::"
 
-#: ../../../source/utilsapi.rst:77
+#: ../../../source/utilsapi.rst:77 ../../../source/utilsapi.rst:178
 msgid "Response data"
 msgstr "レスポンスデータ"
 
@@ -245,4 +251,113 @@ msgid ""
 "documentation for the specific voice API you would like to use. The APIs "
 "will have special parameters which you can use to utilize Text To Speech."
 msgstr ""
+
+#: ../../../source/utilsapi.rst:124
+msgid "Text to Speech Playback API"
+msgstr ""
+
+#: ../../../source/utilsapi.rst:127
+msgid ""
+"To make a call and playback an text message when your recipient answers "
+"the phone, make a ``POST`` request to the endpoint::"
+msgstr ""
+
+#: ../../../source/utilsapi.rst:137
+msgid "caller"
+msgstr ""
+
+#: ../../../source/utilsapi.rst:137
+msgid "Caller number"
+msgstr ""
+
+#: ../../../source/utilsapi.rst:137
+msgid "Numeric"
+msgstr ""
+
+#: ../../../source/utilsapi.rst:138
+msgid "Call recipient"
+msgstr ""
+
+#: ../../../source/utilsapi.rst:139
+msgid "tts_message"
+msgstr ""
+
+#: ../../../source/utilsapi.rst:139
+msgid "text to playback"
+msgstr ""
+
+#: ../../../source/utilsapi.rst:139
+msgid "UTF-8"
+msgstr ""
+
+#: ../../../source/utilsapi.rst:139
+msgid "おはよう"
+msgstr ""
+
+#: ../../../source/utilsapi.rst:140
+msgid "tts_lang"
+msgstr ""
+
+#: ../../../source/utilsapi.rst:140
+msgid "language of the text"
+msgstr ""
+
+#: ../../../source/utilsapi.rst:140
+msgid "ISO 639-1"
+msgstr ""
+
+#: ../../../source/utilsapi.rst:140
+msgid "ja"
+msgstr ""
+
+#: ../../../source/utilsapi.rst:144
+msgid "Notes on the **caller** parameter:"
+msgstr "caller パラメーターに関する注意点"
+
+#: ../../../source/utilsapi.rst:146 ../../../source/utilsapi.rst:150
+msgid "Please refer :ref:`simple-playback-api-ref`"
+msgstr ""
+
+#: ../../../source/utilsapi.rst:153
+msgid "Notes on the **tts_message** parameter:"
+msgstr "tts_message パラメーターに関する注意点"
+
+#: ../../../source/utilsapi.rst:155
+msgid "UTF-8 text used for speech synthesis."
+msgstr ""
+
+#: ../../../source/utilsapi.rst:156
+msgid "Maximum length is 250 characters."
+msgstr ""
+
+#: ../../../source/utilsapi.rst:159
+msgid "Notes on the **tts_lang** parameter:"
+msgstr "tts_lang パラメーターに関する注意点"
+
+#: ../../../source/utilsapi.rst:161
+msgid ""
+"Two letter language code of the tts_message in `ISO 639-1. "
+"<https://en.wikipedia.org/wiki/ISO_639-1>`_"
+msgstr ""
+
+#: ../../../source/utilsapi.rst:162
+msgid "This paramter must exist when tts_message is used."
+msgstr ""
+
+#: ../../../source/utilsapi.rst:163
+msgid "Currently, only **'ja'** is accepted."
+msgstr ""
+
+#: ../../../source/utilsapi.rst:180
+msgid "As for the resopnse, peleae refer :ref:`simple-playback-api-ref`"
+msgstr ""
+
+#~ msgid "As for the resopnse, peleae refer :ref:_simple-playback-api-ref"
+#~ msgstr ""
+
+#~ msgid "As for the resopnse, peleae refer :ref:`_simple-playback-api-ref`"
+#~ msgstr ""
+
+#~ msgid "Please refer Simple Playback API."
+#~ msgstr ""
 

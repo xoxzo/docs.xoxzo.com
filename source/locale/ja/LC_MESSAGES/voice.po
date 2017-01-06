@@ -4,7 +4,6 @@ msgstr ""
 "Project-Id-Version: Heylo API Documentation 1.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2017-01-06 13:31+0900\n"
-"PO-Revision-Date: 2015-10-24 07:25+0900\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "MIME-Version: 1.0\n"
@@ -233,8 +232,8 @@ msgstr "レスポンスは、JSON構造となり、ステータスコード　HT
 #: ../../../source/voice.rst:95
 msgid ""
 "If there's invalid parameters given, HTTP ``400 BAD REQUEST`` status code"
-" will be returned. For example, if the ``recording_url`` parameter is "
-"missing, the HTTP response should be like this::"
+" will be returned. For example, if the ``caller`` parameter is missing, "
+"the HTTP response should be like this::"
 msgstr ""
 "間違ったバラメーターが与えられた場合には、ステータスコード HTTP ``400 BAD REQUEST``　が返されます。例えば、もし "
 "``recording_url`` パラメーターがなかった場合、HTTPからの返答はこのようになります。"
@@ -399,5 +398,84 @@ msgstr "この発信は、受信側に応答されませんでした。"
 #~ msgstr ""
 
 #~ msgid "Below are samples of valid URLs:"
+#~ msgstr ""
+
+#~ msgid "Hello world"
+#~ msgstr ""
+
+#~ msgid "Notes on the **caller** parameter: *  Please refer Simple Playback API."
+#~ msgstr "**caller** パラメーターに関する注意点"
+
+#~ msgid "Notes on the **tts_message** parameter: *  Text to playback."
+#~ msgstr "**caller** パラメーターに関する注意点"
+
+#~ msgid "Maximum length is 250 characters."
+#~ msgstr ""
+
+#~ msgid "Text to playback. Maximum length is 250 characters."
+#~ msgstr ""
+
+#~ msgid "String"
+#~ msgstr ""
+
+#~ msgid "Text used for speech synthesis in UTF-8."
+#~ msgstr ""
+
+#~ msgid "Text to Speech Playback API"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "To make a call and playback an "
+#~ "text message when your recipient answers"
+#~ " the phone, make a ``POST`` request"
+#~ " to the endpoint::"
+#~ msgstr "発信し、相手が電話を取った時にオーディオファイルを再生するには、エンドポイントに ``POST`` リクエストを行ってください。"
+
+#~ msgid "tts_message"
+#~ msgstr ""
+
+#~ msgid "text to playback"
+#~ msgstr ""
+
+#~ msgid "UTF-8"
+#~ msgstr ""
+
+#~ msgid "おはよう"
+#~ msgstr ""
+
+#~ msgid "tts_lang"
+#~ msgstr ""
+
+#~ msgid "language of the text"
+#~ msgstr ""
+
+#~ msgid "ISO 639-1"
+#~ msgstr ""
+
+#~ msgid "ja"
+#~ msgstr ""
+
+#~ msgid "Please refer Simple Playback API."
+#~ msgstr ""
+
+#~ msgid "Notes on the **tts_message** parameter:"
+#~ msgstr "**caller** パラメーターに関する注意点"
+
+#~ msgid "UTF-8 text used for speech synthesis."
+#~ msgstr ""
+
+#~ msgid "Notes on the **tts_lang** parameter:"
+#~ msgstr "**caller** パラメーターに関する注意点"
+
+#~ msgid ""
+#~ "Two letter language code of the "
+#~ "tts_message in `ISO 639-1. "
+#~ "<https://en.wikipedia.org/wiki/ISO_639-1>`_"
+#~ msgstr ""
+
+#~ msgid "This paramter must exist when tts_message is used."
+#~ msgstr ""
+
+#~ msgid "Currently, only **'ja'** is accepted."
 #~ msgstr ""
 
