@@ -35,9 +35,15 @@ The additonal parameters below are for JP specific usage and recipients:
 Please refer to our `K-Premium Service FAQ <http://help.xoxzo.com/customer/en/portal/articles/2264921--sms-api-the-k-premium-service>`_ for more information on the K-Premium Service.
 
 .. note::
+   Notes on the **jp-kp** parameter:
+
+   * If the jp-kp parameter is set to true, the maximum length for ASCII messages are 140 characters
+   * For non-ASCII messages, the maximum length is 70 characters
+
+.. note::
    Notes on the **message** parameter:
 
-   * The maximum length for ASCII messages are 160 characters 
+   * The maximum length for ASCII messages are 160 characters (unless you're using jp-kp)
    * For non-ASCII messages, the maximum length is 70 characters
 
 .. note::
