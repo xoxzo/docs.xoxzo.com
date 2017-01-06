@@ -70,12 +70,12 @@ Optional parameters
 
 The additonal parameters below allows you to utilize special functions
 
-    ==============  ==================      ========    =================== ===================
-    Name            Description             Required    Data Type           Example
-    ==============  ==================      ========    =================== ===================
-    jp-kp           Text To Speech (TTS)    No          The string **true** true
-    jp-kp           Text To Speech (TTS)    No          The string **true** true
-    ==============  ==================      ========    =================== ===================
+    ==============  ===================== ======== ===================  ===================
+    Name            Description           Required Data Type            Example
+    ==============  ===================== ======== ===================  ===================
+    jp-kp           Text To Speech (TTS)  No       The string **true**  true
+    jp-kp           Text To Speech (TTS)  No       The string **true**  true
+    ==============  ===================== ======== ===================  ===================
 
 Below is an example request using cURL::
 
