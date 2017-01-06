@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Xoxzo API Docs 1.3.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2017-01-06 13:31+0900\n"
+"POT-Creation-Date: 2017-01-06 15:41+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -36,34 +36,34 @@ msgstr "携帯電話事業者確認"
 msgid "To do a lookup call, make a ``POST`` request to the endpoint::"
 msgstr "携帯電話事業者確認するには、 ``POST`` リクエストをエンドポイントに行ってください。 ::"
 
-#: ../../../source/utilsapi.rst:13 ../../../source/utilsapi.rst:132
+#: ../../../source/utilsapi.rst:13 ../../../source/utilsapi.rst:138
 msgid "with the following parameters:"
 msgstr "下記のパラメーターを併記してください。"
 
 #: ../../../source/utilsapi.rst:16 ../../../source/utilsapi.rst:80
-#: ../../../source/utilsapi.rst:135
+#: ../../../source/utilsapi.rst:141
 msgid "Name"
 msgstr "名称"
 
 #: ../../../source/utilsapi.rst:16 ../../../source/utilsapi.rst:80
-#: ../../../source/utilsapi.rst:135
+#: ../../../source/utilsapi.rst:141
 msgid "Description"
 msgstr "詳細"
 
-#: ../../../source/utilsapi.rst:16 ../../../source/utilsapi.rst:135
+#: ../../../source/utilsapi.rst:16 ../../../source/utilsapi.rst:141
 msgid "Required"
 msgstr "必須"
 
-#: ../../../source/utilsapi.rst:16 ../../../source/utilsapi.rst:135
+#: ../../../source/utilsapi.rst:16 ../../../source/utilsapi.rst:141
 msgid "Data Type"
 msgstr "データタイプ"
 
-#: ../../../source/utilsapi.rst:16 ../../../source/utilsapi.rst:135
+#: ../../../source/utilsapi.rst:16 ../../../source/utilsapi.rst:141
 msgid "Example"
 msgstr "例"
 
 #: ../../../source/utilsapi.rst:18 ../../../source/utilsapi.rst:88
-#: ../../../source/utilsapi.rst:138
+#: ../../../source/utilsapi.rst:144
 msgid "recipient"
 msgstr ""
 
@@ -71,22 +71,22 @@ msgstr ""
 msgid "The number to lookup"
 msgstr "確認する携帯番号"
 
-#: ../../../source/utilsapi.rst:18 ../../../source/utilsapi.rst:137
-#: ../../../source/utilsapi.rst:138 ../../../source/utilsapi.rst:139
-#: ../../../source/utilsapi.rst:140
+#: ../../../source/utilsapi.rst:18 ../../../source/utilsapi.rst:143
+#: ../../../source/utilsapi.rst:144 ../../../source/utilsapi.rst:145
+#: ../../../source/utilsapi.rst:146
 msgid "Yes"
 msgstr "○"
 
-#: ../../../source/utilsapi.rst:18 ../../../source/utilsapi.rst:138
+#: ../../../source/utilsapi.rst:18 ../../../source/utilsapi.rst:144
 msgid "E.164"
 msgstr ""
 
-#: ../../../source/utilsapi.rst:18 ../../../source/utilsapi.rst:137
-#: ../../../source/utilsapi.rst:138
+#: ../../../source/utilsapi.rst:18 ../../../source/utilsapi.rst:143
+#: ../../../source/utilsapi.rst:144
 msgid "+8190123456789"
 msgstr ""
 
-#: ../../../source/utilsapi.rst:22 ../../../source/utilsapi.rst:148
+#: ../../../source/utilsapi.rst:22 ../../../source/utilsapi.rst:154
 msgid "Notes on the **recipient** parameter:"
 msgstr "recipient パラメーターに関する注意点"
 
@@ -115,11 +115,11 @@ msgstr ""
 "有効な受信者記載例として、 *+818011234567* と挙げられます。 *81* は日本の国番号で、 *8011234567* "
 "は携帯電話番号となります。"
 
-#: ../../../source/utilsapi.rst:32 ../../../source/utilsapi.rst:166
+#: ../../../source/utilsapi.rst:32 ../../../source/utilsapi.rst:173
 msgid "Examples"
 msgstr "例"
 
-#: ../../../source/utilsapi.rst:34 ../../../source/utilsapi.rst:168
+#: ../../../source/utilsapi.rst:34 ../../../source/utilsapi.rst:175
 msgid "Below is an example request using cURL::"
 msgstr "下記は、CURLを使ったリクエストの例です。"
 
@@ -135,7 +135,7 @@ msgid ""
 "your response data will be something like this::"
 msgstr "携帯電話事業者を特定できなかった場合、以下のようなレスポンスが返されます。 ::"
 
-#: ../../../source/utilsapi.rst:77 ../../../source/utilsapi.rst:178
+#: ../../../source/utilsapi.rst:77 ../../../source/utilsapi.rst:185
 msgid "Response data"
 msgstr "レスポンスデータ"
 
@@ -235,120 +235,130 @@ msgstr ""
 "間違ったバラメーターが与えられた場合には、ステータスコード　HTTP ``400 BAD REQUEST``　が返されます。例えば、もし "
 "``recipient`` パラメーターがなかった場合、HTTPからの返答はこのようになります。"
 
-#: ../../../source/utilsapi.rst:115
+#: ../../../source/utilsapi.rst:117
 msgid "Text To Speech"
 msgstr ""
 
-#: ../../../source/utilsapi.rst:116
+#: ../../../source/utilsapi.rst:118
 msgid ""
 "Text to speech is an optional functionality that can be used together "
 "with our voice call API. It is not an API on it's own."
 msgstr ""
 
-#: ../../../source/utilsapi.rst:119
+#: ../../../source/utilsapi.rst:121
 msgid ""
 "In order to use Text To Speech, you will need to refer to the "
 "documentation for the specific voice API you would like to use. The APIs "
 "will have special parameters which you can use to utilize Text To Speech."
 msgstr ""
 
-#: ../../../source/utilsapi.rst:124
+#: ../../../source/utilsapi.rst:126
 msgid "Text to Speech Playback API"
 msgstr ""
 
-#: ../../../source/utilsapi.rst:127
+#: ../../../source/utilsapi.rst:130
+msgid ""
+"Additional credit will apply. Please check the `priceing page "
+"<https://www.xoxzo.com/ja/about/pricing/>`_ for details."
+msgstr ""
+
+#: ../../../source/utilsapi.rst:133
 msgid ""
 "To make a call and playback an text message when your recipient answers "
 "the phone, make a ``POST`` request to the endpoint::"
 msgstr ""
 
-#: ../../../source/utilsapi.rst:137
+#: ../../../source/utilsapi.rst:143
 msgid "caller"
 msgstr ""
 
-#: ../../../source/utilsapi.rst:137
+#: ../../../source/utilsapi.rst:143
 msgid "Caller number"
 msgstr ""
 
-#: ../../../source/utilsapi.rst:137
+#: ../../../source/utilsapi.rst:143
 msgid "Numeric"
 msgstr ""
 
-#: ../../../source/utilsapi.rst:138
+#: ../../../source/utilsapi.rst:144
 msgid "Call recipient"
 msgstr ""
 
-#: ../../../source/utilsapi.rst:139
+#: ../../../source/utilsapi.rst:145
 msgid "tts_message"
 msgstr ""
 
-#: ../../../source/utilsapi.rst:139
+#: ../../../source/utilsapi.rst:145
 msgid "text to playback"
 msgstr ""
 
-#: ../../../source/utilsapi.rst:139
+#: ../../../source/utilsapi.rst:145
 msgid "UTF-8"
 msgstr ""
 
-#: ../../../source/utilsapi.rst:139
+#: ../../../source/utilsapi.rst:145
 msgid "おはよう"
 msgstr ""
 
-#: ../../../source/utilsapi.rst:140
+#: ../../../source/utilsapi.rst:146
 msgid "tts_lang"
 msgstr ""
 
-#: ../../../source/utilsapi.rst:140
+#: ../../../source/utilsapi.rst:146
 msgid "language of the text"
 msgstr ""
 
-#: ../../../source/utilsapi.rst:140
+#: ../../../source/utilsapi.rst:146
 msgid "ISO 639-1"
 msgstr ""
 
-#: ../../../source/utilsapi.rst:140
+#: ../../../source/utilsapi.rst:146
 msgid "ja"
 msgstr ""
 
-#: ../../../source/utilsapi.rst:144
+#: ../../../source/utilsapi.rst:150
 msgid "Notes on the **caller** parameter:"
 msgstr "caller パラメーターに関する注意点"
 
-#: ../../../source/utilsapi.rst:146 ../../../source/utilsapi.rst:150
+#: ../../../source/utilsapi.rst:152 ../../../source/utilsapi.rst:156
 msgid "Please refer :ref:`simple-playback-api-ref`"
 msgstr ""
 
-#: ../../../source/utilsapi.rst:153
+#: ../../../source/utilsapi.rst:159
 msgid "Notes on the **tts_message** parameter:"
 msgstr "tts_message パラメーターに関する注意点"
 
-#: ../../../source/utilsapi.rst:155
+#: ../../../source/utilsapi.rst:161
 msgid "UTF-8 text used for speech synthesis."
 msgstr ""
 
-#: ../../../source/utilsapi.rst:156
+#: ../../../source/utilsapi.rst:162
 msgid "Maximum length is 250 characters."
 msgstr ""
 
-#: ../../../source/utilsapi.rst:159
+#: ../../../source/utilsapi.rst:163
+msgid "You can not specify **recording_url** parameter with this parameter."
+msgstr ""
+
+#: ../../../source/utilsapi.rst:166
 msgid "Notes on the **tts_lang** parameter:"
 msgstr "tts_lang パラメーターに関する注意点"
 
-#: ../../../source/utilsapi.rst:161
+#: ../../../source/utilsapi.rst:168
 msgid ""
 "Two letter language code of the tts_message in `ISO 639-1. "
 "<https://en.wikipedia.org/wiki/ISO_639-1>`_"
 msgstr ""
 
-#: ../../../source/utilsapi.rst:162
+#: ../../../source/utilsapi.rst:169
 msgid "This paramter must exist when tts_message is used."
 msgstr ""
 
-#: ../../../source/utilsapi.rst:163
+#: ../../../source/utilsapi.rst:170
 msgid "Currently, only **'ja'** is accepted."
 msgstr ""
 
-#: ../../../source/utilsapi.rst:180
+#: ../../../source/utilsapi.rst:187
 msgid "As for the resopnse, peleae refer :ref:`simple-playback-api-ref`"
 msgstr ""
 
@@ -359,5 +369,11 @@ msgstr ""
 #~ msgstr ""
 
 #~ msgid "Please refer Simple Playback API."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Additonal credi will apply. Please check"
+#~ " the https://www.xoxzo.com/ja/about/pricing/ for "
+#~ "details."
 #~ msgstr ""
 

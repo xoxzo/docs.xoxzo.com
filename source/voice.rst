@@ -67,21 +67,22 @@ with the following parameters:
    *  http://a.clyp.it/b-byghjf.mp3
    *  http://a.clyp.it/b-bygh_f.mp3
 
-Optional parameters
+Text to speech option
 ------------------------------------
 
-The additonal parameters below allows you to utilize special functions
+You can use text to speech option insted of pre recorded mp3 file.
+To use this option please refer :ref:`text-to-speech-api-ref`
 
-    ==============  ===================== ======== ===================  ===================
-    Name            Description           Required Data Type            Example
-    ==============  ===================== ======== ===================  ===================
-    jp-kp           Text To Speech (TTS)  No       The string **true**  true
-    jp-kp           Text To Speech (TTS)  No       The string **true**  true
-    ==============  ===================== ======== ===================  ===================
+Examples
+------------------------------------
 
 Below is an example request using cURL::
 
-    curl -u <SID>:<AUTH_TOKEN> --data-urlencode 'caller=<caller>' --data-urlencode 'recipient=<recipient>' --data-urlencode 'recording_url=<recording_url>' https://api.xoxzo.com/voice/simple/playback/
+    curl -u <SID>:<AUTH_TOKEN> \
+      --data-urlencode 'caller=<caller>' \
+      --data-urlencode 'recipient=<recipient>' \
+      --data-urlencode 'recording_url=<recording_url>' \
+      https://api.xoxzo.com/voice/simple/playback/
 
 
 

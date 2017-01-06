@@ -111,6 +111,8 @@ the HTTP response should be like this::
     }
 
 
+.. _text-to-speech-api-ref:
+
 Text To Speech
 ====================================
 Text to speech is an optional functionality that can be used together with our voice call API.
@@ -122,6 +124,10 @@ to utilize Text To Speech.
 
 Text to Speech Playback API
 ====================================
+
+.. warning::
+
+   *  Additional credit will apply. Please check the `priceing page <https://www.xoxzo.com/ja/about/pricing/>`_ for details.
 
 
 To make a call and playback an text message when your recipient answers the phone,
@@ -154,6 +160,7 @@ with the following parameters:
 
    *  UTF-8 text used for speech synthesis.
    *  Maximum length is 250 characters.
+   *  You can not specify **recording_url** parameter with this parameter.
 
 .. note::
    Notes on the **tts_lang** parameter:
@@ -172,7 +179,7 @@ Below is an example request using cURL::
          --data-urlencode 'recipient=<recipient>' \
          --data-urlencode 'tts_message=おはよう' \
          --data-urlencode　'tts_lang=ja' \
-         https://api.xoxzo.com/voice/simple/playback/ \
+         https://api.xoxzo.com/voice/simple/playback/
 
 Response data
 ------------------------------------
