@@ -1,6 +1,6 @@
-====================================
+===============================================
 Voice API
-====================================
+===============================================
 
 The Voice API allows you to interact with a phone via beautiful HTTP endpoints.
 
@@ -11,7 +11,7 @@ The Voice API allows you to interact with a phone via beautiful HTTP endpoints.
 .. _simple-playback-api-ref:
 
 Simple Playback API
-====================================
+===============================================
 
 To make a call and playback an audio file when your recipient answers the phone,
 make a ``POST`` request to the endpoint::
@@ -67,14 +67,15 @@ with the following parameters:
    *  http://a.clyp.it/b-byghjf.mp3
    *  http://a.clyp.it/b-bygh_f.mp3
 
-Text to speech option
-------------------------------------
+Using Text To Speech with Simple Playback API
+-----------------------------------------------
 
-You can use text to speech option instead of pre recorded mp3 file.
-To use this option please refer :ref:`text-to-speech-api-ref`
+OPTIONAL: For an additional cost, you can use text to speech option instead of pre-recorded mp3 file
+when making calls using the Simple Playback API.
+To use this option please refer to :ref:`text-to-speech-api-ref`
 
 Examples
-------------------------------------
+-----------------------------------------------
 
 Below is an example request using cURL::
 
@@ -87,7 +88,7 @@ Below is an example request using cURL::
 
 
 Response
-------------------------------------
+-----------------------------------------------
 
 The response would be a JSON structure, returned with HTTP ``201 CREATED`` status code::
 
@@ -116,7 +117,7 @@ parameter is missing, the HTTP response should be like this::
 
 
 Response Data
-------------------------------------
+-----------------------------------------------
 
    =========   ======================================
    Name        Description
@@ -153,7 +154,7 @@ The response would be a JSON structure, returned with HTTP ``200 OK`` status cod
     }
 
 Response data
-------------------------------------
+-----------------------------------------------
 
     =========== ======================================
     Name        Description
@@ -168,7 +169,7 @@ Response data
     =========== ======================================
 
 Common call statuses
-------------------------------------
+-----------------------------------------------
 
 This is a list of statuses that you can find in the ``status`` data:
 
