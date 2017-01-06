@@ -70,7 +70,7 @@ with the following parameters:
 Text to speech option
 ------------------------------------
 
-You can use text to speech option insted of pre recorded mp3 file.
+You can use text to speech option instead of pre recorded mp3 file.
 To use this option please refer :ref:`text-to-speech-api-ref`
 
 Examples

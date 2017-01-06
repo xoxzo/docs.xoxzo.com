@@ -166,7 +166,7 @@ with the following parameters:
    Notes on the **tts_lang** parameter:
 
    *  Two letter language code of the tts_message in `ISO 639-1. <https://en.wikipedia.org/wiki/ISO_639-1>`_
-   *  This paramter must exist when tts_message is used.
+   *  This parameter must exist when tts_message is used.
    *  Currently, only **'ja'** is accepted.
 
 Examples
@@ -184,4 +184,4 @@ Below is an example request using cURL::
 Response data
 ------------------------------------
 
-As for the resopnse, peleae refer :ref:`simple-playback-api-ref`
+As for the response, peleae refer :ref:`simple-playback-api-ref`
