@@ -1,11 +1,11 @@
-==================================== 
+============================================
 Telephony Utilities API
-====================================
+============================================
 
 Telephony Utilities API is a collection of APIs which are useful when dealing with phones and the internet.
 
 Carrier Lookup
-====================================
+============================================
 To do a lookup call, make a ``POST`` request to the endpoint::
 
     https://api.xoxzo.com/utilities/carrierlookup/
@@ -29,7 +29,7 @@ with the following parameters:
       as the mobile number.
 
 Examples
-------------------------------------
+--------------------------------------------
 
 Below is an example request using cURL::
     
@@ -74,7 +74,7 @@ response data will be something like this::
 
 
 Response data
-------------------------------------
+--------------------------------------------
 
     =========  ======================================
     Name       Description       
@@ -114,7 +114,7 @@ the HTTP response should be like this::
 .. _text-to-speech-api-ref:
 
 Text To Speech
-====================================
+============================================
 Text to speech is an optional functionality that can be used together with our voice call API.
 It is not an API on it's own.
 
@@ -122,12 +122,12 @@ In order to use Text To Speech, you will need to refer to the documentation for 
 voice API you would like to use. The APIs will have special parameters which you can use
 to utilize Text To Speech.
 
-Text to Speech Playback API
-====================================
+Text to Speech with Simple Playback API
+--------------------------------------------
 
 .. warning::
 
-   *  Additional credit will apply. Please check the `priceing page <https://www.xoxzo.com/ja/about/pricing/>`_ for details.
+   *  Additional costs will apply. Please check the `pricing page <https://www.xoxzo.com/en/about/pricing/>`_ for details.
 
 
 To make a call and playback an text message when your recipient answers the phone,
@@ -170,7 +170,7 @@ with the following parameters:
    *  Currently, only **'ja'** is accepted.
 
 Examples
-------------------------------------
+++++++++++++++++++++++++++++++++++++++++
 
 Below is an example request using cURL::
 
@@ -182,6 +182,6 @@ Below is an example request using cURL::
          https://api.xoxzo.com/voice/simple/playback/
 
 Response data
-------------------------------------
+++++++++++++++++++++++++++++++++++++++++
 
-As for the response, peleae refer :ref:`simple-playback-api-ref`
+As for the response, please refer :ref:`simple-playback-api-ref`
