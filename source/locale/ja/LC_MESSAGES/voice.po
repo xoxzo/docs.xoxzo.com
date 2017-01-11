@@ -203,7 +203,7 @@ msgid ""
 msgstr ""
 "追加機能：追加料金で、あらかじめ用意した音声ファイルのかわりに、テキストから音声への変換"
 "機能を音声プレーバックAPIで使うことが可能です。"
-"この機能を使うには :ref:`text-to-speech-api-ref` を参照してくだい。"
+"この機能を使うには :ref:`text-to-speech-api-ref` を参照してください。"
 
 #: ../../../source/voice.rst:78
 #, fuzzy

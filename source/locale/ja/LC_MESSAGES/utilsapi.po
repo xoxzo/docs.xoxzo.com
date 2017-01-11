@@ -250,11 +250,12 @@ msgid ""
 "In order to use Text To Speech, you will need to refer to the "
 "documentation for the specific voice API you would like to use. The APIs "
 "will have special parameters which you can use to utilize Text To Speech."
-msgstr "テキストから音声への変換機能を使うためには、それぞれ必要な文書を参照する必要があります。APIには音声への変換機能のための、特別なパラメータがあります。"
+msgstr "テキストから音声への変換機能を使うためには、それぞれ必要な文書を参照する必要があります。"
+"APIには音声への変換機能のための、特別なパラメータがあります。"
 
 #: ../../../source/utilsapi.rst:126
 msgid "Text to Speech with Simple Playback API"
-msgstr "音声プレーバックAPIのテキストから音声への変換機能"
+msgstr "音声プレーバックAPIでのテキストから音声への変換機能"
 
 #: ../../../source/utilsapi.rst:130
 msgid ""
@@ -332,7 +333,7 @@ msgstr "tts_message パラメーターに関する注意点"
 
 #: ../../../source/utilsapi.rst:161
 msgid "UTF-8 text used for speech synthesis."
-msgstr "音声合成に使用する、UTF-8の"
+msgstr "音声合成に使用する、UTF-8のテキスト。"
 
 #: ../../../source/utilsapi.rst:162
 msgid "Maximum length is 250 characters."
