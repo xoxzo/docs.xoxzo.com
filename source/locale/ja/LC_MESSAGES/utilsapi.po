@@ -237,13 +237,14 @@ msgstr ""
 
 #: ../../../source/utilsapi.rst:117
 msgid "Text To Speech"
-msgstr ""
+msgstr "テキストから音声への変換"
 
 #: ../../../source/utilsapi.rst:118
 msgid ""
 "Text to speech is an optional functionality that can be used together "
 "with our voice call API. It is not an API on it's own."
 msgstr ""
+"テキストから音声への変換機能は、音声通話APIの追加機能です。それ自体は単独の機能ではありません。"
 
 #: ../../../source/utilsapi.rst:121
 msgid ""
@@ -251,16 +252,20 @@ msgid ""
 "documentation for the specific voice API you would like to use. The APIs "
 "will have special parameters which you can use to utilize Text To Speech."
 msgstr ""
+"テキストから音声への変換機能を使うためには、それぞれ必要な文書を参照する必要があります。"
+"APIには音声への変換機能のための、特別なパラメータがあります。"
 
 #: ../../../source/utilsapi.rst:126
 msgid "Text to Speech with Simple Playback API"
-msgstr ""
+msgstr "音声プレーバックAPIのテキストから音声への変換機能"
 
 #: ../../../source/utilsapi.rst:130
 msgid ""
 "Additional costs will apply. Please check the `pricing page "
 "<https://www.xoxzo.com/en/about/pricing/>`_ for details."
 msgstr ""
+"追加の料金が発生します。詳しくは `料金ページ <https://www.xoxzo.com/en/about/pricing/>`_ "
+"を参照してください。"
 
 #: ../../../source/utilsapi.rst:133
 msgid ""
