@@ -192,7 +192,7 @@ msgstr ""
 
 #: ../../../source/voice.rst:71
 msgid "Using Text To Speech with Simple Playback API"
-msgstr ""
+msgstr "音声プレーバックAPIでテキストから音声への変換を使う"
 
 #: ../../../source/voice.rst:73
 msgid ""
@@ -201,6 +201,9 @@ msgid ""
 "Playback API. To use this option please refer to :ref:`text-to-speech-"
 "api-ref`"
 msgstr ""
+"追加機能：追加料金で、あらかじめ用意した音声ファイルのかわりに、テキストから音声への変換"
+"機能を音声プレーバックAPIで使うことが可能です。"
+"この機能を使うには :ref:`text-to-speech-api-ref` を参照してくだい。"
 
 #: ../../../source/voice.rst:78
 #, fuzzy
