@@ -39,7 +39,7 @@ msgstr "音声プレーバックAPI"
 msgid ""
 "To make a call and playback an audio file when your recipient answers the"
 " phone, make a ``POST`` request to the endpoint::"
-msgstr "発信し、相手が電話を取った時にオーディオファイルを再生するには、エンドポイントに ``POST`` リクエストを行ってください。"
+msgstr "電話を発信し、相手が電話を取った時にオーディオファイルを再生するには、エンドポイントに ``POST`` リクエストを行ってください。"
 
 #: ../../../source/voice.rst:21
 msgid "with the following parameters:"
@@ -69,7 +69,7 @@ msgstr "例"
 
 #: ../../../source/voice.rst:26 ../../../source/voice.rst:167
 msgid "caller"
-msgstr "caller"
+msgstr ""
 
 #: ../../../source/voice.rst:26
 msgid "Caller number"

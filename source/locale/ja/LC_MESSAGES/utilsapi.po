@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Xoxzo API Docs 1.3.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2017-01-06 18:03+0900\n"
+"POT-Creation-Date: 2017-01-11 14:58+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -243,17 +243,14 @@ msgstr "テキストから音声への変換"
 msgid ""
 "Text to speech is an optional functionality that can be used together "
 "with our voice call API. It is not an API on it's own."
-msgstr ""
-"テキストから音声への変換機能は、音声通話APIの追加機能です。それ自体は単独の機能ではありません。"
+msgstr "テキストから音声への変換機能は、音声通話APIの追加機能です。それ自体は単独の機能ではありません。"
 
 #: ../../../source/utilsapi.rst:121
 msgid ""
 "In order to use Text To Speech, you will need to refer to the "
 "documentation for the specific voice API you would like to use. The APIs "
 "will have special parameters which you can use to utilize Text To Speech."
-msgstr ""
-"テキストから音声への変換機能を使うためには、それぞれ必要な文書を参照する必要があります。"
-"APIには音声への変換機能のための、特別なパラメータがあります。"
+msgstr "テキストから音声への変換機能を使うためには、それぞれ必要な文書を参照する必要があります。APIには音声への変換機能のための、特別なパラメータがあります。"
 
 #: ../../../source/utilsapi.rst:126
 msgid "Text to Speech with Simple Playback API"
@@ -271,23 +268,23 @@ msgstr ""
 msgid ""
 "To make a call and playback an text message when your recipient answers "
 "the phone, make a ``POST`` request to the endpoint::"
-msgstr ""
+msgstr "電話を発信し、相手が電話を取った時にテキストを再生するには、エンドポイントに ``POST`` リクエストを行ってください。"
 
 #: ../../../source/utilsapi.rst:143
 msgid "caller"
-msgstr ""
+msgstr "caller"
 
 #: ../../../source/utilsapi.rst:143
 msgid "Caller number"
-msgstr ""
+msgstr "発信者番号"
 
 #: ../../../source/utilsapi.rst:143
 msgid "Numeric"
-msgstr ""
+msgstr "数字"
 
 #: ../../../source/utilsapi.rst:144
 msgid "Call recipient"
-msgstr ""
+msgstr "通話の受信者"
 
 #: ../../../source/utilsapi.rst:145
 msgid "tts_message"
@@ -295,7 +292,7 @@ msgstr ""
 
 #: ../../../source/utilsapi.rst:145
 msgid "text to playback"
-msgstr ""
+msgstr "再生するテキスト"
 
 #: ../../../source/utilsapi.rst:145
 msgid "UTF-8"
@@ -311,7 +308,7 @@ msgstr ""
 
 #: ../../../source/utilsapi.rst:146
 msgid "language of the text"
-msgstr ""
+msgstr "テキストの言語"
 
 #: ../../../source/utilsapi.rst:146
 msgid "ISO 639-1"
@@ -327,7 +324,7 @@ msgstr "caller パラメーターに関する注意点"
 
 #: ../../../source/utilsapi.rst:152 ../../../source/utilsapi.rst:156
 msgid "Please refer :ref:`simple-playback-api-ref`"
-msgstr ""
+msgstr ":ref:`simple-playback-api-ref` を参照してください。"
 
 #: ../../../source/utilsapi.rst:159
 msgid "Notes on the **tts_message** parameter:"
@@ -335,15 +332,15 @@ msgstr "tts_message パラメーターに関する注意点"
 
 #: ../../../source/utilsapi.rst:161
 msgid "UTF-8 text used for speech synthesis."
-msgstr ""
+msgstr "音声合成に使用する、UTF-8の"
 
 #: ../../../source/utilsapi.rst:162
 msgid "Maximum length is 250 characters."
-msgstr ""
+msgstr "最大長は 250文字です。"
 
 #: ../../../source/utilsapi.rst:163
 msgid "You can not specify **recording_url** parameter with this parameter."
-msgstr ""
+msgstr "このパラメータと同時に **recording_url** パラメータを指定することはできません。"
 
 #: ../../../source/utilsapi.rst:166
 msgid "Notes on the **tts_lang** parameter:"
@@ -354,18 +351,20 @@ msgid ""
 "Two letter language code of the tts_message in `ISO 639-1. "
 "<https://en.wikipedia.org/wiki/ISO_639-1>`_"
 msgstr ""
+"tts_message の言語を示す、２文字の"
+" `ISO 639-1. <https://en.wikipedia.org/wiki/ISO_639-1>`_ コード。"
 
 #: ../../../source/utilsapi.rst:169
 msgid "This parameter must exist when tts_message is used."
-msgstr ""
+msgstr "tts_message を使ったときは、このパラメータを指定しなければいけません。"
 
 #: ../../../source/utilsapi.rst:170
 msgid "Currently, only **'ja'** is accepted."
-msgstr ""
+msgstr "現在、 **'ja'** のみ使用可能です。"
 
 #: ../../../source/utilsapi.rst:187
-msgid "As for the response, please refer :ref:`simple-playback-api-ref`"
-msgstr ""
+msgid "As for the response  , please refer :ref:`simple-playback-api-ref`"
+msgstr "レスポンスに関しては :ref:`simple-playback-api-ref` を参照してください。"
 
 #~ msgid "As for the resopnse, peleae refer :ref:_simple-playback-api-ref"
 #~ msgstr ""
@@ -391,9 +390,15 @@ msgstr ""
 #~ msgid "Text to Speech Playback API"
 #~ msgstr ""
 
-#~ msgid ""
-#~ "Additional costs will apply. Please "
-#~ "check the `pricing page "
-#~ "<https://www.xoxzo.com/ja/about/pricing/>`_ for details."
+#~ msgid ":ref:`simple-playback-api-ref` を参照してください。"
+#~ msgstr ""
+
+#~ msgid "音声合成に使われる UTF-8 のテキスト"
+#~ msgstr ""
+
+#~ msgid "tts_message in `ISO 639-1. <https://en.wikipedia.org/wiki/ISO_639-1>`_"
+#~ msgstr ""
+
+#~ msgid "As for the response, please refer :ref:`simple-playback-api-ref`"
 #~ msgstr ""
 

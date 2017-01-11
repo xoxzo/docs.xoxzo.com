@@ -184,4 +184,4 @@ Below is an example request using cURL::
 Response data
 ++++++++++++++++++++++++++++++++++++++++
 
-As for the response, please refer :ref:`simple-playback-api-ref`
+As for the response  , please refer :ref:`simple-playback-api-ref`
