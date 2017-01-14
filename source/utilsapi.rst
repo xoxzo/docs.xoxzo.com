@@ -1,11 +1,11 @@
-==================================== 
+============================================
 Telephony Utilities API
-====================================
+============================================
 
 Telephony Utilities API is a collection of APIs which are useful when dealing with phones and the internet.
 
 Carrier Lookup
-====================================
+============================================
 To do a lookup call, make a ``POST`` request to the endpoint::
 
     https://api.xoxzo.com/utilities/carrierlookup/
@@ -29,7 +29,7 @@ with the following parameters:
       as the mobile number.
 
 Examples
-------------------------------------
+--------------------------------------------
 
 Below is an example request using cURL::
     
@@ -74,7 +74,7 @@ response data will be something like this::
 
 
 Response data
-------------------------------------
+--------------------------------------------
 
     =========  ======================================
     Name       Description       
@@ -111,3 +111,77 @@ the HTTP response should be like this::
     }
 
 
+.. _text-to-speech-api-ref:
+
+Text To Speech
+============================================
+Text to speech is an optional functionality that can be used together with our voice call API.
+It is not an API on it's own.
+
+In order to use Text To Speech, you will need to refer to the documentation for the specific
+voice API you would like to use. The APIs will have special parameters which you can use
+to utilize Text To Speech.
+
+Text to Speech with Simple Playback API
+--------------------------------------------
+
+.. warning::
+
+   *  Additional costs will apply. Please check the `pricing page <https://www.xoxzo.com/en/about/pricing/>`_ for details.
+
+
+To make a call and playback an text message when your recipient answers the phone,
+make a ``POST`` request to the endpoint::
+
+    https://api.xoxzo.com/voice/simple/playback/
+
+with the following parameters:
+
+    =============  ========================  ========  =============  =============================
+    Name           Description               Required  Data Type      Example
+    =============  ========================  ========  =============  =============================
+    caller         Caller number             Yes       Numeric        +8190123456789
+    recipient      Call recipient            Yes       E.164          +8190123456789
+    tts_message    text to playback          Yes       UTF-8          おはよう
+    tts_lang       language of the text      Yes       ISO 639-1      ja
+    =============  ========================  ========  =============  =============================
+
+.. note::
+   Notes on the **caller** parameter:
+
+   *  Please refer :ref:`simple-playback-api-ref`
+.. note::
+   Notes on the **recipient** parameter:
+
+   *  Please refer :ref:`simple-playback-api-ref`
+
+.. note::
+   Notes on the **tts_message** parameter:
+
+   *  UTF-8 text used for speech synthesis.
+   *  Maximum length is 250 characters.
+   *  You can not specify **recording_url** parameter with this parameter.
+
+.. note::
+   Notes on the **tts_lang** parameter:
+
+   *  Two letter language code of the tts_message in `ISO 639-1. <https://en.wikipedia.org/wiki/ISO_639-1>`_
+   *  This parameter must exist when tts_message is used.
+   *  Currently, only **ja** is accepted.
+
+Examples
+++++++++++++++++++++++++++++++++++++++++
+
+Below is an example request using cURL::
+
+    curl -u <SID>:<AUTH_TOKEN>
+         --data-urlencode 'caller=<caller>' \
+         --data-urlencode 'recipient=<recipient>' \
+         --data-urlencode 'tts_message=おはよう' \
+         --data-urlencode　'tts_lang=ja' \
+         https://api.xoxzo.com/voice/simple/playback/
+
+Response data
+++++++++++++++++++++++++++++++++++++++++
+
+As for the response  , please refer :ref:`simple-playback-api-ref`

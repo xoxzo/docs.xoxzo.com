@@ -1,15 +1,17 @@
-====================================
+===============================================
 Voice API
-====================================
+===============================================
 
 The Voice API allows you to interact with a phone via beautiful HTTP endpoints.
 
 .. warning::
-   *  There is a minimum amount of credits which you need to have in order to make a Voice API call, 
+   *  There is a minimum amount of credits which you need to have in order to make a Voice API call,
       regardless of the cost of the call itself. Please refer to the `Help Center <http://bit.ly/1TxHmrR>`_ for more information.
 
+.. _simple-playback-api-ref:
+
 Simple Playback API
-====================================
+===============================================
 
 To make a call and playback an audio file when your recipient answers the phone,
 make a ``POST`` request to the endpoint::
@@ -32,9 +34,9 @@ with the following parameters:
 
    *  Xoxzo uses the `E.164 <http://en.wikipedia.org/wiki/E.164>`_ number format
       when specifying phone numbers.
-   *  `E.164 <http://en.wikipedia.org/wiki/E.164>`_ dictates that phone numbers must start with the + prefix and country 
+   *  `E.164 <http://en.wikipedia.org/wiki/E.164>`_ dictates that phone numbers must start with the + prefix and country
       code then followed directly by the mobile number leaving the local **0** prefix.
-   *  Example of a valid recipient is: *+818011234567* with *81* as the Japan country code and *8011234567* 
+   *  Example of a valid recipient is: *+818011234567* with *81* as the Japan country code and *8011234567*
       as the mobile number.
 
 .. note::
@@ -42,12 +44,12 @@ with the following parameters:
 
    *  Xoxzo uses the `E.164 <http://en.wikipedia.org/wiki/E.164>`_ number format
       when specifying phone numbers.
-   *  `E.164 <http://en.wikipedia.org/wiki/E.164>`_ dictates that phone numbers must start with the + prefix and country 
+   *  `E.164 <http://en.wikipedia.org/wiki/E.164>`_ dictates that phone numbers must start with the + prefix and country
       code then followed directly by the mobile number leaving the local **0** prefix.
 
 .. warning::
    *  The **caller** is sent as through a best effort method and is not guaranteed to be shown on
-      the recipient's mobile as it is and maybe replaced with an arbitary **caller**. This is dependent on the 
+      the recipient's mobile as it is and maybe replaced with an arbitary **caller**. This is dependent on the
       policies of the carriers, intermerdiary networks and governments, and they may not honour your request.
 
 .. _playback-usable-url-ref:
@@ -65,9 +67,28 @@ with the following parameters:
    *  http://a.clyp.it/b-byghjf.mp3
    *  http://a.clyp.it/b-bygh_f.mp3
 
+Using Text To Speech with Simple Playback API
+-----------------------------------------------
+
+OPTIONAL: For an additional cost, you can use text to speech option instead of pre-recorded mp3 file
+when making calls using the Simple Playback API.
+To use this option please refer to :ref:`text-to-speech-api-ref`
+
+Examples
+-----------------------------------------------
+
 Below is an example request using cURL::
 
-    curl -u <SID>:<AUTH_TOKEN> --data-urlencode 'caller=<caller>' --data-urlencode 'recipient=<recipient>' --data-urlencode 'recording_url=<recording_url>' https://api.xoxzo.com/voice/simple/playback/
+    curl -u <SID>:<AUTH_TOKEN> \
+      --data-urlencode 'caller=<caller>' \
+      --data-urlencode 'recipient=<recipient>' \
+      --data-urlencode 'recording_url=<recording_url>' \
+      https://api.xoxzo.com/voice/simple/playback/
+
+
+
+Response
+-----------------------------------------------
 
 The response would be a JSON structure, returned with HTTP ``201 CREATED`` status code::
 
@@ -81,26 +102,28 @@ The response would be a JSON structure, returned with HTTP ``201 CREATED`` statu
     ]
 
 If there's invalid parameters given, HTTP ``400 BAD REQUEST`` status code will
-be returned. For example, if the ``recording_url``
+be returned. For example, if the ``caller``
 parameter is missing, the HTTP response should be like this::
 
     HTTP/1.0 400 BAD REQUEST
     Content-Type: application/json
 
     {
-        "recording_url": [
+        "caller": [
             "This field is required."
         ]
     }
 
-Response data
-------------------------------------
 
-    =========   ======================================
-    Name        Description       
-    =========   ======================================
-    callid      The unique call id for this call
-    =========   ======================================
+
+Response Data
+-----------------------------------------------
+
+   =========   ======================================
+   Name        Description
+   =========   ======================================
+   callid      The unique call id for this call
+   =========   ======================================
 
 Checking Call Status
 ====================================
@@ -131,10 +154,10 @@ The response would be a JSON structure, returned with HTTP ``200 OK`` status cod
     }
 
 Response data
-------------------------------------
+-----------------------------------------------
 
     =========== ======================================
-    Name        Description       
+    Name        Description
     =========== ======================================
     callid      The unique call id for this call
     cost        The cost in credits for this call
@@ -146,12 +169,12 @@ Response data
     =========== ======================================
 
 Common call statuses
-------------------------------------
+-----------------------------------------------
 
 This is a list of statuses that you can find in the ``status`` data:
 
    ===================  ==================
-   Call status          Description         
+   Call status          Description
    ===================  ==================
    ANSWERED             The call was answered by the recipient, or was passed to
                         a mailbox
