@@ -192,7 +192,7 @@ msgstr ""
 
 #: ../../../source/voice.rst:71
 msgid "Using Text To Speech with Simple Playback API"
-msgstr "音声プレーバックAPIでテキストから音声への変換を使う"
+msgstr "音声プレーバックAPIでテキスト読み上げ機能を使う"
 
 #: ../../../source/voice.rst:73
 msgid ""
@@ -201,12 +201,11 @@ msgid ""
 "Playback API. To use this option please refer to :ref:`text-to-speech-"
 "api-ref`"
 msgstr ""
-"追加機能：追加料金で、あらかじめ用意した音声ファイルのかわりに、テキストから音声への変換"
-"機能を音声プレーバックAPIで使うことが可能です。"
+"追加機能：追加料金で、あらかじめ用意した音声ファイルのかわりに、テキスト読み上げ機能"
+"を音声プレーバックAPIで使うことが可能です。"
 "この機能を使うには :ref:`text-to-speech-api-ref` を参照してください。"
 
 #: ../../../source/voice.rst:78
-#, fuzzy
 msgid "Examples"
 msgstr "例"
 
@@ -215,9 +214,8 @@ msgid "Below is an example request using cURL::"
 msgstr "cURLを使ったリクエストの例は下記のとおりです。"
 
 #: ../../../source/voice.rst:91
-#, fuzzy
 msgid "Response"
-msgstr "レスポンスデータ"
+msgstr "レスポンス"
 
 #: ../../../source/voice.rst:93
 msgid ""
@@ -235,7 +233,6 @@ msgstr ""
 "``recording_url`` パラメーターがなかった場合、HTTPからの返答はこのようになります。"
 
 #: ../../../source/voice.rst:120
-#, fuzzy
 msgid "Response Data"
 msgstr "レスポンスデータ"
 
