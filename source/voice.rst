@@ -67,12 +67,6 @@ with the following parameters:
    *  http://a.clyp.it/b-byghjf.mp3
    *  http://a.clyp.it/b-bygh_f.mp3
 
-Using Text To Speech with Simple Playback API
------------------------------------------------
-
-OPTIONAL: For an additional cost, you can use text to speech option instead of pre-recorded mp3 file
-when making calls using the Simple Playback API.
-To use this option please refer to :ref:`text-to-speech-api-ref`
 
 Examples
 -----------------------------------------------
@@ -84,7 +78,6 @@ Below is an example request using cURL::
       --data-urlencode 'recipient=<recipient>' \
       --data-urlencode 'recording_url=<recording_url>' \
       https://api.xoxzo.com/voice/simple/playback/
-
 
 
 Response
@@ -115,7 +108,6 @@ parameter is missing, the HTTP response should be like this::
     }
 
 
-
 Response Data
 -----------------------------------------------
 
@@ -124,6 +116,14 @@ Response Data
    =========   ======================================
    callid      The unique call id for this call
    =========   ======================================
+
+
+Using Text To Speech with Simple Playback API
+-----------------------------------------------
+
+OPTIONAL: For an additional cost, you can use text to speech option instead of pre-recorded mp3 file
+when making calls using the Simple Playback API.
+To use this option please refer to :ref:`text-to-speech-api-ref`
 
 Checking Call Status
 ====================================
