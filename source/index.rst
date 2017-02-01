@@ -28,3 +28,8 @@ Contents:
 
     errors
     changes
+
+Search
+====================================
+
+* :ref:`search`

@@ -60,6 +60,18 @@ ul.navbar-nav {
   margin-right: 10px;
 }
 
+.nav-toctree {
+  display: none;
+}
+
+.nav-set {
+  display: none;
+}
+
+.dropdown-item:visited {
+  color: #373a3c;
+}
+
 .wy-grid-for-nav, .wy-nav-side {
   margin-top: 57px;
 }
@@ -125,6 +137,33 @@ ul.navbar-nav {
   margin-left: 0;
 }
 
+#search-results .search li:last-child {
+  border-bottom: none;
+}
+
+.search .search-input {
+  box-shadow: none;
+  border-radius: .25rem 0 0 .25rem;
+  border: 1px solid #ccc;
+  height: 37px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.wy-form input[type="text"] {
+  display: inline;
+}
+
+.search .btn-secondary {
+  box-shadow: none;
+  margin-top: -1px;
+  color: #373a3c;
+  margin-left: -4px;
+  border-radius: 0 .25rem .25rem 0;
+  border-left: none;
+  padding-top: 7px;
+}
+
 :target:before {
     content: "";
     display: block;
@@ -144,8 +183,38 @@ ul.navbar-nav {
     margin: 0;
   }
 
-  .navbar-toggleable-sm .navbar-nav .nav-item {
+  .nav-toctree {
+    display: inherit;
+    padding-bottom: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border-bottom: 1px solid rgba(255,255,255,.5);
+  }
+
+  .nav-set {
+    display: inherit;
+  }
+
+  .nav-toctree li {
+    padding-bottom: 0.7rem;
+  }
+
+  .nav-toctree li a {
+    color: rgba(255,255,255,.5);
+  }
+
+  .nav-toctree li.current a, .nav-toctree ul li.current a:hover {
+    color: white;
+  }
+
+  .nav-toctree li a:hover {
+    text-decoration: none;
+    color: rgba(255,255,255,.75);
+  }
+
+  .navbar-toggleable-sm .navbar-nav .nav-item, .nav-toctree li {
     margin-left: 10px;
+    margin-right: 10px;
   }
 
   .wy-nav-side {

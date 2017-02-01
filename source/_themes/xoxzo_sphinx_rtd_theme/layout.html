@@ -105,15 +105,33 @@
     <button class="navbar-toggler hidden-md-up float-xs-right" type="button" data-toggle="collapse" data-target="#collapsingNav" aria-controls="collapsingNav" aria-expanded="false" aria-label="Toggle navigation"></button>
     <div class="collapse navbar-toggleable-sm" id="collapsingNav">
       <ul class="nav navbar-nav float-xs-left float-sm-right">
+        <div class="nav-toctree">
+          {% set toctree1 = toctree(maxdepth=1, collapse=theme_collapse_navigation, includehidden=True) %}
+          {% if toctree1 %}
+            {{ toctree1 }}
+          {% endif %}
+        </div>
+        <div class="nav-set">
+          <li class="nav-item">
+            <a class="nav-link" href="search.html"><i class="fa fa-search" aria-hidden="true"></i> Search</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fa fa-globe" aria-hidden="true"></i> Language&nbsp;<span class="caret"></span></a>
+            <div class="dropdown-menu">
+              <a class="dropdown-item" href="../en/">English</a>
+              <a class="dropdown-item" href="../ja/">Japanese</a>
+            </div>
+          </li>
+        </div>
         <li class="nav-item">
           {% if language == 'ja' %}
-          <a class="nav-link" href="https://info.xoxzo.com/ja/">Who We Are</a>
+          <a class="nav-link" href="https://info.xoxzo.com/ja/"><i class="fa fa-home" aria-hidden="true"></i> Who We Are</a>
           {% else %}
-          <a class="nav-link" href="https://info.xoxzo.com/en/">Who We Are</a>
+          <a class="nav-link" href="https://info.xoxzo.com/en/"><i class="fa fa-home" aria-hidden="true"></i> Who We Are</a>
           {% endif %}
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="https://twitter.com/xoxzotelephony">Twitter</a>
+          <a class="nav-link" href="https://twitter.com/xoxzotelephony"><i class="fa fa-twitter" aria-hidden="true"></i> Twitter</a>
         </li>
       </ul>
     </div>

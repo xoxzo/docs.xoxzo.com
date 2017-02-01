@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Heylo API Documentation 1.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2017-01-31 22:36+0900\n"
+"POT-Creation-Date: 2017-02-01 04:25+0900\n"
 "PO-Revision-Date: 2015-10-22 00:13+0900\n"
 "Last-Translator: \n"
 "Language-Team: \n"
@@ -32,6 +32,14 @@ msgstr ""
 #: ../../../source/index.rst:15
 msgid "Contents:"
 msgstr "目次"
+
+#: ../../../source/index.rst:33
+msgid "Search"
+msgstr ""
+
+#: ../../../source/index.rst:35
+msgid ":ref:`search`"
+msgstr ""
 
 #~ msgid "Welcome to Xoxzo Web Telephony API's documentation!"
 #~ msgstr "Xoxzo クラウド・テレフォニー・APIドキュメンテーションよこそ"
