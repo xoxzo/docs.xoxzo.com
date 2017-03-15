@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Xoxzo API Docs 1.3.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2017-01-14 22:52+0900\n"
+"POT-Creation-Date: 2017-03-15 10:15+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -299,8 +299,8 @@ msgid "UTF-8"
 msgstr ""
 
 #: ../../../source/utilsapi.rst:145
-msgid "おはよう"
-msgstr ""
+msgid "Hello world!"
+msgstr "みなさん、こんにちは！"
 
 #: ../../../source/utilsapi.rst:146
 msgid "tts_lang"
@@ -315,8 +315,8 @@ msgid "ISO 639-1"
 msgstr ""
 
 #: ../../../source/utilsapi.rst:146
-msgid "ja"
-msgstr ""
+msgid "en"
+msgstr "ja"
 
 #: ../../../source/utilsapi.rst:150
 msgid "Notes on the **caller** parameter:"
@@ -359,8 +359,8 @@ msgid "This parameter must exist when tts_message is used."
 msgstr "tts_message を使ったときは、このパラメータを指定しなければいけません。"
 
 #: ../../../source/utilsapi.rst:170
-msgid "Currently, only **ja** is accepted."
-msgstr "現在、 **ja** のみ使用可能です。"
+msgid "Currently, **en** and **ja** are accepted."
+msgstr "現在、 **en** と **ja** が使用可能です。"
 
 #: ../../../source/utilsapi.rst:187
 msgid "As for the response  , please refer :ref:`simple-playback-api-ref`"
@@ -400,5 +400,11 @@ msgstr "レスポンスに関しては :ref:`simple-playback-api-ref` を参照�
 #~ msgstr ""
 
 #~ msgid "As for the response, please refer :ref:`simple-playback-api-ref`"
+#~ msgstr ""
+
+#~ msgid "おはよう"
+#~ msgstr ""
+
+#~ msgid "ja"
 #~ msgstr ""
 
