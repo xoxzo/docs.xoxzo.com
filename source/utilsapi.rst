@@ -142,8 +142,8 @@ with the following parameters:
     =============  ========================  ========  =============  =============================
     caller         Caller number             Yes       Numeric        +8190123456789
     recipient      Call recipient            Yes       E.164          +8190123456789
-    tts_message    text to playback          Yes       UTF-8          おはよう
-    tts_lang       language of the text      Yes       ISO 639-1      ja
+    tts_message    text to playback          Yes       UTF-8          Hello world!
+    tts_lang       language of the text      Yes       ISO 639-1      en
     =============  ========================  ========  =============  =============================
 
 .. note::
@@ -167,7 +167,7 @@ with the following parameters:
 
    *  Two letter language code of the tts_message in `ISO 639-1. <https://en.wikipedia.org/wiki/ISO_639-1>`_
    *  This parameter must exist when tts_message is used.
-   *  Currently, only **ja** is accepted.
+   *  Currently, **en** and **ja** are accepted.
 
 Examples
 ++++++++++++++++++++++++++++++++++++++++

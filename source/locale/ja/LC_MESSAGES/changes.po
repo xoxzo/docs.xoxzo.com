@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Xoxzo API Docs 1.1\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2017-01-14 22:42+0900\n"
+"POT-Creation-Date: 2017-03-15 14:24+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -135,6 +135,18 @@ msgstr ""
 #: ../../../source/changes.rst:16
 msgid "Add new TTS functionality"
 msgstr "テキスト読み上げ機能機能(TTS)新規追加"
+
+#: ../../../source/changes.rst:17
+msgid "1.4.1"
+msgstr ""
+
+#: ../../../source/changes.rst:17
+msgid "2017-03-16"
+msgstr ""
+
+#: ../../../source/changes.rst:17
+msgid "Support en for TTS"
+msgstr "TTS英語対応"
 
 #~ msgid "2016-10-31"
 #~ msgstr ""

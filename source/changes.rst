@@ -14,4 +14,5 @@ CHANGES
     1.3.0       2016-11-03          New addition of telephony utilities API
     1.3.1       2016-12-14          Updated restrictions on playback URL
     1.4.0       2017-01-17          Add new TTS functionality
+    1.4.1       2017-03-16          Support en for TTS
     =========   ==================  ===============================================================================================
