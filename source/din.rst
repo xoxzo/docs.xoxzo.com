@@ -97,7 +97,7 @@ Unsubscribing to a Dial In Number via API
 
 To unsubscribe::
 
-    curl -XDELETE -u <SID>:<AUTH_TOKEN> https://api.xoxzo.com/voice/dins/subscription/<din_uid>/
+    curl -XDELETE -u <SID>:<AUTH_TOKEN> https://api.xoxzo.com/voice/dins/subscriptions/<din_uid>/
 
 
 What are Actions?
