@@ -117,6 +117,10 @@ Response Data
    callid      The unique call id for this call
    =========   ======================================
 
+.. tip:: 
+    It's faster to actually try some test code againts the API to see immediate results.
+    `Signing up <https://www.xoxzo.com/en/accounts/signup/>`_ takes only a few minutes and it's free
+
 
 Using Text To Speech with Simple Playback API
 -----------------------------------------------

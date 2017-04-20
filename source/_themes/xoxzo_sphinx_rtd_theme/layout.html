@@ -125,20 +125,27 @@
         </div>
         <li class="nav-item">
           {% if language == 'ja' %}
-          <a class="nav-link" href="https://info.xoxzo.com/ja/"><i class="fa fa-home" aria-hidden="true"></i> Who We Are</a>
+          <a class="nav-link" href="https://info.xoxzo.com/ja/"><i class="fa fa-home" aria-hidden="true"></i> 運営会社</a>
           {% else %}
           <a class="nav-link" href="https://info.xoxzo.com/en/"><i class="fa fa-home" aria-hidden="true"></i> Who We Are</a>
           {% endif %}
         </li>
         <li class="nav-item">
           {% if language == 'ja' %}
-          <a class="nav-link" href="https://blog.xoxzo.com/ja/"><i class="fa fa-rss-square" aria-hidden="true"></i> Blog</a>
+          <a class="nav-link" href="https://blog.xoxzo.com/ja/"><i class="fa fa-rss-square" aria-hidden="true"></i> ブログ</a>
           {% else %}
           <a class="nav-link" href="https://blog.xoxzo.com/en/"><i class="fa fa-rss-square" aria-hidden="true"></i> Blog</a>
           {% endif %}
         </li>
         <li class="nav-item">
           <a class="nav-link" href="https://twitter.com/xoxzotelephony"><i class="fa fa-twitter" aria-hidden="true"></i> Twitter</a>
+        </li>
+        <li class="nav-item">
+        {% if language == 'ja' %}
+          <a class="nav-link" href="https://www.xoxzo.com/ja/accounts/signup/"><i class="fa fa-home" aria-hidden="true"></i> 今すぐ登録する</a>
+        {% else %}
+          <a class="nav-link" href="https://www.xoxzo.com/en/accounts/signup/"><i class="fa fa-home" aria-hidden="true"></i> Signup now</a>
+        {% endif %}
         </li>
       </ul>
     </div>
