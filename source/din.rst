@@ -85,6 +85,12 @@ Each Dial In Number can be attached an action that will provide instruction what
 The ``url`` specified for ``action_url`` will be called via ``GET`` when there is incoming call to your subscribed DialIN number to get a command that will be
 used to handle the call. 
 
+
+.. tip:: 
+    Try subscribing to a local number and see how it works now!
+    `Signing up <https://www.xoxzo.com/en/accounts/signup/>`_ takes only a few minutes and it's free
+
+
 Getting the list of subscribed Dial In Numbers via API
 ======================================================
 

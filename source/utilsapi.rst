@@ -181,6 +181,10 @@ Below is an example request using cURL::
          --data-urlencode　'tts_lang=ja' \
          https://api.xoxzo.com/voice/simple/playback/
 
+.. tip:: 
+    It's faster to actually try some test code againts the API to see immediate results.
+    `Signing up <https://www.xoxzo.com/en/accounts/signup/>`_ takes only a few minutes and it's free
+
 Response data
 ++++++++++++++++++++++++++++++++++++++++
 

@@ -123,22 +123,29 @@
             </div>
           </li>
         </div>
-        <li class="nav-item">
+        <li class="nav-item nav-top-link">
           {% if language == 'ja' %}
-          <a class="nav-link" href="https://info.xoxzo.com/ja/"><i class="fa fa-home" aria-hidden="true"></i> Who We Are</a>
+          <a class="nav-link" href="https://info.xoxzo.com/ja/" target="blank"><i class="fa fa-home" aria-hidden="true"></i> 運営会社</a>
           {% else %}
-          <a class="nav-link" href="https://info.xoxzo.com/en/"><i class="fa fa-home" aria-hidden="true"></i> Who We Are</a>
+          <a class="nav-link" href="https://info.xoxzo.com/en/" target="blank"><i class="fa fa-home" aria-hidden="true"></i> Who We Are</a>
           {% endif %}
         </li>
-        <li class="nav-item">
+        <li class="nav-item nav-top-link">
           {% if language == 'ja' %}
-          <a class="nav-link" href="https://blog.xoxzo.com/ja/"><i class="fa fa-rss-square" aria-hidden="true"></i> Blog</a>
+          <a class="nav-link" href="https://blog.xoxzo.com/ja/" target="blank"><i class="fa fa-rss-square" aria-hidden="true"></i> ブログ</a>
           {% else %}
-          <a class="nav-link" href="https://blog.xoxzo.com/en/"><i class="fa fa-rss-square" aria-hidden="true"></i> Blog</a>
+          <a class="nav-link" href="https://blog.xoxzo.com/en/" target="blank"><i class="fa fa-rss-square" aria-hidden="true"></i> Blog</a>
           {% endif %}
         </li>
-        <li class="nav-item">
-          <a class="nav-link" href="https://twitter.com/xoxzotelephony"><i class="fa fa-twitter" aria-hidden="true"></i> Twitter</a>
+        <li class="nav-item nav-top-link">
+          <a class="nav-link" href="https://twitter.com/xoxzotelephony" target="blank"><i class="fa fa-twitter" aria-hidden="true"></i> Twitter</a>
+        </li>
+        <li id="signup" class="nav-item">
+        {% if language == 'ja' %}
+          <a class="nav-link nav-button" href="https://www.xoxzo.com/ja/accounts/signup/" target="blank">今すぐ登録する</a>
+        {% else %}
+          <a class="nav-link nav-button" href="https://www.xoxzo.com/en/accounts/signup/" target="blank">Sign Up</a>
+        {% endif %}
         </li>
       </ul>
     </div>
