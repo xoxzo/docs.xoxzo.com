@@ -36,8 +36,21 @@ h1, h2, .rst-content .toctree-wrapper p.caption, h3, h4, h5, h6, legend {
   background-image: none;
 }
 
+.wy-body-for-nav .navbar-brand {
+  margin: 8px 0;
+}
+
 nav {
   max-width: 1300px;
+}
+
+nav.navbar {
+  padding: 0;
+  padding-left: 16px;
+}
+
+button.navbar-toggler {
+  margin: 8px 16px;
 }
 
 .navbar-toggleable-sm {
@@ -57,7 +70,22 @@ nav {
 }
 
 ul.navbar-nav {
-  margin-right: 10px;
+  margin-right: 0;
+}
+
+ul.navbar-nav .nav-item a {
+  padding-top: 15px;
+}
+
+ul.navbar-nav .nav-item a.nav-button {
+  padding: 15px 25px 18px 25px;
+  color: white;
+  background-color: #4e88ff;
+}
+
+ul.navbar-nav .nav-item a.nav-button:hover {
+  background-color: #306ce8;
+  color: white;
 }
 
 .nav-toctree {
@@ -178,14 +206,27 @@ ul.navbar-nav {
 }
 
 @media screen and (max-width: 767px){
+  nav.navbar {
+    padding-left: 0;
+  }
+
+  a.navbar-brand {
+    padding-left: 16px;
+  }
+
   ul.navbar-nav {
     width: 100%;
     margin: 0;
   }
 
+  .navbar-toggleable-sm .navbar-nav {
+    margin-bottom: 0;
+  }
+
   .nav-toctree {
     display: inherit;
     padding-bottom: 10px;
+    padding-left: 16px;
     margin-top: 10px;
     margin-bottom: 10px;
     border-bottom: 1px solid rgba(255,255,255,.5);
@@ -193,6 +234,7 @@ ul.navbar-nav {
 
   .nav-set {
     display: inherit;
+    padding-left: 16px;
   }
 
   .nav-toctree li {
@@ -215,6 +257,22 @@ ul.navbar-nav {
   .navbar-toggleable-sm .navbar-nav .nav-item, .nav-toctree li {
     margin-left: 10px;
     margin-right: 10px;
+  }
+
+  ul.navbar-nav .nav-top-link {
+    padding-left: 16px;
+  }
+
+  ul.navbar-nav #signup {
+    margin: 0;
+  }
+
+  ul.navbar-nav .nav-item a {
+    padding-top: 0.3rem;
+  }
+
+  ul.navbar-nav .nav-item a.nav-button {
+    padding: 10px 26px;
   }
 
   .wy-nav-side {
