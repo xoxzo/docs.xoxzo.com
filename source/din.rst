@@ -168,5 +168,8 @@ For text to speech, you can use ``say``::
 
     say en "Hello, hoa are you?"
 
-You need to inclue two required parameters. The first one is language code. Please refer XXX for details.
+You need to inclue two required parameters. The first one is language code.
+Please refer :ref:`tts_lang<tts_lang_label>` for details.
+
 The second parameter is the text message. You need to enclose the text with the quotation marks.
+Please refer :ref:`tts_tts_message<tts_tts_message>` for details.
