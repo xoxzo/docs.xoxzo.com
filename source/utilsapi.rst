@@ -155,7 +155,7 @@ with the following parameters:
 
    *  Please refer :ref:`simple-playback-api-ref`
 
-.. _tts_tts_message:
+.. _tts_message_label:
 .. note::
    Notes on the **tts_message** parameter:
 

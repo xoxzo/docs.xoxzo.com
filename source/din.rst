@@ -110,7 +110,7 @@ What are Actions?
 ======================================================
 
 An Action is something that you tell us to do when a call comes in via your subscribed Dial In Number (DIN).
-These can be things like transfering the incoming call to a different number, playing a music file or read text
+These can be things like transfering the incoming call to a different number, playing a music file or read the text
 with text to speech.
 
 Avaialable Actions are listed at `Available Actions`_
@@ -166,10 +166,10 @@ For ``transfer``, you'll need to also include a required parameter of the number
 
 For text to speech, you can use ``say``::
 
-    say en "Hello, hoa are you?"
+    say en "Hello, how are you?"
 
 You need to inclue two required parameters. The first one is language code.
 Please refer :ref:`tts_lang<tts_lang_label>` for details.
 
 The second parameter is the text message. You need to enclose the text with the quotation marks.
-Please refer :ref:`tts_tts_message<tts_tts_message>` for details.
+Please refer :ref:`tts_message<tts_message_label>` for details.
