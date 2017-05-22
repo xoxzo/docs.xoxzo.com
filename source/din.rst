@@ -110,7 +110,8 @@ What are Actions?
 ======================================================
 
 An Action is something that you tell us to do when a call comes in via your subscribed Dial In Number (DIN).
-These can be things like transfering the incoming call to a different number, or playing a music file.
+These can be things like transfering the incoming call to a different number, playing a music file or read text
+with text to speech.
 
 Avaialable Actions are listed at `Available Actions`_
 
@@ -134,6 +135,7 @@ The available actions are as follows:
     =============   ======================================
     playback        Plays back an mp3 file to the caller
     transfer        Transfers the incoming call to another number
+    say             Text to speech
     =============   ======================================
 
 
@@ -156,9 +158,15 @@ For ``transfer``, you'll need to also include a required parameter of the number
 
 ``caller`` is an optional argument to set the caller id when you transfer the call.
 
+
 .. warning::
    *  The **caller** is sent as through a best effort method and is not guaranteed to be shown on
-      the recipient's mobile as it is and maybe replaced with an arbitary **caller**. This is dependent on the 
+      the recipient's mobile as it is and maybe replaced with an arbitary **caller**. This is dependent on the
       policies of the carriers, intermerdiary networks and governments, and they may not honour your request.
 
+For text to speech, you can use ``say``::
 
+    say en "Hello, hoa are you?"
+
+You need to inclue two required parameters. The first one is language code. Please refer XXX for details.
+The second parameter is the text message. You need to enclose the text with the quotation marks.
