@@ -135,7 +135,7 @@ The available actions are as follows:
     =============   ======================================
     playback        Plays back an mp3 file to the caller
     transfer        Transfers the incoming call to another number
-    say             Text to speech
+    say             Takes text and reads it out loud (Text-to-Speech)
     =============   ======================================
 
 
@@ -164,7 +164,7 @@ For ``transfer``, you'll need to also include a required parameter of the number
       the recipient's mobile as it is and maybe replaced with an arbitary **caller**. This is dependent on the
       policies of the carriers, intermerdiary networks and governments, and they may not honour your request.
 
-For text to speech, you can use ``say``::
+For text to speech, you use ``say``::
 
     say en "Hello, how are you?"
 
