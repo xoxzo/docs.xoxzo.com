@@ -260,7 +260,7 @@ msgstr ""
 
 #: ../../../source/din.rst:138
 msgid "Takes text and reads it out loud (Text-to-Speech)"
-msgstr ""
+msgstr "テキストを音声で読み上げる(Text-to-Speech)。"
 
 #: ../../../source/din.rst:143
 msgid "Sample"
@@ -312,13 +312,14 @@ msgstr ""
 
 #: ../../../source/din.rst:167
 msgid "For text to speech, you use ``say``::"
-msgstr ""
+msgstr "テキストを読み上げるには ``say`` を使います::"
 
 #: ../../../source/din.rst:171
 msgid ""
 "You need to inclue two required parameters. The first one is language "
 "code. Please refer :ref:`tts_lang<tts_lang_label>` for details."
 msgstr ""
+"２つのパラメータを指定することが必要です。一つ目は言語の指定。詳しくは :ref:`tts_lang<tts_lang_label>` を参照してください。"
 
 #: ../../../source/din.rst:174
 msgid ""
@@ -326,6 +327,7 @@ msgid ""
 "with the quotation marks. Please refer "
 ":ref:`tts_message<tts_message_label>` for details."
 msgstr ""
+"二つ目はテキストメッセージです。テキストは引用符 ``\"`` で囲ってください。詳しくは :ref:`tts_message<tts_message_label>` を参照してください。"
 
 #~ msgid "Actions"
 #~ msgstr ""
