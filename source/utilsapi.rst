@@ -155,6 +155,7 @@ with the following parameters:
 
    *  Please refer :ref:`simple-playback-api-ref`
 
+.. _tts_message_label:
 .. note::
    Notes on the **tts_message** parameter:
 
@@ -162,6 +163,7 @@ with the following parameters:
    *  Maximum length is 250 characters.
    *  You can not specify **recording_url** parameter with this parameter.
 
+.. _tts_lang_label:
 .. note::
    Notes on the **tts_lang** parameter:
 

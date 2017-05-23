@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Xoxzo API Docs 1.2.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2017-04-20 20:42+0900\n"
+"POT-Creation-Date: 2017-05-22 19:03+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -54,7 +54,7 @@ msgstr "応答データ"
 msgid "Name"
 msgstr "名称"
 
-#: ../../../source/din.rst:46 ../../../source/din.rst:132
+#: ../../../source/din.rst:46 ../../../source/din.rst:134
 msgid "Description"
 msgstr "説明"
 
@@ -161,48 +161,51 @@ msgstr ""
 "契約しているダイアルイン番号に電話があったばあいには、 ``url`` で指定した ``action_url`` に対して ``GET`` "
 "リクエストが発行され、処理が行われます。"
 
-#: ../../../source/din.rst:89
+#: ../../../source/din.rst:90
 msgid ""
 "Try subscribing to a local number and see how it works now! `Signing up "
 "<https://www.xoxzo.com/en/accounts/signup/>`_ takes only a few minutes "
 "and it's free"
-msgstr "今すぐローカルの番号を取得して動作確認をしてみましょう！ `無料登録 <https://www.xoxzo.com/ja/accounts/signup/>`_ は無料ですぐできます。"
+msgstr ""
+"今すぐローカルの番号を取得して動作確認をしてみましょう！ `無料登録 "
+"<https://www.xoxzo.com/ja/accounts/signup/>`_ は無料ですぐできます。"
 
-#: ../../../source/din.rst:94
+#: ../../../source/din.rst:95
 msgid "Getting the list of subscribed Dial In Numbers via API"
 msgstr "APIによる契約中のダイアルイン番号の一覧取得"
 
-#: ../../../source/din.rst:96
+#: ../../../source/din.rst:97
 msgid ""
 "To get the list of your current subscribed DINs, just make a ``GET`` "
 "request like::"
 msgstr "契約中のダイアルイン番号の一覧を得るには、下記のように ``GET`` リクエストを発行します。"
 
-#: ../../../source/din.rst:101
+#: ../../../source/din.rst:102
 msgid "Unsubscribing to a Dial In Number via API"
 msgstr "APIによるダイアルイン番号の契約解除"
 
-#: ../../../source/din.rst:103
+#: ../../../source/din.rst:104
 msgid "To unsubscribe::"
 msgstr "契約解除のやりかた::"
 
-#: ../../../source/din.rst:109
+#: ../../../source/din.rst:110
 msgid "What are Actions?"
 msgstr "アクションとは何か？"
 
-#: ../../../source/din.rst:111
+#: ../../../source/din.rst:112
+#, fuzzy
 msgid ""
 "An Action is something that you tell us to do when a call comes in via "
 "your subscribed Dial In Number (DIN). These can be things like "
-"transfering the incoming call to a different number, or playing a music "
-"file."
+"transfering the incoming call to a different number, playing a music file"
+" or read the text with text to speech."
 msgstr "アクションとは契約しているダイアルイン番号に電話が着信した時に行う動作のことです。アクションには、着信した通話の転送や音声ファイルの再生などがあります。"
 
-#: ../../../source/din.rst:114
+#: ../../../source/din.rst:116
 msgid "Avaialable Actions are listed at `Available Actions`_"
 msgstr "`「使用可能なアクション」`_ には、使用可能なアクションの一覧があります。"
 
-#: ../../../source/din.rst:116
+#: ../../../source/din.rst:118
 msgid ""
 "The Actions that you want to do are defined in a simple text file that "
 "you make accessible via a URL. This URL is the ``action_url`` that you "
@@ -211,63 +214,71 @@ msgstr ""
 "指定したいアクションは、URLでアクセス可能な簡単なテキストファイルで定義します。このURLは ``action_url`` "
 "で契約したDINに設定します。"
 
-#: ../../../source/din.rst:119
+#: ../../../source/din.rst:121
 msgid ""
 "When a call comes in to your DIN, we'll make a ``GET`` request to your "
 "``action_url`` that will also include information about the call, like::"
 msgstr "DINに対して着信があると、 ``action_url`` に対して ``GET`` リクエストが発行されます。このとき、以下の情報も付与されます。"
 
-#: ../../../source/din.rst:124
+#: ../../../source/din.rst:126
 msgid ""
 "Where ``caller`` is the caller id of the phone making the call and "
 "``recipient`` is your DIN."
 msgstr "``caller`` は電話をかけてきた人の電話番号です。``recipient`` はあなたのDINです。"
 
-#: ../../../source/din.rst:127
+#: ../../../source/din.rst:129
 msgid "Available Actions"
 msgstr "使用可能なアクション"
 
-#: ../../../source/din.rst:129
+#: ../../../source/din.rst:131
 msgid "The available actions are as follows:"
 msgstr "使用可能はアクションは以下のとおりです。"
 
-#: ../../../source/din.rst:132
+#: ../../../source/din.rst:134
 msgid "Action"
 msgstr "アクション"
 
-#: ../../../source/din.rst:134
+#: ../../../source/din.rst:136
 msgid "playback"
 msgstr ""
 
-#: ../../../source/din.rst:134
+#: ../../../source/din.rst:136
 msgid "Plays back an mp3 file to the caller"
 msgstr "着信に対してmp3ファイルを再生する。"
 
-#: ../../../source/din.rst:135
+#: ../../../source/din.rst:137
 msgid "transfer"
 msgstr ""
 
-#: ../../../source/din.rst:135
+#: ../../../source/din.rst:137
 msgid "Transfers the incoming call to another number"
 msgstr "着信した通話を、他の番号に転送する。"
 
-#: ../../../source/din.rst:140
+#: ../../../source/din.rst:138
+msgid "say"
+msgstr ""
+
+#: ../../../source/din.rst:138
+msgid "Takes text and reads it out loud (Text-to-Speech)"
+msgstr "テキストを音声で読み上げる(Text-to-Speech)。"
+
+#: ../../../source/din.rst:143
 msgid "Sample"
 msgstr "例"
 
-#: ../../../source/din.rst:142
+#: ../../../source/din.rst:145
 msgid ""
 "Your ``action_url`` must return the following output in plain text "
 "format::"
 msgstr "あなたが指定した ``action_url`` は、つぎのようなプレーンテキスト形式で出力しなければいけません:"
 
-#: ../../../source/din.rst:146
+#: ../../../source/din.rst:149
 msgid ""
 "Where ``playback`` contains a required paramater that points to the URL "
 "of the mp3 file you want to play."
 msgstr "``playback`` は再生したい mp3 のURLを指定します。"
 
-#: ../../../source/din.rst:149
+#: ../../../source/din.rst:152
 msgid ""
 "For a more detailed explaination of usable URL for the ``playback`` "
 "action please see :ref:`simple playback API's recording_url parameter "
@@ -276,19 +287,19 @@ msgstr ""
 "``playback`` アクションで使えるURLについては :ref:`音声プレーバックAPIのrecording_urlパラメータ "
 "<playback-usable-url-ref>` をご参考ください。"
 
-#: ../../../source/din.rst:152
+#: ../../../source/din.rst:155
 msgid ""
 "For ``transfer``, you'll need to also include a required parameter of the"
 " number you want to transfer to::"
 msgstr "``transfer`` は転送先の電話番号を含まなけれはいけません。"
 
-#: ../../../source/din.rst:156
+#: ../../../source/din.rst:159
 msgid ""
 "``caller`` is an optional argument to set the caller id when you transfer"
 " the call."
 msgstr "``caller`` はオプションのパラメータで、転送相手に通知される発信者番号です。"
 
-#: ../../../source/din.rst:159
+#: ../../../source/din.rst:163
 msgid ""
 "The **caller** is sent as through a best effort method and is not "
 "guaranteed to be shown on the recipient's mobile as it is and maybe "
@@ -298,6 +309,25 @@ msgid ""
 msgstr ""
 "発信者番号の ``caller`` "
 "は、相手へできるかぎりそのまま通知されるように処理されますが、保証されているわけではなく、別の値に置き換えられる可能性があります。これは、通信キャリア、経由するネットワークや政府の方針依存しており、必ずしも指定したとおりになるわけではありません。"
+
+#: ../../../source/din.rst:167
+msgid "For text to speech, you use ``say``::"
+msgstr "テキストを読み上げるには ``say`` を使います::"
+
+#: ../../../source/din.rst:171
+msgid ""
+"You need to inclue two required parameters. The first one is language "
+"code. Please refer :ref:`tts_lang<tts_lang_label>` for details."
+msgstr ""
+"２つのパラメータを指定することが必要です。一つ目は言語の指定。詳しくは :ref:`tts_lang<tts_lang_label>` を参照してください。"
+
+#: ../../../source/din.rst:174
+msgid ""
+"The second parameter is the text message. You need to enclose the text "
+"with the quotation marks. Please refer "
+":ref:`tts_message<tts_message_label>` for details."
+msgstr ""
+"二つ目はテキストメッセージです。テキストは引用符 ``\"`` で囲ってください。詳しくは :ref:`tts_message<tts_message_label>` を参照してください。"
 
 #~ msgid "Actions"
 #~ msgstr ""
@@ -330,5 +360,17 @@ msgstr ""
 #~ msgstr ""
 
 #~ msgid "http://a.clyp.it/b3By_ghjf.mp3"
+#~ msgstr ""
+
+#~ msgid "For text to speech, you can use ``say``."
+#~ msgstr ""
+
+#~ msgid "say en \"Hello, hoa are you?\""
+#~ msgstr ""
+
+#~ msgid "Text to speech"
+#~ msgstr ""
+
+#~ msgid "For text to speech, you can use ``say``::"
 #~ msgstr ""
 
