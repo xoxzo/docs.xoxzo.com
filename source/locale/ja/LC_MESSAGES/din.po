@@ -4,7 +4,7 @@
 # package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, 2016.
 #
-#, fuzzy
+
 msgid ""
 msgstr ""
 "Project-Id-Version: Xoxzo API Docs 1.2.0\n"
@@ -193,13 +193,12 @@ msgid "What are Actions?"
 msgstr "アクションとは何か？"
 
 #: ../../../source/din.rst:112
-#, fuzzy
 msgid ""
 "An Action is something that you tell us to do when a call comes in via "
 "your subscribed Dial In Number (DIN). These can be things like "
 "transfering the incoming call to a different number, playing a music file"
 " or read the text with text to speech."
-msgstr "アクションとは契約しているダイアルイン番号に電話が着信した時に行う動作のことです。アクションには、着信した通話の転送や音声ファイルの再生などがあります。"
+msgstr "アクションとは契約しているダイアルイン番号に電話が着信した時に行う動作のことです。アクションには、着信した通話の転送、音声ファイルの再生や読み上げ機能などがあります。"
 
 #: ../../../source/din.rst:116
 msgid "Avaialable Actions are listed at `Available Actions`_"
