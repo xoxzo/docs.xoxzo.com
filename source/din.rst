@@ -78,6 +78,9 @@ The response will return with HTTP ``201 OK`` to indicate that the subscription 
 .. warning::
    *  Your credits will be charged immediately for the monhtly subscription if your ``POST`` request succeeds
 
+Attach an action to the Dial In Number via API
+======================================================
+
 Each Dial In Number can be attached an action that will provide instruction what to do with the call if it was answered::
 
     curl -u <SID>:<AUTH_TOKEN> -d'action_url=<url>' https://api.xoxzo.com/voice/dins/subscriptions/<din_uid>/
