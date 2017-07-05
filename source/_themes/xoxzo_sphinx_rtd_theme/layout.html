@@ -246,5 +246,25 @@
 
   {%- block footer %} {% endblock %}
 
+  {# DRIP OPT-IN WIDGET #}
+  <script type="text/javascript">
+    var _dcq = _dcq || [];
+    var _dcs = _dcs || {};
+    _dcs.account = '3014440';
+
+    {% if language == 'ja' %}
+    _dcq.push(["hideForm", { id: "77293033", showTab: false }]);  // lang is ja: hide en form
+    {% else %}
+    _dcq.push(["hideForm", { id: "96268574", showTab: false }]);  // lang is en: hide ja form
+    {% endif %}
+
+  (function() {
+    var dc = document.createElement('script');
+    dc.type = 'text/javascript'; dc.async = true;
+    dc.src = '//tag.getdrip.com/3014440.js';
+    var s = document.getElementsByTagName('script')[0];
+    s.parentNode.insertBefore(dc, s);
+  })();
+  </script>
 </body>
 </html>
