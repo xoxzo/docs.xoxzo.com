@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Xoxzo API Docs 1.2.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2017-06-22 10:03+0900\n"
+"POT-Creation-Date: 2017-07-20 09:28+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -24,138 +24,142 @@ msgstr "ダイアルイン番号API"
 #: ../../../source/din.rst:5
 msgid ""
 "The Dial In Numbers API allows you to receive and manipulate phone "
-"numbers and incoming phone calls via easy APIs"
-msgstr "ダイアルイン番号APIを使うと、簡単なAPIで電話の着信とそれに対応する処理を設定することができます。"
+"numbers and incoming phone calls via easy APIs. You can read the "
+"`tutorial here. <https://blog.xoxzo.com/en/2017/07/13/dialinnumbers-"
+"tutorial/>`_"
+msgstr ""
+"ダイアルイン番号APIを使うと、簡単なAPIで電話の着信とそれに対応する処理を設定することができます。チュートリアルは "
+"`ここで読むことができます。 <https://blog.xoxzo.com/ja/2017/07/01/dialinnumbers-tutorial/>`_"
 
-#: ../../../source/din.rst:8
+#: ../../../source/din.rst:9
 msgid "Finding a Dial In Number via API"
 msgstr "APIによるダイアルイン番号の見つけ方"
 
-#: ../../../source/din.rst:10
+#: ../../../source/din.rst:11
 msgid "This API allows for listing and subscribing to a Dial In Number (DIN)."
 msgstr "このAPIを使うと、ダイアルイン番号(DIN)一覧の表示と契約をおこなうことができます。"
 
-#: ../../../source/din.rst:12
+#: ../../../source/din.rst:13
 msgid "To list available DINs, make a ``GET`` request to::"
 msgstr "空いているDINの一覧を得るには、以下の ``GET`` リクエストを発行します"
 
-#: ../../../source/din.rst:16
+#: ../../../source/din.rst:17
 msgid ""
 "The response will be a JSON structure, returned with HTTP ``200 OK`` "
 "status code like::"
 msgstr "応答はHTTPステータス  ``200 OK`` でJSON形式で返されます。"
 
-#: ../../../source/din.rst:43
+#: ../../../source/din.rst:44
 msgid "Response data"
 msgstr "応答データ"
 
-#: ../../../source/din.rst:46
+#: ../../../source/din.rst:47
 msgid "Name"
 msgstr "名称"
 
-#: ../../../source/din.rst:46 ../../../source/din.rst:137
+#: ../../../source/din.rst:47 ../../../source/din.rst:138
 msgid "Description"
 msgstr "説明"
 
-#: ../../../source/din.rst:48
+#: ../../../source/din.rst:49
 msgid "country_code"
 msgstr ""
 
-#: ../../../source/din.rst:48
+#: ../../../source/din.rst:49
 msgid "The country code for this DIN, dependent on it's country"
 msgstr "DINの国コード。"
 
-#: ../../../source/din.rst:49
+#: ../../../source/din.rst:50
 msgid "din"
 msgstr ""
 
-#: ../../../source/din.rst:49
+#: ../../../source/din.rst:50
 msgid "The E.164 version of the DIN, including country code"
 msgstr "E.164形式のDIN。国コードを含む。"
 
-#: ../../../source/din.rst:50
+#: ../../../source/din.rst:51
 msgid "din_uid"
 msgstr ""
 
-#: ../../../source/din.rst:50
+#: ../../../source/din.rst:51
 msgid "A unique identifier for this particular DIN"
 msgstr "DINに対応する、ユニークな識別子。"
 
-#: ../../../source/din.rst:51
+#: ../../../source/din.rst:52
 msgid "minute_cost"
 msgstr ""
 
-#: ../../../source/din.rst:51
+#: ../../../source/din.rst:52
 msgid "The credit cost per minute when receiving calls to this DIN"
 msgstr "DINに着信したときの、一分間あたりの料金。"
 
-#: ../../../source/din.rst:52
+#: ../../../source/din.rst:53
 msgid "monthly_cost"
 msgstr ""
 
-#: ../../../source/din.rst:52
+#: ../../../source/din.rst:53
 msgid "The monthly credit cost of subscribing to this DIN"
 msgstr "DINを契約したときの、一ヶ月あたりの料金。"
 
-#: ../../../source/din.rst:53
+#: ../../../source/din.rst:54
 msgid "prefix"
 msgstr ""
 
-#: ../../../source/din.rst:53
+#: ../../../source/din.rst:54
 msgid "The local area prefix for this DIN, without the 0"
 msgstr "DINのプリフィックス。先頭の0を除いたもの。"
 
-#: ../../../source/din.rst:57
+#: ../../../source/din.rst:58
 msgid "You can also filter using a country code or a prefix::"
 msgstr "国コードあるいはプリフィックスでフィルタリングすることもできます。"
 
-#: ../../../source/din.rst:61
+#: ../../../source/din.rst:62
 msgid "Or::"
 msgstr "または::"
 
-#: ../../../source/din.rst:65
+#: ../../../source/din.rst:66
 msgid ""
 "filtering using country or prefix will only return you the relevant DINs "
 "based on your filter."
 msgstr "国コードあるいはプリフィックスでフィルタリングをした場合、条件に一致したDINのみが表示されます。"
 
-#: ../../../source/din.rst:68
+#: ../../../source/din.rst:69
 msgid "Subscribing to a Dial In Number via API"
 msgstr "APIによるダイアルイン番号の契約"
 
-#: ../../../source/din.rst:70
+#: ../../../source/din.rst:71
 msgid "To subscribe to a DIN, send a ``POST`` request like::"
 msgstr "ダイアルイン番号を契約するには、以下のような ``POST`` リクエストを発行します。"
 
-#: ../../../source/din.rst:74
+#: ../../../source/din.rst:75
 msgid ""
 "where ``<din_uid>`` is the value you got from the previous ``GET`` "
 "request for the number you want to subscribe to."
 msgstr "``<DIN_UID>`` は、以前の ``GET`` リクエストで返された値の中から、契約したい電話番号のUID識別子の値を指定します。"
 
-#: ../../../source/din.rst:76
+#: ../../../source/din.rst:77
 msgid ""
 "The response will return with HTTP ``201 OK`` to indicate that the "
 "subscription was succesfull."
 msgstr "契約が成立すると、HTTPステータス ``201 OK`` が返されます。"
 
-#: ../../../source/din.rst:79
+#: ../../../source/din.rst:80
 msgid ""
 "Your credits will be charged immediately for the monhtly subscription if "
 "your ``POST`` request succeeds"
 msgstr "``POST`` リクエストが成功すると、直ちに月額使用料がクレジットから引き落とされます。"
 
-#: ../../../source/din.rst:82
+#: ../../../source/din.rst:83
 msgid "Attach an action to the Dial In Number via API"
 msgstr "APIによるダイアルイン番号へのアクションの関連付け"
 
-#: ../../../source/din.rst:84
+#: ../../../source/din.rst:85
 msgid ""
 "Each Dial In Number can be attached an action that will provide "
 "instruction what to do with the call if it was answered::"
 msgstr "それぞれのダイアルイン番号に対しては、電話を着信した時にどのような処理をおこなうかが結びつけられます。"
 
-#: ../../../source/din.rst:88
+#: ../../../source/din.rst:89
 msgid ""
 "The ``url`` specified for ``action_url`` will be called via ``GET`` when "
 "there is incoming call to your subscribed DialIN number to get a command "
@@ -164,7 +168,7 @@ msgstr ""
 "契約しているダイアルイン番号に電話があったばあいには、 ``url`` で指定した ``action_url`` に対して ``GET`` "
 "リクエストが発行され、処理が行われます。"
 
-#: ../../../source/din.rst:93
+#: ../../../source/din.rst:94
 msgid ""
 "Try subscribing to a local number and see how it works now! `Signing up "
 "<https://www.xoxzo.com/en/accounts/signup/>`_ takes only a few minutes "
@@ -173,29 +177,29 @@ msgstr ""
 "今すぐローカルの番号を取得して動作確認をしてみましょう！ `無料登録 "
 "<https://www.xoxzo.com/ja/accounts/signup/>`_ は無料ですぐできます。"
 
-#: ../../../source/din.rst:98
+#: ../../../source/din.rst:99
 msgid "Getting the list of subscribed Dial In Numbers via API"
 msgstr "APIによる契約中のダイアルイン番号の一覧取得"
 
-#: ../../../source/din.rst:100
+#: ../../../source/din.rst:101
 msgid ""
 "To get the list of your current subscribed DINs, just make a ``GET`` "
 "request like::"
 msgstr "契約中のダイアルイン番号の一覧を得るには、下記のように ``GET`` リクエストを発行します。"
 
-#: ../../../source/din.rst:105
+#: ../../../source/din.rst:106
 msgid "Unsubscribing to a Dial In Number via API"
 msgstr "APIによるダイアルイン番号の契約解除"
 
-#: ../../../source/din.rst:107
+#: ../../../source/din.rst:108
 msgid "To unsubscribe::"
 msgstr "契約解除のやりかた::"
 
-#: ../../../source/din.rst:113
+#: ../../../source/din.rst:114
 msgid "What are Actions?"
 msgstr "アクションとは何か？"
 
-#: ../../../source/din.rst:115
+#: ../../../source/din.rst:116
 msgid ""
 "An Action is something that you tell us to do when a call comes in via "
 "your subscribed Dial In Number (DIN). These can be things like "
@@ -203,11 +207,11 @@ msgid ""
 " or read the text with text to speech."
 msgstr "アクションとは契約しているダイアルイン番号に電話が着信した時に行う動作のことです。アクションには、着信した通話の転送、音声ファイルの再生や読み上げ機能などがあります。"
 
-#: ../../../source/din.rst:119
+#: ../../../source/din.rst:120
 msgid "Avaialable Actions are listed at `Available Actions`_"
 msgstr "`「使用可能なアクション」`_ には、使用可能なアクションの一覧があります。"
 
-#: ../../../source/din.rst:121
+#: ../../../source/din.rst:122
 msgid ""
 "The Actions that you want to do are defined in a simple text file that "
 "you make accessible via a URL. This URL is the ``action_url`` that you "
@@ -216,71 +220,71 @@ msgstr ""
 "指定したいアクションは、URLでアクセス可能な簡単なテキストファイルで定義します。このURLは ``action_url`` "
 "で契約したDINに設定します。"
 
-#: ../../../source/din.rst:124
+#: ../../../source/din.rst:125
 msgid ""
 "When a call comes in to your DIN, we'll make a ``GET`` request to your "
 "``action_url`` that will also include information about the call, like::"
 msgstr "DINに対して着信があると、 ``action_url`` に対して ``GET`` リクエストが発行されます。このとき、以下の情報も付与されます。"
 
-#: ../../../source/din.rst:129
+#: ../../../source/din.rst:130
 msgid ""
 "Where ``caller`` is the caller id of the phone making the call and "
 "``recipient`` is your DIN."
 msgstr "``caller`` は電話をかけてきた人の電話番号です。``recipient`` はあなたのDINです。"
 
-#: ../../../source/din.rst:132
+#: ../../../source/din.rst:133
 msgid "Available Actions"
 msgstr "使用可能なアクション"
 
-#: ../../../source/din.rst:134
+#: ../../../source/din.rst:135
 msgid "The available actions are as follows:"
 msgstr "使用可能はアクションは以下のとおりです。"
 
-#: ../../../source/din.rst:137
+#: ../../../source/din.rst:138
 msgid "Action"
 msgstr "アクション"
 
-#: ../../../source/din.rst:139
+#: ../../../source/din.rst:140
 msgid "playback"
 msgstr ""
 
-#: ../../../source/din.rst:139
+#: ../../../source/din.rst:140
 msgid "Plays back an mp3 file to the caller"
 msgstr "着信に対してmp3ファイルを再生する。"
 
-#: ../../../source/din.rst:140
+#: ../../../source/din.rst:141
 msgid "transfer"
 msgstr ""
 
-#: ../../../source/din.rst:140
+#: ../../../source/din.rst:141
 msgid "Transfers the incoming call to another number"
 msgstr "着信した通話を、他の番号に転送する。"
 
-#: ../../../source/din.rst:141
+#: ../../../source/din.rst:142
 msgid "say"
 msgstr ""
 
-#: ../../../source/din.rst:141
+#: ../../../source/din.rst:142
 msgid "Takes text and reads it out loud (Text-to-Speech)"
 msgstr "テキストを音声で読み上げる(Text-to-Speech)。"
 
-#: ../../../source/din.rst:146
+#: ../../../source/din.rst:147
 msgid "Sample"
 msgstr "例"
 
-#: ../../../source/din.rst:148
+#: ../../../source/din.rst:149
 msgid ""
 "Your ``action_url`` must return the following output in plain text "
 "format::"
 msgstr "あなたが指定した ``action_url`` は、つぎのようなプレーンテキスト形式で出力しなければいけません:"
 
-#: ../../../source/din.rst:152
+#: ../../../source/din.rst:153
 msgid ""
 "Where ``playback`` contains a required paramater that points to the URL "
 "of the mp3 file you want to play."
 msgstr "``playback`` は再生したい mp3 のURLを指定します。"
 
-#: ../../../source/din.rst:155
+#: ../../../source/din.rst:156
 msgid ""
 "For a more detailed explaination of usable URL for the ``playback`` "
 "action please see :ref:`simple playback API's recording_url parameter "
@@ -289,19 +293,19 @@ msgstr ""
 "``playback`` アクションで使えるURLについては :ref:`音声プレーバックAPIのrecording_urlパラメータ "
 "<playback-usable-url-ref>` をご参考ください。"
 
-#: ../../../source/din.rst:158
+#: ../../../source/din.rst:159
 msgid ""
 "For ``transfer``, you'll need to also include a required parameter of the"
 " number you want to transfer to::"
 msgstr "``transfer`` は転送先の電話番号を含まなけれはいけません。"
 
-#: ../../../source/din.rst:162
+#: ../../../source/din.rst:163
 msgid ""
 "``caller`` is an optional argument to set the caller id when you transfer"
 " the call."
 msgstr "``caller`` はオプションのパラメータで、転送相手に通知される発信者番号です。"
 
-#: ../../../source/din.rst:166
+#: ../../../source/din.rst:167
 msgid ""
 "The **caller** is sent as through a best effort method and is not "
 "guaranteed to be shown on the recipient's mobile as it is and maybe "
@@ -312,11 +316,11 @@ msgstr ""
 "発信者番号の ``caller`` "
 "は、相手へできるかぎりそのまま通知されるように処理されますが、保証されているわけではなく、別の値に置き換えられる可能性があります。これは、通信キャリア、経由するネットワークや政府の方針依存しており、必ずしも指定したとおりになるわけではありません。"
 
-#: ../../../source/din.rst:170
+#: ../../../source/din.rst:171
 msgid "For text to speech, you use ``say``::"
 msgstr "テキストを読み上げるには ``say`` を使います::"
 
-#: ../../../source/din.rst:174
+#: ../../../source/din.rst:175
 msgid ""
 "You need to inclue two required parameters. The first one is language "
 "code. Please refer :ref:`tts_lang<tts_lang_label>` for details."
@@ -324,7 +328,7 @@ msgstr ""
 "２つのパラメータを指定することが必要です。一つ目は言語の指定。詳しくは :ref:`tts_lang<tts_lang_label>` "
 "を参照してください。"
 
-#: ../../../source/din.rst:177
+#: ../../../source/din.rst:178
 msgid ""
 "The second parameter is the text message. You need to enclose the text "
 "with the quotation marks. Please refer "
@@ -376,5 +380,21 @@ msgstr ""
 #~ msgstr ""
 
 #~ msgid "For text to speech, you can use ``say``::"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "The Dial In Numbers API allows you"
+#~ " to receive and manipulate phone "
+#~ "numbers and incoming phone calls via "
+#~ "easy APIs"
+#~ msgstr "ダイアルイン番号APIを使うと、簡単なAPIで電話の着信とそれに対応する処理を設定することができます。"
+
+#~ msgid ""
+#~ "The Dial In Numbers API allows you"
+#~ " to receive and manipulate phone "
+#~ "numbers and incoming phone calls via "
+#~ "easy APIs. You can read the "
+#~ "tutorial `here. <https://blog.xoxzo.com/2017/07/13"
+#~ "/dialinnumbers-tutorial/>`_"
 #~ msgstr ""
 
