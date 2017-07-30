@@ -3,14 +3,14 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Xoxzo API Docs 1.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2017-04-20 16:28+0900\n"
+"POT-Creation-Date: 2017-07-30 17:02+0900\n"
 "PO-Revision-Date: 2015-10-24 07:21+0900\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Generated-By: Babel 2.3.4\n"
+"Generated-By: Babel 2.4.0\n"
 
 #: ../../../source/sms.rst:3
 msgid "SMS API"
@@ -121,7 +121,7 @@ msgid "The additonal parameters below are for JP specific usage and recipients:"
 msgstr "下記のパラメーターは、JP向けの受信者に提供されます。"
 
 #: ../../../source/sms.rst:31
-msgid "jp-kp"
+msgid "jp_kp"
 msgstr ""
 
 #: ../../../source/sms.rst:31
@@ -141,7 +141,7 @@ msgid "true"
 msgstr ""
 
 #: ../../../source/sms.rst:32
-msgid "jp-kddi-sender"
+msgid "jp_kddi_sender"
 msgstr ""
 
 #: ../../../source/sms.rst:32
@@ -167,14 +167,14 @@ msgstr ""
 "-premium-service>`_ までご確認ください。"
 
 #: ../../../source/sms.rst:38
-msgid "Notes on the **jp-kp** parameter:"
-msgstr "**jp-kp** パラメーターに関する注意点"
+msgid "Notes on the **jp_kp** parameter:"
+msgstr "**jp_kp** パラメーターに関する注意点"
 
 #: ../../../source/sms.rst:40
 msgid ""
-"If the jp-kp parameter is set to true, the maximum length for ASCII "
+"If the jp_kp parameter is set to true, the maximum length for ASCII "
 "messages are 140 characters"
-msgstr "jp-kp パラメーターが有効の場合、ASCII文字のみのメッセージの最大の長さは140文字です。"
+msgstr "jp_kp パラメーターが有効の場合、ASCII文字のみのメッセージの最大の長さは140文字です。"
 
 #: ../../../source/sms.rst:41 ../../../source/sms.rst:47
 msgid "For non-ASCII messages, the maximum length is 70 characters"
@@ -187,8 +187,8 @@ msgstr "**message** パラメーターに関する注意点"
 #: ../../../source/sms.rst:46
 msgid ""
 "The maximum length for ASCII messages are 160 characters (unless you're "
-"using jp-kp)"
-msgstr "ASCII文字のみのメッセージの最大の長さは160文字です。(jp-kpが無効の場合)"
+"using jp_kp)"
+msgstr "ASCII文字のみのメッセージの最大の長さは160文字です。(jp_kpが無効の場合)"
 
 #: ../../../source/sms.rst:50
 msgid "Notes on the **recipient** parameter:"
@@ -315,7 +315,9 @@ msgid ""
 "immediate results. `Signing up "
 "<https://www.xoxzo.com/en/accounts/signup/>`_ takes only a few minutes "
 "and it's free"
-msgstr "実際にテストコードでAPIを叩いたほうが早く動作確認できます。 `無料登録 <https://www.xoxzo.com/ja/accounts/signup/>`_ は無料ですぐできます。"
+msgstr ""
+"実際にテストコードでAPIを叩いたほうが早く動作確認できます。 `無料登録 "
+"<https://www.xoxzo.com/ja/accounts/signup/>`_ は無料ですぐできます。"
 
 #: ../../../source/sms.rst:128
 msgid "Check SMS status API"
@@ -693,5 +695,11 @@ msgstr "メッセージの配信失敗"
 #~ "**``Signing up "
 #~ "<https://www.xoxzo.com/en/accounts/signup/>`_ takes only"
 #~ " a few minutes and it's free**"
+#~ msgstr ""
+
+#~ msgid "jp-kp"
+#~ msgstr ""
+
+#~ msgid "jp-kddi-sender"
 #~ msgstr ""
 
