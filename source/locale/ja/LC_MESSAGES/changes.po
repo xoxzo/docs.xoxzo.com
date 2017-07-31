@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Xoxzo API Docs 1.1\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2017-03-15 14:24+0900\n"
+"POT-Creation-Date: 2017-07-31 12:50+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -147,6 +147,30 @@ msgstr ""
 #: ../../../source/changes.rst:17
 msgid "Support en for TTS"
 msgstr "TTS英語対応"
+
+#: ../../../source/changes.rst:18
+msgid "1.4.2"
+msgstr ""
+
+#: ../../../source/changes.rst:18
+msgid "2017-06-22"
+msgstr ""
+
+#: ../../../source/changes.rst:18
+msgid "Add new section on Dial In Numbers API"
+msgstr "ダイアルイン番号API新セクション追加"
+
+#: ../../../source/changes.rst:19
+msgid "1.4.3"
+msgstr ""
+
+#: ../../../source/changes.rst:19
+msgid "2017-07-30"
+msgstr ""
+
+#: ../../../source/changes.rst:19
+msgid "Replace hyphen (dash) with underscore: jp_kp and jp_kddi_sender"
+msgstr "jp_kpとjp_kddi_senderのパラメーターにてhyphenをunderscoreに置き換える"
 
 #~ msgid "2016-10-31"
 #~ msgstr ""
