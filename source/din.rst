@@ -109,6 +109,16 @@ To unsubscribe::
 
     curl -XDELETE -u <SID>:<AUTH_TOKEN> https://api.xoxzo.com/voice/dins/subscriptions/<din_uid>/
 
+Local Caller ID
+===============
+This is the section for jp_din_caller
+
+To make a call using a local caller ID, send a ``POST`` request::
+
+    curl -u <SID>:<AUTH_TOKEN> https://api.xoxzo.com/voice/dins/subscriptions/ jp_din_caller=true
+
+Daradam
+
 
 What are Actions?
 ======================================================
