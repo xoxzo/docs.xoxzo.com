@@ -83,7 +83,7 @@ Please refer to our `JP Local Caller ID service <http://help.xoxzo.com/>`_ for m
 .. note::
    Notes on the **jp_din_caller** parameter:
 
-   * You are required to subscribe to a Dial In Number in order to use the local caller ID functionality. Please refer to :ref:`subscribe-din-api-ref` for more information
+   * You are required to subscribe to a Dial In Number in order to use the local caller ID functionality. Please refer to :ref:`subscribe-din-api-ref` for more information.
 
 Examples
 -----------------------------------------------
