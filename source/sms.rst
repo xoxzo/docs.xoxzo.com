@@ -23,7 +23,7 @@ with the following parameters:
 JP specific optional parameters
 ------------------------------------
 
-The additonal parameters below are for JP specific usage and recipients:
+The additional parameters below are for JP specific usage and recipients:
 
     ==============  ==================  ========    =================== ===================
     Name            Description         Required    Data Type           Example
