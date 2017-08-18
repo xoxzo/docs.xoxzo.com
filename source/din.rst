@@ -109,41 +109,6 @@ To unsubscribe::
 
     curl -XDELETE -u <SID>:<AUTH_TOKEN> https://api.xoxzo.com/voice/dins/subscriptions/<din_uid>/
 
-Local Caller ID
-===============
-Making a call using local caller ID. You can set the caller ID to your subscribed-DIN when
-you're making a call.
-
-To make a call using a local caller ID, send a ``POST`` request to simple
-playback API endpoint and add another parameter `jp_din_caller` to `true`.
-
-Examples
------------------------------------------------
-
-Below is an example request using cURL::
-
-    curl -u <SID>:<AUTH_TOKEN> \
-      --data-urlencode 'caller=<subscribed_din>' \
-      --data-urlencode 'recipient=<recipient>' \
-      --data-urlencode 'recording_url=<recording_url>' \
-      --data-urlencode 'jp_din_caller=true' \
-      https://api.xoxzo.com/voice/simple/playback/
-
-Response
------------------------------------------------
-
-The response would be the same as simple playback API response: a JSON structure, returned with HTTP ``201 CREATED`` status code::
-
-    HTTP/1.0 201 CREATED
-    Content-Type: application/json
-
-    [
-        {
-            "callid": "<callid>"
-        }
-    ]
-
-
 What are Actions?
 ======================================================
 
