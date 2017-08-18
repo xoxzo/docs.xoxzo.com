@@ -81,7 +81,7 @@ The additional parameters below are for JP specific usage and recipients:
 .. note::
    Notes on the **jp_din_caller** parameter:
 
-   * You are required to subscribe to DIN when you want to set a local caller ID
+   * You are required to :ref:`subscribe-din-api-ref` when you want to set a local caller ID
 
 Examples
 -----------------------------------------------

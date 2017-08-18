@@ -65,6 +65,8 @@ Or::
 
 filtering using country or prefix will only return you the relevant DINs based on your filter.
 
+.. _subscribe-din-api-ref:
+
 Subscribing to a Dial In Number via API
 ======================================================
 
