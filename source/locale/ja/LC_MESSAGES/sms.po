@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Xoxzo API Docs 1.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2017-07-30 17:02+0900\n"
+"POT-Creation-Date: 2017-08-18 17:05+0900\n"
 "PO-Revision-Date: 2015-10-24 07:21+0900\n"
 "Last-Translator: \n"
 "Language-Team: \n"
@@ -117,7 +117,8 @@ msgid "JP specific optional parameters"
 msgstr "JP向けオプションパラメーター"
 
 #: ../../../source/sms.rst:26
-msgid "The additonal parameters below are for JP specific usage and recipients:"
+#, fuzzy
+msgid "The additional parameters below are for JP specific usage and recipients:"
 msgstr "下記のパラメーターは、JP向けの受信者に提供されます。"
 
 #: ../../../source/sms.rst:31
