@@ -67,6 +67,16 @@ with the following parameters:
    *  http://a.clyp.it/b-byghjf.mp3
    *  http://a.clyp.it/b-bygh_f.mp3
 
+JP specific optional parameters
+-------------------------------
+
+The additional parameters below are for JP specific usage and recipients:
+
+    ==============  ==================  ========    =================== ===================
+    Name            Description         Required    Data Type           Example
+    ==============  ==================  ========    =================== ===================
+    jp_din_caller   Local caller ID     No          The string **true** true
+    ==============  ==================  ========    =================== ===================
 
 Examples
 -----------------------------------------------
@@ -186,37 +196,3 @@ This is a list of statuses that you can find in the ``status`` data:
    IN PROGRESS          The call is still in progress
    NO ANSWER            The call was not answered by the recipient
    ===================  ==================
-
-Local Caller ID
-===============
-Making a call using local caller ID. You can set the caller ID to your subscribed-DIN when
-you're making a call.
-
-To make a call using a local caller ID, send a ``POST`` request to simple
-playback API endpoint and add another parameter `jp_din_caller` to `true`.
-
-Examples
------------------------------------------------
-
-Below is an example request using cURL::
-
-    curl -u <SID>:<AUTH_TOKEN> \
-      --data-urlencode 'caller=<subscribed_din>' \
-      --data-urlencode 'recipient=<recipient>' \
-      --data-urlencode 'recording_url=<recording_url>' \
-      --data-urlencode 'jp_din_caller=true' \
-      https://api.xoxzo.com/voice/simple/playback/
-
-Response
------------------------------------------------
-
-The response would be the same as simple playback API response: a JSON structure, returned with HTTP ``201 CREATED`` status code::
-
-    HTTP/1.0 201 CREATED
-    Content-Type: application/json
-
-    [
-        {
-            "callid": "<callid>"
-        }
-    ]
