@@ -78,10 +78,12 @@ The additional parameters below are for JP specific usage and recipients:
     jp_din_caller   Local caller ID     No          The string **true** true
     ==============  ==================  ========    =================== ===================
 
+Please refer to our `JP Local Caller ID service <http://help.xoxzo.com/>`_ for more information.
+
 .. note::
    Notes on the **jp_din_caller** parameter:
 
-   * You are required to :ref:`subscribe-din-api-ref` when you want to set a local caller ID
+   * You are required to subscribe to a Dial In Number in order to use the local caller ID functionality. Please refer to :ref:`subscribe-din-api-ref` for more details.
 
 Examples
 -----------------------------------------------
