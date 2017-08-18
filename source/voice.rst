@@ -78,6 +78,11 @@ The additional parameters below are for JP specific usage and recipients:
     jp_din_caller   Local caller ID     No          The string **true** true
     ==============  ==================  ========    =================== ===================
 
+.. note::
+   Notes on the **jp_din_caller** parameter:
+
+   * You are required to subscribe to DIN when you want to set a local caller ID
+
 Examples
 -----------------------------------------------
 
