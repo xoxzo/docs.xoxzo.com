@@ -3,14 +3,14 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Xoxzo API Docs 1.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2017-07-30 17:02+0900\n"
+"POT-Creation-Date: 2017-08-19 16:29+0900\n"
 "PO-Revision-Date: 2015-10-24 07:21+0900\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Generated-By: Babel 2.4.0\n"
+"Generated-By: Babel 2.3.4\n"
 
 #: ../../../source/sms.rst:3
 msgid "SMS API"
@@ -158,13 +158,12 @@ msgstr ""
 
 #: ../../../source/sms.rst:35
 msgid ""
-"Please refer to our `K-Premium Service FAQ "
-"<http://help.xoxzo.com/customer/en/portal/articles/2264921--sms-api-the-k"
-"-premium-service>`_ for more information on the K-Premium Service."
+"Please refer to our `K-Premium Service FAQ <https://help.xoxzo.com/xoxzo-"
+"cloud-telephony-platform/articles/the-k-premium-service/>`_ for more "
+"information on the K-Premium Service."
 msgstr ""
 "Kプレミアムの詳細については `KプレミアムのFAQページ "
-"<http://help.xoxzo.com/customer/ja/portal/articles/2264921--sms-api-the-k"
-"-premium-service>`_ までご確認ください。"
+"<https://help.xoxzo.com/ja/xoxzo-cloud-telephony-platform/articles/the-k-premium-service/>`_ までご確認ください。"
 
 #: ../../../source/sms.rst:38
 msgid "Notes on the **jp_kp** parameter:"
@@ -654,52 +653,3 @@ msgstr "FAIL"
 #: ../../../source/sms.rst:437
 msgid "Failed to send message"
 msgstr "メッセージの配信失敗"
-
-#~ msgid "Below is an example request using CURL::"
-#~ msgstr "下記は、CURLを使ったリクエストの例です。"
-
-#~ msgid "Min:10, Max:15 (exclude + sign prefix)"
-#~ msgstr "最短10桁、最長15桁（先頭+を除く）"
-
-#~ msgid "Max Length"
-#~ msgstr "最大の長さ"
-
-#~ msgid "ASCII: 160, Non-ASCII: 70"
-#~ msgstr "ASCI英数字のみ: 160, ASCII以外: 70"
-
-#~ msgid "15 digit or 10 alphanumeric"
-#~ msgstr "数字15桁または英数字10桁"
-
-#~ msgid "N/A"
-#~ msgstr ""
-
-#~ msgid "Min:10, Max:12"
-#~ msgstr "最短10桁、最長12桁 "
-
-#~ msgid "Sidebar Title"
-#~ msgstr ""
-
-#~ msgid "test test sidebar"
-#~ msgstr ""
-
-#~ msgid ""
-#~ msgstr ""
-
-#~ msgid ""
-#~ "It's faster to actually try some "
-#~ "test code againts the API to see"
-#~ " immediate results."
-#~ msgstr ""
-
-#~ msgid ""
-#~ "**``Signing up "
-#~ "<https://www.xoxzo.com/en/accounts/signup/>`_ takes only"
-#~ " a few minutes and it's free**"
-#~ msgstr ""
-
-#~ msgid "jp-kp"
-#~ msgstr ""
-
-#~ msgid "jp-kddi-sender"
-#~ msgstr ""
-
