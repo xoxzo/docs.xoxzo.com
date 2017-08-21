@@ -78,7 +78,7 @@ The additional parameters below are for JP specific usage and recipients:
     jp_din_caller   Local caller ID     No          The string **true** true
     ==============  ==================  ========    =================== ===================
 
-Please refer to our `JP Local Caller ID service <http://help.xoxzo.com/>`_ for more information.
+Please refer to our `JP Local Caller ID service <https://help.xoxzo.com/xoxzo-cloud-telephony-platform/articles/local%20caller%20id%20for%20dial%20in%20numbers/>`_ for more information.
 
 .. note::
    Notes on the **jp_din_caller** parameter:
