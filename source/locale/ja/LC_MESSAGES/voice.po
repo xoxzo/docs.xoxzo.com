@@ -241,8 +241,8 @@ msgid ""
 "local caller ID functionality. Please refer to :ref:`subscribe-din-api-"
 "ref` for more information."
 msgstr ""
-"ローカル発信者番号の機能を利用するためには、ダイアルイン番号を購読してください。詳しくは、:こちら:`/ja/subscribe-din-api-"
-"ref`をご参照ください。"
+"ローカル発信者番号の機能を利用するためには、ダイアルイン番号を購読してください。詳しくは、:ref:`subscribe-din-api-ref` "
+"をご参照ください。"
 
 #: ../../../source/voice.rst:89
 msgid "Examples"
