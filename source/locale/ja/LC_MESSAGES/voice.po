@@ -227,7 +227,7 @@ msgid ""
 "/xoxzo-cloud-telephony-"
 "platform/articles/local%20caller%20id%20for%20dial%20in%20numbers/>`_ for"
 " more information."
-msgstr "詳細は`ローカル発信者番号<https://help.xoxzo.com/ja/xoxzo-cloud-telephony-platform/articles/local%20caller%20id%20for%20dial%20in%20numbers/>`にてご確認ください。"
+msgstr "詳細は `ローカル発信者番号 <https://help.xoxzo.com/ja/xoxzo-cloud-telephony-platform/articles/local%20caller%20id%20for%20dial%20in%20numbers/>`_ にてご確認ください。"
 
 #: ../../../source/voice.rst:84
 msgid "Notes on the **jp_din_caller** parameter:"
