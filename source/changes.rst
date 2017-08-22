@@ -17,4 +17,5 @@ CHANGES
     1.4.1       2017-03-16          Support en for TTS
     1.4.2       2017-06-22          Add new section on Dial In Numbers API
     1.4.3       2017-07-30          Replace hyphen (dash) with underscore: jp_kp and jp_kddi_sender
+    1.5.0       2017-08-17          Add new functionality: Local caller ID via DIN
     =========   ==================  ===============================================================================================

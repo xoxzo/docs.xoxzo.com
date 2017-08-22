@@ -3,14 +3,16 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Xoxzo API Docs 1.1\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2017-07-31 12:50+0900\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
+"POT-Creation-Date: 2017-08-18 17:05+0900\n"
+"PO-Revision-Date: 2017-08-21 10:14+0900\n"
 "MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=utf-8\n"
+"Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Generated-By: Babel 2.3.4\n"
+"Generated-By: Babel 2.4.0\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: ja\n"
+"X-Generator: Poedit 2.0.3\n"
 
 #: ../../../source/changes.rst:3
 msgid "CHANGES"
@@ -18,7 +20,7 @@ msgstr "変更点履歴"
 
 #: ../../../source/changes.rst:6
 msgid "Ver"
-msgstr ""
+msgstr "バージョン"
 
 #: ../../../source/changes.rst:6
 msgid "Date"
@@ -30,11 +32,11 @@ msgstr "変更点"
 
 #: ../../../source/changes.rst:8
 msgid "1.0"
-msgstr ""
+msgstr "1.0"
 
 #: ../../../source/changes.rst:8
 msgid "2015-11-05"
-msgstr ""
+msgstr "2015-11-05"
 
 #: ../../../source/changes.rst:8
 msgid "Initial version"
@@ -42,11 +44,11 @@ msgstr "初期バージョン"
 
 #: ../../../source/changes.rst:9
 msgid "1.1"
-msgstr ""
+msgstr "1.1"
 
 #: ../../../source/changes.rst:9
 msgid "2015-12-24"
-msgstr ""
+msgstr "2015-12-24"
 
 #: ../../../source/changes.rst:9
 msgid "Added k-premium settings"
@@ -54,11 +56,11 @@ msgstr "k-premiumパラメーターの追加"
 
 #: ../../../source/changes.rst:10
 msgid "1.1.0"
-msgstr ""
+msgstr "1.1.0"
 
 #: ../../../source/changes.rst:10
 msgid "2016-03-04"
-msgstr ""
+msgstr "2016-03-04"
 
 #: ../../../source/changes.rst:10
 msgid "Added QUEUED status"
@@ -66,11 +68,11 @@ msgstr "配信待ちのステータス追加"
 
 #: ../../../source/changes.rst:11
 msgid "1.1.1"
-msgstr ""
+msgstr "1.1.1"
 
 #: ../../../source/changes.rst:11
 msgid "2016-03-29"
-msgstr ""
+msgstr "2016-03-29"
 
 #: ../../../source/changes.rst:11
 msgid "Return list instead of dictionary for voice call status API"
@@ -78,11 +80,11 @@ msgstr "voice call status APIのレスポンスにてdictionaryからlistに変�
 
 #: ../../../source/changes.rst:12
 msgid "1.1.2"
-msgstr ""
+msgstr "1.1.2"
 
 #: ../../../source/changes.rst:12
 msgid "2016-04-04"
-msgstr ""
+msgstr "2016-04-04"
 
 #: ../../../source/changes.rst:12
 msgid "Add Sent Messages List API documentation"
@@ -90,11 +92,11 @@ msgstr "送信されたSMSのリストを取得するAPIドキュメンテーシ
 
 #: ../../../source/changes.rst:13
 msgid "1.1.3"
-msgstr ""
+msgstr "1.1.3"
 
 #: ../../../source/changes.rst:13
 msgid "2016-04-22"
-msgstr ""
+msgstr "2016-04-22"
 
 #: ../../../source/changes.rst:13
 msgid "Update HTTP status on not enough credits error message"
@@ -102,11 +104,11 @@ msgstr "クレジット不足時にHTTPステータスの変更"
 
 #: ../../../source/changes.rst:14
 msgid "1.3.0"
-msgstr ""
+msgstr "1.3.0"
 
 #: ../../../source/changes.rst:14
 msgid "2016-11-03"
-msgstr ""
+msgstr "2016-11-03"
 
 #: ../../../source/changes.rst:14
 msgid "New addition of telephony utilities API"
@@ -114,11 +116,11 @@ msgstr "テレフォニー・ユーティリティAPIの追加"
 
 #: ../../../source/changes.rst:15
 msgid "1.3.1"
-msgstr ""
+msgstr "1.3.1"
 
 #: ../../../source/changes.rst:15
 msgid "2016-12-14"
-msgstr ""
+msgstr "2016-12-14"
 
 #: ../../../source/changes.rst:15
 msgid "Updated restrictions on playback URL"
@@ -126,11 +128,11 @@ msgstr "音声プレーバックURLの制限アップデート"
 
 #: ../../../source/changes.rst:16
 msgid "1.4.0"
-msgstr ""
+msgstr "1.4.0"
 
 #: ../../../source/changes.rst:16
 msgid "2017-01-17"
-msgstr ""
+msgstr "2017-01-17"
 
 #: ../../../source/changes.rst:16
 msgid "Add new TTS functionality"
@@ -138,11 +140,11 @@ msgstr "テキスト読み上げ機能機能(TTS)新規追加"
 
 #: ../../../source/changes.rst:17
 msgid "1.4.1"
-msgstr ""
+msgstr "1.4.1"
 
 #: ../../../source/changes.rst:17
 msgid "2017-03-16"
-msgstr ""
+msgstr "2017-03-16"
 
 #: ../../../source/changes.rst:17
 msgid "Support en for TTS"
@@ -150,11 +152,11 @@ msgstr "TTS英語対応"
 
 #: ../../../source/changes.rst:18
 msgid "1.4.2"
-msgstr ""
+msgstr "1.4.2"
 
 #: ../../../source/changes.rst:18
 msgid "2017-06-22"
-msgstr ""
+msgstr "2017-06-22"
 
 #: ../../../source/changes.rst:18
 msgid "Add new section on Dial In Numbers API"
@@ -162,16 +164,24 @@ msgstr "ダイアルイン番号API新セクション追加"
 
 #: ../../../source/changes.rst:19
 msgid "1.4.3"
-msgstr ""
+msgstr "1.4.3"
 
 #: ../../../source/changes.rst:19
 msgid "2017-07-30"
-msgstr ""
+msgstr "2017-07-30"
 
 #: ../../../source/changes.rst:19
 msgid "Replace hyphen (dash) with underscore: jp_kp and jp_kddi_sender"
 msgstr "jp_kpとjp_kddi_senderのパラメーターにてhyphenをunderscoreに置き換える"
 
-#~ msgid "2016-10-31"
-#~ msgstr ""
+#: ../../../source/changes.rst:20
+msgid "1.5.0"
+msgstr "1.5.0"
 
+#: ../../../source/changes.rst:20
+msgid "2017-08-17"
+msgstr "2017-08-17"
+
+#: ../../../source/changes.rst:20
+msgid "Add new functionality: Local caller ID via DIN"
+msgstr "新機能追加：ダイアルイン番号のローカルの日本の番号利用が可能に"
