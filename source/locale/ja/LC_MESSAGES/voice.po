@@ -185,7 +185,7 @@ msgstr "No"
 
 #: ../../../source/voice.rst:78
 msgid "The string **true**"
-msgstr "**true**の文字列"
+msgstr "**true** の文字列"
 
 #: ../../../source/voice.rst:78
 msgid "true"
