@@ -181,7 +181,7 @@ msgstr "ローカル発信者番号"
 
 #: ../../../source/voice.rst:78
 msgid "No"
-msgstr "No"
+msgstr "×"
 
 #: ../../../source/voice.rst:78
 msgid "The string **true**"
