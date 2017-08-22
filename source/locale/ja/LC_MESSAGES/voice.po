@@ -128,12 +128,12 @@ msgid "Example of a valid recipient is: *+818011234567* with *81* as the Japan c
 msgstr "有効な受信者記載例として、 *+818011234567* と挙げられます。 *81* は日本の国番号で、 *8011234567* は携帯電話番号となります。"
 
 #: ../../../source/voice.rst:43
-msgid "Notes on the **jp_din_caller** parameter:"
-msgstr "**jp_din_caller** パラメーターに関する注意点"
+msgid "Notes on the **caller** parameter:"
+msgstr "**caller** パラメーターに関する注意点"
 
 #: ../../../source/voice.rst:51
-msgid "The **jp_din_caller** is sent as through a best effort method and is not guaranteed to be shown on the recipient's mobile as it is and maybe replaced with an arbitary **caller**. This is dependent on the policies of the carriers, intermerdiary networks and governments, and they may not honour your request."
-msgstr "**jp_din_caller** は、最良の方法で発信されますが、それでも、受信者側にそのまま表示される保証はありません。任意の **jp_din_caller** に置き換えられることもあります。これは、各キャリアや、ネットワークまたは政府が定めた規定によるもので、リクエストを受け取らない場合もあるからです。"
+msgid "The **caller** is sent as through a best effort method and is not guaranteed to be shown on the recipient's mobile as it is and maybe replaced with an arbitary **caller**. This is dependent on the policies of the carriers, intermerdiary networks and governments, and they may not honour your request."
+msgstr "**caller** は、最良の方法で発信されますが、それでも、受信者側にそのまま表示される保証はありません。任意の **caller** に置き換えられることもあります。これは、各キャリアや、ネットワークまたは政府が定めた規定によるもので、リクエストを受け取らない場合もあるからです。"
 
 #: ../../../source/voice.rst:58
 msgid "Notes on the **recording_url** parameter:"
