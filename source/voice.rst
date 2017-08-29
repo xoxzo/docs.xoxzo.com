@@ -6,7 +6,7 @@ The Voice API allows you to interact with a phone via beautiful HTTP endpoints.
 
 .. warning::
    *  There is a minimum amount of credits which you need to have in order to make a Voice API call,
-      regardless of the cost of the call itself. Please refer to the `Help Center <http://bit.ly/1TxHmrR>`_ for more information.
+      regardless of the cost of the call itself. Please refer to the `Help Center <https://help.xoxzo.com/en/xoxzo-cloud-telephony-platform/articles/minimum-credits-for-voice-api/>`_ for more information.
 
 .. _simple-playback-api-ref:
 
