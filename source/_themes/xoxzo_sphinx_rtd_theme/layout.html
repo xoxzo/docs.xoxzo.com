@@ -110,6 +110,20 @@
           {% if toctree1 %}
             {{ toctree1 }}
           {% endif %}
+          <ul>
+            <li class="toctree-l1 dropdown">
+              {% if language == 'ja' %}
+              <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">各言語のAPI接続ライブラリー<span class="caret"></span></a>
+              {% else %}
+              <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">API client libraries for your language<span class="caret"></span></a>
+              {% endif %}
+              <div class="dropdown-menu">
+                <a class="dropdown-item" href="https://github.com/xoxzo/xoxzo.cloudpy">Python</a>
+                <a class="dropdown-item" href="https://github.com/xoxzo/xoxzo.cloudruby">Ruby</a>
+                <a class="dropdown-item" href="https://github.com/xoxzo/xoxzo.cloudphp">PHP</a>
+              </div>
+            </li>
+          </ul>
         </div>
         <div class="nav-set">
           <li class="nav-item">
@@ -171,6 +185,19 @@
                 <div class="local-toc">{{ toc }}</div>
             {% endif %}
           {% endblock %}
+        </div>
+
+        <div class="wy-menu wy-menu-vertical library">
+          {% if language == 'ja' %}
+          <p>各言語のAPI接続ライブラリー</p>
+          {% else %}
+          <p>API client libraries for your language</p>
+          {% endif %}
+          <ul>
+            <li><a href="https://github.com/xoxzo/xoxzo.cloudpy">Python</a></li>
+            <li><a href="https://github.com/xoxzo/xoxzo.cloudruby">Ruby</a></li>
+            <li><a href="https://github.com/xoxzo/xoxzo.cloudphp">PHP</a></li>
+          </ul>
         </div>
       </div>
     </nav>
