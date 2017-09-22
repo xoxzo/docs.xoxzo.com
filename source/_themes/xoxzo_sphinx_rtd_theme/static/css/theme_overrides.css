@@ -152,6 +152,11 @@ ul.navbar-nav .nav-item a.nav-button:hover {
   border-color: #ccc;
 }
 
+.wy-menu-vertical {
+  padding-bottom: 20px;
+  border-bottom: 1px solid #ddd;
+}
+
 .wy-menu-vertical a {
   color: #6d6d6d;
 }
@@ -159,6 +164,33 @@ ul.navbar-nav .nav-item a.nav-button:hover {
 .wy-menu-vertical a:hover {
   color: #222;
   background: inherit;
+}
+
+.wy-menu-vertical.library {
+  border-bottom: none;
+  padding-left: 23px;
+  padding-top: 20px;
+  color: #6d6d6d;
+}
+
+.wy-menu-vertical.library p {
+  font-size: 0.9rem;
+  margin-bottom: 5px;
+  font-weight: 600;
+}
+
+.wy-menu-vertical.library ul {
+  padding-left: 20px;
+}
+
+.wy-menu-vertical.library ul li {
+  list-style-type: circle;
+  margin-bottom: 5px;
+}
+
+.wy-menu-vertical.library ul li a {
+  padding: 0;
+  display: inline;
 }
 
 .rst-content blockquote {
@@ -227,6 +259,7 @@ ul.navbar-nav .nav-item a.nav-button:hover {
     display: inherit;
     padding-bottom: 10px;
     padding-left: 16px;
+    padding-right: 16px;
     margin-top: 10px;
     margin-bottom: 10px;
     border-bottom: 1px solid rgba(255,255,255,.5);
@@ -235,6 +268,7 @@ ul.navbar-nav .nav-item a.nav-button:hover {
   .nav-set {
     display: inherit;
     padding-left: 16px;
+    padding-right: 16px;
   }
 
   .nav-toctree li {
@@ -252,6 +286,10 @@ ul.navbar-nav .nav-item a.nav-button:hover {
   .nav-toctree li a:hover {
     text-decoration: none;
     color: rgba(255,255,255,.75);
+  }
+
+  .nav-toctree li.dropdown a {
+    color: #373a3c;
   }
 
   .navbar-toggleable-sm .navbar-nav .nav-item, .nav-toctree li {
