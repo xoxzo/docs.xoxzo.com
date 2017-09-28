@@ -6,7 +6,7 @@ The Voice API allows you to interact with a phone via beautiful HTTP endpoints.
 
 .. warning::
    *  There is a minimum amount of credits which you need to have in order to make a Voice API call,
-      regardless of the cost of the call itself. Please refer to the `Help Center <http://bit.ly/1TxHmrR>`_ for more information.
+      regardless of the cost of the call itself. Please refer to the `Help Center <https://help.xoxzo.com/en/xoxzo-cloud-telephony-platform/articles/minimum-credits-for-voice-api/>`_ for more information.
 
 .. _simple-playback-api-ref:
 
@@ -67,6 +67,23 @@ with the following parameters:
    *  http://a.clyp.it/b-byghjf.mp3
    *  http://a.clyp.it/b-bygh_f.mp3
 
+JP specific optional parameters
+-------------------------------
+
+The additional parameters below are for JP specific usage and recipients:
+
+    ==============  ==================  ========    =================== ===================
+    Name            Description         Required    Data Type           Example
+    ==============  ==================  ========    =================== ===================
+    jp_din_caller   Local caller ID     No          The string **true** true
+    ==============  ==================  ========    =================== ===================
+
+Please refer to our `JP Local Caller ID service <https://help.xoxzo.com/xoxzo-cloud-telephony-platform/articles/local-caller-id-for-dial-in-numbers/>`_ for more information.
+
+.. note::
+   Notes on the **jp_din_caller** parameter:
+
+   * You are required to subscribe to a Dial In Number in order to use the local caller ID functionality. Please refer to :ref:`subscribe-din-api-ref` for more information.
 
 Examples
 -----------------------------------------------
@@ -186,4 +203,3 @@ This is a list of statuses that you can find in the ``status`` data:
    IN PROGRESS          The call is still in progress
    NO ANSWER            The call was not answered by the recipient
    ===================  ==================
-

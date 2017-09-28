@@ -23,27 +23,27 @@ with the following parameters:
 JP specific optional parameters
 ------------------------------------
 
-The additonal parameters below are for JP specific usage and recipients:
+The additional parameters below are for JP specific usage and recipients:
 
     ==============  ==================  ========    =================== ===================
     Name            Description         Required    Data Type           Example
     ==============  ==================  ========    =================== ===================
-    jp-kp           K-Premium flag      No          The string **true** true
-    jp-kddi-sender  Sender ID for au    No          Numeric             0312341234
+    jp_kp           K-Premium flag      No          The string **true** true
+    jp_kddi_sender  Sender ID for au    No          Numeric             0312341234
     ==============  ==================  ========    =================== ===================
 
-Please refer to our `K-Premium Service FAQ <http://help.xoxzo.com/customer/en/portal/articles/2264921--sms-api-the-k-premium-service>`_ for more information on the K-Premium Service.
+Please refer to our `K-Premium Service FAQ <https://help.xoxzo.com/xoxzo-cloud-telephony-platform/articles/the-k-premium-service/>`_ for more information on the K-Premium Service.
 
 .. note::
-   Notes on the **jp-kp** parameter:
+   Notes on the **jp_kp** parameter:
 
-   * If the jp-kp parameter is set to true, the maximum length for ASCII messages are 140 characters
+   * If the jp_kp parameter is set to true, the maximum length for ASCII messages are 140 characters
    * For non-ASCII messages, the maximum length is 70 characters
 
 .. note::
    Notes on the **message** parameter:
 
-   * The maximum length for ASCII messages are 160 characters (unless you're using jp-kp)
+   * The maximum length for ASCII messages are 160 characters (unless you're using jp_kp)
    * For non-ASCII messages, the maximum length is 70 characters
 
 .. note::
