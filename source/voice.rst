@@ -27,6 +27,7 @@ with the following parameters:
     recipient      Call recipient            Yes       E.164          +8190123456789
     recording_url  URL where your mp3 audio  Yes       URL            http://www.mysite.com/123.mp3
                    file is located
+    callbackurl    Callback URL              No        URL            http://example.com
     =============  ========================  ========  =============  =============================
 
 .. note::
@@ -66,6 +67,11 @@ with the following parameters:
    *  http://a.clyp.it/b3byGhjf.mp3
    *  http://a.clyp.it/b-byghjf.mp3
    *  http://a.clyp.it/b-bygh_f.mp3
+
+.. note::
+   Notes on the **callbackurl** parameter:
+
+   * bra bra bra
 
 JP specific optional parameters
 -------------------------------
