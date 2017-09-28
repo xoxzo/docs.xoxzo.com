@@ -12,13 +12,14 @@ To send a SMS message, make a ``POST`` request to the endpoint::
 
 with the following parameters:
 
-    =========  ==================  ========  ===================  ===================
-    Name       Description         Required  Data Type            Example
-    =========  ==================  ========  ===================  ===================
-    message    Message body        Yes       UTF-8                こんにちは
-    recipient  Message recipient   Yes       E.164                +8190123456789
-    sender     Sender ID           Yes       Alphanumeric         Xoxzo1
-    =========  ==================  ========  ===================  ===================
+    ===========  ==================  ========  ===================  ===================
+    Name         Description         Required  Data Type            Example
+    ===========  ==================  ========  ===================  ===================
+    message      Message body        Yes       UTF-8                こんにちは
+    recipient    Message recipient   Yes       E.164                +8190123456789
+    sender       Sender ID           Yes       Alphanumeric         Xoxzo1
+    callbackurl  Callback URL        No        URL                  http://example.com
+    ===========  ==================  ========  ===================  ===================
 
 JP specific optional parameters
 ------------------------------------
@@ -77,6 +78,11 @@ Please refer to our `K-Premium Service FAQ <https://help.xoxzo.com/xoxzo-cloud-t
    *  Messages which only contains ASCII based characters will have a maximum 
       length of 160 characters, while other types of messages will have a 
       maximum length of 70 characters
+
+.. note::
+   Notes on the **callbackurl** parameter:
+
+   *  XOXZO cloud will call this URL when status has changed with xxx parameter.
 
 Examples
 ------------------------------------
