@@ -71,7 +71,10 @@ with the following parameters:
 .. note::
    Notes on the **callbackurl** parameter:
 
-   * bra bra bra
+   *  When this optional parameter is provided, XOXZO cloud will call this URL when the phone call success or fail.
+   *  XOXZO cloud call the URL with http POST method. Parameters of the callback is same as "Checking Call Status API". Please see :ref:`check-call-status-label`.
+   *  Callback URL must return http status 200. Until we get 200, we will retry maximum ten times.
+
 
 JP specific optional parameters
 -------------------------------
@@ -151,6 +154,8 @@ Using Text To Speech with Simple Playback API
 OPTIONAL: For an additional cost, you can use text to speech option instead of pre-recorded mp3 file
 when making calls using the Simple Playback API.
 To use this option please refer to :ref:`text-to-speech-api-ref`
+
+.. _check-call-status-label:
 
 Checking Call Status
 ====================================
