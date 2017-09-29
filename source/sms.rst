@@ -82,7 +82,9 @@ Please refer to our `K-Premium Service FAQ <https://help.xoxzo.com/xoxzo-cloud-t
 .. note::
    Notes on the **callbackurl** parameter:
 
-   *  XOXZO cloud will call this URL when status has changed with xxx parameter.
+   *  When this optional parameter is provided, XOXZO cloud will call this URL with http POST method when the carrier network notified us the SMS delivery status(DLR).
+   *  Parameters of the callback is same as "Check SMS status API". Please see :ref:`check-sms-status-label`.
+   *  Callback URL must return http status 200. Until we get 200, we will retry maximum ten times.
 
 Examples
 ------------------------------------
@@ -129,6 +131,8 @@ the HTTP response should be like this::
 .. tip:: 
     It's faster to actually try some test code againts the API to see immediate results.
     `Signing up <https://www.xoxzo.com/en/accounts/signup/>`_ takes only a few minutes and it's free
+
+.. _check-sms-status-label:
 
 Check SMS status API
 ====================================
