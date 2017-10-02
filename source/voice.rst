@@ -71,9 +71,9 @@ with the following parameters:
 .. note::
    Notes on the **callbackurl** parameter:
 
-   *  When this optional parameter is provided, XOXZO cloud will call this URL when the phone call success or fail.
-   *  XOXZO cloud call the URL with http POST method. Parameters of the callback is same as "Checking Call Status API". Please see :ref:`check-call-status-label`.
-   *  Callback URL must return http status 200. Until we get 200, we will retry maximum ten times.
+   *  When this optional parameter is provided, XOXZO cloud will call this URL when the call ended.
+   *  XOXZO cloud will call the URL with http POST method. Parameters of the callback is similar to "Checking Call Status API". Please see :ref:`check-call-status-label`.
+   *  Callback URL must return http status 200. Until then, we will retry up to a maximum of ten times.
 
 
 JP specific optional parameters
