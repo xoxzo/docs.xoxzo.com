@@ -27,6 +27,7 @@ with the following parameters:
     recipient      Call recipient            Yes       E.164          +8190123456789
     recording_url  URL where your mp3 audio  Yes       URL            http://www.mysite.com/123.mp3
                    file is located
+    callbackurl    Callback URL              No        URL            http://example.com
     =============  ========================  ========  =============  =============================
 
 .. note::
@@ -66,6 +67,14 @@ with the following parameters:
    *  http://a.clyp.it/b3byGhjf.mp3
    *  http://a.clyp.it/b-byghjf.mp3
    *  http://a.clyp.it/b-bygh_f.mp3
+
+.. note::
+   Notes on the **callbackurl** parameter:
+
+   *  When this optional parameter is provided, XOXZO cloud will call this URL when the call ended.
+   *  XOXZO cloud will call the URL with http POST method. Parameters of the callback is similar to "Checking Call Status API". Please see :ref:`check-call-status-label`.
+   *  Callback URL must return http status 200. Until then, we will retry up to a maximum of ten times.
+
 
 JP specific optional parameters
 -------------------------------
@@ -145,6 +154,8 @@ Using Text To Speech with Simple Playback API
 OPTIONAL: For an additional cost, you can use text to speech option instead of pre-recorded mp3 file
 when making calls using the Simple Playback API.
 To use this option please refer to :ref:`text-to-speech-api-ref`
+
+.. _check-call-status-label:
 
 Checking Call Status
 ====================================

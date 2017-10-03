@@ -12,13 +12,14 @@ To send a SMS message, make a ``POST`` request to the endpoint::
 
 with the following parameters:
 
-    =========  ==================  ========  ===================  ===================
-    Name       Description         Required  Data Type            Example
-    =========  ==================  ========  ===================  ===================
-    message    Message body        Yes       UTF-8                こんにちは
-    recipient  Message recipient   Yes       E.164                +8190123456789
-    sender     Sender ID           Yes       Alphanumeric         Xoxzo1
-    =========  ==================  ========  ===================  ===================
+    ===========  ==================  ========  ===================  ===================
+    Name         Description         Required  Data Type            Example
+    ===========  ==================  ========  ===================  ===================
+    message      Message body        Yes       UTF-8                こんにちは
+    recipient    Message recipient   Yes       E.164                +8190123456789
+    sender       Sender ID           Yes       Alphanumeric         Xoxzo1
+    callbackurl  Callback URL        No        URL                  http://example.com
+    ===========  ==================  ========  ===================  ===================
 
 JP specific optional parameters
 ------------------------------------
@@ -78,6 +79,13 @@ Please refer to our `K-Premium Service FAQ <https://help.xoxzo.com/xoxzo-cloud-t
       length of 160 characters, while other types of messages will have a 
       maximum length of 70 characters
 
+.. note::
+   Notes on the **callbackurl** parameter:
+
+   *  When this optional parameter is provided, XOXZO cloud will call this URL when the carrier network notifies us of the SMS delivery status(DLR).
+   *  XOXZO cloud call the URL with http POST method. Parameters of the callback is similar to "Check SMS status API". Please see :ref:`check-sms-status-label`.
+   *  Callback URL must return http status 200. Until then, we will retry up to a maximum of ten times.
+
 Examples
 ------------------------------------
 
@@ -123,6 +131,8 @@ the HTTP response should be like this::
 .. tip:: 
     It's faster to actually try some test code againts the API to see immediate results.
     `Signing up <https://www.xoxzo.com/en/accounts/signup/>`_ takes only a few minutes and it's free
+
+.. _check-sms-status-label:
 
 Check SMS status API
 ====================================
