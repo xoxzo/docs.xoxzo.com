@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Heylo API Documentation 1.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2017-09-29 15:19+0900\n"
+"POT-Creation-Date: 2017-10-03 14:09+0900\n"
 "PO-Revision-Date: 2017-08-22 09:43+0900\n"
 "Last-Translator: \n"
 "Language: ja\n"
@@ -128,7 +128,7 @@ msgstr ""
 
 #: ../../../source/voice.rst:30
 msgid "Callback URL"
-msgstr ""
+msgstr "コールバックURL"
 
 #: ../../../source/voice.rst:30 ../../../source/voice.rst:87
 msgid "No"
@@ -213,28 +213,30 @@ msgid "http://a.clyp.it/b-bygh_f.mp3"
 msgstr "http://a.clyp.it/b-bygh_f.mp3"
 
 #: ../../../source/voice.rst:72
-#, fuzzy
 msgid "Notes on the **callbackurl** parameter:"
-msgstr "**caller** パラメーターに関する注意点"
+msgstr "**callbackurl** パラメーターに関する注意点"
 
 #: ../../../source/voice.rst:74
 msgid ""
 "When this optional parameter is provided, XOXZO cloud will call this URL "
-"when the phone call success or fail."
-msgstr ""
+"when the call ended."
+msgstr "このパラメータ（省略可能）が指定された場合は、通話が終了したときに、XOXZOクラウドシステムが指定されたURLを呼び出します。"
+
 
 #: ../../../source/voice.rst:75
 msgid ""
-"XOXZO cloud call the URL with http POST method. Parameters of the "
-"callback is same as \"Checking Call Status API\". Please see :ref:`check-"
-"call-status-label`."
-msgstr ""
+"XOXZO cloud will call the URL with http POST method. Parameters of the "
+"callback is similar to \"Checking Call Status API\". Please see :ref"
+":`check-call-status-label`."
+msgstr "XOXZOクラウドシステムはこのURLを呼び出すとき、httpのPOSTメソッドを使います。コールバックのパラメーターは「プレーバック発信ステータス確認」とほぼ同じです。"
+" :ref:`check-call-status-label` を参照して下さい。"
+
 
 #: ../../../source/voice.rst:76
 msgid ""
-"Callback URL must return http status 200. Until we get 200, we will retry"
-" maximum ten times."
-msgstr ""
+"Callback URL must return http status 200. Until then, we will retry up to"
+" a maximum of ten times."
+msgstr "コールバックURLは http のステータス 200 で応答する必要があります。この応答をうけとるまで、最大１０回まで呼び出しを繰り返します。"
 
 #: ../../../source/voice.rst:80
 msgid "JP specific optional parameters"
@@ -595,5 +597,26 @@ msgstr "受信者はこの発信に応答しませんでした。"
 #~ msgstr ""
 
 #~ msgid "bra bra bra"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "When this optional parameter is "
+#~ "provided, XOXZO cloud will call this "
+#~ "URL when the phone call success or"
+#~ " fail."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "XOXZO cloud call the URL with http"
+#~ " POST method. Parameters of the "
+#~ "callback is same as \"Checking Call "
+#~ "Status API\". Please see :ref:`check-"
+#~ "call-status-label`."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Callback URL must return http status "
+#~ "200. Until we get 200, we will "
+#~ "retry maximum ten times."
 #~ msgstr ""
 
