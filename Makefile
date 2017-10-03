@@ -195,15 +195,16 @@ pseudoxml:
 mkdirhtml:
 	mkdir -p $(BUILDDIR)/html/
 
-cname: mkdirhtml
+static: mkdirhtml
 	cp CNAME $(BUILDDIR)/html/
+	cp index.html $(BUILDDIR)/html/
 
-html-ja: cname
+html-ja: static
 	$(SPHINXBUILD) -b html $(ALLSPHINXOPTS) -D language='ja' $(BUILDDIR)/html/ja
 	@echo
 	@echo "Build finished. The HTML pages are in $(BUILDDIR)/html/ja."
 
-html-en: cname
+html-en: static
 	$(SPHINXBUILD) -b html $(ALLSPHINXOPTS) -D language='en' $(BUILDDIR)/html/en
 	@echo
 	@echo "Build finished. The HTML pages are in $(BUILDDIR)/html/en."
