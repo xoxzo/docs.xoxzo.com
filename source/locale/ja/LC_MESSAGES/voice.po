@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Heylo API Documentation 1.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2017-10-03 14:09+0900\n"
+"POT-Creation-Date: 2017-10-06 09:53+0900\n"
 "PO-Revision-Date: 2017-08-22 09:43+0900\n"
 "Last-Translator: \n"
 "Language: ja\n"
@@ -222,15 +222,14 @@ msgid ""
 "when the call ended."
 msgstr "このパラメータ（省略可能）が指定された場合は、通話が終了したときに、XOXZOクラウドシステムが指定されたURLを呼び出します。"
 
-
 #: ../../../source/voice.rst:75
 msgid ""
 "XOXZO cloud will call the URL with http POST method. Parameters of the "
 "callback is similar to \"Checking Call Status API\". Please see :ref"
 ":`check-call-status-label`."
-msgstr "XOXZOクラウドシステムはこのURLを呼び出すとき、httpのPOSTメソッドを使います。コールバックのパラメーターは「プレーバック発信ステータス確認」とほぼ同じです。"
+msgstr ""
+"XOXZOクラウドシステムはこのURLを呼び出すとき、httpのPOSTメソッドを使います。コールバックのパラメーターは「プレーバック発信ステータス確認」とほぼ同じです。"
 " :ref:`check-call-status-label` を参照して下さい。"
-
 
 #: ../../../source/voice.rst:76
 msgid ""
@@ -458,6 +457,16 @@ msgstr "NO ANSWER"
 #: ../../../source/voice.rst:215
 msgid "The call was not answered by the recipient"
 msgstr "受信者はこの発信に応答しませんでした。"
+
+#: ../../../source/voice.rst:219
+msgid "Simple Conference API"
+msgstr ""
+
+#: ../../../source/voice.rst:221
+msgid ""
+"To start a conference call, you can use the following API. make a "
+"``POST`` request to the endpoint::"
+msgstr ""
 
 #~ msgid "+8190123456789 or ytq5rfdgyw"
 #~ msgstr "+8190123456789 または ytq5rfdgyw"

@@ -214,3 +214,9 @@ This is a list of statuses that you can find in the ``status`` data:
    IN PROGRESS          The call is still in progress
    NO ANSWER            The call was not answered by the recipient
    ===================  ==================
+
+Simple Conference API
+===============================================
+
+To start a conference call, you can use the following API.
+make a ``POST`` request to the endpoint::
