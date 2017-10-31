@@ -286,14 +286,14 @@ The response would be a JSON structure, returned with HTTP ``201 CREATED`` statu
                "participant": "<participant1>"
            },
            {
-               "callid": "<callied2>",
+               "callid": "<callid2>",
                "participant": "<participant2>"
            }
        ]
    }
 
 
-Checking Conferecne Status
+Checking Conference Status
 ====================================
 
 To check conference status, make a GET request to the endpoint followed by
