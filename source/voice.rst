@@ -40,6 +40,8 @@ with the following parameters:
    *  Example of a valid recipient is: *+818011234567* with *81* as the Japan country code and *8011234567*
       as the mobile number.
 
+.. _caller-parameter-label:
+
 .. note::
    Notes on the **caller** parameter:
 
@@ -75,6 +77,8 @@ with the following parameters:
    *  XOXZO cloud will call the URL with http POST method. Parameters of the callback is similar to "Checking Call Status API". Please see :ref:`check-call-status-label`.
    *  Callback URL must return http status 200. Until then, we will retry up to a maximum of ten times.
 
+
+.. _jp-din-caller-label:
 
 JP specific optional parameters
 -------------------------------
@@ -220,3 +224,70 @@ Simple Conference API
 
 To start a conference call, you can use the following API.
 make a ``POST`` request to the endpoint::
+
+    https://api.xoxzo.com/voice/simple/conferences/
+
+with the following parameters:
+
+    =============  ========================  ========  ===============  =============================
+    Name           Description               Required  Data Type        Example
+    =============  ========================  ========  ===============  =============================
+    caller         Caller number             Yes       Numeric          +8190123456789
+    participants   Conference participants   Yes       E.164            +8190123456789,+8190123456780
+    lang           Language of guidance      No        ISO 639-1        en
+    =============  ========================  ========  ===============  =============================
+
+.. note::
+   Notes on the **participants** parameter:
+
+   *  Xoxzo uses the `E.164 <http://en.wikipedia.org/wiki/E.164>`_ number format
+      when specifying phone numbers.
+   *  You have to provide at least two numbers with comma (,) separator.
+   *  `E.164 <http://en.wikipedia.org/wiki/E.164>`_ dictates that phone numbers must start with the + prefix and country
+      code then followed directly by the mobile number leaving the local **0** prefix.
+   *  Example of a valid participants is: *+818011234567* with *81* as the Japan country code and *8011234567*
+      as the mobile number.
+
+.. note::
+   Notes on the **caller** parameter:
+
+   * Please see :ref:`caller parameter<caller-parameter-label>`
+
+
+You can specify optional ``jp_din_caller paramter``. Please see :ref:`jp-din-caller-label`
+
+
+Response
+-----------------------------------------------
+
+The response would be a JSON structure, returned with HTTP ``201 CREATED`` status code::
+
+    HTTP/1.0 201 CREATED
+    Content-Type: application/json
+
+   {
+       "conferenceid": "<conferenceid>",
+       "participants": [
+           {
+               "callid": "ee6a30ce-7009-4f82-b372-25bd5a1002e2",
+               "participant": "<participant1>"
+           },
+           {
+               "callid": "0ac5242c-192c-497f-bbc9-c0c74aa3f277",
+               "participant": "<participant2>"
+           }
+       ]
+   }
+
+
+Checking Conferecne Status
+====================================
+
+To check conference status, make a GET request to the endpoint followed by
+``<conferenceid>``. An example of using curl is below::
+
+
+TBD
+
+
+
