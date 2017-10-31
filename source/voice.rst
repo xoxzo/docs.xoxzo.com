@@ -189,6 +189,8 @@ The response would be a JSON structure, returned with HTTP ``200 OK`` status cod
         "url": "https://api.xoxzo.com/voice/simple/playback/<callid>/"
     }
 
+.. _call_status_response_label:
+
 Response data
 -----------------------------------------------
 
@@ -249,6 +251,14 @@ with the following parameters:
       as the mobile number.
 
 .. note::
+   Notes on the **lang** parameter:
+
+   *  You can specify the guidance language of the beginning of the conference call with this this parameter.
+   *  Two letter language code of the tts_message in `ISO 639-1. <https://en.wikipedia.org/wiki/ISO_639-1>`_
+   *  This parameter is optional. The default value is **ja**.
+   *  Currently, **en** and **ja** are accepted.
+
+.. note::
    Notes on the **caller** parameter:
 
    * Please see :ref:`caller parameter<caller-parameter-label>`
@@ -287,7 +297,48 @@ To check conference status, make a GET request to the endpoint followed by
 ``<conferenceid>``. An example of using curl is below::
 
 
-TBD
+   curl -u <SID>:<AUTH_TOKEN> https://api.xoxzo.com/voice/simple/conferences/<conferenceid>/
+
+Every time you make a canference, you will get a response containing ``<conferenceid>``.
+Use this ``<conferenceid>`` to check call status.
+
+The response would be a JSON structure, returned with HTTP ``200 OK`` status code::
 
 
+   HTTP/1.1 200 OK
+   Content-Type: application/json
 
+   {
+       "cost": 65,
+       "participants": [
+           {
+               "status": "ANSWERED",
+               "recipient": "<recipent1>",
+               "cost": 50,
+               "caller": "<caller>",
+               "callid": "<callid1>",
+               "start_time": "2017-10-31 01:17:50",
+               "url": "https://api.xoxzo.com/voice/calls/<callid1>/",
+               "end_time": "2017-10-31 01:18:00",
+               "duration": 1
+           },
+           {
+               "status": "ANSWERED",
+               "recipient": "<recipent2>",
+               "cost": 15,
+               "caller": "<caller>",
+               "callid": "<callid2>",
+               "start_time": "2017-10-31 01:17:50",
+               "url": "https://api.xoxzo.com/voice/calls/<callid2>/",
+               "end_time": "2017-10-31 01:18:09",
+               "duration": 2
+           }
+       ],
+       "conferenceid": "<conferenceid>",
+       "start_time": "2017-10-31 01:17:50",
+       "end_time": "2017-10-31 01:18:09",
+       "duration": 2
+   }
+
+
+Please see :ref:`call_status_response_label` for details.
