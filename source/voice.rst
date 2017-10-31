@@ -279,11 +279,11 @@ The response would be a JSON structure, returned with HTTP ``201 CREATED`` statu
        "conferenceid": "<conferenceid>",
        "participants": [
            {
-               "callid": "ee6a30ce-7009-4f82-b372-25bd5a1002e2",
+               "callid": "<callid1>",
                "participant": "<participant1>"
            },
            {
-               "callid": "0ac5242c-192c-497f-bbc9-c0c74aa3f277",
+               "callid": "<callied2>",
                "participant": "<participant2>"
            }
        ]
