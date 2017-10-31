@@ -270,9 +270,6 @@ with the following parameters:
    * Please see :ref:`caller parameter<caller-parameter-label>`
 
 
-You can specify optional ``jp_din_caller paramter``. Please see :ref:`jp-din-caller-label`
-
-
 Response
 -----------------------------------------------
 
