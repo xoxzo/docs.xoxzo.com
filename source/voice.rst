@@ -292,6 +292,14 @@ The response would be a JSON structure, returned with HTTP ``201 CREATED`` statu
        ]
    }
 
+    ============== =============================================
+    Name           Description
+    ============== =============================================
+    conferenceid   The unique conference id for this conference
+    participants   The information about each participants
+    callid         The unique call id for the participant
+    participant    The participant number
+    ============== =============================================
 
 Checking Conference Status
 ====================================
