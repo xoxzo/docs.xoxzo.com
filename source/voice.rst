@@ -224,6 +224,11 @@ This is a list of statuses that you can find in the ``status`` data:
 Simple Conference API
 ===============================================
 
+The Conference API when executed, will make a call to each of your participants
+and connect them automatically to a conference call when they answer the call. 
+You can then simultaneously have a conversation with multiple people at
+once on the phone. 
+
 To start a conference call, you can use the following API.
 make a ``POST`` request to the endpoint::
 
@@ -244,7 +249,8 @@ with the following parameters:
 
    *  Xoxzo uses the `E.164 <http://en.wikipedia.org/wiki/E.164>`_ number format
       when specifying phone numbers.
-   *  You have to provide at least two numbers with comma (,) separator.
+   *  You need a minimum of 2 participants and up to a maximum of 3 participants,
+      separated with a comma (,)
    *  `E.164 <http://en.wikipedia.org/wiki/E.164>`_ dictates that phone numbers must start with the + prefix and country
       code then followed directly by the mobile number leaving the local **0** prefix.
    *  Example of a valid participants is: *+818011234567* with *81* as the Japan country code and *8011234567*
@@ -264,9 +270,6 @@ with the following parameters:
    * Please see :ref:`caller parameter<caller-parameter-label>`
 
 
-You can specify optional ``jp_din_caller paramter``. Please see :ref:`jp-din-caller-label`
-
-
 Response
 -----------------------------------------------
 
@@ -283,14 +286,14 @@ The response would be a JSON structure, returned with HTTP ``201 CREATED`` statu
                "participant": "<participant1>"
            },
            {
-               "callid": "<callied2>",
+               "callid": "<callid2>",
                "participant": "<participant2>"
            }
        ]
    }
 
 
-Checking Conferecne Status
+Checking Conference Status
 ====================================
 
 To check conference status, make a GET request to the endpoint followed by
