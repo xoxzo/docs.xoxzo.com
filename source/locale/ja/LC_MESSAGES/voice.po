@@ -470,7 +470,7 @@ msgstr "受信者はこの発信に応答しませんでした。"
 
 #: ../../../source/voice.rst:225
 msgid "Simple Conference API"
-msgstr "会議通話API"
+msgstr "電話会議API"
 
 #: ../../../source/voice.rst:227
 msgid ""
@@ -478,13 +478,13 @@ msgid ""
 "participants and connect them automatically to a conference call when "
 "they answer the call. You can then simultaneously have a conversation "
 "with multiple people at once on the phone."
-msgstr "会議通話APIを使うと、各参加者に電話をかけ、応答があると自動的に会議通話に参加させることができます。同時に複数の参加者のあいだで通話することが可能です。"
+msgstr "電話会議APIを使うと、各参加者に電話をかけ、応答があると自動的に電話会議に参加させることができます。同時に複数の参加者のあいだで通話することが可能です。"
 
 #: ../../../source/voice.rst:232
 msgid ""
 "To start a conference call, you can use the following API. make a "
 "``POST`` request to the endpoint::"
-msgstr "会議通話を開始するにには次のAPIを使います。``POST`` リクエストをこのエンドポイントに行ってください。"
+msgstr "電話会議を開始するにには次のAPIを使います。``POST`` リクエストをこのエンドポイントに行ってください。"
 
 #: ../../../source/voice.rst:243 ../../../source/voice.rst:302
 msgid "participants"
@@ -492,7 +492,7 @@ msgstr ""
 
 #: ../../../source/voice.rst:243
 msgid "Conference participants"
-msgstr "会議通話参加者"
+msgstr "電話会議参加者"
 
 #: ../../../source/voice.rst:243
 msgid "+8190123456789,+8190123456780"
@@ -538,7 +538,7 @@ msgstr "**lang** パラメーターに関する注意点"
 msgid ""
 "You can specify the guidance language of the beginning of the conference "
 "call with this this parameter."
-msgstr "このパラメータは会議通話開始時のガイドの言語を指定します。"
+msgstr "このパラメータは電話会議開始時のガイドの言語を指定します。"
 
 #: ../../../source/voice.rst:263
 msgid ""
@@ -564,7 +564,7 @@ msgstr ""
 
 #: ../../../source/voice.rst:301
 msgid "The unique conference id for this conference"
-msgstr "この会議通話固有のIDです。"
+msgstr "この電話会議固有のIDです。"
 
 #: ../../../source/voice.rst:302
 msgid "A list about each participant's call"
@@ -584,7 +584,7 @@ msgstr "この参加者の着信番号"
 
 #: ../../../source/voice.rst:308
 msgid "Checking Conference Status"
-msgstr "会議通話ステータス確認"
+msgstr "電話会議ステータス確認"
 
 #: ../../../source/voice.rst:310
 msgid ""
@@ -599,8 +599,8 @@ msgid ""
 "Every time you make a canference, you will get a response containing "
 "``<conferenceid>``. Use this ``<conferenceid>`` to check call status."
 msgstr ""
-"会議通話を行うたびに、 ``<conferenceid>`` を含むレスポンスが得られますので、この ``<conferenceid>`` "
-"を会議通話状態の確認にご利用ください。"
+"電話会議を行うたびに、 ``<conferenceid>`` を含むレスポンスが得られますので、この ``<conferenceid>`` "
+"を電話会議状態の確認にご利用ください。"
 
 #: ../../../source/voice.rst:358
 msgid "Please see :ref:`call_status_response_label` for details."
