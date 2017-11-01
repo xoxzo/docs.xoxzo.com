@@ -299,9 +299,9 @@ Response Data
     Name           Description
     ============== =============================================
     conferenceid   The unique conference id for this conference
-    participants   The information about each participants
+    participants   A list about each participant's call
     callid         The unique call id for the participant
-    participant    The participant number
+    participant    The participant number that was called
     ============== =============================================
 
 Checking Conference Status
