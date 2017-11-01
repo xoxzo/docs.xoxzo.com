@@ -79,7 +79,7 @@ msgstr "例"
 #: ../../../source/voice.rst:26 ../../../source/voice.rst:205
 #: ../../../source/voice.rst:242
 msgid "caller"
-msgstr "発信者"
+msgstr ""
 
 #: ../../../source/voice.rst:26 ../../../source/voice.rst:242
 msgid "Caller number"
