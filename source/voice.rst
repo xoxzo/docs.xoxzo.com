@@ -40,6 +40,8 @@ with the following parameters:
    *  Example of a valid recipient is: *+818011234567* with *81* as the Japan country code and *8011234567*
       as the mobile number.
 
+.. _caller-parameter-label:
+
 .. note::
    Notes on the **caller** parameter:
 
@@ -75,6 +77,8 @@ with the following parameters:
    *  XOXZO cloud will call the URL with http POST method. Parameters of the callback is similar to "Checking Call Status API". Please see :ref:`check-call-status-label`.
    *  Callback URL must return http status 200. Until then, we will retry up to a maximum of ten times.
 
+
+.. _jp-din-caller-label:
 
 JP specific optional parameters
 -------------------------------
@@ -185,6 +189,8 @@ The response would be a JSON structure, returned with HTTP ``200 OK`` status cod
         "url": "https://api.xoxzo.com/voice/simple/playback/<callid>/"
     }
 
+.. _call_status_response_label:
+
 Response data
 -----------------------------------------------
 
@@ -214,3 +220,139 @@ This is a list of statuses that you can find in the ``status`` data:
    IN PROGRESS          The call is still in progress
    NO ANSWER            The call was not answered by the recipient
    ===================  ==================
+
+Simple Conference API
+===============================================
+
+The Conference API when executed, will make a call to each of your participants
+and connect them automatically to a conference call when they answer the call. 
+You can then simultaneously have a conversation with multiple people at
+once on the phone. 
+
+To start a conference call, you can use the following API.
+make a ``POST`` request to the endpoint::
+
+    https://api.xoxzo.com/voice/simple/conferences/
+
+with the following parameters:
+
+    =============  ========================  ========  ===============  =============================
+    Name           Description               Required  Data Type        Example
+    =============  ========================  ========  ===============  =============================
+    caller         Caller number             Yes       Numeric          +8190123456789
+    participants   Conference participants   Yes       E.164            +8190123456789,+8190123456780
+    lang           Language of guidance      No        ISO 639-1        en
+    =============  ========================  ========  ===============  =============================
+
+.. note::
+   Notes on the **participants** parameter:
+
+   *  Xoxzo uses the `E.164 <http://en.wikipedia.org/wiki/E.164>`_ number format
+      when specifying phone numbers.
+   *  You need a minimum of 2 participants and up to a maximum of 3 participants,
+      separated with a comma (,)
+   *  `E.164 <http://en.wikipedia.org/wiki/E.164>`_ dictates that phone numbers must start with the + prefix and country
+      code then followed directly by the mobile number leaving the local **0** prefix.
+   *  Example of a valid participants is: *+818011234567* with *81* as the Japan country code and *8011234567*
+      as the mobile number.
+
+.. note::
+   Notes on the **lang** parameter:
+
+   *  You can specify the guidance language of the beginning of the conference call with this this parameter.
+   *  Two letter language code of the guidance in `ISO 639-1. <https://en.wikipedia.org/wiki/ISO_639-1>`_
+   *  This parameter is optional. The default value is **ja**.
+   *  Currently, **en** and **ja** are accepted.
+
+.. note::
+   Notes on the **caller** parameter:
+
+   * Please see :ref:`caller parameter<caller-parameter-label>`
+
+
+Response
+-----------------------------------------------
+
+The response would be a JSON structure, returned with HTTP ``201 CREATED`` status code::
+
+    HTTP/1.0 201 CREATED
+    Content-Type: application/json
+
+    {
+       "conferenceid": "<conferenceid>",
+       "participants": [
+           {
+               "callid": "<callid1>",
+               "participant": "<participant1>"
+           },
+           {
+               "callid": "<callid2>",
+               "participant": "<participant2>"
+           }
+       ]
+    }
+
+Response Data
+-----------------------------------------------
+
+    ============== =============================================
+    Name           Description
+    ============== =============================================
+    conferenceid   The unique conference id for this conference
+    participants   A list about each participant's call
+    callid         The unique call id for the participant
+    participant    The participant number that was called
+    ============== =============================================
+
+Checking Conference Status
+====================================
+
+To check conference status, make a GET request to the endpoint followed by
+``<conferenceid>``. An example of using curl is below::
+
+
+   curl -u <SID>:<AUTH_TOKEN> https://api.xoxzo.com/voice/simple/conferences/<conferenceid>/
+
+Every time you make a canference, you will get a response containing ``<conferenceid>``.
+Use this ``<conferenceid>`` to check call status.
+
+The response would be a JSON structure, returned with HTTP ``200 OK`` status code::
+
+
+   HTTP/1.1 200 OK
+   Content-Type: application/json
+
+   {
+       "cost": 65,
+       "participants": [
+           {
+               "status": "ANSWERED",
+               "recipient": "<recipent1>",
+               "cost": 50,
+               "caller": "<caller>",
+               "callid": "<callid1>",
+               "start_time": "2017-10-31 01:17:50",
+               "url": "https://api.xoxzo.com/voice/calls/<callid1>/",
+               "end_time": "2017-10-31 01:18:00",
+               "duration": 1
+           },
+           {
+               "status": "ANSWERED",
+               "recipient": "<recipent2>",
+               "cost": 15,
+               "caller": "<caller>",
+               "callid": "<callid2>",
+               "start_time": "2017-10-31 01:17:50",
+               "url": "https://api.xoxzo.com/voice/calls/<callid2>/",
+               "end_time": "2017-10-31 01:18:09",
+               "duration": 2
+           }
+       ],
+       "conferenceid": "<conferenceid>",
+       "start_time": "2017-10-31 01:17:50",
+       "end_time": "2017-10-31 01:18:09",
+       "duration": 2
+   }
+
+
+Please see :ref:`call_status_response_label` for details.
