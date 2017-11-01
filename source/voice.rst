@@ -278,7 +278,7 @@ The response would be a JSON structure, returned with HTTP ``201 CREATED`` statu
     HTTP/1.0 201 CREATED
     Content-Type: application/json
 
-   {
+    {
        "conferenceid": "<conferenceid>",
        "participants": [
            {
@@ -290,7 +290,10 @@ The response would be a JSON structure, returned with HTTP ``201 CREATED`` statu
                "participant": "<participant2>"
            }
        ]
-   }
+    }
+
+Response Data
+-----------------------------------------------
 
     ============== =============================================
     Name           Description

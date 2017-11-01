@@ -3,14 +3,14 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Heylo API Documentation 1.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2017-10-31 15:14+0900\n"
+"POT-Creation-Date: 2017-11-01 09:24+0900\n"
 "PO-Revision-Date: 2017-08-22 09:43+0900\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Generated-By: Babel 2.3.4\n"
+"Generated-By: Babel 2.5.1\n"
 
 #: ../../../source/voice.rst:3
 msgid "Voice API"
@@ -50,13 +50,14 @@ msgstr "下記のパラメーターを併記してください。"
 
 #: ../../../source/voice.rst:24 ../../../source/voice.rst:89
 #: ../../../source/voice.rst:145 ../../../source/voice.rst:198
-#: ../../../source/voice.rst:240
+#: ../../../source/voice.rst:240 ../../../source/voice.rst:299
 msgid "Name"
 msgstr "名称"
 
 #: ../../../source/voice.rst:24 ../../../source/voice.rst:89
 #: ../../../source/voice.rst:145 ../../../source/voice.rst:198
 #: ../../../source/voice.rst:215 ../../../source/voice.rst:240
+#: ../../../source/voice.rst:299
 msgid "Description"
 msgstr "詳細"
 
@@ -318,11 +319,12 @@ msgstr ""
 "間違ったバラメーターが与えられた場合には、ステータスコード HTTP ``400 BAD REQUEST``　が返されます。例えば、もし "
 "``recording_url`` パラメーターがなかった場合、HTTPからの返答はこのようになります。"
 
-#: ../../../source/voice.rst:142
+#: ../../../source/voice.rst:142 ../../../source/voice.rst:296
 msgid "Response Data"
 msgstr "レスポンスデータ"
 
 #: ../../../source/voice.rst:147 ../../../source/voice.rst:200
+#: ../../../source/voice.rst:303
 msgid "callid"
 msgstr "callid"
 
@@ -372,7 +374,7 @@ msgid ""
 "``<callid>``. Use this ``<callid>`` to check call status."
 msgstr "発信を行うたびに、 ``<callid>`` を含むレスポンスが得られますので、この ``<callid>`` を通話状態の確認にご利用ください。"
 
-#: ../../../source/voice.rst:175 ../../../source/voice.rst:308
+#: ../../../source/voice.rst:175 ../../../source/voice.rst:319
 msgid ""
 "The response would be a JSON structure, returned with HTTP ``200 OK`` "
 "status code::"
@@ -484,7 +486,7 @@ msgid ""
 "``POST`` request to the endpoint::"
 msgstr ""
 
-#: ../../../source/voice.rst:243
+#: ../../../source/voice.rst:243 ../../../source/voice.rst:302
 msgid "participants"
 msgstr ""
 
@@ -562,12 +564,40 @@ msgstr ""
 msgid "Please see :ref:`caller parameter<caller-parameter-label>`"
 msgstr ""
 
-#: ../../../source/voice.rst:297
+#: ../../../source/voice.rst:301
+msgid "conferenceid"
+msgstr ""
+
+#: ../../../source/voice.rst:301
 #, fuzzy
-msgid "Checking Conferecne Status"
+msgid "The unique conference id for this conference"
+msgstr "この通話固有のIDです。"
+
+#: ../../../source/voice.rst:302
+msgid "The information about each participants"
+msgstr ""
+
+#: ../../../source/voice.rst:303
+#, fuzzy
+msgid "The unique call id for the participant"
+msgstr "この通話固有のIDです。"
+
+#: ../../../source/voice.rst:304
+#, fuzzy
+msgid "participant"
+msgstr "recipient"
+
+#: ../../../source/voice.rst:304
+#, fuzzy
+msgid "The participant number"
+msgstr "着信番号"
+
+#: ../../../source/voice.rst:308
+#, fuzzy
+msgid "Checking Conference Status"
 msgstr "プレーバック発信ステータス確認"
 
-#: ../../../source/voice.rst:299
+#: ../../../source/voice.rst:310
 #, fuzzy
 msgid ""
 "To check conference status, make a GET request to the endpoint followed "
@@ -576,14 +606,14 @@ msgstr ""
 "通話状態を調べるには、エンドポイントに ``<callid>`` "
 "をつけた、GETリクエストを行ってください。curlを用いた例は次のようになります。"
 
-#: ../../../source/voice.rst:305
+#: ../../../source/voice.rst:316
 #, fuzzy
 msgid ""
 "Every time you make a canference, you will get a response containing "
 "``<conferenceid>``. Use this ``<conferenceid>`` to check call status."
 msgstr "発信を行うたびに、 ``<callid>`` を含むレスポンスが得られますので、この ``<callid>`` を通話状態の確認にご利用ください。"
 
-#: ../../../source/voice.rst:347
+#: ../../../source/voice.rst:358
 msgid "Please see :ref:`call_status_response_label` for details."
 msgstr ""
 
