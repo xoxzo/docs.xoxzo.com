@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Heylo API Documentation 1.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2017-11-01 09:24+0900\n"
+"POT-Creation-Date: 2017-11-01 12:16+0900\n"
 "PO-Revision-Date: 2017-08-22 09:43+0900\n"
 "Last-Translator: \n"
 "Language-Team: \n"
@@ -470,7 +470,7 @@ msgstr "受信者はこの発信に応答しませんでした。"
 
 #: ../../../source/voice.rst:225
 msgid "Simple Conference API"
-msgstr ""
+msgstr "会議通話API"
 
 #: ../../../source/voice.rst:227
 msgid ""
@@ -478,24 +478,23 @@ msgid ""
 "participants and connect them automatically to a conference call when "
 "they answer the call. You can then simultaneously have a conversation "
 "with multiple people at once on the phone."
-msgstr ""
+msgstr "会議通話APIを使うと、各参加者に電話をかけ、応答があると自動的に会議通話に参加させることができます。同時に複数の参加者のあいだで通話することが可能です。"
 
 #: ../../../source/voice.rst:232
 msgid ""
 "To start a conference call, you can use the following API. make a "
 "``POST`` request to the endpoint::"
-msgstr ""
+msgstr "会議通話を開始するにには次のAPIを使います。``POST`` リクエストをこのエンドポイントに行ってください。"
 
 #: ../../../source/voice.rst:243 ../../../source/voice.rst:302
 msgid "participants"
-msgstr ""
+msgstr "参加者"
 
 #: ../../../source/voice.rst:243
 msgid "Conference participants"
-msgstr ""
+msgstr "会議通話参加者"
 
 #: ../../../source/voice.rst:243
-#, fuzzy
 msgid "+8190123456789,+8190123456780"
 msgstr "+8190123456789"
 
@@ -505,7 +504,7 @@ msgstr ""
 
 #: ../../../source/voice.rst:244
 msgid "Language of guidance"
-msgstr ""
+msgstr "ガイドの言語"
 
 #: ../../../source/voice.rst:244
 msgid "ISO 639-1"
@@ -516,89 +515,78 @@ msgid "en"
 msgstr ""
 
 #: ../../../source/voice.rst:248
-#, fuzzy
 msgid "Notes on the **participants** parameter:"
-msgstr "**recipient** パラメーターに関する注意点"
+msgstr "**participants** パラメーターに関する注意点"
 
 #: ../../../source/voice.rst:252
 msgid ""
 "You need a minimum of 2 participants and up to a maximum of 3 "
 "participants, separated with a comma (,)"
-msgstr ""
+msgstr "参加者の数は最低２名、最高３名です。参加者はコンマ(,)で区切ります。"
 
 #: ../../../source/voice.rst:256
-#, fuzzy
 msgid ""
 "Example of a valid participants is: *+818011234567* with *81* as the "
 "Japan country code and *8011234567* as the mobile number."
-msgstr ""
-"有効な受信者記載例として、 *+818011234567* と挙げられます。 *81* は日本の国番号で、 *8011234567* "
-"は携帯電話番号となります。"
+msgstr "有効な参加者の例は *+818011234567* です。 *81* は日本の国番号で、 *8011234567* は携帯電話番号となります。"
 
 #: ../../../source/voice.rst:260
-#, fuzzy
 msgid "Notes on the **lang** parameter:"
-msgstr "**caller** パラメーターに関する注意点"
+msgstr "**lang** パラメーターに関する注意点"
 
 #: ../../../source/voice.rst:262
 msgid ""
 "You can specify the guidance language of the beginning of the conference "
 "call with this this parameter."
-msgstr ""
+msgstr "このパラメータは会議通話開始時のガイドの言語を指定します。"
 
 #: ../../../source/voice.rst:263
 msgid ""
-"Two letter language code of the tts_message in `ISO 639-1. "
+"Two letter language code of the guidance in `ISO 639-1. "
 "<https://en.wikipedia.org/wiki/ISO_639-1>`_"
-msgstr ""
+msgstr "ISO 639-1 形式の２文字の言語コード `<https://en.wikipedia.org/wiki/ISO_639-1>`_"
 
 #: ../../../source/voice.rst:264
 msgid "This parameter is optional. The default value is **ja**."
-msgstr ""
+msgstr "このパラメータは省略可能です。デフォルトは **ja** です。"
 
 #: ../../../source/voice.rst:265
 msgid "Currently, **en** and **ja** are accepted."
-msgstr ""
+msgstr "現在使えるのは **en** と **ja** です。"
 
 #: ../../../source/voice.rst:270
 msgid "Please see :ref:`caller parameter<caller-parameter-label>`"
-msgstr ""
+msgstr ":ref:`caller parameter<caller-parameter-label>` を参照して下さい。"
 
 #: ../../../source/voice.rst:301
 msgid "conferenceid"
 msgstr ""
 
 #: ../../../source/voice.rst:301
-#, fuzzy
 msgid "The unique conference id for this conference"
-msgstr "この通話固有のIDです。"
+msgstr "この会議通話固有のIDです。"
 
 #: ../../../source/voice.rst:302
 msgid "The information about each participants"
-msgstr ""
+msgstr "各参加者に関する情報です。"
 
 #: ../../../source/voice.rst:303
-#, fuzzy
 msgid "The unique call id for the participant"
-msgstr "この通話固有のIDです。"
+msgstr "この参加者の通話固有のID"
 
 #: ../../../source/voice.rst:304
-#, fuzzy
 msgid "participant"
-msgstr "recipient"
+msgstr "participant"
 
 #: ../../../source/voice.rst:304
-#, fuzzy
 msgid "The participant number"
-msgstr "着信番号"
+msgstr "この参加者の着信番号"
 
 #: ../../../source/voice.rst:308
-#, fuzzy
 msgid "Checking Conference Status"
-msgstr "プレーバック発信ステータス確認"
+msgstr "会議通話ステータス確認"
 
 #: ../../../source/voice.rst:310
-#, fuzzy
 msgid ""
 "To check conference status, make a GET request to the endpoint followed "
 "by ``<conferenceid>``. An example of using curl is below::"
@@ -607,15 +595,16 @@ msgstr ""
 "をつけた、GETリクエストを行ってください。curlを用いた例は次のようになります。"
 
 #: ../../../source/voice.rst:316
-#, fuzzy
 msgid ""
 "Every time you make a canference, you will get a response containing "
 "``<conferenceid>``. Use this ``<conferenceid>`` to check call status."
-msgstr "発信を行うたびに、 ``<callid>`` を含むレスポンスが得られますので、この ``<callid>`` を通話状態の確認にご利用ください。"
+msgstr ""
+"会議通話を行うたびに、 ``<conferenceid>`` を含むレスポンスが得られますので、この ``<conferenceid>`` "
+"を会議通話状態の確認にご利用ください。"
 
 #: ../../../source/voice.rst:358
 msgid "Please see :ref:`call_status_response_label` for details."
-msgstr ""
+msgstr "詳細は :ref:`call_status_response_label` を参照してください。"
 
 #~ msgid "+8190123456789 or ytq5rfdgyw"
 #~ msgstr "+8190123456789 または ytq5rfdgyw"

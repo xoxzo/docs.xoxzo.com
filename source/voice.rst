@@ -260,7 +260,7 @@ with the following parameters:
    Notes on the **lang** parameter:
 
    *  You can specify the guidance language of the beginning of the conference call with this this parameter.
-   *  Two letter language code of the tts_message in `ISO 639-1. <https://en.wikipedia.org/wiki/ISO_639-1>`_
+   *  Two letter language code of the guidance in `ISO 639-1. <https://en.wikipedia.org/wiki/ISO_639-1>`_
    *  This parameter is optional. The default value is **ja**.
    *  Currently, **en** and **ja** are accepted.
 
