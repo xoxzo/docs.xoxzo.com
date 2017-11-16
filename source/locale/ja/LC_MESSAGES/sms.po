@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Xoxzo API Docs 1.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2017-10-03 14:43+0900\n"
+"POT-Creation-Date: 2017-11-16 11:15+0900\n"
 "PO-Revision-Date: 2017-08-21 10:31+0900\n"
 "Last-Translator: \n"
 "Language: ja\n"
@@ -12,7 +12,7 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Generated-By: Babel 2.4.0\n"
+"Generated-By: Babel 2.5.1\n"
 
 #: ../../../source/sms.rst:3
 msgid "SMS API"
@@ -669,15 +669,15 @@ msgstr "メッセージステータス"
 
 #: ../../../source/sms.rst:444
 msgid "QUEUED"
-msgstr "配信待ち"
+msgstr "QUEUED"
 
 #: ../../../source/sms.rst:444
 msgid "Message put into queue and will be delivered shortly"
-msgstr "配信待ち"
+msgstr "メッセージは配信待ち"
 
 #: ../../../source/sms.rst:445
-msgid "OK"
-msgstr "OK"
+msgid "DELIVERED"
+msgstr "DELIVERED"
 
 #: ../../../source/sms.rst:445
 msgid "Message successfully delivered"
@@ -806,4 +806,7 @@ msgstr "メッセージの配信失敗"
 
 #~ msgid ":samp:`http://example.com`"
 #~ msgstr ""
+
+#~ msgid "OK"
+#~ msgstr "OK"
 

@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Xoxzo API Docs 1.1\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2017-11-01 13:41+0900\n"
+"POT-Creation-Date: 2017-11-16 11:22+0900\n"
 "PO-Revision-Date: 2017-08-21 10:14+0900\n"
 "Last-Translator: \n"
 "Language: ja\n"
@@ -197,4 +197,16 @@ msgstr ""
 #: ../../../source/changes.rst:21
 msgid "Add new functionality: Conference call API"
 msgstr "新機能追加：電話会議APIの利用が可能に"
+
+#: ../../../source/changes.rst:22
+msgid "1.6.1"
+msgstr ""
+
+#: ../../../source/changes.rst:22
+msgid "2017-11-16"
+msgstr ""
+
+#: ../../../source/changes.rst:22
+msgid "Fix SMS send status"
+msgstr "SMS送信ステータスを訂正"
 

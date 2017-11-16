@@ -19,4 +19,5 @@ CHANGES
     1.4.3       2017-07-30          Replace hyphen (dash) with underscore: jp_kp and jp_kddi_sender
     1.5.0       2017-08-17          Add new functionality: Local caller ID via DIN
     1.6.0       2017-11-01          Add new functionality: Conference call API
+    1.6.1       2017-11-16          Fix SMS send status
     =========   ==================  ===============================================================================================

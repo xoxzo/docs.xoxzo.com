@@ -157,7 +157,7 @@ The response would be a JSON structure, returned with HTTP ``200 OK`` status cod
     Content-Type: application/json
 
     {
-        "status": "OK",
+        "status": "DELIVERED",
         "sent_time":"2015-08-27 09:22:32",
         "cost": 10,
         "sender": "<sender>",
@@ -271,7 +271,7 @@ The response would be a JSON structure, returned with HTTP ``200 OK`` status cod
            "recipient": "<recipient>",
            "sender": "<sender>",
            "sent_time": "2016-03-04 00:00:00",
-           "status": "OK",
+           "status": "DELIVERED",
            "url": "https://api.xoxzo.com/sms/messages/<msgid>"
         },
     ]
@@ -296,7 +296,7 @@ The response would be a JSON structure, returned with HTTP ``200 OK`` status cod
            "recipient": "<recipient>",
            "sender": "<sender>",
            "sent_time": "2016-03-04 10:15:00",
-           "status": "OK",
+           "status": "DELIVERED",
            "url": "https://api.xoxzo.com/sms/messages/<msgid>"
         },
         {
@@ -305,7 +305,7 @@ The response would be a JSON structure, returned with HTTP ``200 OK`` status cod
            "recipient": "<recipient>",
            "sender": "<sender>",
            "sent_time": "2016-03-04 00:00:00",
-           "status": "OK",
+           "status": "DELIVERED",
            "url": "https://api.xoxzo.com/sms/messages/<msgid>"
         },
     ]
@@ -327,7 +327,7 @@ The response would be a JSON structure, returned with HTTP ``200 OK`` status cod
            "recipient": "<recipient>",
            "sender": "<sender>",
            "sent_time": "2016-03-04 10:15:00",
-           "status": "OK",
+           "status": "DELIVERED",
            "url": "https://api.xoxzo.com/sms/messages/<msgid>"
         },
         {
@@ -336,7 +336,7 @@ The response would be a JSON structure, returned with HTTP ``200 OK`` status cod
            "recipient": "<recipient>",
            "sender": "<sender>",
            "sent_time": "2016-03-04 00:00:00",
-           "status": "OK",
+           "status": "DELIVERED",
            "url": "https://api.xoxzo.com/sms/messages/<msgid>"
         },
         {
@@ -345,7 +345,7 @@ The response would be a JSON structure, returned with HTTP ``200 OK`` status cod
            "recipient": "<recipient>",
            "sender": "<sender>",
            "sent_time": "2016-02-15 11:30:47",
-           "status": "OK",
+           "status": "DELIVERED",
            "url": "https://api.xoxzo.com/sms/messages/<msgid>"
         },
     ]
@@ -442,7 +442,7 @@ This is a list of statuses that you can find in the ``status`` data:
     Message status      Description         
     =================== ===============================
     QUEUED              Message put into queue and will be delivered shortly
-    OK                  Message successfully delivered
+    DELIVERED           Message successfully delivered
     DELIVERING          Sending message in progress
     FAIL                Failed to send message
     =================== ===============================
