@@ -16,7 +16,7 @@ while failed requests returns something else.
 
 As an example, if your request to an endpoint like::
 
-    https://api.xoxzo.com/voice/simple/playback/
+    https://api.xoxzo.com/voice/simple/playbacks/
 
 was successful and accepted for processing, you will get a response such as::
 
