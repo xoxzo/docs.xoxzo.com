@@ -591,7 +591,7 @@ msgid ""
 "To check conference status, make a GET request to the endpoint followed "
 "by ``<conferenceid>``. An example of using curl is below::"
 msgstr ""
-"通話状態を調べるには、エンドポイントに ``<callid>`` "
+"電話会議のステータスを調べるには、エンドポイントに ``<conferenceid>`` "
 "をつけた、GETリクエストを行ってください。curlを用いた例は次のようになります。"
 
 #: ../../../source/voice.rst:316

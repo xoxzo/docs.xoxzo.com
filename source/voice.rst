@@ -16,7 +16,7 @@ Simple Playback API
 To make a call and playback an audio file when your recipient answers the phone,
 make a ``POST`` request to the endpoint::
 
-    https://api.xoxzo.com/voice/simple/playback/
+    https://api.xoxzo.com/voice/simple/playbacks/
 
 with the following parameters:
 
@@ -107,7 +107,7 @@ Below is an example request using cURL::
       --data-urlencode 'caller=<caller>' \
       --data-urlencode 'recipient=<recipient>' \
       --data-urlencode 'recording_url=<recording_url>' \
-      https://api.xoxzo.com/voice/simple/playback/
+      https://api.xoxzo.com/voice/simple/playbacks/
 
 
 Response
@@ -167,7 +167,7 @@ Checking Call Status
 To check call status, make a GET request to the endpoint followed by
 ``<callid>``. An example of using curl is below::
 
-    curl -u <SID>:<AUTH_TOKEN> https://api.xoxzo.com/voice/simple/playback/<callid>/
+    curl -u <SID>:<AUTH_TOKEN> https://api.xoxzo.com/voice/calls/<callid>/
 
 Every time you make a call, you will get a response containing ``<callid>``.
 Use this ``<callid>`` to check call status.
@@ -186,7 +186,7 @@ The response would be a JSON structure, returned with HTTP ``200 OK`` status cod
         "status": "ANSWERED",
         "caller": "<caller>",
         "recipient": "<recipient>",
-        "url": "https://api.xoxzo.com/voice/simple/playback/<callid>/"
+        "url": "https://api.xoxzo.com/voice/calls/<callid>/"
     }
 
 .. _call_status_response_label:

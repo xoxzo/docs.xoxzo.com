@@ -133,7 +133,7 @@ Text to Speech with Simple Playback API
 To make a call and playback an text message when your recipient answers the phone,
 make a ``POST`` request to the endpoint::
 
-    https://api.xoxzo.com/voice/simple/playback/
+    https://api.xoxzo.com/voice/simple/playbacks/
 
 with the following parameters:
 
@@ -181,7 +181,7 @@ Below is an example request using cURL::
          --data-urlencode 'recipient=<recipient>' \
          --data-urlencode 'tts_message=おはよう' \
          --data-urlencode　'tts_lang=ja' \
-         https://api.xoxzo.com/voice/simple/playback/
+         https://api.xoxzo.com/voice/simple/playbacks/
 
 .. tip:: 
     It's faster to actually try some test code againts the API to see immediate results.

@@ -20,4 +20,5 @@ CHANGES
     1.5.0       2017-08-17          Add new functionality: Local caller ID via DIN
     1.6.0       2017-11-01          Add new functionality: Conference call API
     1.6.1       2017-11-16          Fix SMS send status
+    1.6.2       2017-11-24          Endpoint change for simple playbacks and call status API
     =========   ==================  ===============================================================================================
