@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Xoxzo API Docs 1.1\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2017-11-16 11:22+0900\n"
+"POT-Creation-Date: 2017-11-24 13:56+0900\n"
 "PO-Revision-Date: 2017-08-21 10:14+0900\n"
 "Last-Translator: \n"
 "Language: ja\n"
@@ -209,4 +209,16 @@ msgstr ""
 #: ../../../source/changes.rst:22
 msgid "Fix SMS send status"
 msgstr "SMS送信ステータスを訂正"
+
+#: ../../../source/changes.rst:23
+msgid "1.6.2"
+msgstr ""
+
+#: ../../../source/changes.rst:23
+msgid "2017-11-24"
+msgstr ""
+
+#: ../../../source/changes.rst:23
+msgid "Endpoint change for simple playbacks and call status API"
+msgstr "音声プレーバック, 発信ステータス APIのエンドポイントの変更"
 
