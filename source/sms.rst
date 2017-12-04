@@ -44,14 +44,14 @@ Please refer to our `K-Premium Service FAQ <https://help.xoxzo.com/xoxzo-cloud-t
 .. note::
    Notes on the **jp_kddi_sender** parameter:
 
-   * If the jp_kp parameter is set to true, you must specify this parameter.
-   * If the recipient is KDDI, the value specified fot this parameter will be shown the recipient's mobile.
-   * If the recipient is Docomo or Softbank, a fixed number will be shown on the the recipient's mobile.
-     As for the fixed number, please contact customer support.
+   * If the jp_kp parameter is set to true, you must specify this parameter with your pre-registered number for KDDI.
+   * If the recipient is KDDI, the value specified fot this parameter will be shown on the recipient's mobile.
+   * If the recipient is non-KDDI, a fixed number will be shown on the the recipient's mobile instead.
 
 .. note::
    Notes on the **message** parameter:
 
+   * If the jp_kp parameter is set to true, the maximum length for ASCII messages are 140 characters
    * The maximum length for ASCII messages are 160 characters (unless you're using jp_kp)
    * For non-ASCII messages, the maximum length is 70 characters
 
