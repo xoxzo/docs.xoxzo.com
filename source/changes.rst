@@ -21,4 +21,5 @@ CHANGES
     1.6.0       2017-11-01          Add new functionality: Conference call API
     1.6.1       2017-11-16          Fix SMS send status
     1.6.2       2017-11-24          Endpoint change for simple playbacks and call status API
+    1.7.0       2017-12-05          KPremium V2 support
     =========   ==================  ===============================================================================================
