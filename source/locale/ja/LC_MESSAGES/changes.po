@@ -223,18 +223,16 @@ msgid "Endpoint change for simple playbacks and call status API"
 msgstr "音声プレーバック, 発信ステータス APIのエンドポイントの変更"
 
 #: ../../../source/changes.rst:24
-#, fuzzy
 msgid "1.7.0"
-msgstr "1.5.0"
+msgstr "1.7.0"
 
 #: ../../../source/changes.rst:24
-#, fuzzy
 msgid "2017-12-05"
-msgstr "2015-11-05"
+msgstr "2017-12-05"
 
 #: ../../../source/changes.rst:24
 msgid "KPremium V2 support"
-msgstr ""
+msgstr "Kプレミアム V2 機能追加"
 
 #~ msgid "K Premium V2 support"
 #~ msgstr ""

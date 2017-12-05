@@ -128,9 +128,8 @@ msgid "No"
 msgstr "×"
 
 #: ../../../source/sms.rst:21
-#, fuzzy
 msgid "URL"
-msgstr "url"
+msgstr "URL"
 
 #: ../../../source/sms.rst:21
 msgid "http://example.com"
