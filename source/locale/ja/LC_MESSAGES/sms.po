@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Xoxzo API Docs 1.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2017-12-04 14:03+0900\n"
+"POT-Creation-Date: 2017-12-05 09:36+0900\n"
 "PO-Revision-Date: 2017-08-21 10:31+0900\n"
 "Last-Translator: \n"
 "Language: ja\n"
@@ -189,7 +189,7 @@ msgstr ""
 msgid "Notes on the **jp_kp** parameter:"
 msgstr "**jp_kp** パラメーターに関する注意点"
 
-#: ../../../source/sms.rst:41
+#: ../../../source/sms.rst:41 ../../../source/sms.rst:54
 msgid ""
 "If the jp_kp parameter is set to true, the maximum length for ASCII "
 "messages are 140 characters"
@@ -200,28 +200,32 @@ msgid "For non-ASCII messages, the maximum length is 70 characters"
 msgstr "ASCII以外の文字が含まれる場合（日本語など）、最大の長さは70文字です。"
 
 #: ../../../source/sms.rst:45
-#, fuzzy
 msgid "Notes on the **jp_kddi_sender** parameter:"
-msgstr "**sender** パラメーターに関する注意点"
+msgstr "**jp_kddi_sender** パラメーターに関する注意点"
 
 #: ../../../source/sms.rst:47
-msgid "If the jp_kp parameter is set to true, you must specify this parameter."
+msgid ""
+"If the jp_kp parameter is set to true, you must specify this parameter "
+"with your pre-registered number for KDDI."
 msgstr ""
+"jp_kpパラメーターが有効な場合、このパラメータに、あらかじめKDDIに登録してある番号を指定しなければいけません。"
 
 #: ../../../source/sms.rst:48
 msgid ""
 "If the recipient is KDDI, the value specified fot this parameter will be "
-"shown the recipient's mobile."
+"shown on the recipient's mobile."
 msgstr ""
+"受信者がKDDIの場合、このパラメータに指定した値が、携帯電話に表示されます。"
 
 #: ../../../source/sms.rst:49
 msgid ""
-"If the recipient is Docomo or Softbank, a fixed number will be shown on "
-"the the recipient's mobile. As for the fixed number, please contact "
-"customer support."
+"If the recipient is non-KDDI, a fixed number will be shown on the the "
+"recipient's mobile instead."
 msgstr ""
+"受信者がKDDI以外の場合は、ある固定した番号が、代わりに携帯電話に表示されます。"
 
-#: ../../../source/sms.rst:53 ../../../source/sms.rst:82
+
+#: ../../../source/sms.rst:52 ../../../source/sms.rst:82
 msgid "Notes on the **message** parameter:"
 msgstr "**message** パラメーターに関する注意点"
 
@@ -831,4 +835,21 @@ msgstr "メッセージの配信失敗"
 
 #~ msgid "OK"
 #~ msgstr "OK"
+
+#~ msgid "If the jp_kp parameter is set to true, you must specify this parameter."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "If the recipient is KDDI, the "
+#~ "value specified fot this parameter will"
+#~ " be shown the recipient's mobile."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "If the recipient is Docomo or "
+#~ "Softbank, a fixed number will be "
+#~ "shown on the the recipient's mobile. "
+#~ "As for the fixed number, please "
+#~ "contact customer support."
+#~ msgstr ""
 
