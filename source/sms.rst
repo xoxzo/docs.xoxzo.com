@@ -142,6 +142,20 @@ the HTTP response should be like this::
 
 .. _check-sms-status-label:
 
+Rate limiting
+------------------------------------
+
+Rate limiting is set in place for send sms message api.
+It is limited maximum
+
+ * three calls / second for regular account
+ * ten calls / second for post-pay account
+
+If you exceed this limit, you will get http status 429.
+
+For details about the post-pay account, please contact the customer support help@xoxzo.com
+
+
 Check SMS status API
 ====================================
 
