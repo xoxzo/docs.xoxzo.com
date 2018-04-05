@@ -35,3 +35,16 @@ more information on the error in the body of the response such as::
             ]
     }
 
+
+
+Rate limiting
+------------------------------------
+
+When the server load goes too high, rate limiting will apply. You will get response such as::
+
+    HTTP/1.0 429 Too Many Requests
+    Content-Type: application/json
+
+    {
+        "detail":"Request was throttled. Expected available in 1 second."
+    }
