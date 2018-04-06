@@ -242,7 +242,7 @@ msgstr "1.7.0"
 #: ../../../source/changes.rst:25
 #, fuzzy
 msgid "2018-04-05"
-msgstr "2016-04-05"
+msgstr "2018-04-05"
 
 #: ../../../source/changes.rst:25
 msgid "Add description about rate limiting"
