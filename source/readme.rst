@@ -38,7 +38,7 @@ more information on the error in the body of the response such as::
 Rate limiting
 ------------------------------------
 
-When the server load goes too high, rate limiting will apply. You will get response such as::
+Rate limiting is apply to our API and if your requests exceed the the threshold you will get response such as::
 
     HTTP/1.0 429 Too Many Requests
     Content-Type: application/json
