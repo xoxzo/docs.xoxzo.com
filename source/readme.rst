@@ -35,8 +35,6 @@ more information on the error in the body of the response such as::
             ]
     }
 
-
-
 Rate limiting
 ------------------------------------
 
