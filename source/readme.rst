@@ -35,3 +35,14 @@ more information on the error in the body of the response such as::
             ]
     }
 
+Rate limiting
+------------------------------------
+
+Rate limiting is apply to our API and if your requests exceed the the threshold you will get response such as::
+
+    HTTP/1.0 429 Too Many Requests
+    Content-Type: application/json
+
+    {
+        "detail":"Request was throttled. Expected available in 1 second."
+    }

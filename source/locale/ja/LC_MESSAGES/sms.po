@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Xoxzo API Docs 1.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2017-12-05 09:36+0900\n"
+"POT-Creation-Date: 2018-04-05 16:14+0900\n"
 "PO-Revision-Date: 2017-08-21 10:31+0900\n"
 "Last-Translator: \n"
 "Language: ja\n"
@@ -206,23 +206,19 @@ msgstr "**jp_kddi_sender** パラメーターに関する注意点"
 msgid ""
 "If the jp_kp parameter is set to true, you must specify this parameter "
 "with your pre-registered number for KDDI."
-msgstr ""
-"jp_kpパラメーターが有効な場合、このパラメータに、あらかじめKDDIに登録してある番号を指定しなければいけません。"
+msgstr "jp_kpパラメーターが有効な場合、このパラメータに、あらかじめKDDIに登録してある番号を指定しなければいけません。"
 
 #: ../../../source/sms.rst:48
 msgid ""
 "If the recipient is KDDI, the value specified fot this parameter will be "
 "shown on the recipient's mobile."
-msgstr ""
-"受信者がKDDIの場合、このパラメータに指定した値が、携帯電話に表示されます。"
+msgstr "受信者がKDDIの場合、このパラメータに指定した値が、携帯電話に表示されます。"
 
 #: ../../../source/sms.rst:49
 msgid ""
 "If the recipient is non-KDDI, a fixed number will be shown on the the "
 "recipient's mobile instead."
-msgstr ""
-"受信者がKDDI以外の場合は、ある固定した番号が、代わりに携帯電話に表示されます。"
-
+msgstr "受信者がKDDI以外の場合は、ある固定した番号が、代わりに携帯電話に表示されます。"
 
 #: ../../../source/sms.rst:52 ../../../source/sms.rst:82
 msgid "Notes on the **message** parameter:"
@@ -850,5 +846,62 @@ msgstr "メッセージの配信失敗"
 #~ "shown on the the recipient's mobile. "
 #~ "As for the fixed number, please "
 #~ "contact customer support."
+#~ msgstr ""
+
+#~ msgid "..　note::"
+#~ msgstr ""
+
+#~ msgid "Notes on the **rate limiting**::"
+#~ msgstr "**recipient** パラメーターに関する注意点"
+
+#~ msgid ""
+#~ "Send SMS messages API can be "
+#~ "called maximum three api calls / "
+#~ "second. If you exceed this limit, "
+#~ "you will get http status 429."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Rate limiting is set in place for"
+#~ " send sms message api. It is "
+#~ "limited maximum * three calls / "
+#~ "second for regular account * ten "
+#~ "calls / second for post pay "
+#~ "account If you exceed this limit, "
+#~ "you will get http status 429."
+#~ msgstr ""
+
+#~ msgid "ten calls / second for post pay account"
+#~ msgstr ""
+
+#~ msgid "If you exceed this limit, you will get http status 429."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "If you exceed this limit, you will"
+#~ " get http status 429. For details "
+#~ "about the post-pay account, please "
+#~ "contact the customer support help@xoxzo.com"
+#~ msgstr ""
+
+#~ msgid "Rate limiting"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Rate limiting is set in place for"
+#~ " send sms message api. It is "
+#~ "limited maximum"
+#~ msgstr ""
+
+#~ msgid "three calls / second for regular account"
+#~ msgstr ""
+
+#~ msgid "ten calls / second for post-pay account"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "For details about the post-pay "
+#~ "account, please contact the customer "
+#~ "support help@xoxzo.com"
 #~ msgstr ""
 

@@ -3,24 +3,47 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Xoxzo API Docs 1.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-10-11 14:13+0900\n"
+"POT-Creation-Date: 2018-04-06 10:39+0900\n"
 "PO-Revision-Date: 2015-10-22 12:39+0900\n"
 "Last-Translator: \n"
-"Language-Team: \n"
-"MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=UTF-8\n"
-"Content-Transfer-Encoding: 8bit\n"
 "Language: ja\n"
-"Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Poedit 1.8.5\n"
+"Language-Team: \n"
+"Plural-Forms: nplurals=1; plural=0\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.5.1\n"
 
 #: ../../../source/readme.rst:3
 msgid "README"
 msgstr ""
 
+#: ../../../source/readme.rst:6
+msgid "About this document"
+msgstr "このドキュメントについて"
+
+#: ../../../source/readme.rst:7
+msgid ""
+"This document aims to be the starting point for you to start exploring "
+"the rest of the documentation for the Xoxzo Cloud Telephony Platform."
+msgstr "このドキュメントは、XoxzoのAPIドキュメンテーションにおける基本や共通となるものを紹介のため作られたものです。"
+
 #: ../../../source/readme.rst:11
 msgid "General Usage"
 msgstr "一般的なご利用"
+
+#: ../../../source/readme.rst:13
+msgid ""
+"All APIs uses standard HTTP error codes to signify if a request was "
+"successful or otherwise. Successful requests returns ``2xx`` error codes "
+"such as ``200`` or ``201``, while failed requests returns something else."
+msgstr ""
+"リスエストが成功したかどうかを示すために、APIは標準HTTPエラーコードを使います。成功の場合には ``200`` または ``201`` "
+"のような ``2xx`` を、失敗の場合にはそれ以外、となります。"
+
+#: ../../../source/readme.rst:17
+msgid "As an example, if your request to an endpoint like::"
+msgstr "例として、もしエンドポイントへ、こういったリクエストをした場合"
 
 #: ../../../source/readme.rst:21
 msgid ""
@@ -32,31 +55,44 @@ msgstr "成功し、処理が引き受けられた場合、こういったレス
 msgid ""
 "On the other hand, if your request was invalid and not accepted for "
 "processing, you will get a non-200 error code, such as ``400`` and will "
-"contain more information on the error in the body of the response such as::"
+"contain more information on the error in the body of the response such "
+"as::"
 msgstr ""
 "反対に、リクエストが有効でなく、処理を引き受けられなかった場合、 ``400`` "
 "などの、200エラーでないエラーコードを受け取ることになります。そして、レスポンス中には、例えば下記のような、さらなる情報が含まれることとなります。"
 
-#: ../../../source/readme.rst:6
-msgid "About this document"
-msgstr "このドキュメントについて"
+#: ../../../source/readme.rst:39
+msgid "Rate limiting"
+msgstr "帯域制限"
 
-#: ../../../source/readme.rst:7
+#: ../../../source/readme.rst:41
 msgid ""
-"This document aims to be the starting point for you to start exploring the "
-"rest of the documentation for the Xoxzo Cloud Telephony Platform."
-msgstr "このドキュメントは、XoxzoのAPIドキュメンテーションにおける基本や共通となるものを紹介のため作られたものです。"
-
-#: ../../../source/readme.rst:13
-msgid ""
-"All APIs uses standard HTTP error codes to signify if a request was "
-"successful or otherwise. Successful requests returns ``2xx`` error codes "
-"such as ``200`` or ``201``, while failed requests returns something else."
+"Rate limiting is apply to our API and if your requests exceed the the "
+"threshold you will get response such as::"
 msgstr ""
-"リスエストが成功したかどうかを示すために、APIは標準HTTPエラーコードを使います。成功の場合には ``200`` または ``201`` のような ``2xx`` "
-"を、失敗の場合にはそれ以外、となります。"
+"APIには帯域制限がかけられています。リクエストが一定の制限を超えると、つぎのようなレスポンスが返されます。"
 
-#: ../../../source/readme.rst:17
-msgid "As an example, if your request to an endpoint like::"
-msgstr "例として、もしエンドポイントへ、こういったリクエストをした場合"
+#~ msgid "When the server load goes too high, rate limiting will apply."
+#~ msgstr ""
+
+#~ msgid "HTTP/1.0 429 Too Many Requests Content-Type: application/json"
+#~ msgstr ""
+
+#~ msgid "{"
+#~ msgstr ""
+
+#~ msgid "\"detail\":\"Request was throttled. Expected available in 1 second.\""
+#~ msgstr ""
+
+#~ msgid "}"
+#~ msgstr ""
+
+#~ msgid "Please contact the customer support help@xoxzo.com"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "When the server load goes too "
+#~ "high, rate limiting will apply. You "
+#~ "will get response such as::"
+#~ msgstr ""
 
