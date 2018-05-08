@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Heylo API Documentation 1.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-05-08 12:44+0900\n"
+"POT-Creation-Date: 2018-05-08 13:55+0900\n"
 "PO-Revision-Date: 2017-08-22 09:43+0900\n"
 "Last-Translator: \n"
 "Language-Team: \n"
@@ -206,8 +206,8 @@ msgid ""
 msgstr "音声ファイルのURLには、ASCII 文字と数字以外、アンダースコアとスラッシュ（記号） **のみ** としてください。"
 
 #: ../../../source/voice.rst:65
-msgid "`https` is not allowed at this moment."
-msgstr "現在 `https` は使えません。"
+msgid "`https` is not supported at this moment."
+msgstr "現在 `https` はサポートされていません。"
 
 #: ../../../source/voice.rst:68
 msgid "Samples of valid URL for **recording_url** are as below:"
