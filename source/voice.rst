@@ -62,6 +62,7 @@ with the following parameters:
 
    *  The mp3 file specified by the URL **MUST** be publicly accessible.
    *  The URL can **ONLY** contain ascii letters or digits, underscores, slash or hyphens.
+   *  `https` is not supported at this moment.
 
 .. note::
    Samples of valid URL for **recording_url** are as below:

@@ -23,4 +23,5 @@ CHANGES
     1.6.2       2017-11-24          Endpoint change for simple playbacks and call status API
     1.7.0       2017-12-05          KPremium V2 support
     1.7.1       2018-04-05          Add description about rate limiting
+    1.7.2       2018-05-08          https is not supported for recording_url of simple playback api
     =========   ==================  ===============================================================================================
