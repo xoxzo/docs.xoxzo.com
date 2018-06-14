@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Xoxzo API Docs 1.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-06-14 14:08+0900\n"
+"POT-Creation-Date: 2018-06-14 15:15+0900\n"
 "PO-Revision-Date: 2017-08-21 10:31+0900\n"
 "Last-Translator: \n"
 "Language: ja\n"
@@ -218,7 +218,7 @@ msgstr ""
 #: ../../../source/sms.rst:46
 msgid ""
 "The difference between **jp_kp** and **jp_kpl** is the sender id display "
-"for non-KDDI nuberes. Please refer **jp_kddi_sender** parameter section."
+"for non-KDDI numbers. Please refer **jp_kddi_sender** parameter section."
 msgstr ""
 
 #: ../../../source/sms.rst:50
@@ -963,4 +963,11 @@ msgstr "メッセージの配信失敗"
 
 #~ msgid "Notes on the v parameter:"
 #~ msgstr "**jp_kp** パラメーターに関する注意点"
+
+#~ msgid ""
+#~ "The difference between **jp_kp** and "
+#~ "**jp_kpl** is the sender id display "
+#~ "for non-KDDI nuberes. Please refer "
+#~ "**jp_kddi_sender** parameter section."
+#~ msgstr ""
 
