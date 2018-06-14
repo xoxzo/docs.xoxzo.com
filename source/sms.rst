@@ -26,27 +26,33 @@ JP specific optional parameters
 
 The additional parameters below are for JP specific usage and recipients:
 
-    ==============  ==================  ========    =================== ===================
-    Name            Description         Required    Data Type           Example
-    ==============  ==================  ========    =================== ===================
-    jp_kp           K-Premium flag      No          The string **true** true
-    jp_kddi_sender  Sender ID for au    No          Numeric             0312341234
-    ==============  ==================  ========    =================== ===================
+    ==============  ===================   ========    =================== ===================
+    Name            Description           Required    Data Type           Example
+    ==============  ===================   ========    =================== ===================
+    jp_kp           K-Premium flag        No          The string **true** true
+    jp_kpl          K-Premium Lite flag   No          The string **true** true
+    jp_kddi_sender  Sender ID for au      No          Numeric             0312341234
+    ==============  ===================   ========    =================== ===================
 
 Please refer to our `K-Premium Service FAQ <https://help.xoxzo.com/xoxzo-cloud-telephony-platform/articles/the-k-premium-service/>`_ for more information on the K-Premium Service.
 
 .. note::
-   Notes on the **jp_kp** parameter:
+   Notes on the **jp_kp** and **jp_kpl** parameter:
 
    * If the jp_kp parameter is set to true, the maximum length for ASCII messages are 140 characters
    * For non-ASCII messages, the maximum length is 70 characters
+   * You cannot specify **jp_kp** and **jp_kpl** together. These are mutually exclusive.
+     You can only one of these for each api call.
+   * The difference between **jp_kp** and **jp_kpl** is the sender id display for non-KDDI nuberes.
+     Please refer **jp_kddi_sender** parameter section.
 
 .. note::
    Notes on the **jp_kddi_sender** parameter:
 
-   * If the jp_kp parameter is set to true, you must specify this parameter with your pre-registered number for KDDI.
+   * If the jp_kp or jp_kpl parameter is set to true, you must specify this parameter with your pre-registered number for KDDI.
    * If the recipient is KDDI, the value specified fot this parameter will be shown on the recipient's mobile.
-   * If the recipient is non-KDDI, a fixed number will be shown on the the recipient's mobile instead.
+   * If the **jp_kp** is set and the recipient is non-KDDI, a fixed number will be shown on the the recipient's mobile instead.
+   * If the **jp_kpl** is set and the recipient is non-KDDI, **sender** will be shown on the the recipient's mobile instead.
 
 .. note::
    Notes on the **message** parameter:
