@@ -41,8 +41,7 @@ Please refer to our `K-Premium Service FAQ <https://help.xoxzo.com/xoxzo-cloud-t
 
    * If the jp_kp parameter is set to true, the maximum length for ASCII messages are 140 characters
    * For non-ASCII messages, the maximum length is 70 characters
-   * You cannot specify **jp_kp** and **jp_kpl** together. These are mutually exclusive.
-     You can only one of these for each api call.
+   * You cannot specify **jp_kp** and **jp_kpl** together at the same time. These are mutually exclusive.
    * The difference between **jp_kp** and **jp_kpl** is the sender id display for non-KDDI numbers.
      Please refer **jp_kddi_sender** parameter section.
 
