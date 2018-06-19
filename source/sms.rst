@@ -39,7 +39,7 @@ Please refer to our `K-Premium Service FAQ <https://help.xoxzo.com/xoxzo-cloud-t
 .. note::
    Notes on the **jp_kp** and **jp_kpl** parameter:
 
-   * If the jp_kp parameter is set to true, the maximum length for ASCII messages are 140 characters
+   * If the jp_kp or jp_kpl parameter is set to true, the maximum length for ASCII messages are 140 characters
    * For non-ASCII messages, the maximum length is 70 characters
    * You cannot specify **jp_kp** and **jp_kpl** together at the same time. These are mutually exclusive.
    * The difference between **jp_kp** and **jp_kpl** is the sender id display for non-KDDI numbers.
@@ -56,8 +56,8 @@ Please refer to our `K-Premium Service FAQ <https://help.xoxzo.com/xoxzo-cloud-t
 .. note::
    Notes on the **message** parameter:
 
-   * If the jp_kp parameter is set to true, the maximum length for ASCII messages are 140 characters
-   * The maximum length for ASCII messages are 160 characters (unless you're using jp_kp)
+   * If the jp_kp or jp_kpl parameter is set to true, the maximum length for ASCII messages are 140 characters
+   * The maximum length for ASCII messages are 160 characters (unless you're using jp_kp or jp_kpl)
    * For non-ASCII messages, the maximum length is 70 characters
 
 .. note::

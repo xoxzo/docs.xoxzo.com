@@ -3,14 +3,14 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Xoxzo API Docs 1.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-06-15 22:18+0900\n"
+"POT-Creation-Date: 2018-06-19 09:43+0900\n"
 "PO-Revision-Date: 2017-08-21 10:31+0900\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Generated-By: Babel 2.3.4\n"
+"Generated-By: Babel 2.5.1\n"
 
 #: ../../../source/sms.rst:3
 msgid "SMS API"
@@ -147,7 +147,7 @@ msgstr ""
 
 #: ../../../source/sms.rst:32
 msgid "K-Premium flag"
-msgstr ""
+msgstr "K-Premiumフラグ"
 
 #: ../../../source/sms.rst:32 ../../../source/sms.rst:33
 msgid "The string **true**"
@@ -163,19 +163,17 @@ msgstr ""
 
 #: ../../../source/sms.rst:33
 msgid "K-Premium Lite flag"
-msgstr ""
+msgstr "K-Premium Liteフラグ"
 
 #: ../../../source/sms.rst:34
-#, fuzzy
 msgid "jp_kddi_sender"
-msgstr "sender"
+msgstr ""
 
 #: ../../../source/sms.rst:34
 msgid "Sender ID for au"
-msgstr ""
+msgstr "au向けSender ID"
 
 #: ../../../source/sms.rst:34
-#, fuzzy
 msgid "Numeric"
 msgstr "英数字"
 
@@ -193,15 +191,14 @@ msgstr ""
 "telephony-platform/articles/the-k-premium-service/>`_ までご確認ください。"
 
 #: ../../../source/sms.rst:40
-#, fuzzy
 msgid "Notes on the **jp_kp** and **jp_kpl** parameter:"
-msgstr "**jp_kddi_sender** パラメーターに関する注意点"
+msgstr "**jp_kp** と **jp_kpl** パラメーターに関する注意点"
 
 #: ../../../source/sms.rst:42 ../../../source/sms.rst:59
 msgid ""
-"If the jp_kp parameter is set to true, the maximum length for ASCII "
-"messages are 140 characters"
-msgstr "jp_kp パラメーターが有効の場合、ASCII文字のみのメッセージの最大の長さは140文字です。"
+"If the jp_kp or jp_kpl parameter is set to true, the maximum length for "
+"ASCII messages are 140 characters"
+msgstr "jp_kp または jp_kpl パラメーターが有効の場合、ASCII文字のみのメッセージの最大の長さは140文字です。"
 
 #: ../../../source/sms.rst:43 ../../../source/sms.rst:61
 msgid "For non-ASCII messages, the maximum length is 70 characters"
@@ -211,24 +208,25 @@ msgstr "ASCII以外の文字が含まれる場合（日本語など）、最大�
 msgid ""
 "You cannot specify **jp_kp** and **jp_kpl** together at the same time. "
 "These are mutually exclusive."
-msgstr ""
+msgstr "**jp_kp** と **jp_kpl** を同時に指定することはできません。どちらか一方のみ指定してください。"
 
 #: ../../../source/sms.rst:45
 msgid ""
 "The difference between **jp_kp** and **jp_kpl** is the sender id display "
 "for non-KDDI numbers. Please refer **jp_kddi_sender** parameter section."
 msgstr ""
+"**jp_kp** と **jp_kpl** の違いは、sender "
+"のKDDI以外での表示のされ方にあります。詳細は、**jp_kddi_sender** の説明を参照してください。"
 
 #: ../../../source/sms.rst:49
 msgid "Notes on the **jp_kddi_sender** parameter:"
 msgstr "**jp_kddi_sender** パラメーターに関する注意点"
 
 #: ../../../source/sms.rst:51
-#, fuzzy
 msgid ""
 "If the jp_kp or jp_kpl parameter is set to true, you must specify this "
 "parameter with your pre-registered number for KDDI."
-msgstr "jp_kpパラメーターが有効な場合、このパラメータに、あらかじめKDDIに登録してある番号を指定しなければいけません。"
+msgstr "jp_kpまたはjp_kplパラメーターが有効な場合、このパラメータに、あらかじめKDDIに登録してある番号を指定しなければいけません。"
 
 #: ../../../source/sms.rst:52
 msgid ""
@@ -237,18 +235,16 @@ msgid ""
 msgstr "受信者がKDDIの場合、このパラメータに指定した値が、携帯電話に表示されます。"
 
 #: ../../../source/sms.rst:53
-#, fuzzy
 msgid ""
 "If the **jp_kp** is set and the recipient is non-KDDI, a fixed number "
 "will be shown on the the recipient's mobile instead."
-msgstr "受信者がKDDI以外の場合は、ある固定した番号が、代わりに携帯電話に表示されます。"
+msgstr "**jp_kp** が指定されたとき、受信者がKDDI以外の場合は、ある固定した番号が、代わりに携帯電話に表示されます。"
 
 #: ../../../source/sms.rst:54
-#, fuzzy
 msgid ""
 "If the **jp_kpl** is set and the recipient is non-KDDI, **sender** will "
 "be shown on the the recipient's mobile instead."
-msgstr "受信者がKDDI以外の場合は、ある固定した番号が、代わりに携帯電話に表示されます。"
+msgstr "**jp_kpl** が指定されたとき、受信者がKDDI以外の場合は、**sender** に指定した番号が、代わりに携帯電話に表示されます。"
 
 #: ../../../source/sms.rst:57 ../../../source/sms.rst:87
 msgid "Notes on the **message** parameter:"
@@ -257,8 +253,8 @@ msgstr "**message** パラメーターに関する注意点"
 #: ../../../source/sms.rst:60
 msgid ""
 "The maximum length for ASCII messages are 160 characters (unless you're "
-"using jp_kp)"
-msgstr "ASCII文字のみのメッセージの最大の長さは160文字です。(jp_kpが無効の場合)"
+"using jp_kp or jp_kpl)"
+msgstr "ASCII文字のみのメッセージの最大の長さは160文字です。(jp_kpまはたjp_kplが無効の場合)"
 
 #: ../../../source/sms.rst:64
 msgid "Notes on the **recipient** parameter:"
@@ -381,7 +377,7 @@ msgstr "上記の例にある ``<message>`` は **必ず** 送信される前に
 msgid ""
 "The response would be a JSON structure, returned with HTTP ``201 "
 "CREATED`` status code::"
-msgstr "レスポンスは、JSON構造となり、ステータスコード　HTTP ``201 CREATED`` にて返されます。"
+msgstr "レスポンスは、JSON構造となり、ステータスコード HTTP ``201 CREATED`` にて返されます。"
 
 #: ../../../source/sms.rst:123 ../../../source/sms.rst:199
 msgid "Response data"
@@ -401,7 +397,7 @@ msgid ""
 " will be returned. For example, if the ``message`` parameter is missing, "
 "the HTTP response should be like this::"
 msgstr ""
-"間違ったバラメーターが与えられた場合には、ステータスコード　HTTP ``400 BAD REQUEST``　が返されます。例えば、もし "
+"間違ったバラメーターが与えられた場合には、ステータスコード HTTP ``400 BAD REQUEST`` が返されます。例えば、もし "
 "``message`` パラメーターがなかった場合、HTTPからの返答はこのようになります。"
 
 #: ../../../source/sms.rst:145
@@ -435,13 +431,13 @@ msgstr "送信を行うたびに、 ``<msgid>`` を含むレスポンスが得�
 msgid ""
 "The response would be a JSON structure, returned with HTTP ``200 OK`` "
 "status code::"
-msgstr "レスポンスは、JSON構造となり、ステータスコード　HTTP ``200 OK`` にて返されます。"
+msgstr "レスポンスは、JSON構造となり、ステータスコード HTTP ``200 OK`` にて返されます。"
 
 #: ../../../source/sms.rst:182
 msgid ""
 "Below is a sample of a response for a message that failed to be "
 "delivered, returned with a HTTP ``200 OK`` status code::"
-msgstr "下記は、メッセージが配信失敗し、ステータスコード　HTTP ``200 OK`` が返された場合の例です。"
+msgstr "下記は、メッセージが配信失敗し、ステータスコード HTTP ``200 OK`` が返された場合の例です。"
 
 #: ../../../source/sms.rst:204
 msgid "status"
@@ -857,5 +853,8 @@ msgstr "メッセージの配信失敗"
 #~ "**jp_kpl** together. These are mutually "
 #~ "exclusive. You can only one of "
 #~ "these for each api call."
+#~ msgstr ""
+
+#~ msgid "文字列 **true**"
 #~ msgstr ""
 
