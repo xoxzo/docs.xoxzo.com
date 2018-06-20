@@ -151,7 +151,7 @@ msgstr "Kプレミアムフラグ"
 
 #: ../../../source/sms.rst:32 ../../../source/sms.rst:33
 msgid "The string **true**"
-msgstr ""
+msgstr "**true** の文字列"
 
 #: ../../../source/sms.rst:32 ../../../source/sms.rst:33
 msgid "true"
