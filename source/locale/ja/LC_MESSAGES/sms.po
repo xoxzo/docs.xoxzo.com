@@ -147,7 +147,7 @@ msgstr ""
 
 #: ../../../source/sms.rst:32
 msgid "K-Premium flag"
-msgstr "K-Premiumフラグ"
+msgstr "Kプレミアムフラグ"
 
 #: ../../../source/sms.rst:32 ../../../source/sms.rst:33
 msgid "The string **true**"
@@ -163,7 +163,7 @@ msgstr ""
 
 #: ../../../source/sms.rst:33
 msgid "K-Premium Lite flag"
-msgstr "K-Premium Liteフラグ"
+msgstr "Kプレミアム Liteフラグ"
 
 #: ../../../source/sms.rst:34
 msgid "jp_kddi_sender"
