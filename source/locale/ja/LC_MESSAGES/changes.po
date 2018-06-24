@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Xoxzo API Docs 1.1\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-05-08 13:55+0900\n"
+"POT-Creation-Date: 2018-06-20 11:29+0900\n"
 "PO-Revision-Date: 2017-08-21 10:14+0900\n"
 "Last-Translator: \n"
 "Language: ja\n"
@@ -231,7 +231,7 @@ msgid "2017-12-05"
 msgstr "2017-12-05"
 
 #: ../../../source/changes.rst:24
-msgid "KPremium V2 support"
+msgid "K-Premium V2 support"
 msgstr "Kプレミアム V2 機能追加"
 
 #: ../../../source/changes.rst:25
@@ -258,6 +258,18 @@ msgstr ""
 msgid "https is not supported for recording_url of simple playback api"
 msgstr "音声プレーバックAPIのrecording_urlにはhttpsはサポートされていない"
 
-#~ msgid "K Premium V2 support"
-#~ msgstr ""
+#: ../../../source/changes.rst:27
+msgid "1.8.0"
+msgstr ""
+
+#: ../../../source/changes.rst:27
+msgid "2018-06-19"
+msgstr ""
+
+#: ../../../source/changes.rst:27
+msgid "K-Premium Lite support"
+msgstr "Kプレミアム Lite 機能追加"
+
+#~ msgid "Add K-Premium Lite"
+#~ msgstr "Kプレミアム Liteパラメーターの追加"
 
