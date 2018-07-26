@@ -25,4 +25,5 @@ CHANGES
     1.7.1       2018-04-05          Add description about rate limiting
     1.7.2       2018-05-08          https is not supported for recording_url of simple playback api
     1.8.0       2018-06-19          K-Premium Lite support
+    1.8.1       2018-07-26          Increase sms log size limit 30,000
     =========   ==================  ===============================================================================================
