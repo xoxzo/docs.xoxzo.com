@@ -246,7 +246,7 @@ the sent messages:
     =========  ===================
 
 .. note::
-   * The maximum amount of sent messages that can be pulled are limited to 5000 messages.
+   * The maximum amount of sent messages that can be pulled are limited to 30,000 messages.
    * Only sent messages within 90 days ago that can be be pulled.
    * This API supports only one operator and one specified sent date on each request.
    * All dates are based on UTC.
