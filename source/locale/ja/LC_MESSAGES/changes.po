@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Xoxzo API Docs 1.1\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-07-26 12:34+0800\n"
+"POT-Creation-Date: 2018-08-22 15:42+0900\n"
 "PO-Revision-Date: 2017-08-21 10:14+0900\n"
 "Last-Translator: \n"
 "Language: ja\n"
@@ -281,6 +281,20 @@ msgstr ""
 #: ../../../source/changes.rst:28
 msgid "Increase sms log size limit 30,000"
 msgstr "SMSログのサイズの上限を30,000に変更"
+
+#: ../../../source/changes.rst:29
+#, fuzzy
+msgid "1.9.0"
+msgstr "1.7.0"
+
+#: ../../../source/changes.rst:29
+#, fuzzy
+msgid "2018-08-23"
+msgstr "2018-04-05"
+
+#: ../../../source/changes.rst:29
+msgid "Added credit api"
+msgstr ""
 
 #~ msgid "Add K-Premium Lite"
 #~ msgstr "Kプレミアム Liteパラメーターの追加"
