@@ -20,13 +20,12 @@ Below is an example request using cURL::
 
 The response would be a JSON structure, returned with HTTP ``200 OK`` status code::
 
-   HTTP/1.1 200 OK
-   Content-Type: application/json
+    HTTP/1.1 200 OK
+    Content-Type: application/json
 
-   {
-    "credits": 1000.0
-   }
-
+    {
+        "credits": 1000.0
+    }
 
 
 Response data
