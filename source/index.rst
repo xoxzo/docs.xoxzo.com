@@ -22,7 +22,7 @@ Contents:
     voice
     din
     utilsapi
-    admin
+    account
 
 .. toctree::
     :maxdepth: 1

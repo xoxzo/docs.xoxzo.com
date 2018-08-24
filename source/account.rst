@@ -1,8 +1,8 @@
 ============================================
-Admin API
+Account API
 ============================================
 
-Admin API is a collection of APIs which are useful when dealing with your accounts.
+Account API is a collection of APIs which are useful when dealing with your accounts.
 
 Credit Balance Lookup
 ============================================
