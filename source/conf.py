@@ -48,7 +48,7 @@ master_doc = 'index'
 
 # General information about the project.
 project = 'Xoxzo API Docs'
-copyright = '2017, Xoxzo Inc.'
+copyright = '2018, Xoxzo Inc.'
 author = 'help@xoxzo.com'
 
 # The version info for the project you're documenting, acts as replacement for
