@@ -1,0 +1,162 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2017, Xoxzo Inc.
+# This file is distributed under the same license as the Xoxzo API Docs
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2018.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Xoxzo API Docs 1.8.1\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2018-08-22 15:31+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.5.1\n"
+
+#: ../../../source/admin.rst:3
+msgid "Admin API"
+msgstr ""
+
+#: ../../../source/admin.rst:5
+msgid ""
+"Admin API is a collection of APIs which are useful when dealing with your"
+" accounts."
+msgstr ""
+
+#: ../../../source/admin.rst:8
+msgid "Credit Balance Lookup"
+msgstr ""
+
+#: ../../../source/admin.rst:9
+msgid "To do a lookup credit balance, make a ``GET`` request to the endpoint::"
+msgstr ""
+
+#: ../../../source/admin.rst:15
+msgid "Examples"
+msgstr ""
+
+#: ../../../source/admin.rst:17
+msgid "Below is an example request using cURL::"
+msgstr ""
+
+#: ../../../source/admin.rst:21
+msgid ""
+"The response would be a JSON structure, returned with HTTP ``200 OK`` "
+"status code::"
+msgstr ""
+
+#: ../../../source/admin.rst:33
+msgid "Response data"
+msgstr ""
+
+#: ../../../source/admin.rst:36
+msgid "Name"
+msgstr ""
+
+#: ../../../source/admin.rst:36
+msgid "Description"
+msgstr ""
+
+#: ../../../source/admin.rst:38
+msgid "credits"
+msgstr ""
+
+#: ../../../source/admin.rst:38
+msgid "Current credits balance"
+msgstr ""
+
+#~ msgid ""
+#~ "The response would be a JSON "
+#~ "structure, returned with HTTP ``201 "
+#~ "CREATED`` status code::"
+#~ msgstr ""
+
+#~ msgid "id"
+#~ msgstr ""
+
+#~ msgid "A unique 32 char id to identify this lookup request"
+#~ msgstr ""
+
+#~ msgid "mcc"
+#~ msgstr ""
+
+#~ msgid "The country code of the carrier"
+#~ msgstr ""
+
+#~ msgid "mnc"
+#~ msgstr ""
+
+#~ msgid "The network code of the carrier"
+#~ msgstr ""
+
+#~ msgid "mccmnc"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "The mccmnc code (combination of mcc "
+#~ "and mnc) that uniquely identifies this"
+#~ " carrier"
+#~ msgstr ""
+
+#~ msgid "carrier"
+#~ msgstr ""
+
+#~ msgid "The carrier name"
+#~ msgstr ""
+
+#~ msgid "country"
+#~ msgstr ""
+
+#~ msgid "ISO Alpha-2 code of the home country of this carrier"
+#~ msgstr ""
+
+#~ msgid "recipient"
+#~ msgstr ""
+
+#~ msgid "The number being queried"
+#~ msgstr ""
+
+#~ msgid "cost"
+#~ msgstr ""
+
+#~ msgid "The credits deducted for this API call"
+#~ msgstr ""
+
+#~ msgid "Notes on the **mccmnc** data:"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "The combination of the MCC and MNC"
+#~ " code `MCCMNC "
+#~ "<https://en.wikipedia.org/wiki/Mobile_country_code>`_ uniquely"
+#~ " identifies a certain network operator "
+#~ "(carrier) anywhere in the world."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Although the operator business name "
+#~ "might change due to buyouts or "
+#~ "management changes, the MCCMNC code very"
+#~ " rarely does."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "There are cases where one business "
+#~ "entity or operator brand might have "
+#~ "multiple MCCMNC codes assigned to it."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "If there's invalid parameters given, "
+#~ "HTTP ``400 BAD REQUEST`` status code "
+#~ "will be returned. For example, if "
+#~ "the ``recipient`` parameter is missing, "
+#~ "the HTTP response should be like "
+#~ "this::"
+#~ msgstr ""
+
