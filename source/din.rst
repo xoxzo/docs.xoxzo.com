@@ -3,7 +3,7 @@ Dial In Numbers API
 ======================================================
 
 The Dial In Numbers API allows you to receive and manipulate phone numbers and incoming phone calls via easy APIs.
-You can read the `tutorial here. <https://blog.xoxzo.com/en/2017/07/13/dialinnumbers-tutorial/>`_
+You can read the `tutorial here. <https://blog.xoxzo.com/en/2017/07/01/dialinnumbers-tutorial/>`_
 
 Finding a Dial In Number via API
 ======================================================
