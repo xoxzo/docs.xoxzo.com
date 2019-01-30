@@ -80,8 +80,7 @@ Please refer to our `K-Premium Service FAQ <https://help.xoxzo.com/xoxzo-cloud-t
 
 .. warning::
    The **sender** is sent as through a best effort method and is not guaranteed to be shown on
-   the recipient's mobile as it is and maybe replaced with an arbitary **sender**. This is dependent on the 
-   policies of the carriers, intermerdiary networks and governments, and they may not honour your request.
+   the recipient's mobile as it is and maybe replaced with an arbitrary **sender**. This is dependent on the policies of the carriers, intermerdiary networks and governments, and they may not honour your request.
 
 .. note::
    Notes on the **message** parameter:
