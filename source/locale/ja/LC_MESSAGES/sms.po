@@ -312,7 +312,7 @@ msgstr "**sender** パラメーターが、数字のみの場合、最大の長�
 msgid ""
 "The **sender** is sent as through a best effort method and is not "
 "guaranteed to be shown on the recipient's mobile as it is and maybe "
-"replaced with an arbitary **sender**. This is dependent on the policies "
+"replaced with an arbitrary **sender**. This is dependent on the policies "
 "of the carriers, intermerdiary networks and governments, and they may not"
 " honour your request."
 msgstr ""
