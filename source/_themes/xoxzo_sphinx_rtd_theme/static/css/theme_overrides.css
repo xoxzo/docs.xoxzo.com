@@ -73,6 +73,11 @@ ul.navbar-nav {
   margin-right: 0;
 }
 
+ul.navbar-nav .nav-link {
+  font-size: .9rem;
+  line-height: 1.6rem;
+}
+
 ul.navbar-nav .nav-item a {
   padding-top: 15px;
 }
@@ -303,6 +308,11 @@ ul.navbar-nav .nav-item a.nav-button:hover {
 
   ul.navbar-nav #signup {
     margin: 0;
+  }
+
+  ul.navbar-nav .nav-link {
+    font-size: 1rem;
+    line-height: 1.5rem;
   }
 
   ul.navbar-nav .nav-item a {
