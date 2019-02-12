@@ -459,3 +459,141 @@ This is a list of statuses that you can find in the ``status`` data:
     FAIL                Failed to send message
     =================== ===============================
 
+Receive SMS messages API
+=============================================
+
+The Receive SMS messages API allows you to subscribe to phone numbers and receive incoming SMS.
+
+Finding a SMS In Number via API
+---------------------------------------------
+
+This API allows for listing and subscribing to a SMS In Number (SIN).
+
+To list available DINs, make a ``GET`` request to::
+
+    curl -u <SID>:<AUTH_TOKEN> https://api.xoxzo.com/sms/sins/
+
+The response will be a JSON structure, returned with HTTP ``200 OK`` status code like::
+
+    HTTP/1.1 200 OK
+    Allow: GET, HEAD, OPTIONS
+    Connection: keep-alive
+    Content-Type: application/json
+
+    [
+        {
+            "country_code": "81", 
+            "sin": "815012345678", 
+            "sin_uid": "JPafr34rafic76tf", 
+            "minute_cost": 1, 
+            "monthly_cost": 650.0, 
+            "prefix": "50"
+        }, 
+        {
+            "country_code": "81", 
+            "sin": "81312345678", 
+            "sin_uid": "JPascfdrwersdf12", 
+            "minute_cost": 10, 
+            "monthly_cost": 1900.0, 
+            "prefix": "3"
+        }
+    ]
+
+Response data
+---------------------------------------------
+
+    =============   ======================================
+    Name            Description       
+    =============   ======================================
+    country_code    The country code for this SIN, dependent on it's country
+    sin             The E.164 version of the SIN, including country code
+    sin_uid         A unique identifier for this particular SIN
+    monthly_cost    The monthly credit cost of subscribing to this SIN
+    prefix          The local area prefix for this SIN, without the 0
+    =============   ======================================
+
+You can also filter using a country code or a prefix::
+
+    curl -u <SID>:<AUTH_TOKEN> https://api.xoxzo.com/sms/sins/?country=JP
+
+Or::
+
+    curl -u <SID>:<AUTH_TOKEN> https://api.xoxzo.com/sms/sins/?prefix=813
+
+filtering using country or prefix will only return you the relevant SINs based on your filter.
+
+.. _subscribe-sin-api-ref:
+
+Subscribing to a SMS In Number via API
+---------------------------------------------
+
+To subscribe to a SIN, send a ``POST`` request like::
+
+    curl -u <SID>:<AUTH_TOKEN> -d'sin_uid=<sin_uid>' https://api.xoxzo.com/sms/sins/subscriptions/
+
+where ``<sin_uid>`` is the value you got from the previous ``GET`` request for the number you want to subscribe to.
+
+The response will return with HTTP ``201 OK`` to indicate that the subscription was succesfull.
+
+.. warning::
+   *  Your credits will be charged immediately for the monhtly subscription if your ``POST`` request succeeds
+
+Attach an action to the SMS In Number via API
+---------------------------------------------
+
+Each SMS In Number can be attached an action that will provide instruction what to do with the call if it was answered::
+
+    curl -u <SID>:<AUTH_TOKEN> -d'action_url=<url>' https://api.xoxzo.com/sms/sins/subscriptions/<sin_uid>/
+
+The ``url`` specified for ``action_url`` will be called via ``GET`` when there is incoming call to your subscribed SMS IN number to get a command that will be
+used to handle the call. 
+
+
+.. tip:: 
+    Try subscribing to a local number and see how it works now!
+    `Signing up <https://www.xoxzo.com/en/accounts/signup/>`_ takes only a few minutes and it's free
+
+Getting the list of subscribed SMS In Numbers via API
+-----------------------------------------------------
+
+To get the list of your current subscribed SINs, just make a ``GET`` request like::
+
+   curl -u <SID>:<AUTH_TOKEN> https://api.xoxzo.com/sms/sins/subscriptions/
+
+Unsubscribing to a SMS In Number via API
+---------------------------------------------
+
+To unsubscribe::
+
+    curl -XDELETE -u <SID>:<AUTH_TOKEN> https://api.xoxzo.com/sms/sins/subscriptions/<sin_uid>/
+
+What are Actions?
+=============================================
+
+An Action is something that you tell us to do when a message comes in via your subscribed SMS In Number (SIN).
+These can be things like forwarding the incoming message to a different number. More functionality will be added in the future.
+
+Avaialable Actions are listed at `Available Actions`_
+
+The Actions that you want to do are defined in a simple text file that you make accessible
+via a URL. This URL is the ``action_url`` that you set when you subscribe to a DIN.
+
+When a call comes in to your SIN, we'll make a ``GET`` request to your ``action_url`` that will also include
+information about the call, like::
+
+    GET /command/?sender=+8180123456789&recipient=+8150123456789
+
+Where ``sender`` is the phone number sending the message and ``recipient`` is your SIN.
+
+Available Actions
+---------------------------------------------
+
+The available actions are as follows:
+
+    =============   ======================================
+    Action          Description       
+    =============   ======================================
+    forward         Forwards the incoming SMS to another number
+    =============   ======================================
+
+
