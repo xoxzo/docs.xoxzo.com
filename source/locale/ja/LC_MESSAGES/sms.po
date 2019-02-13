@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Xoxzo API Docs 1.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-02-12 18:02+0900\n"
+"POT-Creation-Date: 2019-02-13 13:09+0900\n"
 "PO-Revision-Date: 2017-08-21 10:31+0900\n"
 "Last-Translator: \n"
 "Language-Team: \n"
@@ -44,7 +44,7 @@ msgstr "名称"
 #: ../../../source/sms.rst:16 ../../../source/sms.rst:30
 #: ../../../source/sms.rst:125 ../../../source/sms.rst:201
 #: ../../../source/sms.rst:226 ../../../source/sms.rst:454
-#: ../../../source/sms.rst:506 ../../../source/sms.rst:594
+#: ../../../source/sms.rst:506
 msgid "Description"
 msgstr "詳細"
 
@@ -859,23 +859,23 @@ msgid ""
 msgstr ""
 
 #: ../../../source/sms.rst:542
-msgid "Attach an action to the SMS In Number via API"
+msgid "Define a webhook for the SMS In Number via API"
 msgstr ""
 
 #: ../../../source/sms.rst:544
 msgid ""
-"Each SMS In Number can be attached an action that will provide "
-"instruction what to do with the call if it was answered::"
+"Each SMS In Number can be forwarded to a webhook that will receive the "
+"data within the message that was received::"
 msgstr ""
 
 #: ../../../source/sms.rst:548
 msgid ""
-"The ``url`` specified for ``action_url`` will be called via ``GET`` when "
-"there is incoming call to your subscribed SMS IN number to get a command "
-"that will be used to handle the call."
+"The ``url`` specified for ``webhook_url`` will be sent a request via "
+"``POST`` method when there is incoming message to your subscribed SMS IN "
+"number to get a command that will be used to handle the call."
 msgstr ""
 
-#: ../../../source/sms.rst:553
+#: ../../../source/sms.rst:552
 #, fuzzy
 msgid ""
 "Try subscribing to a local number and see how it works now! `Signing up "
@@ -885,77 +885,22 @@ msgstr ""
 "実際にテストコードでAPIを叩いたほうが早く動作確認できます。 `無料登録 "
 "<https://www.xoxzo.com/ja/accounts/signup/>`_ は無料ですぐできます。"
 
-#: ../../../source/sms.rst:557
+#: ../../../source/sms.rst:556
 msgid "Getting the list of subscribed SMS In Numbers via API"
 msgstr ""
 
-#: ../../../source/sms.rst:559
+#: ../../../source/sms.rst:558
 msgid ""
 "To get the list of your current subscribed SINs, just make a ``GET`` "
 "request like::"
 msgstr ""
 
-#: ../../../source/sms.rst:564
+#: ../../../source/sms.rst:563
 msgid "Unsubscribing to a SMS In Number via API"
 msgstr ""
 
-#: ../../../source/sms.rst:566
+#: ../../../source/sms.rst:565
 msgid "To unsubscribe::"
-msgstr ""
-
-#: ../../../source/sms.rst:571
-msgid "What are Actions?"
-msgstr ""
-
-#: ../../../source/sms.rst:573
-msgid ""
-"An Action is something that you tell us to do when a message comes in via"
-" your subscribed SMS In Number (SIN). These can be things like forwarding"
-" the incoming message to a different number. More functionality will be "
-"added in the future."
-msgstr ""
-
-#: ../../../source/sms.rst:576
-msgid "Avaialable Actions are listed at `Available Actions`_"
-msgstr ""
-
-#: ../../../source/sms.rst:578
-msgid ""
-"The Actions that you want to do are defined in a simple text file that "
-"you make accessible via a URL. This URL is the ``action_url`` that you "
-"set when you subscribe to a DIN."
-msgstr ""
-
-#: ../../../source/sms.rst:581
-msgid ""
-"When a call comes in to your SIN, we'll make a ``GET`` request to your "
-"``action_url`` that will also include information about the call, like::"
-msgstr ""
-
-#: ../../../source/sms.rst:586
-msgid ""
-"Where ``sender`` is the phone number sending the message and "
-"``recipient`` is your SIN."
-msgstr ""
-
-#: ../../../source/sms.rst:589
-msgid "Available Actions"
-msgstr ""
-
-#: ../../../source/sms.rst:591
-msgid "The available actions are as follows:"
-msgstr ""
-
-#: ../../../source/sms.rst:594
-msgid "Action"
-msgstr ""
-
-#: ../../../source/sms.rst:596
-msgid "forward"
-msgstr ""
-
-#: ../../../source/sms.rst:596
-msgid "Forwards the incoming SMS to another number"
 msgstr ""
 
 #~ msgid "Below is an example request using CURL::"
@@ -1084,5 +1029,82 @@ msgstr ""
 #~ msgstr ""
 
 #~ msgid "The credit cost per minute when receiving calls to this SIN"
+#~ msgstr ""
+
+#~ msgid "Attach an action to the SMS In Number via API"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Each SMS In Number can be attached"
+#~ " an action that will provide "
+#~ "instruction what to do with the "
+#~ "call if it was answered::"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "The ``url`` specified for ``action_url`` "
+#~ "will be called via ``GET`` when "
+#~ "there is incoming call to your "
+#~ "subscribed SMS IN number to get a"
+#~ " command that will be used to "
+#~ "handle the call."
+#~ msgstr ""
+
+#~ msgid "What are Actions?"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "An Action is something that you "
+#~ "tell us to do when a message "
+#~ "comes in via your subscribed SMS "
+#~ "In Number (SIN). These can be "
+#~ "things like forwarding the incoming "
+#~ "message to a different number. More "
+#~ "functionality will be added in the "
+#~ "future."
+#~ msgstr ""
+
+#~ msgid "Avaialable Actions are listed at `Available Actions`_"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "The Actions that you want to do"
+#~ " are defined in a simple text "
+#~ "file that you make accessible via "
+#~ "a URL. This URL is the "
+#~ "``action_url`` that you set when you "
+#~ "subscribe to a DIN."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "When a call comes in to your "
+#~ "SIN, we'll make a ``GET`` request "
+#~ "to your ``action_url`` that will also"
+#~ " include information about the call, "
+#~ "like::"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Where ``sender`` is the phone number "
+#~ "sending the message and ``recipient`` is"
+#~ " your SIN."
+#~ msgstr ""
+
+#~ msgid "Available Actions"
+#~ msgstr ""
+
+#~ msgid "The available actions are as follows:"
+#~ msgstr ""
+
+#~ msgid "Action"
+#~ msgstr ""
+
+#~ msgid "forward"
+#~ msgstr ""
+
+#~ msgid "Forwards the incoming SMS to another number"
+#~ msgstr ""
+
+#~ msgid "Defined a webhook for the SMS In Number via API"
 #~ msgstr ""
 

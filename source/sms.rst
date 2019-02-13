@@ -460,12 +460,12 @@ This is a list of statuses that you can find in the ``status`` data:
     =================== ===============================
 
 Receive SMS messages API
-=============================================
+==============================================
 
 The Receive SMS messages API allows you to subscribe to phone numbers and receive incoming SMS.
 
 Finding a SMS In Number via API
----------------------------------------------
+----------------------------------------------
 
 This API allows for listing and subscribing to a SMS In Number (SIN).
 
@@ -500,7 +500,7 @@ The response will be a JSON structure, returned with HTTP ``200 OK`` status code
     ]
 
 Response data
----------------------------------------------
+----------------------------------------------
 
     =============   ======================================
     Name            Description       
@@ -525,7 +525,7 @@ filtering using country or prefix will only return you the relevant SINs based o
 .. _subscribe-sin-api-ref:
 
 Subscribing to a SMS In Number via API
----------------------------------------------
+----------------------------------------------
 
 To subscribe to a SIN, send a ``POST`` request like::
 
@@ -538,15 +538,14 @@ The response will return with HTTP ``201 OK`` to indicate that the subscription 
 .. warning::
    *  Your credits will be charged immediately for the monhtly subscription if your ``POST`` request succeeds
 
-Attach an action to the SMS In Number via API
----------------------------------------------
+Define a webhook for the SMS In Number via API
+----------------------------------------------
 
-Each SMS In Number can be attached an action that will provide instruction what to do with the call if it was answered::
+Each SMS In Number can be forwarded to a webhook that will receive the data within the message that was received::
 
-    curl -u <SID>:<AUTH_TOKEN> -d'action_url=<url>' https://api.xoxzo.com/sms/sins/subscriptions/<sin_uid>/
+    curl -u <SID>:<AUTH_TOKEN> -d'webhook_url=<url>' https://api.xoxzo.com/sms/sins/subscriptions/<sin_uid>/
 
-The ``url`` specified for ``action_url`` will be called via ``GET`` when there is incoming call to your subscribed SMS IN number to get a command that will be
-used to handle the call. 
+The ``url`` specified for ``webhook_url`` will be sent a request via ``POST`` method when there is incoming message to your subscribed SMS IN number to get a command that will be used to handle the call. 
 
 
 .. tip:: 
@@ -561,39 +560,10 @@ To get the list of your current subscribed SINs, just make a ``GET`` request lik
    curl -u <SID>:<AUTH_TOKEN> https://api.xoxzo.com/sms/sins/subscriptions/
 
 Unsubscribing to a SMS In Number via API
----------------------------------------------
+----------------------------------------------
 
 To unsubscribe::
 
     curl -XDELETE -u <SID>:<AUTH_TOKEN> https://api.xoxzo.com/sms/sins/subscriptions/<sin_uid>/
-
-What are Actions?
-=============================================
-
-An Action is something that you tell us to do when a message comes in via your subscribed SMS In Number (SIN).
-These can be things like forwarding the incoming message to a different number. More functionality will be added in the future.
-
-Avaialable Actions are listed at `Available Actions`_
-
-The Actions that you want to do are defined in a simple text file that you make accessible
-via a URL. This URL is the ``action_url`` that you set when you subscribe to a DIN.
-
-When a call comes in to your SIN, we'll make a ``GET`` request to your ``action_url`` that will also include
-information about the call, like::
-
-    GET /command/?sender=+8180123456789&recipient=+8150123456789
-
-Where ``sender`` is the phone number sending the message and ``recipient`` is your SIN.
-
-Available Actions
----------------------------------------------
-
-The available actions are as follows:
-
-    =============   ======================================
-    Action          Description       
-    =============   ======================================
-    forward         Forwards the incoming SMS to another number
-    =============   ======================================
 
 
