@@ -485,7 +485,6 @@ The response will be a JSON structure, returned with HTTP ``200 OK`` status code
             "country_code": "81", 
             "sin": "815012345678", 
             "sin_uid": "JPafr34rafic76tf", 
-            "minute_cost": 1, 
             "monthly_cost": 650.0, 
             "prefix": "50"
         }, 
@@ -493,7 +492,6 @@ The response will be a JSON structure, returned with HTTP ``200 OK`` status code
             "country_code": "81", 
             "sin": "81312345678", 
             "sin_uid": "JPascfdrwersdf12", 
-            "minute_cost": 10, 
             "monthly_cost": 1900.0, 
             "prefix": "3"
         }
