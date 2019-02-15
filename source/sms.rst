@@ -462,14 +462,14 @@ This is a list of statuses that you can find in the ``status`` data:
 Receive SMS messages API
 ==============================================
 
-The Receive SMS messages API allows you to subscribe to phone numbers and receive incoming SMS.
+The receive SMS messages API allows you to subscribe to phone numbers and receive incoming SMS.
 
 Finding a SMS In Number via API
 ----------------------------------------------
 
 This API allows for listing and subscribing to a SMS In Number (SIN).
 
-To list available DINs, make a ``GET`` request to::
+To list available SINs, make a ``GET`` request to::
 
     curl -u <SID>:<AUTH_TOKEN> https://api.xoxzo.com/sms/sins/
 
