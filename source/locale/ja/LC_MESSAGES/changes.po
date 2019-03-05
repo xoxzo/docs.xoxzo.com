@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Xoxzo API Docs 1.1\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-08-24 09:43+0900\n"
+"POT-Creation-Date: 2019-02-04 12:24+0900\n"
 "PO-Revision-Date: 2017-08-21 10:14+0900\n"
 "Last-Translator: \n"
 "Language: ja\n"
@@ -293,3 +293,16 @@ msgstr ""
 #: ../../../source/changes.rst:29
 msgid "Added credit api"
 msgstr "クレジットAPIを追加"
+
+#: ../../../source/changes.rst:30
+msgid "1.9.1"
+msgstr ""
+
+#: ../../../source/changes.rst:30
+msgid "2019-02-04"
+msgstr ""
+
+#: ../../../source/changes.rst:30
+msgid "Fix sound url sample"
+msgstr "サウンドURLのサンプルを修正"
+

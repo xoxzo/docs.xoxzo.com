@@ -70,9 +70,7 @@ with the following parameters:
 .. note::
    Samples of valid URL for **recording_url** are as below:
 
-   *  http://a.clyp.it/b3byGhjf.mp3
-   *  http://a.clyp.it/b-byghjf.mp3
-   *  http://a.clyp.it/b-bygh_f.mp3
+   *  http://example.com/sample-sound.mp3
 
 .. note::
    Notes on the **callbackurl** parameter:
