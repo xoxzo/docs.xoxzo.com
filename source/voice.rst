@@ -83,7 +83,7 @@ with the following parameters:
 .. note::
    Notes on the **tags** parameter:
 
-   *  When this optional parameter is provided, you can put tags for each api calls and you can retrieve the tags using the check call status api later.
+   *  When this optional parameter is provided, you can put tags for each API calls and you can retrieve the tags using the check call status API later.
    *  You can put multiple tags separated by the comma. The leading and trailing spaces are removed from the tags.
 
 .. _jp-din-caller-label:
