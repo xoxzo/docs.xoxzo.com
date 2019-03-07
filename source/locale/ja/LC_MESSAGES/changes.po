@@ -307,16 +307,14 @@ msgid "Fix sound url sample"
 msgstr "サウンドURLのサンプルを修正"
 
 #: ../../../source/changes.rst:31
-#, fuzzy
 msgid "1.10.0"
-msgstr "1.1.0"
+msgstr ""
 
 #: ../../../source/changes.rst:31
-#, fuzzy
 msgid "2019-03-05"
-msgstr "2018-04-05"
+msgstr ""
 
 #: ../../../source/changes.rst:31
 msgid "Added tags parameters"
-msgstr ""
+msgstr "tagsパラメータを追加"
 
