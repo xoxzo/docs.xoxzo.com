@@ -528,7 +528,7 @@ msgstr "この発信は、受信者へつながりませんでした。"
 
 #: ../../../source/voice.rst:239
 msgid "IN PROGRESS"
-msgstr "通話中"
+msgstr ""
 
 #: ../../../source/voice.rst:239
 msgid "The call is still in progress"
