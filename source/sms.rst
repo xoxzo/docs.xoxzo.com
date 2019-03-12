@@ -219,7 +219,8 @@ Response data
     sender     The set sender
     sent_time  The sent time of the message in UTC
     url        The URL of this message status
-    tags       The tags assigned to this message
+    tags       The tags assigned to this message.
+               If no tagas are assigned, empty list [] will be set.
     =========  ======================================
 
 
