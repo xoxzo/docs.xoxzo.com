@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Xoxzo API Docs 1.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-03-12 10:33+0900\n"
+"POT-Creation-Date: 2019-03-12 17:15+0900\n"
 "PO-Revision-Date: 2017-08-21 10:31+0900\n"
 "Last-Translator: \n"
 "Language-Team: \n"
@@ -511,8 +511,8 @@ msgstr "このメッセージステータスのURLです。"
 
 #: ../../../source/sms.rst:222
 msgid ""
-"The tags assigned to this message. If no tagas are assigned, empty list "
-"[] will be set."
+"The tags assigned to this message. If no tags are assigned, empty list []"
+" will be set."
 msgstr ""
 
 #: ../../../source/sms.rst:228
@@ -912,4 +912,10 @@ msgstr "メッセージの配信失敗"
 
 #~ msgid "The tags assigned to this message"
 #~ msgstr "このメッセージに付けられたタグです。"
+
+#~ msgid ""
+#~ "The tags assigned to this message. "
+#~ "If no tagas are assigned, empty "
+#~ "list [] will be set."
+#~ msgstr ""
 

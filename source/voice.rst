@@ -220,7 +220,8 @@ Response data
     recipient   The recipient number
     status      The status of this call
     url         The URL of this call status
-    tags        The tags assigned to this call
+    tags        The tags assigned to this call.
+                If no tags are assigned, empty list [] will be set.
     direction   The direction of this call
     call_type   The call type of this call
     =========== ======================================
