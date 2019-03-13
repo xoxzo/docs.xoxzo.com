@@ -513,7 +513,7 @@ msgstr "このメッセージステータスのURLです。"
 msgid ""
 "The tags assigned to this message. If no tags are assigned, empty list []"
 " will be set."
-msgstr ""
+msgstr "このメッセージに付けられたタグです。タグが無いときは空のリスト[]になります。"
 
 #: ../../../source/sms.rst:228
 msgid "Sent Messages List API"

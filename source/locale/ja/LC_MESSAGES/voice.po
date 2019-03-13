@@ -479,7 +479,10 @@ msgstr "この通話状態のURLを表示します。"
 msgid ""
 "The tags assigned to this call. If no tags are assigned, empty list [] "
 "will be set."
-msgstr ""
+msgstr "この通話に付けられたタグです。タグが無いときは空のリスト[]になります。"
+
+
+
 
 #: ../../../source/voice.rst:225
 msgid "direction"
