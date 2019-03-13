@@ -19,6 +19,7 @@ with the following parameters:
     recipient    Message recipient   Yes       E.164                +8190123456789
     sender       Sender ID           Yes       Alphanumeric         Xoxzo1
     callbackurl  Callback URL        No        URL                  http://example.com
+    tags         Tags                No        UTF-8                tag1,tag2
     ===========  ==================  ========  ===================  ===================
 
 JP specific optional parameters
@@ -98,6 +99,13 @@ Please refer to our `K-Premium Service FAQ <https://help.xoxzo.com/xoxzo-cloud-t
    *  XOXZO cloud call the URL with http POST method. Parameters of the callback is similar to "Check SMS status API". Please see :ref:`check-sms-status-label`.
    *  Callback URL must return http status 200. Until then, we will retry up to a maximum of ten times.
 
+.. note::
+   Notes on the **tags** parameter:
+
+   *  When this optional parameter is provided, you can put tags for each API calls and you can retrieve the tags using the check sms status API     later.
+   *  You can put multiple tags separated by the comma. The leading and trailing spaces are removed from the tags.
+
+
 Examples
 ------------------------------------
 
@@ -169,13 +177,17 @@ The response would be a JSON structure, returned with HTTP ``200 OK`` status cod
     Content-Type: application/json
 
     {
-        "status": "DELIVERED",
-        "sent_time":"2015-08-27 09:22:32",
-        "cost": 10,
-        "sender": "<sender>",
-        "recipient": "<recipient>",
+        "tags": [
+            "tag1",
+            "tag2"
+        ],
         "url": "https://api.xoxzo.com/sms/messages/<msgid>/",
-        "msgid": "<msgid>"
+        "recipient": "<recipient>",
+        "cost": 10,
+        "sent_time": "2019-03-05 00:37:44",
+        "sender": "<sender>",
+        "msgid": "<msgid>",
+        "status": "DELIVERED"
     }
 
 Below is a sample of a response for a message that failed to be delivered,
@@ -207,6 +219,8 @@ Response data
     sender     The set sender
     sent_time  The sent time of the message in UTC
     url        The URL of this message status
+    tags       The tags assigned to this message.
+               If no tags are assigned, empty list [] will be set.
     =========  ======================================
 
 
