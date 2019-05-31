@@ -787,129 +787,129 @@ msgstr "メッセージの配信失敗"
 
 #: ../../../source/sms.rst:477
 msgid "Receive SMS messages API"
-msgstr ""
+msgstr "SMS受信API"
 
 #: ../../../source/sms.rst:479
 msgid ""
 "The receive SMS messages API allows you to subscribe to phone numbers and"
 " receive incoming SMS."
-msgstr ""
+msgstr "SMS受信APIを使うと、簡単なAPIでSMSの着信とそれに対応する処理を設定することができます。チュートリアルは ここで読むことができます"
 
 #: ../../../source/sms.rst:482
 msgid "Finding a SMS In Number via API"
-msgstr ""
+msgstr "APIによる SMSイン番号 の見つけ方"
 
 #: ../../../source/sms.rst:484
 msgid "This API allows for listing and subscribing to a SMS In Number (SIN)."
-msgstr ""
+msgstr "このAPIを使うと、SMSイン番号(SIN)一覧の表示と購読契約を行うことができます。"
 
 #: ../../../source/sms.rst:486
 msgid "To list available SINs, make a ``GET`` request to::"
-msgstr ""
+msgstr "空いているSINの一覧を得るには、以下の ``GET`` リクエストを発行します。"
 
 #: ../../../source/sms.rst:490
 #, fuzzy
 msgid ""
 "The response will be a JSON structure, returned with HTTP ``200 OK`` "
 "status code like::"
-msgstr "レスポンスは、JSON構造となり、ステータスコード HTTP ``200 OK`` にて返されます。"
+msgstr "レスポンスは、JSON構造となり、ステータスコード HTTP ``200 OK`` にて返されます。::"
 
 #: ../../../source/sms.rst:520
 msgid "country_code"
-msgstr ""
+msgstr "country_code"
 
 #: ../../../source/sms.rst:520
 msgid "The country code for this SIN, dependent on it's country"
-msgstr ""
+msgstr "SINの国コード。"
 
 #: ../../../source/sms.rst:521
 msgid "sin"
-msgstr ""
+msgstr "sin"
 
 #: ../../../source/sms.rst:521
 msgid "The E.164 version of the SIN, including country code"
-msgstr ""
+msgstr "E.164形式のSIN。国コードを含む。"
 
 #: ../../../source/sms.rst:522
 msgid "sin_uid"
-msgstr ""
+msgstr "sin_uid"
 
 #: ../../../source/sms.rst:522
 msgid "A unique identifier for this particular SIN"
-msgstr ""
+msgstr "SINに対応する、ユニークな識別子。"
 
 #: ../../../source/sms.rst:523
 msgid "monthly_cost"
-msgstr ""
+msgstr "monthly_cost"
 
 #: ../../../source/sms.rst:523
 msgid "The monthly credit cost of subscribing to this SIN"
-msgstr ""
+msgstr "SINを購読契約したときの、一ヶ月あたりの料金。"
 
 #: ../../../source/sms.rst:524
 msgid "prefix"
-msgstr ""
+msgstr "prefix"
 
 #: ../../../source/sms.rst:524
 msgid "The local area prefix for this SIN, without the 0"
-msgstr ""
+msgstr "SINのプリフィックス。先頭の0を除いたもの。"
 
 #: ../../../source/sms.rst:527
 msgid "You can also filter using a country code or a prefix::"
-msgstr ""
+msgstr "国コードあるいはプリフィックスでフィルタリングすることもできます。"
 
 #: ../../../source/sms.rst:531
 msgid "Or::"
-msgstr ""
+msgstr "または::"
 
 #: ../../../source/sms.rst:535
 msgid ""
 "filtering using country or prefix will only return you the relevant SINs "
 "based on your filter."
-msgstr ""
+msgstr "国コードあるいはプリフィックスでフィルタリングをした場合、条件に一致したSINのみが表示されます。"
 
 #: ../../../source/sms.rst:540
 msgid "Subscribing to a SMS In Number via API"
-msgstr ""
+msgstr "APIによるSMSイン番号の契約"
 
 #: ../../../source/sms.rst:542
 msgid "To subscribe to a SIN, send a ``POST`` request like::"
-msgstr ""
+msgstr "SMSイン番号を契約するには、以下のような ``POST`` リクエストを発行します。::"
 
 #: ../../../source/sms.rst:546
 msgid ""
 "where ``<sin_uid>`` is the value you got from the previous ``GET`` "
 "request for the number you want to subscribe to."
-msgstr ""
+msgstr "``<sin_uid>`` は、前項の ``GET`` リクエストで返された値の中から、購読契約したい電話番号のUID識別子の値を指定します。"
 
 #: ../../../source/sms.rst:548
 msgid ""
 "The response will return with HTTP ``201 OK`` to indicate that the "
 "subscription was succesfull."
-msgstr ""
+msgstr "契約が成立すると、HTTPステータス ``201 OK`` が返されます。"
 
 #: ../../../source/sms.rst:551
 msgid ""
 "Your credits will be charged immediately for the monhtly subscription if "
 "your ``POST`` request succeeds"
-msgstr ""
+msgstr "``POST`` リクエストが成功すると、直ちに月額購読料がクレジットから引き落とされます。"
 
 #: ../../../source/sms.rst:554
 msgid "Define a webhook for the SMS In Number via API"
-msgstr ""
+msgstr "APIによるSMSイン番号へのアクションの関連付け"
 
 #: ../../../source/sms.rst:556
 msgid ""
 "Each SMS In Number can be forwarded to a webhook that will receive the "
 "data within the message that was received::"
-msgstr ""
+msgstr "各SMSイン番号に対して、SMSを着信した時に行う処理を結びつけられます。"
 
 #: ../../../source/sms.rst:560
 msgid ""
 "The ``url`` specified for ``webhook_url`` will be sent a request via "
 "``POST`` method when there is incoming message to your subscribed SMS IN "
 "number to get a command that will be used to handle the call."
-msgstr ""
+msgstr "契約しているSMSイン番号に着信があると、 ``url`` で指定した ``action_url`` に対して ``POST`` リクエストが発行され、処理が行われます。"
 
 #: ../../../source/sms.rst:564
 #, fuzzy
@@ -923,21 +923,21 @@ msgstr ""
 
 #: ../../../source/sms.rst:568
 msgid "Getting the list of subscribed SMS In Numbers via API"
-msgstr ""
+msgstr "APIによる契約中のSMSイン番号の一覧取得"
 
 #: ../../../source/sms.rst:570
 msgid ""
 "To get the list of your current subscribed SINs, just make a ``GET`` "
 "request like::"
-msgstr ""
+msgstr "契約中のSMSイン番号の一覧を得るには、下記のように ``GET`` リクエストを発行します。::"
 
 #: ../../../source/sms.rst:575
 msgid "Unsubscribing to a SMS In Number via API"
-msgstr ""
+msgstr "APIによるダイアルイン番号の契約解除"
 
 #: ../../../source/sms.rst:577
 msgid "To unsubscribe::"
-msgstr ""
+msgstr "契約解除のやりかた::"
 
 #~ msgid "Below is an example request using CURL::"
 #~ msgstr "下記は、CURLを使ったリクエストの例です。"
