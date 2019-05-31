@@ -548,7 +548,7 @@ where ``<sin_uid>`` is the value you got from the previous ``GET`` request for t
 The response will return with HTTP ``201 OK`` to indicate that the subscription was succesfull.
 
 .. warning::
-   *  Your credits will be charged immediately for the monhtly subscription if your ``POST`` request succeeds
+   *  Your credits will be charged immediately for the monthly subscription if your ``POST`` request succeeds
 
 Define a webhook for the SMS In Number via API
 ----------------------------------------------
