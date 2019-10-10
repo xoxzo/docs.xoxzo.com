@@ -170,7 +170,7 @@ with the following parameters:
    *  Two letter language code of the tts_message in `ISO 639-1. <https://en.wikipedia.org/wiki/ISO_639-1>`_
    *  This parameter must exist when tts_message is used.
 
-Supported languages
+Supported languages:
 
     ==============  =================
     Language code   Language
