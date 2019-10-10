@@ -319,14 +319,12 @@ msgid "Added tags parameters"
 msgstr "tagsパラメータを追加"
 
 #: ../../../source/changes.rst:32
-#, fuzzy
 msgid "1.11.0"
-msgstr "1.1.0"
+msgstr ""
 
 #: ../../../source/changes.rst:32
-#, fuzzy
 msgid "2019-10-10"
-msgstr "2018-04-05"
+msgstr ""
 
 #: ../../../source/changes.rst:32
 msgid "Added Indonesian to text to speech service"
