@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Xoxzo API Docs 1.1\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-03-05 10:32+0900\n"
+"POT-Creation-Date: 2019-10-10 09:55+0900\n"
 "PO-Revision-Date: 2017-08-21 10:14+0900\n"
 "Last-Translator: \n"
 "Language: ja\n"
@@ -136,7 +136,7 @@ msgstr "2017-01-17"
 
 #: ../../../source/changes.rst:16
 msgid "Add new TTS functionality"
-msgstr "テキスト読み上げ機能機能(TTS)新規追加"
+msgstr "テキスト読み上げ機能(TTS)新規追加"
 
 #: ../../../source/changes.rst:17
 msgid "1.4.1"
@@ -317,4 +317,16 @@ msgstr ""
 #: ../../../source/changes.rst:31
 msgid "Added tags parameters"
 msgstr "tagsパラメータを追加"
+
+#: ../../../source/changes.rst:32
+msgid "1.11.0"
+msgstr ""
+
+#: ../../../source/changes.rst:32
+msgid "2019-10-10"
+msgstr ""
+
+#: ../../../source/changes.rst:32
+msgid "Added Indonesian to text to speech service"
+msgstr "テキスト読み上げ機能にインドネシア語を追加"
 
