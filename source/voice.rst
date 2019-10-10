@@ -31,6 +31,7 @@ with the following parameters:
     recording_url  URL where your mp3 audio  Yes       URL            http://www.mysite.com/123.mp3
                    file is located
     callbackurl    Callback URL              No        URL            http://example.com
+    tags           Tags                      No        UTF-8          tag1,tag2
     =============  ========================  ========  =============  =============================
 
 .. note::
@@ -79,6 +80,11 @@ with the following parameters:
    *  XOXZO cloud will call the URL with http POST method. Parameters of the callback is similar to "Checking Call Status API". Please see :ref:`check-call-status-label`.
    *  Callback URL must return http status 200. Until then, we will retry up to a maximum of ten times.
 
+.. note::
+   Notes on the **tags** parameter:
+
+   *  When this optional parameter is provided, you can put tags for each API calls and you can retrieve the tags using the check call status API later.
+   *  You can put multiple tags separated by the comma. The leading and trailing spaces are removed from the tags.
 
 .. _jp-din-caller-label:
 
@@ -181,14 +187,20 @@ The response would be a JSON structure, returned with HTTP ``200 OK`` status cod
 
     {
         "callid": "<callid>",
-        "cost": 10,
-        "duration": 11,
-        "start_time": "2015-09-08 12:50:05",
-        "end_time": "2015-09-08 12:50:16",
-        "status": "ANSWERED",
-        "caller": "<caller>",
         "recipient": "<recipient>",
-        "url": "https://api.xoxzo.com/voice/calls/<callid>/"
+        "url": "https://api.xoxzo.com/voice/calls/<callid>/",
+        "tags": [
+            "tag2",
+            "tag3"
+        ],
+        "end_time": "2019-03-05 01:38:50",
+        "direction": "outbound",
+        "cost": 1,
+        "status": "NO ANSWER",
+        "duration": 0,
+        "call_type": "simple/playbacks",
+        "start_time": "2019-03-05 01:38:10",
+        "caller": "<caller>"
     }
 
 .. _call_status_response_label:
@@ -206,6 +218,12 @@ Response data
     end_time    The time when the call ended (in UTC)
     caller      The caller number
     recipient   The recipient number
+    status      The status of this call
+    url         The URL of this call status
+    tags        The tags assigned to this call.
+                If no tags are assigned, empty list [] will be set.
+    direction   The direction of this call
+    call_type   The call type of this call
     =========== ======================================
 
 Common call statuses
