@@ -80,7 +80,7 @@
 </head>
 
 <body class="wy-body-for-nav" role="document">
-  <nav class="navbar navbar-fixed-top navbar-dark bg-inverse">
+  <nav class="navbar navbar-fixed-top navbar-dark">
     {% if logo and theme_logo_only %}
     <a class="navbar-brand" href="{{ pathto(master_doc) }}">
     {% else %}
@@ -110,7 +110,7 @@
           {% if toctree1 %}
             {{ toctree1 }}
           {% endif %}
-          <ul>
+          <ul class="hidden-sm-down">
             <li class="toctree-l1 dropdown">
               {% if language == 'ja' %}
               <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">各言語のAPI接続ライブラリー<span class="caret"></span></a>
@@ -133,7 +133,7 @@
             <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fa fa-globe" aria-hidden="true"></i> Language&nbsp;<span class="caret"></span></a>
             <div class="dropdown-menu">
               <a class="dropdown-item" href="../en/">English</a>
-              <a class="dropdown-item" href="../ja/">Japanese</a>
+              <a class="dropdown-item" href="../ja/">日本語</a>
             </div>
           </li>
         </div>
@@ -150,16 +150,6 @@
           {% else %}
           <a class="nav-link" href="https://hello.xoxzo.com/en/" target="blank"><i class="fa fa-phone" aria-hidden="true"></i> Xoxzo Demo</a>
           {% endif %}
-        </li>
-        <li class="nav-item nav-top-link">
-          {% if language == 'ja' %}
-          <a class="nav-link" href="https://blog.xoxzo.com/ja/" target="blank"><i class="fa fa-rss-square" aria-hidden="true"></i> ブログ</a>
-          {% else %}
-          <a class="nav-link" href="https://blog.xoxzo.com/en/" target="blank"><i class="fa fa-rss-square" aria-hidden="true"></i> Blog</a>
-          {% endif %}
-        </li>
-        <li class="nav-item nav-top-link">
-          <a class="nav-link" href="https://twitter.com/xoxzotelephony" target="blank"><i class="fa fa-twitter" aria-hidden="true"></i> Twitter</a>
         </li>
         <li id="signup" class="nav-item">
         {% if language == 'ja' %}
@@ -222,10 +212,10 @@
             {% block comments %}{% endblock %}
            </div>
           </div>
-          {% include "footer.html" %}
+          {% include "pagination.html" %}
         </div>
       </div>
-
+      {% include "footer.html" %}
     </section>
 
   </div>

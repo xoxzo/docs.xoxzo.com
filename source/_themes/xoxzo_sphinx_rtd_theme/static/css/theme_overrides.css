@@ -3,16 +3,21 @@
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700');
 @import url('https://fonts.googleapis.com/css?family=Roboto:400,500,700');
 
+.s2 {
+  color: #8e46e6;
+}
+
 body {
   font-family: 'Open Sans', 'Helvetica Neue, Helvetica, Arial', sans-serif;
+  height: 100%;
 }
 
 a {
-  color: #4e88ff;
+  color: #ff7359;
 }
 
 a:visited {
-  color: #4e88ff;
+  color: #ff7359;
 }
 
 img {
@@ -31,8 +36,75 @@ h1, h2, .rst-content .toctree-wrapper p.caption, h3, h4, h5, h6, legend {
   font-family: 'Roboto', 'Open Sans', 'Helvetica Neue, Helvetica, Arial', sans-serif;
 }
 
+.document {
+  max-width: 800px;
+}
+
+.index {
+  background: #f2f5f9;
+}
+
+.index main {
+  padding: 60px 12px;
+}
+
+.index div {
+  max-width: 500px;
+  margin: 0 auto;
+  padding: 40px;
+  border-radius: .25rem;
+  box-shadow: 0 2px 5px 1px rgba(171, 176, 189, 0.25);
+  background: white;
+}
+
+.index img {
+  max-width: 150px;
+  margin-bottom: 20px;
+}
+
+.index div img {
+  max-width: 250px;
+  margin-bottom: 0;
+}
+
+.index p {
+  margin-bottom: 30px;
+}
+
+.index a {
+  margin: 0 3px;
+}
+
+.wy-nav-content a {
+  color: #4c9eff;
+}
+
+.wy-nav-content a:hover {
+  color: #4c9eff;
+}
+
+.wy-nav-content a:visited {
+  color: #4c9eff;
+}
+
+.admonition a {
+  color: #1d82f9;
+}
+
+.admonition a:hover {
+  color: #1d82f9;
+}
+
+.admonition a:visited {
+  color: #1d82f9;
+}
+
+.admonition ul:last-child {
+  margin-bottom: 5px;
+}
+
 .wy-body-for-nav {
-  background: #f3f3f3;
+  background: white;
   background-image: none;
 }
 
@@ -41,7 +113,7 @@ h1, h2, .rst-content .toctree-wrapper p.caption, h3, h4, h5, h6, legend {
 }
 
 nav {
-  max-width: 1300px;
+  background: #132d4e;
 }
 
 nav.navbar {
@@ -58,15 +130,15 @@ button.navbar-toggler {
 }
 
 .navbar-brand img {
-    width: 100px;
-    margin: 2px 0;
-    margin-left: 10px;
+  width: 100px;
+  margin: 2px 0;
+  margin-left: 10px;
 }
 
 .navbar-brand span {
-    color: #ddd;
-    font-size: 1rem;
-    margin-left: 6px;
+  color: #ddd;
+  font-size: 1rem;
+  margin-left: 6px;
 }
 
 ul.navbar-nav {
@@ -85,11 +157,11 @@ ul.navbar-nav .nav-item a {
 ul.navbar-nav .nav-item a.nav-button {
   padding: 15px 25px 18px 25px;
   color: white;
-  background-color: #4e88ff;
+  background-color: #ff7359;
 }
 
 ul.navbar-nav .nav-item a.nav-button:hover {
-  background-color: #306ce8;
+  background-color: #fe4b4b;
   color: white;
 }
 
@@ -106,7 +178,7 @@ ul.navbar-nav .nav-item a.nav-button:hover {
 }
 
 .wy-grid-for-nav, .wy-nav-side {
-  margin-top: 57px;
+  padding-top: 57px;
 }
 
 .wy-grid-for-nav {
@@ -117,31 +189,66 @@ ul.navbar-nav .nav-item a.nav-button:hover {
   background: white;
   margin: 0;
   border-right: 1px solid #ddd;
-  max-width: 1000px;
+  max-width: 100%;
 }
 
-.wy-nav-content h2 {
-  margin-top: 40px;
+.wy-nav-content h2, .wy-nav-content h3 {
+  margin-top: 30px;
 }
 
-.wy-nav-content h3 {
-  margin-top: 35px;
+.wy-nav-content h4 {
+  margin-top: 15px;
 }
 
 .wy-nav-content-wrap {
   background: none;
+  display: flex;
+  flex-direction: column;
 }
 
 .wy-nav-side {
-  background: #f3f3f3;
+  background: #f2f5f9;
   border-right: 1px solid #ddd;
 }
 
 .wy-side-nav-search {
-  background-color: #f3f3f3;
+  background-color: #f2f5f9;
   padding-bottom: 20px;
   padding-top: 20px;
   margin-bottom: 0;
+}
+
+.wy-menu-vertical li.on a, .wy-menu-vertical li.current>a {
+  border-top: solid 1px #ced7e3;
+  border-bottom: solid 1px #ced7e3;
+}
+
+.wy-menu-vertical li.current {
+  background: #e4e8ed;
+}
+
+.wy-menu-vertical li.current a {
+  color: #444;
+}
+
+.wy-menu-vertical li.current a:hover {
+ background: #d9dfe9;
+}
+
+.wy-menu-vertical li.current>a:hover {
+  background: #fcfcfc;
+}
+
+.wy-menu-vertical li.toctree-l2.current>a, .wy-menu-vertical li.toctree-l2.current>a:hover {
+  background: #ced7e3;
+}
+
+.wy-menu-vertical li.toctree-l2.current li.toctree-l3>a {
+  background: #ced7e3;
+}
+
+.wy-menu-vertical li.toctree-l3.current li.toctree-l4>a {
+  background: #bbc8d9;
 }
 
 .lang-div {
@@ -202,6 +309,32 @@ ul.navbar-nav .nav-item a.nav-button:hover {
   margin-left: 0;
 }
 
+.rst-footer-buttons {
+  max-width: 800px;
+  margin-top: 40px;
+}
+
+.btn-point {
+  background: none;
+  border: 1px solid #ff7359;
+  box-shadow: none;
+  color: #fc5233!important;
+}
+
+.btn-point:hover {
+  background-color: rgba(255, 133, 106, 0.12);
+}
+
+.btn-point:active {
+  box-shadow: none;
+  padding: .5rem 1rem;
+  background-color: rgba(255, 133, 106, 0.12);
+}
+
+.btn-point:focus {
+  background-color: rgba(255, 133, 106, 0.12);
+}
+
 #search-results .search li:last-child {
   border-bottom: none;
 }
@@ -227,6 +360,43 @@ ul.navbar-nav .nav-item a.nav-button:hover {
   border-radius: 0 .25rem .25rem 0;
   border-left: none;
   padding-top: 7px;
+}
+
+footer {
+  padding: 3.236em;
+  background: #4b4d51;
+  color: rgba(255, 255, 255, 0.6);
+  margin-top: auto;
+}
+
+footer p {
+  font-size: .9rem;
+}
+
+footer a {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+footer a:hover {
+  color: white;
+  text-decoration: none;
+}
+
+footer a:visited {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+footer a:focus {
+  outline: none;
+  text-decoration: none;
+}
+
+.footer-link {
+  font-size: 1.75rem;
+}
+
+.footer-link .fa-instagram:before {
+  font-weight: bold;
 }
 
 :target:before {
@@ -257,7 +427,7 @@ ul.navbar-nav .nav-item a.nav-button:hover {
   }
 
   .navbar-toggleable-sm .navbar-nav {
-    margin-bottom: 0;
+    margin-bottom: -1px;
   }
 
   .nav-toctree {
@@ -267,7 +437,7 @@ ul.navbar-nav .nav-item a.nav-button:hover {
     padding-right: 16px;
     margin-top: 10px;
     margin-bottom: 10px;
-    border-bottom: 1px solid rgba(255,255,255,.5);
+    border-bottom: 1px solid rgba(255,255,255,.15);
   }
 
   .nav-set {
@@ -321,10 +491,29 @@ ul.navbar-nav .nav-item a.nav-button:hover {
 
   ul.navbar-nav .nav-item a.nav-button {
     padding: 10px 26px;
+    margin-top: 10px;
   }
 
   .wy-nav-side {
     display: none;
+  }
+}
+
+@media screen and (max-width: 576px){
+  h1 {
+    font-size: 2rem;
+  }
+
+  h2 {
+    font-size: 1.75rem;
+  }
+
+  h3 {
+    font-size: 1.5rem;
+  }
+
+  .index main {
+    padding: 12% 12px;
   }
 }
 
