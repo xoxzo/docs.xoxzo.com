@@ -9,14 +9,14 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Xoxzo API Docs 1.3.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2017-04-20 16:31+0900\n"
+"POT-Creation-Date: 2019-10-10 13:54+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Generated-By: Babel 2.3.4\n"
+"Generated-By: Babel 2.5.1\n"
 
 #: ../../../source/utilsapi.rst:3
 msgid "Telephony Utilities API"
@@ -115,11 +115,11 @@ msgstr ""
 "有効な受信者記載例として、 *+818011234567* と挙げられます。 *81* は日本の国番号で、 *8011234567* "
 "は携帯電話番号となります。"
 
-#: ../../../source/utilsapi.rst:32 ../../../source/utilsapi.rst:173
+#: ../../../source/utilsapi.rst:32 ../../../source/utilsapi.rst:184
 msgid "Examples"
 msgstr "例"
 
-#: ../../../source/utilsapi.rst:34 ../../../source/utilsapi.rst:175
+#: ../../../source/utilsapi.rst:34 ../../../source/utilsapi.rst:186
 msgid "Below is an example request using cURL::"
 msgstr "下記は、CURLを使ったリクエストの例です。"
 
@@ -135,11 +135,11 @@ msgid ""
 "your response data will be something like this::"
 msgstr "携帯電話事業者を特定できなかった場合、以下のようなレスポンスが返されます。 ::"
 
-#: ../../../source/utilsapi.rst:77 ../../../source/utilsapi.rst:189
+#: ../../../source/utilsapi.rst:77 ../../../source/utilsapi.rst:200
 msgid "Response data"
 msgstr "レスポンスデータ"
 
-#: ../../../source/utilsapi.rst:82
+#: ../../../source/utilsapi.rst:82 ../../../source/utilsapi.rst:180
 msgid "id"
 msgstr ""
 
@@ -314,9 +314,9 @@ msgstr "テキストの言語"
 msgid "ISO 639-1"
 msgstr ""
 
-#: ../../../source/utilsapi.rst:146
+#: ../../../source/utilsapi.rst:146 ../../../source/utilsapi.rst:179
 msgid "en"
-msgstr "ja"
+msgstr ""
 
 #: ../../../source/utilsapi.rst:150
 msgid "Notes on the **caller** parameter:"
@@ -326,27 +326,27 @@ msgstr "caller パラメーターに関する注意点"
 msgid "Please refer :ref:`simple-playback-api-ref`"
 msgstr ":ref:`simple-playback-api-ref` を参照してください。"
 
-#: ../../../source/utilsapi.rst:159
+#: ../../../source/utilsapi.rst:160
 msgid "Notes on the **tts_message** parameter:"
 msgstr "tts_message パラメーターに関する注意点"
 
-#: ../../../source/utilsapi.rst:161
+#: ../../../source/utilsapi.rst:162
 msgid "UTF-8 text used for speech synthesis."
 msgstr "音声合成に使用する、UTF-8のテキスト。"
 
-#: ../../../source/utilsapi.rst:162
+#: ../../../source/utilsapi.rst:163
 msgid "Maximum length is 250 characters."
 msgstr "最大長は 250文字です。"
 
-#: ../../../source/utilsapi.rst:163
+#: ../../../source/utilsapi.rst:164
 msgid "You can not specify **recording_url** parameter with this parameter."
 msgstr "このパラメータと同時に **recording_url** パラメータを指定することはできません。"
 
-#: ../../../source/utilsapi.rst:166
+#: ../../../source/utilsapi.rst:168
 msgid "Notes on the **tts_lang** parameter:"
 msgstr "tts_lang パラメーターに関する注意点"
 
-#: ../../../source/utilsapi.rst:168
+#: ../../../source/utilsapi.rst:170
 msgid ""
 "Two letter language code of the tts_message in `ISO 639-1. "
 "<https://en.wikipedia.org/wiki/ISO_639-1>`_"
@@ -354,23 +354,49 @@ msgstr ""
 "tts_message の言語を示す、２文字の `ISO 639-1. "
 "<https://en.wikipedia.org/wiki/ISO_639-1>`_ コード。"
 
-#: ../../../source/utilsapi.rst:169
+#: ../../../source/utilsapi.rst:171
 msgid "This parameter must exist when tts_message is used."
 msgstr "tts_message を使ったときは、このパラメータを指定しなければいけません。"
 
-#: ../../../source/utilsapi.rst:170
-msgid "Currently, **en** and **ja** are accepted."
-msgstr "現在、 **en** と **ja** が使用可能です。"
+#: ../../../source/utilsapi.rst:173
+msgid "Supported languages:"
+msgstr "サポートされている言語"
 
-#: ../../../source/utilsapi.rst:185
+#: ../../../source/utilsapi.rst:176
+msgid "Language code"
+msgstr "言語コード"
+
+#: ../../../source/utilsapi.rst:176
+msgid "Language"
+msgstr "言語"
+
+#: ../../../source/utilsapi.rst:178
+msgid "ja"
+msgstr ""
+
+#: ../../../source/utilsapi.rst:178
+msgid "Japanese"
+msgstr "日本語"
+
+#: ../../../source/utilsapi.rst:179
+msgid "English"
+msgstr "英語"
+
+#: ../../../source/utilsapi.rst:180
+msgid "Indonesian"
+msgstr "インドネシア語"
+
+#: ../../../source/utilsapi.rst:196
 msgid ""
 "It's faster to actually try some test code againts the API to see "
 "immediate results. `Signing up "
 "<https://www.xoxzo.com/en/accounts/signup/>`_ takes only a few minutes "
 "and it's free"
-msgstr "実際にテストコードでAPIを叩いたほうが早く動作確認できます。 `無料登録 <https://www.xoxzo.com/ja/accounts/signup/>`_ は無料ですぐできます。"
+msgstr ""
+"実際にテストコードでAPIを叩いたほうが早く動作確認できます。 `無料登録 "
+"<https://www.xoxzo.com/ja/accounts/signup/>`_ は無料ですぐできます。"
 
-#: ../../../source/utilsapi.rst:191
+#: ../../../source/utilsapi.rst:202
 msgid "As for the response  , please refer :ref:`simple-playback-api-ref`"
 msgstr "レスポンスに関しては :ref:`simple-playback-api-ref` を参照してください。"
 
@@ -414,5 +440,11 @@ msgstr "レスポンスに関しては :ref:`simple-playback-api-ref` を参照�
 #~ msgstr ""
 
 #~ msgid "ja"
+#~ msgstr ""
+
+#~ msgid "Currently, **en** and **ja** are accepted."
+#~ msgstr "現在、 **en** と **ja** が使用可能です。"
+
+#~ msgid "Lang code"
 #~ msgstr ""
 

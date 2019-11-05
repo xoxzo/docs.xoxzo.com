@@ -29,4 +29,5 @@ CHANGES
     1.9.0       2018-08-25          Added credit api
     1.9.1       2019-02-04          Fix sound url sample
     1.10.0      2019-03-05          Added tags parameters
+    1.11.0      2019-10-10          Added Indonesian to text to speech service
     =========   ==================  ===============================================================================================
