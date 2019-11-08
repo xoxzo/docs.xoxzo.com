@@ -20,7 +20,7 @@
 
   {# FAVICON #}
   {% if favicon %}
-    <link rel="shortcut icon" href="{{ pathto('_static/' + favicon, 1) }}"/>
+    <link rel="shortcut icon" href="{{ pathto('_static/' + favicon, 1) }}">
   {% endif %}
 
   {# CSS #}
@@ -28,59 +28,53 @@
   {# OPENSEARCH #}
   {% if not embedded %}
     {% if use_opensearch %}
-      <link rel="search" type="application/opensearchdescription+xml" title="{% trans docstitle=docstitle|e %}Search within {{ docstitle }}{% endtrans %}" href="{{ pathto('_static/opensearch.xml', 1) }}"/>
+      <link rel="search" type="application/opensearchdescription+xml" title="{% trans docstitle=docstitle|e %}Search within {{ docstitle }}{% endtrans %}" href="{{ pathto('_static/opensearch.xml', 1) }}">
     {% endif %}
 
   {% endif %}
 
   {# RTD hosts this file, so just load on non RTD builds #}
   {% if not READTHEDOCS %}
-    <link rel="stylesheet" href="{{ pathto('_static/' + style, 1) }}" type="text/css" />
+    <link rel="stylesheet" href="{{ pathto('_static/' + style, 1) }}?v=2.0" type="text/css">
   {% endif %}
 
   {% for cssfile in css_files %}
-    <link rel="stylesheet" href="{{ pathto(cssfile, 1) }}" type="text/css" />
+    <link rel="stylesheet" href="{{ pathto(cssfile, 1) }}" type="text/css">
   {% endfor %}
 
   {% for cssfile in extra_css_files %}
-    <link rel="stylesheet" href="{{ pathto(cssfile, 1) }}" type="text/css" />
+    <link rel="stylesheet" href="{{ pathto(cssfile, 1) }}" type="text/css">
   {% endfor %}
 
   {%- block linktags %}
     {%- if hasdoc('about') %}
-        <link rel="author" title="{{ _('About these documents') }}"
-              href="{{ pathto('about') }}"/>
-    {%- endif %}
-    {%- if hasdoc('genindex') %}
-        <link rel="index" title="{{ _('Index') }}"
-              href="{{ pathto('genindex') }}"/>
+    <link rel="author" title="{{ _('About these documents') }}" href="{{ pathto('about') }}">
     {%- endif %}
     {%- if hasdoc('search') %}
-        <link rel="search" title="{{ _('Search') }}" href="{{ pathto('search') }}"/>
+    <link rel="search" title="{{ _('Search') }}" href="{{ pathto('search') }}">
     {%- endif %}
     {%- if hasdoc('copyright') %}
-        <link rel="copyright" title="{{ _('Copyright') }}" href="{{ pathto('copyright') }}"/>
+    <link rel="copyright" title="{{ _('Copyright') }}" href="{{ pathto('copyright') }}">
     {%- endif %}
-    <link rel="top" title="{{ docstitle|e }}" href="{{ pathto('index') }}"/>
+    <link rel="top" title="{{ docstitle|e }}" href="{{ pathto('index') }}">
     {%- if parents %}
-        <link rel="up" title="{{ parents[-1].title|striptags|e }}" href="{{ parents[-1].link|e }}"/>
+    <link rel="up" title="{{ parents[-1].title|striptags|e }}" href="{{ parents[-1].link|e }}">
     {%- endif %}
     {%- if next %}
-        <link rel="next" title="{{ next.title|striptags|e }}" href="{{ next.link|e }}"/>
+    <link rel="next" title="{{ next.title|striptags|e }}" href="{{ next.link|e }}">
     {%- endif %}
     {%- if prev %}
-        <link rel="prev" title="{{ prev.title|striptags|e }}" href="{{ prev.link|e }}"/>
+    <link rel="prev" title="{{ prev.title|striptags|e }}" href="{{ prev.link|e }}">
     {%- endif %}
   {%- endblock %}
   {%- block extrahead %} {% endblock %}
 
   {# Keep modernizr in head - http://modernizr.com/docs/#installing #}
   <script src="{{ pathto('_static/js/modernizr.min.js', 1) }}"></script>
-
 </head>
 
 <body class="wy-body-for-nav" role="document">
-  <nav class="navbar navbar-fixed-top navbar-dark bg-inverse">
+  <nav class="navbar navbar-fixed-top navbar-dark">
     {% if logo and theme_logo_only %}
     <a class="navbar-brand" href="{{ pathto(master_doc) }}">
     {% else %}
@@ -110,7 +104,7 @@
           {% if toctree1 %}
             {{ toctree1 }}
           {% endif %}
-          <ul>
+          <ul class="hidden-sm-down">
             <li class="toctree-l1 dropdown">
               {% if language == 'ja' %}
               <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">各言語のAPI接続ライブラリー<span class="caret"></span></a>
@@ -133,7 +127,7 @@
             <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fa fa-globe" aria-hidden="true"></i> Language&nbsp;<span class="caret"></span></a>
             <div class="dropdown-menu">
               <a class="dropdown-item" href="../en/">English</a>
-              <a class="dropdown-item" href="../ja/">Japanese</a>
+              <a class="dropdown-item" href="../ja/">日本語</a>
             </div>
           </li>
         </div>
@@ -150,16 +144,6 @@
           {% else %}
           <a class="nav-link" href="https://hello.xoxzo.com/en/" target="blank"><i class="fa fa-phone" aria-hidden="true"></i> Xoxzo Demo</a>
           {% endif %}
-        </li>
-        <li class="nav-item nav-top-link">
-          {% if language == 'ja' %}
-          <a class="nav-link" href="https://blog.xoxzo.com/ja/" target="blank"><i class="fa fa-rss-square" aria-hidden="true"></i> ブログ</a>
-          {% else %}
-          <a class="nav-link" href="https://blog.xoxzo.com/en/" target="blank"><i class="fa fa-rss-square" aria-hidden="true"></i> Blog</a>
-          {% endif %}
-        </li>
-        <li class="nav-item nav-top-link">
-          <a class="nav-link" href="https://twitter.com/xoxzotelephony" target="blank"><i class="fa fa-twitter" aria-hidden="true"></i> Twitter</a>
         </li>
         <li id="signup" class="nav-item">
         {% if language == 'ja' %}
@@ -222,10 +206,10 @@
             {% block comments %}{% endblock %}
            </div>
           </div>
-          {% include "footer.html" %}
+          {% include "pagination.html" %}
         </div>
       </div>
-
+      {% include "footer.html" %}
     </section>
 
   </div>
@@ -247,34 +231,32 @@
   </script>
 
   {% if not embedded %}
-
-    <script type="text/javascript">
-        var DOCUMENTATION_OPTIONS = {
-            URL_ROOT:'{{ url_root }}',
-            VERSION:'{{ release|e }}',
-            COLLAPSE_INDEX:false,
-            FILE_SUFFIX:'{{ '' if no_search_suffix else file_suffix }}',
-            HAS_SOURCE:  {{ has_source|lower }},
-            SOURCELINK_SUFFIX: '{{ sourcelink_suffix }}'
-        };
-    </script>
-    {%- for scriptfile in script_files %}
-      <script type="text/javascript" src="{{ pathto(scriptfile, 1) }}"></script>
-    {%- endfor %}
-
+  <script type="text/javascript">
+    var DOCUMENTATION_OPTIONS = {
+      URL_ROOT:'{{ url_root }}',
+      VERSION:'{{ release|e }}',
+      COLLAPSE_INDEX:false,
+      FILE_SUFFIX:'{{ '' if no_search_suffix else file_suffix }}',
+      HAS_SOURCE:  {{ has_source|lower }},
+      SOURCELINK_SUFFIX: '{{ sourcelink_suffix }}'
+    };
+  </script>
+  {%- for scriptfile in script_files %}
+  <script type="text/javascript" src="{{ pathto(scriptfile, 1) }}"></script>
+  {%- endfor %}
   {% endif %}
 
   {# RTD hosts this file, so just load on non RTD builds #}
   {% if not READTHEDOCS %}
-    <script type="text/javascript" src="{{ pathto('_static/js/theme.js', 1) }}"></script>
+  <script type="text/javascript" src="{{ pathto('_static/js/theme.js', 1) }}"></script>
   {% endif %}
 
   {# STICKY NAVIGATION #}
   {% if theme_sticky_navigation %}
   <script type="text/javascript">
-      jQuery(function () {
-          SphinxRtdTheme.StickyNav.enable();
-      });
+    jQuery(function () {
+      SphinxRtdTheme.StickyNav.enable();
+    });
   </script>
   {% endif %}
 
