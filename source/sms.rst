@@ -496,33 +496,39 @@ The response will be a JSON structure, returned with HTTP ``200 OK`` status code
 
     [
         {
-            "country_code": "81", 
+            "country_code": "81",
+            "initial_subscription_cost": 37500.0,
+            "message_rate": 3,
+            "monthly_cost": 7500.0,
             "sin": "815012345678", 
             "sin_uid": "JPafr34rafic76tf", 
-            "monthly_cost": 650.0, 
             "prefix": "50"
         }, 
         {
             "country_code": "81", 
-            "sin": "81312345678", 
+            "initial_subscription_cost": 37500.0,
+            "message_rate": 3,
+            "monthly_cost": 7500.0,
+            "sin": "817012345678", 
             "sin_uid": "JPascfdrwersdf12", 
-            "monthly_cost": 1900.0, 
-            "prefix": "3"
+            "prefix": "70"
         }
     ]
 
 Response data
 ----------------------------------------------
 
-    =============   ======================================
-    Name            Description       
-    =============   ======================================
-    country_code    The country code for this SIN, dependent on it's country
-    sin             The E.164 version of the SIN, including country code
-    sin_uid         A unique identifier for this particular SIN
-    monthly_cost    The monthly credit cost of subscribing to this SIN
-    prefix          The local area prefix for this SIN, without the 0
-    =============   ======================================
+    ==========================   ======================================
+    Name                         Description
+    ==========================   ======================================
+    country_code                 The country code for this SIN, dependent on it's country
+    initial_subscription_cost    The initial subscription credit cost of subscribing to this SIN
+    message_rate                 The credit cost per incoming message received to this SIN
+    monthly_cost                 The monthly credit cost of subscribing to this SIN
+    sin                          The E.164 version of the SIN, including country code
+    sin_uid                      A unique identifier for this particular SIN
+    prefix                       The local area prefix for this SIN, without the 0
+    =============                ======================================
 
 You can also filter using a country code or a prefix::
 
@@ -530,7 +536,7 @@ You can also filter using a country code or a prefix::
 
 Or::
 
-    curl -u <SID>:<AUTH_TOKEN> https://api.xoxzo.com/sms/sins/?prefix=813
+    curl -u <SID>:<AUTH_TOKEN> https://api.xoxzo.com/sms/sins/?prefix=817
 
 filtering using country or prefix will only return you the relevant SINs based on your filter.
 
@@ -548,16 +554,16 @@ where ``<sin_uid>`` is the value you got from the previous ``GET`` request for t
 The response will return with HTTP ``201 OK`` to indicate that the subscription was succesfull.
 
 .. warning::
-   *  Your credits will be charged immediately for the monthly subscription if your ``POST`` request succeeds
+   *  Your credits will be charged immediately for the initial subscription cost if your ``POST`` request succeeds
 
 Define a webhook for the SMS In Number via API
 ----------------------------------------------
 
 Each SMS In Number can be forwarded to a webhook that will receive the data within the message that was received::
 
-    curl -u <SID>:<AUTH_TOKEN> -d'webhook_url=<url>' https://api.xoxzo.com/sms/sins/subscriptions/<sin_uid>/
+    curl -u <SID>:<AUTH_TOKEN> -d'action_url=<url>' https://api.xoxzo.com/sms/sins/subscriptions/<sin_uid>/
 
-The ``url`` specified for ``webhook_url`` will be sent a request via ``POST`` method when there is incoming message to your subscribed SMS IN number to get a command that will be used to handle the call. 
+The ``url`` specified for ``action_url`` will be sent a request via ``POST`` method when there is incoming message to your subscribed SMS IN number to get a command that will be used to handle the call.
 
 
 .. tip:: 
