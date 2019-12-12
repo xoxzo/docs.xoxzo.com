@@ -565,10 +565,26 @@ Each SMS In Number can be forwarded to a webhook that will receive the data with
 
 The ``url`` specified for ``action_url`` will be sent a request via ``POST`` method when there is incoming message to your subscribed SMS IN number to get a command that will be used to handle the call.
 
-
 .. tip:: 
     Try subscribing to a local number and see how it works now!
     `Signing up <https://www.xoxzo.com/en/accounts/signup/>`_ takes only a few minutes and it's free
+
+Data that will be sent to webhook
+---------------------------------
+
+Following are data that will be sent to webhook:
+
+    ============== ==============================================
+    Name           Description
+    ============== ==============================================
+    sender         The sender of the message
+    sin            The SIN number that's receiving the message
+    message        The payload of the message
+    received_time  The time when the message is received (in UTC)
+    =============  ==============================================
+
+The data will be sent in JSON format. Please return HTTP Successful 2xx status to ensure
+the data forwarded to webhook successfully.
 
 Getting the list of subscribed SMS In Numbers via API
 -----------------------------------------------------
@@ -583,5 +599,4 @@ Unsubscribing to a SMS In Number via API
 To unsubscribe::
 
     curl -XDELETE -u <SID>:<AUTH_TOKEN> https://api.xoxzo.com/sms/sins/subscriptions/<sin_uid>/
-
 
