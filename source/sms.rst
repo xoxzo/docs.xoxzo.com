@@ -583,8 +583,8 @@ Following are data that will be sent to webhook:
     received_time  The time when the message is received (in UTC)
     =============  ==============================================
 
-The data will be sent in JSON format. Please return HTTP Successful 2xx status to ensure
-the data forwarded to webhook successfully.
+The data will be sent in JSON format. webhook must return HTTP Successfull 2xx status.
+Until then, we will retry up to a maximum of ten times.
 
 Getting the list of subscribed SMS In Numbers via API
 -----------------------------------------------------
