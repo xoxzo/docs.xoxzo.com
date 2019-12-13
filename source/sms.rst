@@ -581,7 +581,7 @@ Following are data that will be sent to webhook:
     sin            The SIN number that's receiving the message
     message        The payload of the message
     received_time  The time when the message is received (in UTC)
-    =============  ==============================================
+    ============== ==============================================
 
 The data will be sent in JSON format. webhook must return HTTP Successfull 2xx status.
 Until then, we will retry up to a maximum of ten times.
