@@ -559,11 +559,11 @@ The response will return with HTTP ``201 OK`` to indicate that the subscription 
 Define a webhook for the SMS In Number via API
 ----------------------------------------------
 
-Each SMS In Number can be forwarded to a webhook that will receive the data within the message that was received::
+Each SMS In Number needs to have a webhook that will receive the data when the incoming message was received::
 
     curl -u <SID>:<AUTH_TOKEN> -d'action_url=<url>' https://api.xoxzo.com/sms/sins/subscriptions/<sin_uid>/
 
-The ``url`` specified for ``action_url`` will be sent a request via ``POST`` method when there is incoming message to your subscribed SMS IN number to get a command that will be used to handle the call.
+The ``url`` specified for ``action_url`` will be called via ``POST`` method when there is incoming message to your subscribed SMS In Number.
 
 .. tip:: 
     Try subscribing to a local number and see how it works now!
