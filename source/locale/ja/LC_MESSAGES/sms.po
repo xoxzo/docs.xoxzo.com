@@ -3,14 +3,14 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Xoxzo API Docs 1.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-12-04 17:18+0900\n"
+"POT-Creation-Date: 2019-12-17 09:20+0900\n"
 "PO-Revision-Date: 2017-08-21 10:31+0900\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Generated-By: Babel 2.7.0\n"
+"Generated-By: Babel 2.5.1\n"
 
 #: ../../../source/sms.rst:3
 msgid "SMS API"
@@ -37,12 +37,14 @@ msgstr "下記のパラメーターを併記してください。"
 #: ../../../source/sms.rst:16 ../../../source/sms.rst:31
 #: ../../../source/sms.rst:133 ../../../source/sms.rst:213
 #: ../../../source/sms.rst:240 ../../../source/sms.rst:252
+#: ../../../source/sms.rst:578
 msgid "Name"
 msgstr "名称"
 
 #: ../../../source/sms.rst:16 ../../../source/sms.rst:31
 #: ../../../source/sms.rst:133 ../../../source/sms.rst:213
 #: ../../../source/sms.rst:240 ../../../source/sms.rst:468
+#: ../../../source/sms.rst:578
 msgid "Description"
 msgstr "詳細"
 
@@ -59,7 +61,7 @@ msgstr "データタイプ"
 msgid "Example"
 msgstr "例"
 
-#: ../../../source/sms.rst:18
+#: ../../../source/sms.rst:18 ../../../source/sms.rst:582
 msgid "message"
 msgstr "message"
 
@@ -97,6 +99,7 @@ msgid "+8190123456789"
 msgstr "+8190123456789"
 
 #: ../../../source/sms.rst:20 ../../../source/sms.rst:219
+#: ../../../source/sms.rst:580
 msgid "sender"
 msgstr "sender"
 
@@ -791,7 +794,7 @@ msgstr "SMS受信API"
 msgid ""
 "The receive SMS messages API allows you to subscribe to phone numbers and"
 " receive incoming SMS."
-msgstr "SMS受信APIを使うと、簡単なAPIでSMSの着信とそれに対応する処理を設定することができます。チュートリアルは ここで読むことができます"
+msgstr "SMS受信APIを使うと、電話番号を契約してSMSの受信ができるようになります"
 
 #: ../../../source/sms.rst:482
 msgid "Finding a SMS In Number via API"
@@ -799,18 +802,17 @@ msgstr "APIによる SMSイン番号 の見つけ方"
 
 #: ../../../source/sms.rst:484
 msgid "This API allows for listing and subscribing to a SMS In Number (SIN)."
-msgstr "このAPIを使うと、SMSイン番号(SIN)一覧の表示と購読契約を行うことができます。"
+msgstr "このAPIを使うと、SMSイン番号(SIN)一覧の表示と契約を行うことができます。"
 
 #: ../../../source/sms.rst:486
 msgid "To list available SINs, make a ``GET`` request to::"
-msgstr "空いているSINの一覧を得るには、以下の ``GET`` リクエストを発行します。"
+msgstr "空いているSINの一覧を得るには、以下へ ``GET`` リクエストを発行します。"
 
 #: ../../../source/sms.rst:490
-#, fuzzy
 msgid ""
 "The response will be a JSON structure, returned with HTTP ``200 OK`` "
 "status code like::"
-msgstr "レスポンスは、JSON構造となり、ステータスコード HTTP ``200 OK`` にて返されます。::"
+msgstr "レスポンスは、JSONとなり、ステータスコード HTTP ``200 OK`` が返されます。::"
 
 #: ../../../source/sms.rst:533
 msgid "You can also filter using a country code or a prefix::"
@@ -838,7 +840,7 @@ msgstr "SMSイン番号を契約するには、以下のような ``POST`` リ�
 msgid ""
 "where ``<sin_uid>`` is the value you got from the previous ``GET`` "
 "request for the number you want to subscribe to."
-msgstr "``<sin_uid>`` は、前項の ``GET`` リクエストで返された値の中から、購読契約したい電話番号のUID識別子の値を指定します。"
+msgstr "``<sin_uid>`` は、前項の ``GET`` リクエストで返された値の中から、契約したい電話番号のUIDの値を指定します。"
 
 #: ../../../source/sms.rst:554
 msgid ""
@@ -847,30 +849,28 @@ msgid ""
 msgstr "契約が成立すると、HTTPステータス ``201 OK`` が返されます。"
 
 #: ../../../source/sms.rst:557
-#, fuzzy
 msgid ""
 "Your credits will be charged immediately for the initial subscription "
 "cost if your ``POST`` request succeeds"
-msgstr "``POST`` リクエストが成功すると、直ちに月額購読料がクレジットから引き落とされます。"
+msgstr "``POST`` リクエストが成功すると、直ちに最初の契約料がクレジットから引き落とされます。"
 
 #: ../../../source/sms.rst:560
 msgid "Define a webhook for the SMS In Number via API"
-msgstr "APIによるSMSイン番号へのアクションの関連付け"
+msgstr "APIによるSMSイン番号へのwebhookの関連付け"
 
 #: ../../../source/sms.rst:562
 msgid ""
-"Each SMS In Number can be forwarded to a webhook that will receive the "
-"data within the message that was received::"
-msgstr "各SMSイン番号に対して、SMSを着信した時に行う処理を結びつけられます。"
-
+"Each SMS In Number needs to have a webhook that will receive the data "
+"when the incoming message was received::"
+msgstr ""
+"各SMSイン番号はメッセージを受信したときに呼び出されるwebhookを持つ必要があります。"
 #: ../../../source/sms.rst:566
 msgid ""
-"The ``url`` specified for ``action_url`` will be sent a request via "
-"``POST`` method when there is incoming message to your subscribed SMS IN "
-"number to get a command that will be used to handle the call."
+"The ``url`` specified for ``action_url`` will be called via ``POST`` "
+"method when there is incoming message to your subscribed SMS In Number."
 msgstr ""
 
-#: ../../../source/sms.rst:570
+#: ../../../source/sms.rst:569
 #, fuzzy
 msgid ""
 "Try subscribing to a local number and see how it works now! `Signing up "
@@ -880,21 +880,63 @@ msgstr ""
 "実際にテストコードでAPIを叩いたほうが早く動作確認できます。 `無料登録 "
 "<https://www.xoxzo.com/ja/accounts/signup/>`_ は無料ですぐできます。"
 
-#: ../../../source/sms.rst:574
+#: ../../../source/sms.rst:573
+msgid "Data that will be sent to webhook"
+msgstr ""
+
+#: ../../../source/sms.rst:575
+msgid "Following are data that will be sent to webhook:"
+msgstr ""
+
+#: ../../../source/sms.rst:580
+#, fuzzy
+msgid "The sender of the message"
+msgstr "送信時間が、UTC（協定世界時）にて返されます。"
+
+#: ../../../source/sms.rst:581
+msgid "sin"
+msgstr ""
+
+#: ../../../source/sms.rst:581
+msgid "The SIN number that's receiving the message"
+msgstr ""
+
+#: ../../../source/sms.rst:582
+#, fuzzy
+msgid "The payload of the message"
+msgstr "送信されたメッセージの状態です。"
+
+#: ../../../source/sms.rst:583
+msgid "received_time"
+msgstr ""
+
+#: ../../../source/sms.rst:583
+msgid "The time when the message is received (in UTC)"
+msgstr ""
+
+#: ../../../source/sms.rst:586
+#, fuzzy
+msgid ""
+"The data will be sent in JSON format. webhook must return HTTP "
+"Successfull 2xx status. Until then, we will retry up to a maximum of ten "
+"times."
+msgstr "コールバックURLは http のステータス 200 で応答する必要があります。この応答をうけとるまで、最大１０回まで呼び出しを繰り返します。"
+
+#: ../../../source/sms.rst:590
 msgid "Getting the list of subscribed SMS In Numbers via API"
 msgstr "APIによる契約中のSMSイン番号の一覧取得"
 
-#: ../../../source/sms.rst:576
+#: ../../../source/sms.rst:592
 msgid ""
 "To get the list of your current subscribed SINs, just make a ``GET`` "
 "request like::"
 msgstr "契約中のSMSイン番号の一覧を得るには、下記のように ``GET`` リクエストを発行します。::"
 
-#: ../../../source/sms.rst:581
+#: ../../../source/sms.rst:597
 msgid "Unsubscribing to a SMS In Number via API"
 msgstr "APIによるダイアルイン番号の契約解除"
 
-#: ../../../source/sms.rst:583
+#: ../../../source/sms.rst:599
 msgid "To unsubscribe::"
 msgstr "契約解除のやりかた::"
 
@@ -1175,4 +1217,13 @@ msgstr "契約解除のやりかた::"
 #~ msgstr ""
 #~ "契約しているSMSイン番号に着信があると、 ``url`` で指定した ``action_url``"
 #~ " に対して ``POST`` リクエストが発行され、処理が行われます。"
+
+#~ msgid ""
+#~ "The ``url`` specified for ``action_url`` "
+#~ "will be sent a request via "
+#~ "``POST`` method when there is incoming"
+#~ " message to your subscribed SMS IN"
+#~ " number to get a command that "
+#~ "will be used to handle the call."
+#~ msgstr ""
 
