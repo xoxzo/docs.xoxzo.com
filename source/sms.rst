@@ -518,9 +518,9 @@ The response will be a JSON structure, returned with HTTP ``200 OK`` status code
 Response data
 ----------------------------------------------
 
-    ==========================   ======================================
+    ==========================   ================================================================
     Name                         Description
-    ==========================   ======================================
+    ==========================   ================================================================
     country_code                 The country code for this SIN, dependent on it's country
     initial_subscription_cost    The initial subscription credit cost of subscribing to this SIN
     message_rate                 The credit cost per incoming message received to this SIN
@@ -528,7 +528,7 @@ Response data
     sin                          The E.164 version of the SIN, including country code
     sin_uid                      A unique identifier for this particular SIN
     prefix                       The local area prefix for this SIN, without the 0
-    =============                ======================================
+    ==========================   ================================================================
 
 You can also filter using a country code or a prefix::
 
