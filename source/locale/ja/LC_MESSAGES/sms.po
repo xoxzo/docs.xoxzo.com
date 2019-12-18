@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Xoxzo API Docs 1.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-12-17 09:20+0900\n"
+"POT-Creation-Date: 2019-12-18 11:02+0900\n"
 "PO-Revision-Date: 2017-08-21 10:31+0900\n"
 "Last-Translator: \n"
 "Language-Team: \n"
@@ -14,13 +14,13 @@ msgstr ""
 
 #: ../../../source/sms.rst:3
 msgid "SMS API"
-msgstr "SMS配信API"
+msgstr "SMS API"
 
 #: ../../../source/sms.rst:5
 msgid ""
-"The SMS API allows you to send SMS to supported carriers via beautiful "
-"HTTP endpoints."
-msgstr "SMS配信APIにて、簡潔なHTTPエンドポイントを通じて、対応キャリアへSMSを送信できます。"
+"The SMS API allows you to send/receive SMS to supported carriers via "
+"beautiful HTTP endpoints."
+msgstr "SMS APIにて、簡潔なHTTPエンドポイントを通じて、対応キャリアへSMSを送受信できます。"
 
 #: ../../../source/sms.rst:8
 msgid "Send SMS messages API"
@@ -862,20 +862,19 @@ msgstr "APIによるSMSイン番号へのwebhookの関連付け"
 msgid ""
 "Each SMS In Number needs to have a webhook that will receive the data "
 "when the incoming message was received::"
-msgstr ""
-"各SMSイン番号はメッセージを受信したときに呼び出されるwebhookを持つ必要があります。"
-#: ../../../source/sms.rst:566
+msgstr "各SMSイン番号はメッセージを受信したときに呼び出されるwebhookを持つ必要があります。"
 
+#: ../../../source/sms.rst:566
 msgid ""
 "The ``url`` specified for ``action_url`` will be called via ``POST`` "
 "method when there is incoming message to your subscribed SMS In Number."
 msgstr ""
-"契約しているSMSイン番号にメッセージが届くと"
-" ``action_url`` で指定された ``url`` に対して ``POST`` メソッドでリクエストが送られます。"
+"契約しているSMSイン番号にメッセージが届くと ``action_url`` で指定された ``url`` に対して ``POST`` "
+"メソッドでリクエストが送られます。"
 
 #: ../../../source/sms.rst:569
-
-msgid "Try subscribing to a local number and see how it works now! `Signing up "
+msgid ""
+"Try subscribing to a local number and see how it works now! `Signing up "
 "<https://www.xoxzo.com/en/accounts/signup/>`_ takes only a few minutes "
 "and it's free"
 msgstr ""
@@ -919,8 +918,9 @@ msgid ""
 "The data will be sent in JSON format. webhook must return HTTP "
 "Successfull 2xx status. Until then, we will retry up to a maximum of ten "
 "times."
-msgstr "データはJSON形式で送信されます。"
-"webhookは、http のステータス 2XX で応答する必要があります。この応答をうけとるまで、最大１０回まで呼び出しを繰り返します。"
+msgstr ""
+"データはJSON形式で送信されます。webhookは、http のステータス 2XX "
+"で応答する必要があります。この応答をうけとるまで、最大１０回まで呼び出しを繰り返します。"
 
 #: ../../../source/sms.rst:590
 msgid "Getting the list of subscribed SMS In Numbers via API"

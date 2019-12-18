@@ -2,7 +2,7 @@
 SMS API
 ====================================
 
-The SMS API allows you to send SMS to supported carriers via beautiful HTTP endpoints.
+The SMS API allows you to send/receive SMS to supported carriers via beautiful HTTP endpoints.
 
 Send SMS messages API
 ====================================
