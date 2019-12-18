@@ -40,7 +40,7 @@ msgstr ""
 
 #: ../../../source/changes.rst:8
 msgid "Added SIN (SMS Incoming Number)"
-msgstr "SIN(SMSイン)番号追加"
+msgstr "SIN(SMSイン番号)追加"
 
 #: ../../../source/changes.rst:9
 msgid "1.11.0"
