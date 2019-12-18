@@ -852,7 +852,7 @@ msgstr "契約が成立すると、HTTPステータス ``201 OK`` が返され�
 msgid ""
 "Your credits will be charged immediately for the initial subscription "
 "cost if your ``POST`` request succeeds"
-msgstr "``POST`` リクエストが成功すると、直ちに最初の契約料がクレジットから引き落とされます。"
+msgstr " ``POST`` リクエストが成功すると、直ちに最初の契約料がクレジットから引き落とされます。"
 
 #: ../../../source/sms.rst:560
 msgid "Define a webhook for the SMS In Number via API"
@@ -865,15 +865,17 @@ msgid ""
 msgstr ""
 "各SMSイン番号はメッセージを受信したときに呼び出されるwebhookを持つ必要があります。"
 #: ../../../source/sms.rst:566
+
 msgid ""
 "The ``url`` specified for ``action_url`` will be called via ``POST`` "
 "method when there is incoming message to your subscribed SMS In Number."
 msgstr ""
+"契約しているSMSイン番号にメッセージが届くと"
+" ``action_url`` で指定された ``url`` に対して ``POST`` メソッドでリクエストが送られます。"
 
 #: ../../../source/sms.rst:569
-#, fuzzy
-msgid ""
-"Try subscribing to a local number and see how it works now! `Signing up "
+
+msgid "Try subscribing to a local number and see how it works now! `Signing up "
 "<https://www.xoxzo.com/en/accounts/signup/>`_ takes only a few minutes "
 "and it's free"
 msgstr ""
@@ -882,16 +884,15 @@ msgstr ""
 
 #: ../../../source/sms.rst:573
 msgid "Data that will be sent to webhook"
-msgstr ""
+msgstr "webhookに送られるデータ"
 
 #: ../../../source/sms.rst:575
 msgid "Following are data that will be sent to webhook:"
-msgstr ""
+msgstr "以下のデータがwebhookへ送られます。"
 
 #: ../../../source/sms.rst:580
-#, fuzzy
 msgid "The sender of the message"
-msgstr "送信時間が、UTC（協定世界時）にて返されます。"
+msgstr "メッセージの送信者。"
 
 #: ../../../source/sms.rst:581
 msgid "sin"
@@ -899,12 +900,11 @@ msgstr ""
 
 #: ../../../source/sms.rst:581
 msgid "The SIN number that's receiving the message"
-msgstr ""
+msgstr "メッセージを受信したSMSイン番号。"
 
 #: ../../../source/sms.rst:582
-#, fuzzy
 msgid "The payload of the message"
-msgstr "送信されたメッセージの状態です。"
+msgstr "受信したメッセージの内容。"
 
 #: ../../../source/sms.rst:583
 msgid "received_time"
@@ -912,15 +912,15 @@ msgstr ""
 
 #: ../../../source/sms.rst:583
 msgid "The time when the message is received (in UTC)"
-msgstr ""
+msgstr "メッセージを受信した時刻(UTC)"
 
 #: ../../../source/sms.rst:586
-#, fuzzy
 msgid ""
 "The data will be sent in JSON format. webhook must return HTTP "
 "Successfull 2xx status. Until then, we will retry up to a maximum of ten "
 "times."
-msgstr "コールバックURLは http のステータス 200 で応答する必要があります。この応答をうけとるまで、最大１０回まで呼び出しを繰り返します。"
+msgstr "データはJSON形式で送信されます。"
+"webhookは、http のステータス 2XX で応答する必要があります。この応答をうけとるまで、最大１０回まで呼び出しを繰り返します。"
 
 #: ../../../source/sms.rst:590
 msgid "Getting the list of subscribed SMS In Numbers via API"
