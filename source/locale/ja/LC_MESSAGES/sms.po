@@ -852,7 +852,7 @@ msgstr "契約が成立すると、HTTPステータス ``201 OK`` が返され�
 msgid ""
 "Your credits will be charged immediately for the initial subscription "
 "cost if your ``POST`` request succeeds"
-msgstr " ``POST`` リクエストが成功すると、直ちに最初の契約料がクレジットから引き落とされます。"
+msgstr "``POST`` リクエストが成功すると、直ちに最初の契約料がクレジットから引き落とされます。"
 
 #: ../../../source/sms.rst:560
 msgid "Define a webhook for the SMS In Number via API"
