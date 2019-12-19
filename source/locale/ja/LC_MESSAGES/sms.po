@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Xoxzo API Docs 1.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-03-12 17:15+0900\n"
+"POT-Creation-Date: 2019-12-19 10:25+0900\n"
 "PO-Revision-Date: 2017-08-21 10:31+0900\n"
 "Last-Translator: \n"
 "Language-Team: \n"
@@ -14,13 +14,13 @@ msgstr ""
 
 #: ../../../source/sms.rst:3
 msgid "SMS API"
-msgstr "SMS配信API"
+msgstr "SMS API"
 
 #: ../../../source/sms.rst:5
 msgid ""
-"The SMS API allows you to send SMS to supported carriers via beautiful "
-"HTTP endpoints."
-msgstr "SMS配信APIにて、簡潔なHTTPエンドポイントを通じて、対応キャリアへSMSを送信できます。"
+"The SMS API allows you to send/receive SMS to supported carriers via "
+"beautiful HTTP endpoints."
+msgstr "SMS APIにて、簡潔なHTTPエンドポイントを通じて、対応キャリアへSMSを送受信できます。"
 
 #: ../../../source/sms.rst:8
 msgid "Send SMS messages API"
@@ -37,12 +37,14 @@ msgstr "下記のパラメーターを併記してください。"
 #: ../../../source/sms.rst:16 ../../../source/sms.rst:31
 #: ../../../source/sms.rst:133 ../../../source/sms.rst:213
 #: ../../../source/sms.rst:240 ../../../source/sms.rst:252
+#: ../../../source/sms.rst:522 ../../../source/sms.rst:578
 msgid "Name"
 msgstr "名称"
 
 #: ../../../source/sms.rst:16 ../../../source/sms.rst:31
 #: ../../../source/sms.rst:133 ../../../source/sms.rst:213
 #: ../../../source/sms.rst:240 ../../../source/sms.rst:468
+#: ../../../source/sms.rst:522 ../../../source/sms.rst:578
 msgid "Description"
 msgstr "詳細"
 
@@ -59,7 +61,7 @@ msgstr "データタイプ"
 msgid "Example"
 msgstr "例"
 
-#: ../../../source/sms.rst:18
+#: ../../../source/sms.rst:18 ../../../source/sms.rst:582
 msgid "message"
 msgstr "message"
 
@@ -97,6 +99,7 @@ msgid "+8190123456789"
 msgstr "+8190123456789"
 
 #: ../../../source/sms.rst:20 ../../../source/sms.rst:219
+#: ../../../source/sms.rst:580
 msgid "sender"
 msgstr "sender"
 
@@ -410,6 +413,7 @@ msgid ""
 msgstr "レスポンスは、JSON構造となり、ステータスコード HTTP ``201 CREATED`` にて返されます。"
 
 #: ../../../source/sms.rst:130 ../../../source/sms.rst:210
+#: ../../../source/sms.rst:519
 msgid "Response data"
 msgstr "レスポンスデータ"
 
@@ -782,6 +786,212 @@ msgstr "FAIL"
 msgid "Failed to send message"
 msgstr "メッセージの配信失敗"
 
+#: ../../../source/sms.rst:477
+msgid "Receive SMS messages API"
+msgstr "SMS受信API"
+
+#: ../../../source/sms.rst:479
+msgid ""
+"The receive SMS messages API allows you to subscribe to phone numbers and"
+" receive incoming SMS."
+msgstr "SMS受信APIを使うと、電話番号を契約してSMSの受信ができるようになります"
+
+#: ../../../source/sms.rst:482
+msgid "Finding a SMS In Number via API"
+msgstr "APIによる SMSイン番号 の見つけ方"
+
+#: ../../../source/sms.rst:484
+msgid "This API allows for listing and subscribing to a SMS In Number (SIN)."
+msgstr "このAPIを使うと、SMSイン番号(SIN)一覧の表示と契約を行うことができます。"
+
+#: ../../../source/sms.rst:486
+msgid "To list available SINs, make a ``GET`` request to::"
+msgstr "空いているSINの一覧を得るには、以下へ ``GET`` リクエストを発行します。"
+
+#: ../../../source/sms.rst:490
+msgid ""
+"The response will be a JSON structure, returned with HTTP ``200 OK`` "
+"status code like::"
+msgstr "レスポンスは、JSONとなり、ステータスコード HTTP ``200 OK`` が返されます。::"
+
+#: ../../../source/sms.rst:524
+msgid "country_code"
+msgstr ""
+
+#: ../../../source/sms.rst:524
+msgid "The country code for this SIN, dependent on it's country"
+msgstr "SINの国番号。"
+
+#: ../../../source/sms.rst:525
+msgid "initial_subscription_cost"
+msgstr ""
+
+#: ../../../source/sms.rst:525
+msgid "The initial subscription credit cost of subscribing to this SIN"
+msgstr "SINを契約するときに、最初にかかる費用。"
+
+#: ../../../source/sms.rst:526
+msgid "message_rate"
+msgstr ""
+
+#: ../../../source/sms.rst:526
+msgid "The credit cost per incoming message received to this SIN"
+msgstr "SINでメッセージを、一通受信するごとにかかる費用。"
+
+#: ../../../source/sms.rst:527
+msgid "monthly_cost"
+msgstr ""
+
+#: ../../../source/sms.rst:527
+msgid "The monthly credit cost of subscribing to this SIN"
+msgstr "SINを契約するのに必要な、月額費用。"
+
+#: ../../../source/sms.rst:528 ../../../source/sms.rst:581
+msgid "sin"
+msgstr ""
+
+#: ../../../source/sms.rst:528
+msgid "The E.164 version of the SIN, including country code"
+msgstr "E.164 形式のSIN。国番号を含む。"
+
+#: ../../../source/sms.rst:529
+msgid "sin_uid"
+msgstr ""
+
+#: ../../../source/sms.rst:529
+msgid "A unique identifier for this particular SIN"
+msgstr "SINを表すユニークな識別子。"
+
+#: ../../../source/sms.rst:530
+msgid "prefix"
+msgstr ""
+
+#: ../../../source/sms.rst:530
+msgid "The local area prefix for this SIN, without the 0"
+msgstr "0を除いた、SINのプリフィクス。"
+
+#: ../../../source/sms.rst:533
+msgid "You can also filter using a country code or a prefix::"
+msgstr "国コードあるいはプリフィックスでフィルタリングすることもできます。"
+
+#: ../../../source/sms.rst:537
+msgid "Or::"
+msgstr "または::"
+
+#: ../../../source/sms.rst:541
+msgid ""
+"filtering using country or prefix will only return you the relevant SINs "
+"based on your filter."
+msgstr "国コードあるいはプリフィックスでフィルタリングをした場合、条件に一致したSINのみが表示されます。"
+
+#: ../../../source/sms.rst:546
+msgid "Subscribing to a SMS In Number via API"
+msgstr "APIによるSMSイン番号の契約"
+
+#: ../../../source/sms.rst:548
+msgid "To subscribe to a SIN, send a ``POST`` request like::"
+msgstr "SMSイン番号を契約するには、以下のような ``POST`` リクエストを発行します。::"
+
+#: ../../../source/sms.rst:552
+msgid ""
+"where ``<sin_uid>`` is the value you got from the previous ``GET`` "
+"request for the number you want to subscribe to."
+msgstr "``<sin_uid>`` は、前項の ``GET`` リクエストで返された値の中から、契約したい電話番号のUIDの値を指定します。"
+
+#: ../../../source/sms.rst:554
+msgid ""
+"The response will return with HTTP ``201 OK`` to indicate that the "
+"subscription was succesfull."
+msgstr "契約が成立すると、HTTPステータス ``201 OK`` が返されます。"
+
+#: ../../../source/sms.rst:557
+msgid ""
+"Your credits will be charged immediately for the initial subscription "
+"cost if your ``POST`` request succeeds"
+msgstr "``POST`` リクエストが成功すると、直ちに最初の契約料がクレジットから引き落とされます。"
+
+#: ../../../source/sms.rst:560
+msgid "Define a webhook for the SMS In Number via API"
+msgstr "APIによるSMSイン番号へのwebhookの関連付け"
+
+#: ../../../source/sms.rst:562
+msgid ""
+"Each SMS In Number needs to have a webhook that will receive the data "
+"when the incoming message was received::"
+msgstr "各SMSイン番号はメッセージを受信したときに呼び出されるwebhookを持つ必要があります。"
+
+#: ../../../source/sms.rst:566
+msgid ""
+"The ``url`` specified for ``action_url`` will be called via ``POST`` "
+"method when there is incoming message to your subscribed SMS In Number."
+msgstr ""
+"契約しているSMSイン番号にメッセージが届くと ``action_url`` で指定された ``url`` に対して ``POST`` "
+"メソッドでリクエストが送られます。"
+
+#: ../../../source/sms.rst:569
+msgid ""
+"Try subscribing to a local number and see how it works now! `Signing up "
+"<https://www.xoxzo.com/en/accounts/signup/>`_ takes only a few minutes "
+"and it's free"
+msgstr ""
+"実際にテストコードでAPIを叩いたほうが早く動作確認できます。 `無料登録 "
+"<https://www.xoxzo.com/ja/accounts/signup/>`_ は無料ですぐできます。"
+
+#: ../../../source/sms.rst:573
+msgid "Data that will be sent to webhook"
+msgstr "webhookに送られるデータ"
+
+#: ../../../source/sms.rst:575
+msgid "Following are data that will be sent to webhook:"
+msgstr "以下のデータがwebhookへ送られます。"
+
+#: ../../../source/sms.rst:580
+msgid "The sender of the message"
+msgstr "メッセージの送信者。"
+
+#: ../../../source/sms.rst:581
+msgid "The SIN number that's receiving the message"
+msgstr "メッセージを受信したSMSイン番号。"
+
+#: ../../../source/sms.rst:582
+msgid "The payload of the message"
+msgstr "受信したメッセージの内容。"
+
+#: ../../../source/sms.rst:583
+msgid "received_time"
+msgstr ""
+
+#: ../../../source/sms.rst:583
+msgid "The time when the message is received (in UTC)"
+msgstr "メッセージを受信した時刻(UTC)"
+
+#: ../../../source/sms.rst:586
+msgid ""
+"The data will be sent in JSON format. webhook must return HTTP "
+"Successfull 2xx status. Until then, we will retry up to a maximum of ten "
+"times."
+msgstr ""
+"データはJSON形式で送信されます。webhookは、http のステータス 2XX "
+"で応答する必要があります。この応答をうけとるまで、最大１０回まで呼び出しを繰り返します。"
+
+#: ../../../source/sms.rst:590
+msgid "Getting the list of subscribed SMS In Numbers via API"
+msgstr "APIによる契約中のSMSイン番号の一覧取得"
+
+#: ../../../source/sms.rst:592
+msgid ""
+"To get the list of your current subscribed SINs, just make a ``GET`` "
+"request like::"
+msgstr "契約中のSMSイン番号の一覧を得るには、下記のように ``GET`` リクエストを発行します。::"
+
+#: ../../../source/sms.rst:597
+msgid "Unsubscribing to a SMS In Number via API"
+msgstr "APIによるダイアルイン番号の契約解除"
+
+#: ../../../source/sms.rst:599
+msgid "To unsubscribe::"
+msgstr "契約解除のやりかた::"
+
 #~ msgid "Below is an example request using CURL::"
 #~ msgstr "下記は、CURLを使ったリクエストの例です。"
 
@@ -895,11 +1105,102 @@ msgstr "メッセージの配信失敗"
 #~ msgstr ""
 
 #~ msgid ""
-#~ "When this optional parameter is "
-#~ "provided, you can put tags for "
-#~ "each api calls and you can "
-#~ "retrieve the tags in the get "
-#~ "status api."
+#~ "The Receive SMS messages API allows "
+#~ "you to receive and manipulate phone "
+#~ "numbers and incoming phone calls via "
+#~ "easy APIs."
+#~ msgstr ""
+
+#~ msgid "Finding a Dial In Number via API"
+#~ msgstr ""
+
+#~ msgid "minute_cost"
+#~ msgstr ""
+
+#~ msgid "The credit cost per minute when receiving calls to this SIN"
+#~ msgstr ""
+
+#~ msgid "Attach an action to the SMS In Number via API"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Each SMS In Number can be attached"
+#~ " an action that will provide "
+#~ "instruction what to do with the "
+#~ "call if it was answered::"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "The ``url`` specified for ``action_url`` "
+#~ "will be called via ``GET`` when "
+#~ "there is incoming call to your "
+#~ "subscribed SMS IN number to get a"
+#~ " command that will be used to "
+#~ "handle the call."
+#~ msgstr ""
+
+#~ msgid "What are Actions?"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "An Action is something that you "
+#~ "tell us to do when a message "
+#~ "comes in via your subscribed SMS "
+#~ "In Number (SIN). These can be "
+#~ "things like forwarding the incoming "
+#~ "message to a different number. More "
+#~ "functionality will be added in the "
+#~ "future."
+#~ msgstr ""
+
+#~ msgid "Avaialable Actions are listed at `Available Actions`_"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "The Actions that you want to do"
+#~ " are defined in a simple text "
+#~ "file that you make accessible via "
+#~ "a URL. This URL is the "
+#~ "``action_url`` that you set when you "
+#~ "subscribe to a DIN."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "When a call comes in to your "
+#~ "SIN, we'll make a ``GET`` request "
+#~ "to your ``action_url`` that will also"
+#~ " include information about the call, "
+#~ "like::"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Where ``sender`` is the phone number "
+#~ "sending the message and ``recipient`` is"
+#~ " your SIN."
+#~ msgstr ""
+
+#~ msgid "Available Actions"
+#~ msgstr ""
+
+#~ msgid "The available actions are as follows:"
+#~ msgstr ""
+
+#~ msgid "Action"
+#~ msgstr ""
+
+#~ msgid "forward"
+#~ msgstr ""
+
+#~ msgid "Forwards the incoming SMS to another number"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Defined a webhook for the SMS In"
+#~ " Number via APIWhen this optional "
+#~ "parameter is provided, you can put "
+#~ "tags for each api calls and you"
+#~ " can retrieve the tags in the "
+#~ "get status api."
 #~ msgstr ""
 
 #~ msgid ""
@@ -917,5 +1218,64 @@ msgstr "メッセージの配信失敗"
 #~ "The tags assigned to this message. "
 #~ "If no tagas are assigned, empty "
 #~ "list [] will be set."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "The Receive SMS messages API allows "
+#~ "you to subscribe to phone numbers "
+#~ "and receive incoming SMS."
+#~ msgstr ""
+
+#~ msgid "To list available DINs, make a ``GET`` request to::"
+#~ msgstr ""
+
+#~ msgid "country_code"
+#~ msgstr "country_code"
+
+#~ msgid "The country code for this SIN, dependent on it's country"
+#~ msgstr "SINの国コード。"
+
+#~ msgid "sin"
+#~ msgstr "sin"
+
+#~ msgid "The E.164 version of the SIN, including country code"
+#~ msgstr "E.164形式のSIN。国コードを含む。"
+
+#~ msgid "sin_uid"
+#~ msgstr "sin_uid"
+
+#~ msgid "A unique identifier for this particular SIN"
+#~ msgstr "SINに対応する、ユニークな識別子。"
+
+#~ msgid "monthly_cost"
+#~ msgstr "monthly_cost"
+
+#~ msgid "The monthly credit cost of subscribing to this SIN"
+#~ msgstr "SINを購読契約したときの、一ヶ月あたりの料金。"
+
+#~ msgid "prefix"
+#~ msgstr "prefix"
+
+#~ msgid "The local area prefix for this SIN, without the 0"
+#~ msgstr "SINのプリフィックス。先頭の0を除いたもの。"
+
+#~ msgid ""
+#~ "The ``url`` specified for ``webhook_url`` "
+#~ "will be sent a request via "
+#~ "``POST`` method when there is incoming"
+#~ " message to your subscribed SMS IN"
+#~ " number to get a command that "
+#~ "will be used to handle the call."
+#~ msgstr ""
+#~ "契約しているSMSイン番号に着信があると、 ``url`` で指定した ``action_url``"
+#~ " に対して ``POST`` リクエストが発行され、処理が行われます。"
+
+#~ msgid ""
+#~ "The ``url`` specified for ``action_url`` "
+#~ "will be sent a request via "
+#~ "``POST`` method when there is incoming"
+#~ " message to your subscribed SMS IN"
+#~ " number to get a command that "
+#~ "will be used to handle the call."
 #~ msgstr ""
 
