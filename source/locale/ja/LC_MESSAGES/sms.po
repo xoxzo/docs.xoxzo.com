@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Xoxzo API Docs 1.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-12-18 11:02+0900\n"
+"POT-Creation-Date: 2019-12-19 10:25+0900\n"
 "PO-Revision-Date: 2017-08-21 10:31+0900\n"
 "Last-Translator: \n"
 "Language-Team: \n"
@@ -37,14 +37,14 @@ msgstr "下記のパラメーターを併記してください。"
 #: ../../../source/sms.rst:16 ../../../source/sms.rst:31
 #: ../../../source/sms.rst:133 ../../../source/sms.rst:213
 #: ../../../source/sms.rst:240 ../../../source/sms.rst:252
-#: ../../../source/sms.rst:578
+#: ../../../source/sms.rst:522 ../../../source/sms.rst:578
 msgid "Name"
 msgstr "名称"
 
 #: ../../../source/sms.rst:16 ../../../source/sms.rst:31
 #: ../../../source/sms.rst:133 ../../../source/sms.rst:213
 #: ../../../source/sms.rst:240 ../../../source/sms.rst:468
-#: ../../../source/sms.rst:578
+#: ../../../source/sms.rst:522 ../../../source/sms.rst:578
 msgid "Description"
 msgstr "詳細"
 
@@ -814,6 +814,62 @@ msgid ""
 "status code like::"
 msgstr "レスポンスは、JSONとなり、ステータスコード HTTP ``200 OK`` が返されます。::"
 
+#: ../../../source/sms.rst:524
+msgid "country_code"
+msgstr ""
+
+#: ../../../source/sms.rst:524
+msgid "The country code for this SIN, dependent on it's country"
+msgstr "SINの国番号。"
+
+#: ../../../source/sms.rst:525
+msgid "initial_subscription_cost"
+msgstr ""
+
+#: ../../../source/sms.rst:525
+msgid "The initial subscription credit cost of subscribing to this SIN"
+msgstr "SINを契約するときに、最初にかかる費用。"
+
+#: ../../../source/sms.rst:526
+msgid "message_rate"
+msgstr ""
+
+#: ../../../source/sms.rst:526
+msgid "The credit cost per incoming message received to this SIN"
+msgstr "SINでメッセージを、一通受信するごとにかかる費用。"
+
+#: ../../../source/sms.rst:527
+msgid "monthly_cost"
+msgstr ""
+
+#: ../../../source/sms.rst:527
+msgid "The monthly credit cost of subscribing to this SIN"
+msgstr "SINを契約するのに必要な、月額費用。"
+
+#: ../../../source/sms.rst:528 ../../../source/sms.rst:581
+msgid "sin"
+msgstr ""
+
+#: ../../../source/sms.rst:528
+msgid "The E.164 version of the SIN, including country code"
+msgstr "E.164 形式のSIN。国番号を含む。"
+
+#: ../../../source/sms.rst:529
+msgid "sin_uid"
+msgstr ""
+
+#: ../../../source/sms.rst:529
+msgid "A unique identifier for this particular SIN"
+msgstr "SINを表すユニークな識別子。"
+
+#: ../../../source/sms.rst:530
+msgid "prefix"
+msgstr ""
+
+#: ../../../source/sms.rst:530
+msgid "The local area prefix for this SIN, without the 0"
+msgstr "0を除いた、SINのプリフィクス。"
+
 #: ../../../source/sms.rst:533
 msgid "You can also filter using a country code or a prefix::"
 msgstr "国コードあるいはプリフィックスでフィルタリングすることもできます。"
@@ -892,10 +948,6 @@ msgstr "以下のデータがwebhookへ送られます。"
 #: ../../../source/sms.rst:580
 msgid "The sender of the message"
 msgstr "メッセージの送信者。"
-
-#: ../../../source/sms.rst:581
-msgid "sin"
-msgstr ""
 
 #: ../../../source/sms.rst:581
 msgid "The SIN number that's receiving the message"
