@@ -521,7 +521,7 @@ Response data
     ==========================   ================================================================
     Name                         Description
     ==========================   ================================================================
-    country_code                 The country code for this SIN, dependent on it's country
+    country_code                 The country code for this SIN
     initial_subscription_cost    The initial subscription credit cost of subscribing to this SIN
     message_rate                 The credit cost per incoming message received to this SIN
     monthly_cost                 The monthly credit cost of subscribing to this SIN
