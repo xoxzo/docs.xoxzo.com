@@ -5,6 +5,7 @@ CHANGES
     =========   ==================  ===============================================================================================
     Ver         Date                Changes
     =========   ==================  ===============================================================================================
+    1.12.1      2020-01-17          Added rate limiting for Sent Messages List API
     1.12.0      2019-12-06          Added SIN (SMS Incoming Number)
     1.11.0      2019-10-10          Added Indonesian to text to speech service
     1.10.0      2019-03-05          Added tags parameters
