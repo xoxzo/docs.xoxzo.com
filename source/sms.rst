@@ -1,4 +1,4 @@
-==================================== 
+====================================
 SMS API
 ====================================
 
@@ -263,6 +263,9 @@ the sent messages:
    * Only sent messages within 90 days ago that can be be pulled.
    * This API supports only one operator and one specified sent date on each request.
    * All dates are based on UTC.
+
+.. warning::
+   * This API call is limited to use up to 3 requests/hour.
 
 Examples of response data
 --------------------------
