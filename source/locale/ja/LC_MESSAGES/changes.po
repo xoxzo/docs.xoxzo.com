@@ -16,7 +16,7 @@ msgstr ""
 
 #: ../../../source/changes.rst:3
 msgid "CHANGES"
-msgstr "変更点"
+msgstr "変更点履歴"
 
 #: ../../../source/changes.rst:6
 msgid "Ver"
