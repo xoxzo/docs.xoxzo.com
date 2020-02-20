@@ -56,7 +56,8 @@ Please refer to our `K-Premium Service FAQ <https://help.xoxzo.com/xoxzo-cloud-t
 
 .. note::
    Notes on the **jp_kddi_sender** parameter:
-   * This parameter id deprecated and can be usable until Aug. 31 2020.
+
+   * This parameter is deprecated and can be usable until Aug. 31 2020.
 
 .. note::
    Notes on the **message** parameter:
