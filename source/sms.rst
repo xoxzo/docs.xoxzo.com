@@ -27,13 +27,13 @@ JP specific optional parameters
 
 The additional parameters below are for JP specific usage and recipients:
 
-    ==============  ===================   ========    =================== ===================
-    Name            Description           Required    Data Type           Example
-    ==============  ===================   ========    =================== ===================
-    jp_kp           K-Premium flag        No          The string **true** true
-    jp_kpl          K-Premium Lite flag   No          The string **true** true
-    jp_kddi_sender  Sender ID for au      No          Numeric             0312341234
-    ==============  ===================   ========    =================== ===================
+    ==============  ===========================   ========    =================== ===================
+    Name            Description                   Required    Data Type           Example
+    ==============  ===========================   ========    =================== ===================
+    jp_kp           K-Premium flag                No          The string **true** true
+    jp_kpl          K-Premium Lite flag           No          The string **true** true
+    jp_kp_sender    Sender ID for kddi, docomo    No          Numeric             0312341234
+    ==============  ===========================   ========    =================== ===================
 
 Please refer to our `K-Premium Service FAQ <https://help.xoxzo.com/xoxzo-cloud-telephony-platform/articles/the-k-premium-service/>`_ for more information on the K-Premium Service.
 
@@ -43,16 +43,21 @@ Please refer to our `K-Premium Service FAQ <https://help.xoxzo.com/xoxzo-cloud-t
    * If the jp_kp or jp_kpl parameter is set to true, the maximum length for ASCII messages are 140 characters
    * For non-ASCII messages, the maximum length is 70 characters
    * You cannot specify **jp_kp** and **jp_kpl** together at the same time. These are mutually exclusive.
-   * The difference between **jp_kp** and **jp_kpl** is the sender id display for non-KDDI numbers.
-     Please refer **jp_kddi_sender** parameter section.
+   * The difference between **jp_kp** and **jp_kpl** is the sender id display for Softbank numbers.
+     Please refer **jp_kp_sender** parameter section.
+
+.. note::
+   Notes on the **jp_kp_sender** parameter:
+
+   * If the jp_kp or jp_kpl parameter is set to true, you must specify this parameter with your pre-registered number for KDDI/docomo.
+   * If the recipient is KDDI/docomo, the value specified for this parameter will be shown on the recipient's mobile.
+   * If the **jp_kp** is set and the recipient is Softbank, a fixed number will be shown on the the recipient's mobile instead.
+   * If the **jp_kpl** is set and the recipient is Softbank, **sender** will be shown on the the recipient's mobile instead.
 
 .. note::
    Notes on the **jp_kddi_sender** parameter:
 
-   * If the jp_kp or jp_kpl parameter is set to true, you must specify this parameter with your pre-registered number for KDDI.
-   * If the recipient is KDDI, the value specified fot this parameter will be shown on the recipient's mobile.
-   * If the **jp_kp** is set and the recipient is non-KDDI, a fixed number will be shown on the the recipient's mobile instead.
-   * If the **jp_kpl** is set and the recipient is non-KDDI, **sender** will be shown on the the recipient's mobile instead.
+   * This parameter is deprecated and can be used until Aug. 31 2020.
 
 .. note::
    Notes on the **message** parameter:
