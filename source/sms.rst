@@ -27,13 +27,13 @@ JP specific optional parameters
 
 The additional parameters below are for JP specific usage and recipients:
 
-    ==============  ========================   ========    =================== ===================
-    Name            Description                Required    Data Type           Example
-    ==============  ========================   ========    =================== ===================
-    jp_kp           K-Premium flag             No          The string **true** true
-    jp_kpl          K-Premium Lite flag        No          The string **true** true
-    jp_kp_sender    Sender ID for au,docomo    No          Numeric             0312341234
-    ==============  ========================   ========    =================== ===================
+    ==============  ===========================   ========    =================== ===================
+    Name            Description                   Required    Data Type           Example
+    ==============  ===========================   ========    =================== ===================
+    jp_kp           K-Premium flag                No          The string **true** true
+    jp_kpl          K-Premium Lite flag           No          The string **true** true
+    jp_kp_sender    Sender ID for kddi, docomo    No          Numeric             0312341234
+    ==============  ===========================   ========    =================== ===================
 
 Please refer to our `K-Premium Service FAQ <https://help.xoxzo.com/xoxzo-cloud-telephony-platform/articles/the-k-premium-service/>`_ for more information on the K-Premium Service.
 

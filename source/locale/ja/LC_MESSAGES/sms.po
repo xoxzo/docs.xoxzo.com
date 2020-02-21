@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Xoxzo API Docs 1.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-02-20 15:51+0900\n"
+"POT-Creation-Date: 2020-02-21 10:14+0900\n"
 "PO-Revision-Date: 2017-08-21 10:31+0900\n"
 "Last-Translator: \n"
 "Language-Team: \n"
@@ -186,8 +186,8 @@ msgid "jp_kp_sender"
 msgstr ""
 
 #: ../../../source/sms.rst:35
-msgid "Sender ID for au,docomo"
-msgstr "au,docomo 向けSender ID"
+msgid "Sender ID for kddi, docomo"
+msgstr "kddi, docomo 向けSender ID"
 
 #: ../../../source/sms.rst:35
 msgid "Numeric"
