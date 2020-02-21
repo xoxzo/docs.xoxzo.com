@@ -50,14 +50,14 @@ Please refer to our `K-Premium Service FAQ <https://help.xoxzo.com/xoxzo-cloud-t
    Notes on the **jp_kp_sender** parameter:
 
    * If the jp_kp or jp_kpl parameter is set to true, you must specify this parameter with your pre-registered number for KDDI/docomo.
-   * If the recipient is KDDI/docomo, the value specified fot this parameter will be shown on the recipient's mobile.
+   * If the recipient is KDDI/docomo, the value specified for this parameter will be shown on the recipient's mobile.
    * If the **jp_kp** is set and the recipient is Softbank, a fixed number will be shown on the the recipient's mobile instead.
    * If the **jp_kpl** is set and the recipient is Softbank, **sender** will be shown on the the recipient's mobile instead.
 
 .. note::
    Notes on the **jp_kddi_sender** parameter:
 
-   * This parameter is deprecated and can be usable until Aug. 31 2020.
+   * This parameter is deprecated and can be used until Aug. 31 2020.
 
 .. note::
    Notes on the **message** parameter:

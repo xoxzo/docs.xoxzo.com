@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Xoxzo API Docs 1.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-02-21 10:14+0900\n"
+"POT-Creation-Date: 2020-02-21 14:09+0900\n"
 "PO-Revision-Date: 2017-08-21 10:31+0900\n"
 "Last-Translator: \n"
 "Language-Team: \n"
@@ -246,7 +246,7 @@ msgstr "jp_kpまたはjp_kplパラメーターが有効な場合、このパラ�
 
 #: ../../../source/sms.rst:53
 msgid ""
-"If the recipient is KDDI/docomo, the value specified fot this parameter "
+"If the recipient is KDDI/docomo, the value specified for this parameter "
 "will be shown on the recipient's mobile."
 msgstr "受信者がKDDI/docomoの場合、このパラメータに指定した値が、携帯電話に表示されます。"
 
@@ -267,7 +267,7 @@ msgid "Notes on the **jp_kddi_sender** parameter:"
 msgstr "**jp_kddi_sender** パラメーターに関する注意点"
 
 #: ../../../source/sms.rst:60
-msgid "This parameter is deprecated and can be usable until Aug. 31 2020."
+msgid "This parameter is deprecated and can be used until Aug. 31 2020."
 msgstr "このパラメータは廃止されました。2020年8月31日まで使用することができます。"
 
 #: ../../../source/sms.rst:63 ../../../source/sms.rst:92
