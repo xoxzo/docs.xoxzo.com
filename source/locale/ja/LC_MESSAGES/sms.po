@@ -191,7 +191,7 @@ msgstr "kddi, docomo 向けSender ID"
 
 #: ../../../source/sms.rst:35
 msgid "Numeric"
-msgstr "英数字"
+msgstr "数字"
 
 #: ../../../source/sms.rst:35
 msgid "0312341234"
