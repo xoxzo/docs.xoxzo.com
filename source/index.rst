@@ -4,7 +4,7 @@
    contain the root `toctree` directive.
 
 ====================================
-Xoxzo Cloud Telephony Platform API
+Xoxzo Cloud Telephony API
 ====================================
 
 Overview

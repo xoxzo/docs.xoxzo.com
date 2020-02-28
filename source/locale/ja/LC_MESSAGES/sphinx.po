@@ -41,8 +41,8 @@ msgstr ""
 "を利用して作製しました。"
 
 #: ../../../source/_templates/layout.html:73
-msgid "<a href=\"https://www.xoxzo.com/en/\">Xoxzo Cloud Telephony Platform</a>"
-msgstr "<a href=\"https://www.xoxzo.com/ja/\">Xoxzo クラウド・テレフォニー・プラットフォーム</a>"
+msgid "<a href=\"https://www.xoxzo.com/en/\">Xoxzo Cloud Telephony</a>"
+msgstr "<a href=\"https://www.xoxzo.com/ja/\">Xoxzo クラウド・テレフォニー</a>"
 
 #: ../../../source/_templates/layout.html:76
 msgid "SMS Delivery Service [EZSMS]"
