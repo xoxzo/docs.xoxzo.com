@@ -3,14 +3,14 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Heylo API Documentation 1.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-03-12 17:15+0900\n"
+"POT-Creation-Date: 2020-02-28 12:28+0900\n"
 "PO-Revision-Date: 2017-08-22 09:43+0900\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Generated-By: Babel 2.5.1\n"
+"Generated-By: Babel 2.7.0\n"
 
 #: ../../../source/voice.rst:3
 msgid "Voice API"
@@ -27,11 +27,11 @@ msgid ""
 "There is a minimum amount of credits which you need to have in order to "
 "make a Voice API call, regardless of the cost of the call itself. Please "
 "refer to the `Help Center <https://help.xoxzo.com/en/xoxzo-cloud-"
-"telephony-platform/articles/minimum-credits-for-voice-api/>`_ for more "
+"telephony/articles/minimum-credits-for-voice-api/>`_ for more "
 "information."
 msgstr ""
 "音声APIを利用するための料金にかかわらず、アカウントにあるクレジットが最低残高でないといけない場合があります。詳細については `ヘルプ・センター"
-" <https://help.xoxzo.com/ja/xoxzo-cloud-telephony-platform/articles"
+" <https://help.xoxzo.com/ja/xoxzo-cloud-telephony/articles"
 "/minimum-credits-for-voice-api/>`_ をご確認ください。"
 
 #: ../../../source/voice.rst:12
@@ -308,11 +308,11 @@ msgstr "true"
 #: ../../../source/voice.rst:102
 msgid ""
 "Please refer to our `JP Local Caller ID service <https://help.xoxzo.com"
-"/xoxzo-cloud-telephony-platform/articles/local-caller-id-for-dial-in-"
-"numbers/>`_ for more information."
+"/xoxzo-cloud-telephony/articles/local-caller-id-for-dial-in-numbers/>`_ "
+"for more information."
 msgstr ""
-"詳細は `ローカル発信者番号 <https://help.xoxzo.com/ja/xoxzo-cloud-telephony-"
-"platform/articles/local-caller-id-for-dial-in-numbers/>`_ にてご確認ください。"
+"詳細は `ローカル発信者番号 <https://help.xoxzo.com/ja/xoxzo-cloud-telephony"
+"/articles/local-caller-id-for-dial-in-numbers/>`_ にてご確認ください。"
 
 #: ../../../source/voice.rst:105
 msgid "Notes on the **jp_din_caller** parameter:"
@@ -480,9 +480,6 @@ msgid ""
 "The tags assigned to this call. If no tags are assigned, empty list [] "
 "will be set."
 msgstr "この通話に付けられたタグです。タグが無いときは空のリスト[]になります。"
-
-
-
 
 #: ../../../source/voice.rst:225
 msgid "direction"

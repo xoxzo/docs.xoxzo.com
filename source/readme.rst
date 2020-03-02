@@ -5,7 +5,7 @@ README
 About this document
 ====================================
 This document aims to be the starting point for you to start exploring the 
-rest of the documentation for the Xoxzo Cloud Telephony Platform.
+rest of the documentation for the Xoxzo Cloud Telephony.
 
 General Usage
 ====================================

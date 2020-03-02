@@ -6,7 +6,7 @@ The Voice API allows you to interact with a phone via beautiful HTTP endpoints.
 
 .. warning::
    *  There is a minimum amount of credits which you need to have in order to make a Voice API call,
-      regardless of the cost of the call itself. Please refer to the `Help Center <https://help.xoxzo.com/en/xoxzo-cloud-telephony-platform/articles/minimum-credits-for-voice-api/>`_ for more information.
+      regardless of the cost of the call itself. Please refer to the `Help Center <https://help.xoxzo.com/en/xoxzo-cloud-telephony/articles/minimum-credits-for-voice-api/>`_ for more information.
 
 .. tip:: 
     You can see how this API works on the web at `hello.xoxzo.com <https://hello.xoxzo.com/en/>`_
@@ -99,7 +99,7 @@ The additional parameters below are for JP specific usage and recipients:
     jp_din_caller   Local caller ID     No          The string **true** true
     ==============  ==================  ========    =================== ===================
 
-Please refer to our `JP Local Caller ID service <https://help.xoxzo.com/xoxzo-cloud-telephony-platform/articles/local-caller-id-for-dial-in-numbers/>`_ for more information.
+Please refer to our `JP Local Caller ID service <https://help.xoxzo.com/xoxzo-cloud-telephony/articles/local-caller-id-for-dial-in-numbers/>`_ for more information.
 
 .. note::
    Notes on the **jp_din_caller** parameter:
