@@ -96,7 +96,7 @@ Please refer to our `K-Premium Service FAQ <https://help.xoxzo.com/xoxzo-cloud-t
    *  Messages which only contains ASCII based characters will have a maximum
       length of 160 characters, while other types of messages will have a
       maximum length of 70 characters
-   *  For Malaysia, messages which only contains ASCII based characters will have a maximum
+   *  For Malaysia recipient, messages which only contains ASCII based characters will have a maximum
       length of 153 characters, while other types of messages will have a
       maximum length of 63 characters
 
