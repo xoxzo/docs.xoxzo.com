@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Xoxzo API Docs 1.1\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-02-20 12:28+0900\n"
+"POT-Creation-Date: 2020-04-21 15:42+0900\n"
 "PO-Revision-Date: 2017-08-21 10:14+0900\n"
 "Last-Translator: \n"
 "Language: ja\n"
@@ -31,339 +31,350 @@ msgid "Changes"
 msgstr "変更点"
 
 #: ../../../source/changes.rst:8
+msgid "1.14.0"
+msgstr ""
+
+#: ../../../source/changes.rst:8
+msgid "2020-04-22"
+msgstr ""
+
+#: ../../../source/changes.rst:8
+msgid "Update max message length for Malaysia"
+msgstr "マレーシア向けメッセージの最大長を更新"
+
+#: ../../../source/changes.rst:9
 msgid "1.13.0"
 msgstr ""
 
-#: ../../../source/changes.rst:8
-
+#: ../../../source/changes.rst:9
 msgid "2020-02-13"
 msgstr ""
 
-#: ../../../source/changes.rst:8
+#: ../../../source/changes.rst:9
 msgid "K-Premium V3 support"
 msgstr "Kプレミアム V3 機能追加"
 
-#: ../../../source/changes.rst:9
+#: ../../../source/changes.rst:10
 msgid "1.12.1"
 msgstr ""
 
-#: ../../../source/changes.rst:9
+#: ../../../source/changes.rst:10
 msgid "2020-01-17"
 msgstr ""
 
-#: ../../../source/changes.rst:9
+#: ../../../source/changes.rst:10
 msgid "Added rate limiting for Sent Messages List API"
 msgstr "送信されたSMSのリストAPIに関する帯域制限の説明を追加"
 
-#: ../../../source/changes.rst:10
+#: ../../../source/changes.rst:11
 msgid "1.12.0"
 msgstr ""
 
-#: ../../../source/changes.rst:10
+#: ../../../source/changes.rst:11
 msgid "2019-12-06"
 msgstr ""
 
-#: ../../../source/changes.rst:10
+#: ../../../source/changes.rst:11
 msgid "Added SIN (SMS Incoming Number)"
 msgstr "SIN(SMSイン番号)追加"
 
-#: ../../../source/changes.rst:11
+#: ../../../source/changes.rst:12
 msgid "1.11.0"
 msgstr ""
 
-#: ../../../source/changes.rst:11
+#: ../../../source/changes.rst:12
 msgid "2019-10-10"
 msgstr ""
 
-#: ../../../source/changes.rst:11
+#: ../../../source/changes.rst:12
 msgid "Added Indonesian to text to speech service"
 msgstr "テキスト読み上げ機能にインドネシア語を追加"
 
-#: ../../../source/changes.rst:12
+#: ../../../source/changes.rst:13
 msgid "1.10.0"
 msgstr ""
 
-#: ../../../source/changes.rst:12
+#: ../../../source/changes.rst:13
 msgid "2019-03-05"
 msgstr ""
 
-#: ../../../source/changes.rst:12
+#: ../../../source/changes.rst:13
 msgid "Added tags parameters"
 msgstr "tagsパラメータを追加"
 
-#: ../../../source/changes.rst:13
+#: ../../../source/changes.rst:14
 msgid "1.9.1"
 msgstr ""
 
-#: ../../../source/changes.rst:13
+#: ../../../source/changes.rst:14
 msgid "2019-02-04"
 msgstr ""
 
-#: ../../../source/changes.rst:13
+#: ../../../source/changes.rst:14
 msgid "Fix sound url sample"
 msgstr "サウンドURLのサンプルを修正"
 
-#: ../../../source/changes.rst:14
+#: ../../../source/changes.rst:15
 msgid "1.9.0"
 msgstr ""
 
-#: ../../../source/changes.rst:14
+#: ../../../source/changes.rst:15
 msgid "2018-08-25"
 msgstr ""
 
-#: ../../../source/changes.rst:14
+#: ../../../source/changes.rst:15
 msgid "Added credit api"
 msgstr "クレジットAPIを追加"
 
-#: ../../../source/changes.rst:15
+#: ../../../source/changes.rst:16
 msgid "1.8.1"
 msgstr ""
 
-#: ../../../source/changes.rst:15
+#: ../../../source/changes.rst:16
 msgid "2018-07-26"
 msgstr ""
 
-#: ../../../source/changes.rst:15
+#: ../../../source/changes.rst:16
 msgid "Increase sms log size limit 30,000"
 msgstr "SMSログのサイズの上限を30,000に変更"
 
-#: ../../../source/changes.rst:16
+#: ../../../source/changes.rst:17
 msgid "1.8.0"
 msgstr ""
 
-#: ../../../source/changes.rst:16
+#: ../../../source/changes.rst:17
 msgid "2018-06-19"
 msgstr ""
 
-#: ../../../source/changes.rst:16
+#: ../../../source/changes.rst:17
 msgid "K-Premium Lite support"
 msgstr "Kプレミアム Lite 機能追加"
 
-#: ../../../source/changes.rst:17
+#: ../../../source/changes.rst:18
 msgid "1.7.2"
 msgstr ""
 
-#: ../../../source/changes.rst:17
+#: ../../../source/changes.rst:18
 msgid "2018-05-08"
 msgstr ""
 
-#: ../../../source/changes.rst:17
+#: ../../../source/changes.rst:18
 msgid "https is not supported for recording_url of simple playback api"
 msgstr "音声プレーバックAPIのrecording_urlにはhttpsはサポートされていない"
 
-#: ../../../source/changes.rst:18
+#: ../../../source/changes.rst:19
 msgid "1.7.1"
 msgstr "1.7.1"
 
-#: ../../../source/changes.rst:18
+#: ../../../source/changes.rst:19
 msgid "2018-04-05"
 msgstr "2018-04-05"
 
-#: ../../../source/changes.rst:18
+#: ../../../source/changes.rst:19
 msgid "Add description about rate limiting"
 msgstr "帯域制限に関する説明を追加"
 
-#: ../../../source/changes.rst:19
+#: ../../../source/changes.rst:20
 msgid "1.7.0"
 msgstr "1.7.0"
 
-#: ../../../source/changes.rst:19
+#: ../../../source/changes.rst:20
 msgid "2017-12-05"
 msgstr "2017-12-05"
 
-#: ../../../source/changes.rst:19
+#: ../../../source/changes.rst:20
 msgid "K-Premium V2 support"
 msgstr "Kプレミアム V2 機能追加"
 
-#: ../../../source/changes.rst:20
+#: ../../../source/changes.rst:21
 msgid "1.6.2"
 msgstr ""
 
-#: ../../../source/changes.rst:20
+#: ../../../source/changes.rst:21
 msgid "2017-11-24"
 msgstr ""
 
-#: ../../../source/changes.rst:20
+#: ../../../source/changes.rst:21
 msgid "Endpoint change for simple playbacks and call status API"
 msgstr "音声プレーバック, 発信ステータス APIのエンドポイントの変更"
 
-#: ../../../source/changes.rst:21
+#: ../../../source/changes.rst:22
 msgid "1.6.1"
 msgstr ""
 
-#: ../../../source/changes.rst:21
+#: ../../../source/changes.rst:22
 msgid "2017-11-16"
 msgstr ""
 
-#: ../../../source/changes.rst:21
+#: ../../../source/changes.rst:22
 msgid "Fix SMS send status"
 msgstr "SMS送信ステータスを訂正"
 
-#: ../../../source/changes.rst:22
+#: ../../../source/changes.rst:23
 msgid "1.6.0"
 msgstr ""
 
-#: ../../../source/changes.rst:22
+#: ../../../source/changes.rst:23
 msgid "2017-11-01"
 msgstr ""
 
-#: ../../../source/changes.rst:22
+#: ../../../source/changes.rst:23
 msgid "Add new functionality: Conference call API"
 msgstr "新機能追加：電話会議APIの利用が可能に"
 
-#: ../../../source/changes.rst:23
+#: ../../../source/changes.rst:24
 msgid "1.5.0"
 msgstr "1.5.0"
 
-#: ../../../source/changes.rst:23
+#: ../../../source/changes.rst:24
 msgid "2017-08-17"
 msgstr "2017-08-17"
 
-#: ../../../source/changes.rst:23
+#: ../../../source/changes.rst:24
 msgid "Add new functionality: Local caller ID via DIN"
 msgstr "新機能追加：ダイアルイン番号のローカルの日本の番号利用が可能に"
 
-#: ../../../source/changes.rst:24
+#: ../../../source/changes.rst:25
 msgid "1.4.3"
 msgstr "1.4.3"
 
-#: ../../../source/changes.rst:24
+#: ../../../source/changes.rst:25
 msgid "2017-07-30"
 msgstr "2017-07-30"
 
-#: ../../../source/changes.rst:24
+#: ../../../source/changes.rst:25
 msgid "Replace hyphen (dash) with underscore: jp_kp and jp_kddi_sender"
 msgstr "jp_kpとjp_kddi_senderのパラメーターにてhyphenをunderscoreに置き換える"
 
-#: ../../../source/changes.rst:25
+#: ../../../source/changes.rst:26
 msgid "1.4.2"
 msgstr "1.4.2"
 
-#: ../../../source/changes.rst:25
+#: ../../../source/changes.rst:26
 msgid "2017-06-22"
 msgstr "2017-06-22"
 
-#: ../../../source/changes.rst:25
+#: ../../../source/changes.rst:26
 msgid "Add new section on Dial In Numbers API"
 msgstr "ダイアルイン番号API新セクション追加"
 
-#: ../../../source/changes.rst:26
+#: ../../../source/changes.rst:27
 msgid "1.4.1"
 msgstr "1.4.1"
 
-#: ../../../source/changes.rst:26
+#: ../../../source/changes.rst:27
 msgid "2017-03-16"
 msgstr "2017-03-16"
 
-#: ../../../source/changes.rst:26
+#: ../../../source/changes.rst:27
 msgid "Support en for TTS"
 msgstr "TTS英語対応"
 
-#: ../../../source/changes.rst:27
+#: ../../../source/changes.rst:28
 msgid "1.4.0"
 msgstr "1.4.0"
 
-#: ../../../source/changes.rst:27
+#: ../../../source/changes.rst:28
 msgid "2017-01-17"
 msgstr "2017-01-17"
 
-#: ../../../source/changes.rst:27
+#: ../../../source/changes.rst:28
 msgid "Add new TTS functionality"
 msgstr "テキスト読み上げ機能(TTS)新規追加"
 
-#: ../../../source/changes.rst:28
+#: ../../../source/changes.rst:29
 msgid "1.3.1"
 msgstr "1.3.1"
 
-#: ../../../source/changes.rst:28
+#: ../../../source/changes.rst:29
 msgid "2016-12-14"
 msgstr "2016-12-14"
 
-#: ../../../source/changes.rst:28
+#: ../../../source/changes.rst:29
 msgid "Updated restrictions on playback URL"
 msgstr "音声プレーバックURLの制限アップデート"
 
-#: ../../../source/changes.rst:29
+#: ../../../source/changes.rst:30
 msgid "1.3.0"
 msgstr "1.3.0"
 
-#: ../../../source/changes.rst:29
+#: ../../../source/changes.rst:30
 msgid "2016-11-03"
 msgstr "2016-11-03"
 
-#: ../../../source/changes.rst:29
+#: ../../../source/changes.rst:30
 msgid "New addition of telephony utilities API"
 msgstr "テレフォニー・ユーティリティAPIの追加"
 
-#: ../../../source/changes.rst:30
+#: ../../../source/changes.rst:31
 msgid "1.1.3"
 msgstr "1.1.3"
 
-#: ../../../source/changes.rst:30
+#: ../../../source/changes.rst:31
 msgid "2016-04-22"
 msgstr "2016-04-22"
 
-#: ../../../source/changes.rst:30
+#: ../../../source/changes.rst:31
 msgid "Update HTTP status on not enough credits error message"
 msgstr "クレジット不足時にHTTPステータスの変更"
 
-#: ../../../source/changes.rst:31
+#: ../../../source/changes.rst:32
 msgid "1.1.2"
 msgstr "1.1.2"
 
-#: ../../../source/changes.rst:31
+#: ../../../source/changes.rst:32
 msgid "2016-04-04"
 msgstr "2016-04-04"
 
-#: ../../../source/changes.rst:31
+#: ../../../source/changes.rst:32
 msgid "Add Sent Messages List API documentation"
 msgstr "送信されたSMSのリストを取得するAPIドキュメンテーション追加"
 
-#: ../../../source/changes.rst:32
+#: ../../../source/changes.rst:33
 msgid "1.1.1"
 msgstr "1.1.1"
 
-#: ../../../source/changes.rst:32
+#: ../../../source/changes.rst:33
 msgid "2016-03-29"
 msgstr "2016-03-29"
 
-#: ../../../source/changes.rst:32
+#: ../../../source/changes.rst:33
 msgid "Return list instead of dictionary for voice call status API"
 msgstr "voice call status APIのレスポンスにてdictionaryからlistに変えて返却"
 
-#: ../../../source/changes.rst:33
+#: ../../../source/changes.rst:34
 msgid "1.1.0"
 msgstr "1.1.0"
 
-#: ../../../source/changes.rst:33
+#: ../../../source/changes.rst:34
 msgid "2016-03-04"
 msgstr "2016-03-04"
 
-#: ../../../source/changes.rst:33
+#: ../../../source/changes.rst:34
 msgid "Added QUEUED status"
 msgstr "配信待ちのステータス追加"
 
-#: ../../../source/changes.rst:34
+#: ../../../source/changes.rst:35
 msgid "1.1"
 msgstr "1.1"
 
-#: ../../../source/changes.rst:34
+#: ../../../source/changes.rst:35
 msgid "2015-12-24"
 msgstr "2015-12-24"
 
-#: ../../../source/changes.rst:34
+#: ../../../source/changes.rst:35
 msgid "Added k-premium settings"
 msgstr "k-premiumパラメーターの追加"
 
-#: ../../../source/changes.rst:35
+#: ../../../source/changes.rst:36
 msgid "1.0"
 msgstr "1.0"
 
-#: ../../../source/changes.rst:35
+#: ../../../source/changes.rst:36
 msgid "2015-11-05"
 msgstr "2015-11-05"
 
-#: ../../../source/changes.rst:35
+#: ../../../source/changes.rst:36
 msgid "Initial version"
 msgstr "初期バージョン"
 
