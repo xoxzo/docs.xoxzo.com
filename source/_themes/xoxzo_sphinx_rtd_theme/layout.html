@@ -8,8 +8,13 @@
 {%- endif %}
 
 <!DOCTYPE html>
+{% if language == 'ja' %}
+<!--[if IE 8]><html class="no-js lt-ie9" lang="ja" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="ja" prefix="og: http://ogp.me/ns#"> <!--<![endif]-->
+{% else %}
 <!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" prefix="og: http://ogp.me/ns#"> <!--<![endif]-->
+{% endif %}
 <head>
   <meta charset="utf-8">
   {{ metatags }}
@@ -17,6 +22,46 @@
   {% block htmltitle %}
   <title>{{ title|striptags|e }}{{ titlesuffix }}</title>
   {% endblock %}
+
+  {% if language == 'ja' %}
+  <meta name="description" content="Xoxzoのドキュメンテーションは、SMSの送受信、音声通話の送話と受話、その他ユーティリティーまで、XoxzoのAPIのご利用に必要な情報が網羅されています。">
+
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="{{ title|striptags|e }}{{ titlesuffix }}">
+  <meta property="og:description" content="Xoxzoのドキュメンテーションは、SMSの送受信、音声通話の送話と受話、その他ユーティリティーまで、XoxzoのAPIのご利用に必要な情報が網羅されています。">
+  <meta property="og:url" content="https://docs.xoxzo.com/ja/{{ pagename }}.html">
+  <meta property="og:site_name" content="Xoxzo クラウドテレフォニーAPI — Xoxzo API ドキュメント">
+  <meta property="og:image" content="https://docs.xoxzo.com/ja/_static/images/xoxzo_opengraph.png">
+
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:site" content="@xoxzocom">
+  <meta name="twitter:title" content="{{ title|striptags|e }}{{ titlesuffix }}">
+  <meta name="twitter:description" content="Xoxzoのドキュメンテーションは、SMSの送受信、音声通話の送話と受話、その他ユーティリティーまで、XoxzoのAPIのご利用に必要な情報が網羅されています。">
+  <meta name="twitter:image" content="https://docs.xoxzo.com/ja/_static/images/xoxzo_twcard.png">
+
+  <link rel="canonical" href="https://docs.xoxzo.com/ja/{{ pagename }}.html">
+
+  {% else %}
+  <meta name="description" content="Xoxzo Docs have all information you need to know to use Xoxzo APIs from sending and receiving SMS, calling and receiving calls to telephony utilities.">
+
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="{{ title|striptags|e }}{{ titlesuffix }}">
+  <meta property="og:description" content="Xoxzo Docs have all information you need to know to use Xoxzo APIs from sending and receiving SMS, calling and receiving calls to telephony utilities.">
+  <meta property="og:url" content="https://docs.xoxzo.com/en/{{ pagename }}.html">
+  <meta property="og:site_name" content="Xoxzo Cloud Telephony - Xoxzo API Docs">
+  <meta property="og:image" content="https://docs.xoxzo.com/en/_static/images/xoxzo_opengraph.png">
+
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:site" content="@xoxzocom">
+  <meta name="twitter:title" content="{{ title|striptags|e }}{{ titlesuffix }}">
+  <meta name="twitter:description" content="Xoxzo Docs have all information you need to know to use Xoxzo APIs from sending and receiving SMS, calling and receiving calls to telephony utilities.">
+  <meta name="twitter:image" content="https://docs.xoxzo.com/en/_static/images/xoxzo_twcard.png">
+
+  <link rel="canonical" href="https://docs.xoxzo.com/en/{{ pagename }}.html">
+  {% endif %}
+
+  <link rel="alternate" href="https://docs.xoxzo.com/en/{{ pagename }}.html" hreflang="en">
+  <link rel="alternate" href="https://docs.xoxzo.com/ja/{{ pagename }}.html" hreflang="ja">
 
   {# FAVICON #}
   {% if favicon %}
@@ -83,7 +128,7 @@
 
     {% if logo %}
       {# Not strictly valid HTML, but it's the only way to display/scale it properly, without weird scripting or heaps of work #}
-      <img src="{{ pathto('_static/images/' + logo, 1) }}" class="logo" />
+      <img src="{{ pathto('_static/images/' + logo, 1) }}" class="logo" alt="Xoxzo Logo">
     {% endif %}
     <span>API DOCS</span>
       {% if theme_display_version %}
@@ -218,6 +263,21 @@
   <script src="{{ pathto('_static/js/jquery.min.js', 1) }}"></script>
   <script src="{{ pathto('_static/js/tether.min.js', 1) }}"></script>
   <script src="{{ pathto('_static/js/bootstrap.min.js', 1) }}"></script>
+
+  <script type="application/ld+json">
+    {
+      "@context": "http://schema.org",
+      "@type": "DigitalDocument",
+      "name": "Xoxzo API Docs",
+      "url": "https://docs.xoxzo.com/",
+      "sameAs": [
+        "https://twitter.com/xoxzocom",
+        "https://www.instagram.com/lifeatxoxzo/",
+        "https://www.linkedin.com/company/xoxzo-inc-/",
+        "https://www.facebook.com/xoxzotelephony"
+      ]
+    }
+  </script>
 
   <!-- Google Analytics -->
   <script>

@@ -198,6 +198,8 @@ mkdirhtml:
 static: mkdirhtml
 	cp CNAME $(BUILDDIR)/html/
 	cp index.html $(BUILDDIR)/html/
+	cp robots.txt $(BUILDDIR)/html/
+	cp sitemap.xml $(BUILDDIR)/html/
 
 html-ja: static
 	$(SPHINXBUILD) -b html $(ALLSPHINXOPTS) -D language='ja' $(BUILDDIR)/html/ja
