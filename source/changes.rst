@@ -5,6 +5,7 @@ CHANGES
     =========   ==================  ===============================================================================================
     Ver         Date                Changes
     =========   ==================  ===============================================================================================
+    1.14.1      2020-08-12          Removed Indonesian from text to speech service
     1.14.0      2020-04-22          Update max message length for Malaysia
     1.13.0      2020-02-13          K-Premium V3 support
     1.12.1      2020-01-17          Added rate limiting for Sent Messages List API

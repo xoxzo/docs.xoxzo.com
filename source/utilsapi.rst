@@ -177,7 +177,6 @@ Supported languages:
     ==============  =================
     ja              Japanese
     en              English
-    id              Indonesian
     ==============  =================
 
 Examples
