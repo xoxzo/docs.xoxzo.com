@@ -141,6 +141,7 @@ The available actions are as follows:
     playback        Plays back an mp3 file to the caller
     transfer        Transfers the incoming call to another number
     say             Takes text and reads it out loud (Text-to-Speech)
+    voicemail       Plays mp3 file to leave a voice message
     =============   ======================================
 
 
@@ -178,3 +179,10 @@ Please refer :ref:`tts_lang<tts_lang_label>` for details.
 
 The second parameter is the text message. You need to enclose the text with the quotation marks.
 Please refer :ref:`tts_message<tts_message_label>` for details.
+
+For `voicemail` system, you use ``voicemail``::
+
+    voicemail playback http://example.com/greeting.mp3
+    voicemail say en "You have reached the ABC company. Please leave a message after the beep."
+
+There's two options available for voicemail greetings - 1) URL of the mp3 file you want to play, format is ``playback <greeting_url>``, or 2) playing a phrase using TTS engine, please refer :ref:`tts_lang<tts_lang_label>` for details.
