@@ -183,6 +183,12 @@ Please refer :ref:`tts_message<tts_message_label>` for details.
 For `voicemail` system, you use ``voicemail``::
 
     voicemail playback http://example.com/greeting.mp3
+
+or::
+
     voicemail say en "You have reached the ABC company. Please leave a message after the beep."
 
-There's two options available for voicemail greetings - 1) URL of the mp3 file you want to play, format is ``playback <greeting_url>``, or 2) playing a phrase using TTS engine, please refer :ref:`tts_lang<tts_lang_label>` for details.
+There's two options available for voicemail greetings
+
+- URL of the mp3 file you want to play, format is ``playback <greeting_url>``, or
+- playing a phrase using TTS engine, please refer :ref:`tts_lang<tts_lang_label>` for details.
