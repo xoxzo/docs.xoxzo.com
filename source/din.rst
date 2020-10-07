@@ -174,7 +174,7 @@ For text to speech, you use ``say`` ::
 
     say en "Hello, how are you?"
 
-You need to inclue two required parameters. The first one is language code.
+You need to include two required parameters. The first one is language code.
 Please refer :ref:`tts_lang<tts_lang_label>` for details.
 
 The second parameter is the text message. You need to enclose the text with the quotation marks.

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Xoxzo API Docs 1.2.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-10-07 14:15+0900\n"
+"POT-Creation-Date: 2020-10-07 15:51+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -331,7 +331,7 @@ msgstr "テキストを読み上げるには ``say`` を使います::"
 
 #: ../../../source/din.rst:177
 msgid ""
-"You need to inclue two required parameters. The first one is language "
+"You need to include two required parameters. The first one is language "
 "code. Please refer :ref:`tts_lang<tts_lang_label>` for details."
 msgstr ""
 "２つのパラメータを指定することが必要です。一つ目は言語の指定。詳しくは :ref:`tts_lang<tts_lang_label>` "
@@ -365,7 +365,6 @@ msgid ""
 msgstr "再生したいmp3ファイルのURLを指定する。形式は ``playback <greeting_url>``　"
 
 #: ../../../source/din.rst:194
-
 msgid ""
 "playing a phrase using TTS engine, format is ``say <lang> <message>`` "
 "please refer :ref:`tts_lang<tts_lang_label>` for details."
