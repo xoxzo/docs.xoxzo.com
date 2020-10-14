@@ -111,7 +111,7 @@ Please refer to our `K-Premium Service FAQ <https://help.xoxzo.com/xoxzo-cloud-t
 .. note::
    Notes on the **tags** parameter:
 
-   *  When this optional parameter is provided, you can put tags for each API calls and you can retrieve the tags using the check sms status API     later.
+   *  When this optional parameter is provided, you can put tags for each API calls and you can retrieve the tags using the check sms status API later.
    *  You can put multiple tags separated by the comma. The leading and trailing spaces are removed from the tags.
 
 .. note::
@@ -121,6 +121,8 @@ Please refer to our `K-Premium Service FAQ <https://help.xoxzo.com/xoxzo-cloud-t
      in the **massage** will be replaced with our private short url and you can get the information
      if the user has clicked the link on the mobile terminal. In order to get this information, you have to use
      the :ref:`check-sms-status-label`.
+   * An additional credit will be deducted when this parameter is used. Please consult with the `pricing information <https://www.xoxzo.com/about/pricing/>`_.
+   * The shortlink will expire in 90 days after it is generated.
 
 .. warning::
     You need to put at least one ASCII white space(0x20) before and after the link
@@ -246,7 +248,7 @@ Response data
 If the **link_track** is enabled, following information are also included.
 
     =============  ============  ========================================
-    Name           Name-2        Description
+    Name           key           Description
     =============  ============  ========================================
     link_tracking  accessed      true if the link is accessed already, false if not
     \              accessed_on   The time when the link was first accessed
