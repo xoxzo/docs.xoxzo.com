@@ -115,7 +115,7 @@ Please refer to our `K-Premium Service FAQ <https://help.xoxzo.com/xoxzo-cloud-t
    *  You can put multiple tags separated by the comma. The leading and trailing spaces are removed from the tags.
 
 .. note::
-   Notes on the **link_track** parameter:
+   Notes on the **track_link** parameter:
 
    * When this optional parameter is provided, link tracking function is enabled. The first URL/domain name
      in the **message** will be replaced with our private short url and you can get the information
@@ -245,7 +245,7 @@ Response data
                If no tags are assigned, empty list [] will be set.
     =========  ======================================
 
-If the **link_track** is enabled, following information are also included.
+If the **track_link** is enabled, following information are also included.
 
     =============  ============  ========================================
     Name           key           Description
