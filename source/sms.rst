@@ -248,7 +248,7 @@ Response data
 If the **track_link** is enabled, following information are also included.
 
     =============  ============  ========================================
-    Name           key           Description
+    Name           Key           Description
     =============  ============  ========================================
     link_tracking  accessed      true if the link is accessed already, false if not
     \              accessed_on   The time when the link was first accessed
