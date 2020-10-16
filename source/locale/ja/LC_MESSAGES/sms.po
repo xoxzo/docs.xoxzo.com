@@ -587,7 +587,7 @@ msgid "If the **track_link** is enabled, following information are also included
 msgstr "**track_link** が有効になっている場合は、以下の情報も含まれます。"
 
 #: ../../../source/sms.rst:251
-msgid "key"
+msgid "Key"
 msgstr "キー"
 
 #: ../../../source/sms.rst:253
