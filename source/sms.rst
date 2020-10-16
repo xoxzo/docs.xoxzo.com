@@ -12,15 +12,16 @@ To send a SMS message, make a ``POST`` request to the endpoint::
 
 with the following parameters:
 
-    ===========  ==================  ========  ===================  ===================
-    Name         Description         Required  Data Type            Example
-    ===========  ==================  ========  ===================  ===================
-    message      Message body        Yes       UTF-8                こんにちは
-    recipient    Message recipient   Yes       E.164                +8190123456789
-    sender       Sender ID           Yes       Alphanumeric         Xoxzo1
-    callbackurl  Callback URL        No        URL                  http://example.com
-    tags         Tags                No        UTF-8                tag1,tag2
-    ===========  ==================  ========  ===================  ===================
+    ===========  =====================  ========  ===================  ===================
+    Name         Description            Required  Data Type            Example
+    ===========  =====================  ========  ===================  ===================
+    message      Message body           Yes       UTF-8                こんにちは
+    recipient    Message recipient      Yes       E.164                +8190123456789
+    sender       Sender ID              Yes       Alphanumeric         Xoxzo1
+    callbackurl  Callback URL           No        URL                  http://example.com
+    tags         Tags                   No        UTF-8                tag1,tag2
+    track_link   Enable link tracking   No        The string **true**  true
+    ===========  =====================  ========  ===================  ===================
 
 JP specific optional parameters
 ------------------------------------
@@ -110,9 +111,22 @@ Please refer to our `K-Premium Service FAQ <https://help.xoxzo.com/xoxzo-cloud-t
 .. note::
    Notes on the **tags** parameter:
 
-   *  When this optional parameter is provided, you can put tags for each API calls and you can retrieve the tags using the check sms status API     later.
+   *  When this optional parameter is provided, you can put tags for each API calls and you can retrieve the tags using the check sms status API later.
    *  You can put multiple tags separated by the comma. The leading and trailing spaces are removed from the tags.
 
+.. note::
+   Notes on the **track_link** parameter:
+
+   * When this optional parameter is provided, link tracking function is enabled. The first URL/domain name
+     in the **message** will be replaced with our private short url and you can get the information
+     if the user has clicked the link on the mobile terminal. In order to get this information, you have to use
+     the :ref:`check-sms-status-label`.
+   * Additional credit will be deducted when this parameter is used. Please consult with the `pricing information <https://www.xoxzo.com/about/pricing/>`_.
+   * The shortlink will expire in 90 days after it is generated.
+
+.. warning::
+    You need to put at least one ASCII white space(0x20) before and after the link
+    in the **message** in order to link tracking work properly.
 
 Examples
 ------------------------------------
@@ -231,6 +245,35 @@ Response data
                If no tags are assigned, empty list [] will be set.
     =========  ======================================
 
+If the **track_link** is enabled, following information are also included.
+
+    =============  ============  ========================================
+    Name           key           Description
+    =============  ============  ========================================
+    link_tracking  accessed      true if the link is accessed already, false if not
+    \              accessed_on   The time when the link was first accessed
+    \              link          The link originally set in the message
+    \              shortlink     The shortened link
+    =============  ============  ========================================
+
+example of the response::
+
+    {
+        "cost": 15.0,
+        "link_tracking": {
+            "accessed": false,
+            "accessed_on": "",
+            "link": "http://www.example.com",
+            "shortlink": "https://xoz.so/dbNL4"
+        },
+        "msgid": "oxgyFO6tfwYkHLIMbURrz5smCv9QT423",
+        "recipient": "+818012345678",
+        "sender": "XOXZO",
+        "sent_time": "2020-10-09 02:37:47",
+        "status": "DELIVERED",
+        "tags": [],
+        "url": "https://api.xoxzo.com/sms/messages/oxgyFO6tfwYkHLIMbURrz5smCv9QT423/"
+    }
 
 Sent Messages List API
 ====================================

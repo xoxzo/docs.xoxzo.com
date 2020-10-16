@@ -5,7 +5,8 @@ CHANGES
     =========   ==================  ===============================================================================================
     Ver         Date                Changes
     =========   ==================  ===============================================================================================
-    1.15.0      2020-10-07          Voicemail support
+    1.16.0      2020-10-16          Voicemail support
+    1.15.0      2020-10-14          Link tracking for SMS
     1.14.1      2020-08-12          Removed Indonesian from text to speech service
     1.14.0      2020-04-22          Update max message length for Malaysia
     1.13.0      2020-02-13          K-Premium V3 support
