@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Xoxzo API Docs 1.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-10-14 14:33+0900\n"
+"POT-Creation-Date: 2020-10-16 12:06+0900\n"
 "PO-Revision-Date: 2017-08-21 10:31+0900\n"
 "Last-Translator: \n"
 "Language-Team: \n"
@@ -419,8 +419,8 @@ msgid ""
 msgstr "タグは、コンマで区切ることで複数付けられます。タグの前後の空白は取り除かれます。"
 
 #: ../../../source/sms.rst:118
-msgid "Notes on the **link_track** parameter:"
-msgstr "**link_track** パラメーターに関する注意点"
+msgid "Notes on the **track_link** parameter:"
+msgstr "**track_link** パラメーターに関する注意点"
 
 #: ../../../source/sms.rst:120
 msgid ""
@@ -583,12 +583,12 @@ msgid ""
 msgstr "このメッセージに付けられたタグです。タグが無いときは空のリスト[]になります。"
 
 #: ../../../source/sms.rst:248
-msgid "If the **link_track** is enabled, following information are also included."
-msgstr "**link_track** が有効になっている場合は、以下の情報も含まれます。"
+msgid "If the **track_link** is enabled, following information are also included."
+msgstr "**track_link** が有効になっている場合は、以下の情報も含まれます。"
 
 #: ../../../source/sms.rst:251
-msgid "key"
-msgstr ""
+msgid "Key"
+msgstr "キー"
 
 #: ../../../source/sms.rst:253
 msgid "link_tracking"
