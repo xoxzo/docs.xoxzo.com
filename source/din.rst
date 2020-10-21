@@ -141,7 +141,7 @@ The available actions are as follows:
     playback        Plays back an mp3 file to the caller
     transfer        Transfers the incoming call to another number
     say             Takes text and reads it out loud (Text-to-Speech)
-    voicemail       Plays back an greeting and record a voice message
+    voicemail       Playbacks a greeting and record a voice message
     =============   ======================================
 
 

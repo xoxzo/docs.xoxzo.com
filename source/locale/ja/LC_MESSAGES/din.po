@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Xoxzo API Docs 1.2.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-10-07 15:51+0900\n"
+"POT-Creation-Date: 2020-10-20 18:53+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -274,7 +274,7 @@ msgid "voicemail"
 msgstr ""
 
 #: ../../../source/din.rst:144
-msgid "Plays back an greeting and record a voice message"
+msgid "Playbacks a greeting and record a voice message"
 msgstr "応答メッセージを再生し、音声を録音する"
 
 #: ../../../source/din.rst:149

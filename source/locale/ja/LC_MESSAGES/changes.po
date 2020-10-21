@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Xoxzo API Docs 1.1\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-10-16 12:06+0900\n"
+"POT-Creation-Date: 2020-10-21 10:50+0900\n"
 "PO-Revision-Date: 2017-08-21 10:14+0900\n"
 "Last-Translator: \n"
 "Language: ja\n"
@@ -35,7 +35,7 @@ msgid "1.16.0"
 msgstr ""
 
 #: ../../../source/changes.rst:8
-msgid "2020-10-16"
+msgid "2020-10-21"
 msgstr ""
 
 #: ../../../source/changes.rst:8
@@ -424,5 +424,8 @@ msgstr "初期バージョン"
 #~ msgstr "変更点"
 
 #~ msgid "2020-10-07"
+#~ msgstr ""
+
+#~ msgid "2020-10-16"
 #~ msgstr ""
 
