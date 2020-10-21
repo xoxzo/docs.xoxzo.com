@@ -141,6 +141,7 @@ The available actions are as follows:
     playback        Plays back an mp3 file to the caller
     transfer        Transfers the incoming call to another number
     say             Takes text and reads it out loud (Text-to-Speech)
+    voicemail       Playbacks a greeting and record a voice message
     =============   ======================================
 
 
@@ -169,12 +170,28 @@ For ``transfer``, you'll need to also include a required parameter of the number
       the recipient's mobile as it is and maybe replaced with an arbitary **caller**. This is dependent on the
       policies of the carriers, intermerdiary networks and governments, and they may not honour your request.
 
-For text to speech, you use ``say``::
+For text to speech, you use ``say`` ::
 
     say en "Hello, how are you?"
 
-You need to inclue two required parameters. The first one is language code.
+You need to include two required parameters. The first one is language code.
 Please refer :ref:`tts_lang<tts_lang_label>` for details.
 
 The second parameter is the text message. You need to enclose the text with the quotation marks.
 Please refer :ref:`tts_message<tts_message_label>` for details.
+
+For `voicemail` system, you use ``voicemail``::
+
+    voicemail playback http://example.com/greeting.mp3
+
+or::
+
+    voicemail say en "You have reached the ABC company. Please leave a message after the beep."
+
+There are two options available for voicemail greetings
+
+- URL of the mp3 file you want to play, format is ``playback <greeting_url>``
+- playing a phrase using TTS engine, format is ``say <lang> <message>``
+  please refer :ref:`tts_lang<tts_lang_label>` for details.
+
+To listen to the recorded voicemail message, you need to access XOXZO user's dashboard.
