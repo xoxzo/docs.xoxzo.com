@@ -129,17 +129,11 @@ Please refer to our `K-Premium Service FAQ <https://help.xoxzo.com/xoxzo-cloud-t
    Notes on the **lt_callbackurl** parameter:
 
    *  When this optional parameter is provided, XOXZO cloud will call this URL when the user clicks the link tracking short url.
-   *  XOXZO cloud call the URL with http POST method. Parameters of the callback is similar to "Check SMS status API". Please see :ref:`check-sms-status-label`.
+   *  XOXZO cloud call the URL with http POST method. Parameters of the callback is similar to "Check SMS status API"
+      and it contains the **link_tracking** key with information about when the link has been accessed.
+      Please see :ref:`check-sms-status-label`.
    *  Callback URL must return http status 200. Until then, we will retry up to a maximum of ten times.
    *  The URL called only once when the user clicked the short URL for the first time.
-
-.. note::
-   Notes on the **callbackurl** parameter:
-
-   *  When this optional parameter is provided, XOXZO cloud will call this URL when the carrier network notifies us of the SMS delivery status(DLR).
-   *  XOXZO cloud call the URL with http POST method. Parameters of the callback is similar to "Check SMS status API". Please see :ref:`check-sms-status-label`.
-   *  Callback URL must return http status 200. Until then, we will retry up to a maximum of ten times.
-
 
 .. warning::
     You need to put at least one ASCII white space(0x20) before and after the link
