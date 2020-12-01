@@ -12,16 +12,17 @@ To send a SMS message, make a ``POST`` request to the endpoint::
 
 with the following parameters:
 
-    ===========  =====================  ========  ===================  ===================
-    Name         Description            Required  Data Type            Example
-    ===========  =====================  ========  ===================  ===================
-    message      Message body           Yes       UTF-8                こんにちは
-    recipient    Message recipient      Yes       E.164                +8190123456789
-    sender       Sender ID              Yes       Alphanumeric         Xoxzo1
-    callbackurl  Callback URL           No        URL                  http://example.com
-    tags         Tags                   No        UTF-8                tag1,tag2
-    track_link   Enable link tracking   No        The string **true**  true
-    ===========  =====================  ========  ===================  ===================
+    ===============  ===========================  ========  ===================  ===================
+    Name             Description                  Required  Data Type            Example
+    ===============  ===========================  ========  ===================  ===================
+    message          Message body                 Yes       UTF-8                こんにちは
+    recipient        Message recipient            Yes       E.164                +8190123456789
+    sender           Sender ID                    Yes       Alphanumeric         Xoxzo1
+    callbackurl      Callback URL                 No        URL                  http://example.com
+    tags             Tags                         No        UTF-8                tag1,tag2
+    track_link       Enable link tracking         No        The string **true**  true
+    lt_callbackurl   Link tracking callback URL   No        URL                  http://example.com
+    ===============  ===========================  ========  ===================  ===================
 
 JP specific optional parameters
 ------------------------------------
@@ -123,6 +124,16 @@ Please refer to our `K-Premium Service FAQ <https://help.xoxzo.com/xoxzo-cloud-t
      the :ref:`check-sms-status-label`.
    * Additional credit will be deducted when this parameter is used. Please consult with the `pricing information <https://www.xoxzo.com/about/pricing/>`_.
    * The shortlink will expire in 90 days after it is generated.
+
+.. note::
+   Notes on the **lt_callbackurl** parameter:
+
+   *  When this optional parameter is provided, XOXZO cloud will call this URL when the user clicks the link tracking short url.
+   *  XOXZO cloud call the URL with http POST method. Parameters of the callback is similar to "Check SMS status API"
+      and it contains the **link_tracking** key with information about when the link has been accessed.
+      Please see :ref:`check-sms-status-label`.
+   *  Callback URL must return http status 200. Until then, we will retry up to a maximum of ten times.
+   *  The URL called only once when the user clicked the short URL for the first time.
 
 .. warning::
     You need to put at least one ASCII white space(0x20) before and after the link
