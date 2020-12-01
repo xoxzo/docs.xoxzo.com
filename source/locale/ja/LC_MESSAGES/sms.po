@@ -176,7 +176,7 @@ msgstr ""
 
 #: ../../../source/sms.rst:24
 msgid "Link tracking callback URL"
-msgstr "リンクトラッキングのコールバックURl"
+msgstr "リンクトラッキングのコールバックURL"
 
 #: ../../../source/sms.rst:28
 msgid "JP specific optional parameters"
