@@ -213,3 +213,10 @@ html-en: static
 
 serve: html-en html-ja
 	cd $(BUILDDIR)/html && ../../../bin/python -m http.server
+
+
+build: clean
+	python3 get-pip.py
+	./bin/buildout -v
+	make -f Makefile.m7 translate-ja
+	make -f Makefile.m7 translate
