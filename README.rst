@@ -11,7 +11,7 @@ Run buildout to get all dependencies:-
 
 .. code-block:: shell
 
-    $ python3 get-pip.py
+    $ python3 bootstrap.py
     $ ./bin/buildout -v
 
 For details on how to make document translation using Sphinx, read:
@@ -84,6 +84,10 @@ To view the generated documentation:-
 Publish Changes on GitHub Pages
 ===============================
 
+Update!
+Now we're using netlify to publish the documentation.
+
+<deprecated>
 How to publish changes on GitHub Pages.
 
 If you'd like to know how to make changes, please follow our github flow: https://sites.google.com/a/xoxzo.com/alpha-site/development/git/xoxzo.
@@ -161,6 +165,7 @@ So make sure you've checked out to ``gh-pages`` branch before you copy the files
     labo-a:(gh-pages) ~/github/api-docs$ git push origin gh-pages
 
 Make PR (Pull Requests) if you don't have write access to the repo.
+</deprecated>
 
 Issues
 ======================

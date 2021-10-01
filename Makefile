@@ -216,7 +216,9 @@ serve: html-en html-ja
 
 
 build: clean
-	python3 get-pip.py
+	rm -rf .env .installed.cfg .mr.developer.cfg
+	rm -rf parts eggs develop-eggs bin
+	python3 bootstrap.py
 	./bin/buildout -v
 	make -f Makefile.m7 translate-ja
 	make -f Makefile.m7 translate
