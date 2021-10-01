@@ -1142,7 +1142,7 @@ msgstr "契約中のSMSイン番号の一覧を得るには、下記のように
 
 #: ../../../source/sms.rst:662
 msgid "Unsubscribing to a SMS In Number via API"
-msgstr "APIによるダイアルイン番号の契約解除"
+msgstr "APIによるSMSイン番号の契約解除"
 
 #: ../../../source/sms.rst:664
 msgid "To unsubscribe::"
