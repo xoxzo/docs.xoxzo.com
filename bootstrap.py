@@ -5,7 +5,7 @@ import functools
 
 run = functools.partial(subprocess.call, shell=True)
 
-run('python3.6 -mvenv .env')
+run('python3 -mvenv .env')
 
 run('.env/bin/pip install setuptools==51.3.3')
 
