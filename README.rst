@@ -11,7 +11,7 @@ Run buildout to get all dependencies:-
 
 .. code-block:: shell
 
-    $ python3 bootstrap.py
+    $ python3 get-pip.py
     $ ./bin/buildout -v
 
 For details on how to make document translation using Sphinx, read:
