@@ -4,9 +4,9 @@ import functools
 
 run = functools.partial(subprocess.call, shell=True)
 
-run('sudo apt-get install python3-venv')
+run('pip install virtualenv')
 
-run('python3 -mvenv .env')
+run('virtualenv -p python3 .env')
 
 run('.env/bin/pip install setuptools==51.3.3')
 

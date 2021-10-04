@@ -215,7 +215,7 @@ serve: html-en html-ja
 	cd $(BUILDDIR)/html && ../../../bin/python -m http.server
 
 
-build: clean
+docs: clean
 	rm -rf .env .installed.cfg .mr.developer.cfg
 	rm -rf parts eggs develop-eggs bin
 	python3 bootstrap.py
