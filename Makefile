@@ -222,3 +222,9 @@ docs: clean
 	./bin/buildout -v
 	make -f Makefile.m7 translate-ja
 	make -f Makefile.m7 translate
+
+netdep:
+	python3 bootstrap.py
+	./bin/buildout -v
+	make -f Makefile.m7 translate-ja
+	make -f Makefile.m7 translate
