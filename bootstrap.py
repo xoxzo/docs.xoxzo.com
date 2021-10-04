@@ -1,9 +1,10 @@
 import os
-import sys
 import subprocess
 import functools
 
 run = functools.partial(subprocess.call, shell=True)
+
+run('sudo apt-get install python3-venv')
 
 run('python3 -mvenv .env')
 
