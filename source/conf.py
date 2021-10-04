@@ -16,6 +16,7 @@
 # import sys
 # import os
 # import shlex
+from datetime import datetime
 
 # If extensions (or modules to document with autodoc) are in another directory,
 # add these directories to sys.path here. If the directory is relative to the
@@ -46,9 +47,10 @@ source_encoding = 'utf-8-sig'
 # The master toctree document.
 master_doc = 'index'
 
+year = datetime.utcnow().year
 # General information about the project.
 project = 'Xoxzo API Docs'
-copyright = '2020, Xoxzo Inc.'
+copyright = '%s, Xoxzo Inc.' % year
 author = 'help@xoxzo.com'
 
 # The version info for the project you're documenting, acts as replacement for
