@@ -1,9 +1,9 @@
 **Step to send SMS from email using Xoxzo**
-1. Signup for Xoxzo X4
-2. Go to mailsms page and create a MailSMS user 
-3. Login to the mail site (yahoo/gmail ) using user@gmail.com or user@yahoo.com and 
-send message to the number like 9840753098@mailsms.xoxzo.com 
-For example if I am a user of Xoxzo , I want to send messages from my two email addresses 
+* Signup for Xoxzo X4
+* Go to mailsms page and create a MailSMS user 
+* Login to the mail site (yahoo/gmail ) using user@gmail.com or user@yahoo.com and 
+* send message to the number like 9840753098@mailsms.xoxzo.com 
+* For example if I am a user of Xoxzo , I want to send messages from my two email addresses 
 user@gmail.com and user@yahoo.com then I will create two pokhara users with the email 
 user@gmail.com and user@yahoo.com and send sms to number
 
@@ -48,7 +48,7 @@ The response would be a JSON structure, returned with HTTP ``201 CREATED`` statu
     {
     'message': 'MailSMS User Added successfully'
     }
-
+::
 Get  MailSMS User API
 ====================================
 To fetch a MailSMS user, make a ``GET`` request to the endpoint::
@@ -79,7 +79,7 @@ The response would be a list of JSON structure, returned with HTTP ``200 OK`` st
     'updated_on': '2023-06-23T07:59:10.172264'
     }, 
     ]
-
+::
 Update  MailSMS User API
 ====================================
 To update a MailSMS user, make a ``PUT`` request to the endpoint::
@@ -117,8 +117,7 @@ The response would be a JSON structure, returned with HTTP ``200 OK`` status cod
     'message': 'MailSMS User Updated successfully'
     }
 
-
-
+::
 Delete  MailSMS User API
 ====================================
 To delete a MailSMS user, make a ``DELETE`` request to the endpoint::
@@ -130,7 +129,7 @@ To delete a MailSMS user, make a ``DELETE`` request to the endpoint::
    Notes on the **Process to delete MailSMS  User**:
 
    * Delete only acts as a soft delete so when user delete mailsms user
-   * So we set revoked as true and skip those mailsms user whose revoked status is true
+   * When user delete mailsms user we set revoked as true and skip those mailsms user whose revoked status is true
    * If the owner of the mailsms user whose status is revoked try to add mailsms same user 
    we reactivate the mailsms user by setting the revoked status as false
    * If the user try to add mailsms user which is already exist under other user then the system
@@ -152,6 +151,7 @@ The response would be a JSON structure, returned with HTTP ``200 OK`` status cod
    * Normal user cannot access these pages
    * Permission and authorization for the mailsms user crud operation is only allowed from BO admin
 
+::
 ====================================
 MailSMS API
 ====================================
