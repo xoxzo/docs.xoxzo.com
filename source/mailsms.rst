@@ -2,8 +2,7 @@
    **Step to send SMS from email using Xoxzo**:
     * Signup for Xoxzo X4
     * Go to mailsms page and create a MailSMS user 
-    * Login to the mail site (yahoo/gmail ) using user@gmail.com or user@yahoo.com and 
-    send message to the number like 9840753098@mailsms.xoxzo.com::
+    * Login to the mail site (yahoo/gmail ) using user@gmail.com or user@yahoo.com and send message to the number like 9840753098@mailsms.xoxzo.com
     * For example if I am a user of Xoxzo , I want to send messages from my two email addresses 
     user@gmail.com and user@yahoo.com then I will create two pokhara users with the email 
     user@gmail.com and user@yahoo.com and send sms to number
@@ -49,7 +48,7 @@ The response would be a JSON structure, returned with HTTP ``201 CREATED`` statu
     {
     'message': 'MailSMS User Added successfully'
     }
-::
+
 Get  MailSMS User API
 ====================================
 To fetch a MailSMS user, make a ``GET`` request to the endpoint::
@@ -80,7 +79,7 @@ The response would be a list of JSON structure, returned with HTTP ``200 OK`` st
     'updated_on': '2023-06-23T07:59:10.172264'
     }, 
     ]
-::
+
 Update  MailSMS User API
 ====================================
 To update a MailSMS user, make a ``PUT`` request to the endpoint::
@@ -118,7 +117,7 @@ The response would be a JSON structure, returned with HTTP ``200 OK`` status cod
     'message': 'MailSMS User Updated successfully'
     }
 
-::
+
 Delete  MailSMS User API
 ====================================
 To delete a MailSMS user, make a ``DELETE`` request to the endpoint::
@@ -152,7 +151,7 @@ The response would be a JSON structure, returned with HTTP ``200 OK`` status cod
    * Normal user cannot access these pages
    * Permission and authorization for the mailsms user crud operation is only allowed from BO admin
 
-::
+
 ====================================
 MailSMS API
 ====================================
