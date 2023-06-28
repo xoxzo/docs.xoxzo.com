@@ -3,9 +3,7 @@
     * Signup for Xoxzo X4
     * Go to mailsms page and create a MailSMS user 
     * Login to the mail site (yahoo/gmail ) using user@gmail.com or user@yahoo.com and send message to the number like 9840753098@mailsms.xoxzo.com
-    * For example if I am a user of Xoxzo , I want to send messages from my two email addresses 
-    user@gmail.com and user@yahoo.com then I will create two pokhara users with the email 
-    user@gmail.com and user@yahoo.com and send sms to number
+    * For example if I am a user of Xoxzo , I want to send messages from my two email addresses user@gmail.com and user@yahoo.com then I will create two pokhara users with the email user@gmail.com and user@yahoo.com and send sms to number
 
 
 Add  MailSMS User API
