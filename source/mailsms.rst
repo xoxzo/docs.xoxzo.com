@@ -1,200 +1,79 @@
+============================================
+Mail2SMS Usage
+============================================
+
 .. note::
-   **Step to send SMS from email using Xoxzo**:
+   **Step to send SMS from email using Xoxzo in summary**:
     * Signup for Xoxzo X4
-    * Go to mailsms page and create a MailSMS user 
-    * Login to the mail site (yahoo/gmail ) using user@gmail.com or user@yahoo.com and send message to the number like 9840753098@mailsms.xoxzo.com
-    * For example if I am a user of Xoxzo , I want to send messages from my two email addresses user@gmail.com and user@yahoo.com then I will create two pokhara users with the email user@gmail.com and user@yahoo.com and send sms to number
+    * Go to Mail2SMS page and create a Mail2SMS user 
+    * Login to the mail site (yahoo/gmail ) using user@gmail.com or user@yahoo.com and send message to the number like +819841753098@mail2sms.xoxzo.com
+    * For example if I am a user of Xoxzo , I want to send messages from my two email addresses user@gmail.com and user@yahoo.com then I will create two Mail2SMS users with the email user@gmail.com and user@yahoo.com and send sms to number
 
-
-Add  MailSMS User API
+Signup for Xoxzo
 ====================================
-To add a MailSMS user, make a ``POST`` request to the endpoint::
+| Go to `Signing up <https://www.xoxzo.com/en/accounts/signup/>`_ if you have'nt already.
+| Fillup the signup form where a user need to enter email, fullname password etc
 
-    https://api.xoxzo.com/bo/users/<username>/mailsms/
+Create Mail2SMS User
+====================================
+| Login to Xoxzo and go to `Mail2SMS User <https://www.xoxzo.com/en/you/mailsmsprofile/>`_  page
+| Click on the `Add Mail2SMS <https://www.xoxzo.com/en/you/mailsmsuser/create/>`_ button
+| There we will see the parameter given below:
 
-
-add_mailsms_user ={'sender': 'kkk',
-                'email':'krihnak@xoxzo.com',
-                'dkim':'PASS',
-                'spf':'PASS',
-                'dmarc':'PASS'}
-with the following parameters:
-
-    ===============  ===========================  ========  ===================  ===================
-    Name             Description                  Required  Data Type            Example
-    ===============  ===========================  ========  ===================  ===================
-    email            MailSMS User email           Yes       email                krishna@xoxzo.com
-    sender           sender info                  Yes       string               XoxzoAPI
-    dkim             DKIM email security          Yes       string               PASS
-    spf              spf email security           Yes       string               GRAY
-    dmarc            dmarc email security         Yes       string               FAIL
-    ===============  ===========================  ========  ===================  ===================
-
+    ======================  ===========================  ========  ===================  ===================
+    Name                    Description                  Required  Data Type            Example
+    ======================  ===========================  ========  ===================  ===================
+    Mail2SMS User Email     Mail2SMS User Email           Yes       email                krishna@xoxzo.com
+    Sender                  SMS Sender                    Yes       string               XoxzoAPI
+    DKIM                    DKIM email security           Yes       string               PASS
+    SPF                     SPF email security            Yes       string               GRAY
+    DMARC                   DMARC email security          Yes       string               FAIL
+    ======================  ===========================  ========  ===================  ===================
 
 .. note::
-   Notes on the **Process to add MailSMS  User**:
+   Notes on the parameter:
 
-   * The email should be unique
-   * Sender information should be added
-   * The security like DKIM,DMARC,SPF should be added
+   * **Mail2SMS User Email** should be valid and unique
+   * **Sender** should be atleast 3 characters and should be less than 10 character
+   * **DKIM**, **SPF**, **DMARC** should match with Mail2SMS user email security
 
-The response would be a JSON structure, returned with HTTP ``201 CREATED`` status code::
-
-    HTTP/1.1 201 CREATED
-    Content-Type: application/json
-
-    {
-    'message': 'MailSMS User Added successfully'
-    }
-
-Get  MailSMS User API
+Update Mail2SMS User
 ====================================
-To fetch a MailSMS user, make a ``GET`` request to the endpoint::
+| `Mail2SMS User <https://www.xoxzo.com/en/you/mailsmsprofile/>`_  page list all Mail2SMS user 
+| In this list we will see the Edit option after clicking that we will go to specific Mail2SMS user edit page
+| We will see the following parameters:
 
-    https://api.xoxzo.com/bo/users/<username>/mailsms/
-
+    ======================  ===========================  ========  ===================  ===================
+    Name                    Description                  Required  Data Type            Example
+    ======================  ===========================  ========  ===================  ===================
+    Sender                  SMS Sender                    Yes       string               XoxzoAPI
+    DKIM                    DKIM email security           Yes       string               PASS
+    SPF                     SPF email security            Yes       string               GRAY
+    DMARC                   DMARC email security          Yes       string               FAIL
+    ======================  ===========================  ========  ===================  ===================
 
 .. note::
-   Notes on the **To fetch MailSMS  User**:
+   Notes on the parameter:
 
-   * The endpoint will list all the MailSMS User under a particular user
-   * If there is a need to fetch the particular mailsms user we can request the 
-   endpoint https://api.xoxzo.com/bo/users/<username>/mailsms/1/
+   * **Mail2SMS User Email** is not present as email of Mail2SMS user can not be updated
+   * Validation of other parameter is same to create Mail2SMS user
 
-The response would be a list of JSON structure, returned with HTTP ``200 OK`` status code::
 
-    HTTP/1.1 200 OK
-    Content-Type: application/json
-
-    [{
-    'id': 42,
-    'email': 'krishna5@xoxzo.com',
-    'sender': 'kkk',
-    'dkim': 'PASS', 
-    'spf': 'PASS', 
-    'dmarc': 'PASS',
-    'revoked': False, 
-    'updated_on': '2023-06-23T07:59:10.172264'
-    }, 
-    ]
-
-Update  MailSMS User API
+Delete Mail2SMS User
 ====================================
-To update a MailSMS user, make a ``PUT`` request to the endpoint::
-
-    https://api.xoxzo.com/bo/users/<username>/mailsms/
-
-
-update_mailsms_user ={'sender': 'kkk',
-                'dkim':'PASS',
-                'spf':'PASS',
-                'dmarc':'PASS'}
-with the following parameters:
-
-    ===============  ===========================  ========  ===================  ===================
-    Name             Description                  Required  Data Type            Example
-    ===============  ===========================  ========  ===================  ===================
-    sender           sender info                  Yes       string               XoxzoAPI
-    dkim             DKIM email security          Yes       string               PASS
-    spf              spf email security           Yes       string               GRAY
-    dmarc            dmarc email security         Yes       string               FAIL
-    ===============  ===========================  ========  ===================  ===================
-
+| List of Mail2SMS user will be displayed in `Mail2SMS User <https://www.xoxzo.com/en/you/mailsmsprofile/>`_ page 
+| In this list we will see the Delete option clicking on that will delete Mail2SMS User
 
 .. note::
-   Notes on the **Process to update MailSMS  User**:
+   Notes on the **How delete Mail2SMS user works ?**:
 
-   * The email field is not needed for the updates
-
-The response would be a JSON structure, returned with HTTP ``200 OK`` status code::
-
-    HTTP/1.1 200 OK
-    Content-Type: application/json
-
-    {
-    'message': 'MailSMS User Updated successfully'
-    }
+   * Delete only acts as a soft delete of Mail2SMS user
+   * If the owner add the deleted Mail2SMS user we reactivate the Mail2SMS user
+   * If the user try to add Mail2SMS user which is already exist under other user then the system will through the duplicate error as we are maintaining unique Mail2SMS user
 
 
-Delete  MailSMS User API
+Send Mail2SMS messages
 ====================================
-To delete a MailSMS user, make a ``DELETE`` request to the endpoint::
-
-    https://api.xoxzo.com/bo/users/<username>/mailsms/
-
-
-.. note::
-   Notes on the **Process to delete MailSMS  User**:
-
-   * Delete only acts as a soft delete so when user delete mailsms user
-   * When user delete mailsms user we set revoked as true and skip those mailsms user whose revoked status is true
-   * If the owner of the mailsms user whose status is revoked try to add mailsms same user 
-   we reactivate the mailsms user by setting the revoked status as false
-   * If the user try to add mailsms user which is already exist under other user then the system
-   will through the Duplicate error as we are maintaining unique mailsms user 
-
-The response would be a JSON structure, returned with HTTP ``200 OK`` status code::
-
-    HTTP/1.1 200 OK
-    Content-Type: application/json
-
-    {
-    'message': 'MailSMS User deleted successfully'
-    }
-
-
-.. note::
-   Notes on the **MailSMS User crud process**:
-
-   * Normal user cannot access these pages
-   * Permission and authorization for the mailsms user crud operation is only allowed from BO admin
-
-
-====================================
-MailSMS API
-====================================
-
-The MailSMS API allows you to send SMS to from email server to the phone number.
-
-Send  MailSMS messages API
-====================================
-To send a SMS message, make a ``POST`` request to the endpoint::
-
-    https://api.xoxzo.com/mailsms/send-email-sms/
-
-with the following parameters:
-
-    ===============  ===========================  ========  ===================  ===================
-    Name             Description                  Required  Data Type            Example
-    ===============  ===========================  ========  ===================  ===================
-    from_email       MailSMS User email           Yes       email                krishna@xoxzo.Common
-    to_number        recipient phone number       Yes       string               +8190123456789
-    mail_message     Message body                 Yes       string               This is a test
-    dkim             DKIM email security          Yes       string               PASS
-    spf              spf email security           Yes       string               GRAY
-    dmarc            dmarc email security         Yes       string               FAIL
-    ===============  ===========================  ========  ===================  ===================
-
-
-.. note::
-   Notes on the **MailSMS Sending Process**:
-
-   * The from_email is the registered mailsms user in Xoxzo
-   * The number should be valid phone number
-   * The security like DKIM,DMARC,SPF should be present in the payload.
-
-The response would be a JSON structure, returned with HTTP ``200 OK`` status code::
-
-    HTTP/1.1 200 OK
-    Content-Type: application/json
-
-    {
-    'message': 'Started a process to send sms',
-    'mailsmsid': 45
-    }
-
-.. note::
-   Notes on the **mailsmsid**:
-
-   * It is the id of the mailsmssentmessage table
-   * We can do the inquiry of the message status using this id
+| Go to email portal by logging in with the valid Mail2SMS user (like gmail, yahoo etc)
+| Compose the email and send it the recipient like <phone-number>@mail2sms.xoxzo.com
+| For example, If I want to send sms to +819876543210 then recipient will be +819876543210@mail2sms.xoxzo.com
