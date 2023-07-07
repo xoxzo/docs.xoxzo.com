@@ -11,14 +11,15 @@ Mail2SMS Usage
 
 Signup for Xoxzo
 ====================================
-| Go to `Signing up <https://www.xoxzo.com/en/accounts/signup/>`_ if you have'nt already.
-| Fillup the signup form where a user need to enter email, fullname password etc
+#. Go to `Signing up <https://www.xoxzo.com/en/accounts/signup/>`_ if you haven't already.
+#. Fill out the signup form where a user need to enter email, fullname, password etc
 
 Create Mail2SMS User
 ====================================
-| Login to Xoxzo and go to `Mail2SMS User <https://www.xoxzo.com/en/you/mailsmsprofile/>`_  page
-| Click on the `Add Mail2SMS <https://www.xoxzo.com/en/you/mailsmsuser/create/>`_ button
-| There we will see the parameter given below:
+#. Login to Xoxzo and go to `Mail2SMS User <https://www.xoxzo.com/en/you/mailsmsprofile/>`_  page
+#. Click on the `Add Mail2SMS <https://www.xoxzo.com/en/you/mailsmsuser/create/>`_ button
+
+We will see the following parameters
 
     ======================  ===========================  ========  ===================  ===================
     Name                    Description                  Required  Data Type            Example
@@ -31,7 +32,6 @@ Create Mail2SMS User
     ======================  ===========================  ========  ===================  ===================
 
 .. note::
-   Notes on the parameter:
 
    * **Mail2SMS User Email** should be valid and unique
    * **Sender** should be atleast 3 characters and should be less than 10 character
@@ -39,9 +39,10 @@ Create Mail2SMS User
 
 Update Mail2SMS User
 ====================================
-| `Mail2SMS User <https://www.xoxzo.com/en/you/mailsmsprofile/>`_  page list all Mail2SMS user 
-| In this list we will see the Edit option after clicking that we will go to specific Mail2SMS user edit page
-| We will see the following parameters:
+#. `Mail2SMS User <https://www.xoxzo.com/en/you/mailsmsprofile/>`_  page list all Mail2SMS user 
+#. In this list we will see the Edit option, after clicking that we will go to specific Mail2SMS user edit page
+
+We will see the following parameters
 
     ======================  ===========================  ========  ===================  ===================
     Name                    Description                  Required  Data Type            Example
@@ -53,7 +54,6 @@ Update Mail2SMS User
     ======================  ===========================  ========  ===================  ===================
 
 .. note::
-   Notes on the parameter:
 
    * **Mail2SMS User Email** is not present as email of Mail2SMS user can not be updated
    * Validation of other parameter is same to create Mail2SMS user
@@ -61,11 +61,11 @@ Update Mail2SMS User
 
 Delete Mail2SMS User
 ====================================
-| List of Mail2SMS user will be displayed in `Mail2SMS User <https://www.xoxzo.com/en/you/mailsmsprofile/>`_ page 
-| In this list we will see the Delete option clicking on that will delete Mail2SMS User
+#. List of Mail2SMS user will be displayed in `Mail2SMS User <https://www.xoxzo.com/en/you/mailsmsprofile/>`_ page 
+#. In this list, we will see the delete option, clicking on that will delete Mail2SMS User
 
 .. note::
-   Notes on the **How delete Mail2SMS user works ?**:
+   **How delete Mail2SMS user works ?**
 
    * Delete only acts as a soft delete of Mail2SMS user
    * If the owner add the deleted Mail2SMS user we reactivate the Mail2SMS user
@@ -74,6 +74,10 @@ Delete Mail2SMS User
 
 Send Mail2SMS messages
 ====================================
-| Go to email portal by logging in with the valid Mail2SMS user (like gmail, yahoo etc)
-| Compose the email and send it the recipient like <phone-number>@mail2sms.xoxzo.com
-| For example, If I want to send sms to +819876543210 then recipient will be +819876543210@mail2sms.xoxzo.com
+* Go to email portal by logging in with the valid Mail2SMS user (like gmail, yahoo etc)
+* Compose the email and send it the recipient like <phone-number>@mail2sms.xoxzo.com
+* For example, If I want to send sms to +819876543210 then recipient will be +819876543210@mail2sms.xoxzo.com
+
+.. tip:: 
+    Try adding Mail2SMS user and send sms using email.
+    `Signing up <https://www.xoxzo.com/en/accounts/signup/>`_ takes only a few minutes and it's free
