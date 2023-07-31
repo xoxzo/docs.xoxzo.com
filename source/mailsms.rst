@@ -36,6 +36,7 @@ We will see the following parameters
    * **Mail2SMS User Email** should be valid and unique
    * **Sender** should be atleast 3 characters and should be less than 10 character
    * **DKIM**, **SPF**, **DMARC** should match with Mail2SMS user email security
+   * To know the DKIM, SPF and DKIM security status. Please send email to **verdict@acrt-mail.jp** using Mail2SMS email address
 
 Update Mail2SMS User
 ====================================

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Xoxzo API Docs 1.17.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-07-07 02:56+0000\n"
+"POT-Creation-Date: 2023-07-31 07:28+0000\n"
 "PO-Revision-Date: 2023-07-03 16:49+0900\n"
 "Last-Translator: \n"
 "Language-Team: \n"
@@ -203,6 +203,14 @@ msgid ""
 "security"
 msgstr "**DKIM**, **SPF**, **DMARC** は、Mail2SMSユーザメールセキュリティと合致する必要があります"
 
+#: ../../../source/mailsms.rst:39
+msgid ""
+"To know the DKIM, SPF and DKIM security status. Please send email to "
+"**verdict@acrt-mail.jp** using Mail2SMS email address"
+msgstr "" 
+"DKIM、SPF、DKIMのセキュリティーステータスの確認には、Mail2SMSユーザーとして登録したメールアドレスから"
+" **verdict@acrt-mail.jp** へメールを送信してください。"
+
 #: ../../../source/mailsms.rst:42
 msgid "Update Mail2SMS User"
 msgstr "Mail2SMS ユーザを変更する"
@@ -272,19 +280,19 @@ msgstr "他のMail2SMSユーザーとしてこのメールアドレスを登録�
 msgid "Send Mail2SMS messages"
 msgstr "Mail2SMS メッセージを送信する"
 
-#: ../../../source/mailsms.rst
+#: ../../../source/mailsms.rst:78
 msgid ""
 "Go to email portal by logging in with the valid Mail2SMS user (like "
 "gmail, yahoo etc)"
 msgstr "Mail2SMSユーザーとして登録したメールを使うメールクライアントやポータルを使います。"
 
-#: ../../../source/mailsms.rst
+#: ../../../source/mailsms.rst:79
 msgid ""
 "Compose the email and send it the recipient like <phone-"
 "number>@mail2sms.xoxzo.com"
 msgstr "新規メールを作成し、受信者に<phone-number>@mail2sms.xoxzo.com を入力します。"
 
-#: ../../../source/mailsms.rst
+#: ../../../source/mailsms.rst:80
 msgid ""
 "For example, If I want to send sms to +819876543210 then recipient will "
 "be +819876543210@mail2sms.xoxzo.com"
@@ -342,6 +350,4 @@ msgstr ""
 #~ "<https://www.xoxzo.com/en/accounts/signup/>`_ takes only"
 #~ " a few minutes and it's free"
 #~ msgstr ""
-
-
 
