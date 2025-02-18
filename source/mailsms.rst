@@ -37,6 +37,7 @@ We will see the following parameters
    * **Sender** should be atleast 3 characters and should be less than 10 character
    * To learn more about `DKIM <https://help.xoxzo.com/xoxzo-cloud-telephony/sms-api/articles/how-to-send-via-mail2sms/#dkim>`_, `SPF <https://help.xoxzo.com/xoxzo-cloud-telephony/sms-api/articles/how-to-send-via-mail2sms/#spf>`_, `DMARC <https://help.xoxzo.com/xoxzo-cloud-telephony/sms-api/articles/how-to-send-via-mail2sms/#dmarc>`_, please visit the link.
    * If you don't know the security status please leave the value as Grey. 
+   * The maximum length of the email body or message length is 70 characters.
 
 Update Mail2SMS User
 ====================================
