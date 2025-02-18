@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Xoxzo API Docs 1.17.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-02-18 16:03+0900\n"
+"POT-Creation-Date: 2025-02-18 17:29+0900\n"
 "PO-Revision-Date: 2023-07-03 16:49+0900\n"
 "Last-Translator: \n"
 "Language-Team: \n"
@@ -224,8 +224,8 @@ msgid "The maximum length of the email body or message length is 70 characters."
 msgstr "メール本文またはメッセージの最大文字数は70文字です"
 
 #: ../../../source/mailsms.rst:41
-msgid "**Messages sent via Mail2SMS experience a one-minute delay.**."
-msgstr "**Mail2SMSより送信されたメッセージは約1分の遅延が発生します。**"
+msgid "**Messages sent via Mail2SMS experience a delay.**."
+msgstr "**Mail2SMSより送信されたメッセージは遅延が発生します。**"
 
 #: ../../../source/mailsms.rst:44
 msgid "Update Mail2SMS User"

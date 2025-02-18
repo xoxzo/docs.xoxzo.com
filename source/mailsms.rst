@@ -38,7 +38,7 @@ We will see the following parameters
    * To learn more about `DKIM <https://help.xoxzo.com/xoxzo-cloud-telephony/sms-api/articles/how-to-send-via-mail2sms/#dkim>`_, `SPF <https://help.xoxzo.com/xoxzo-cloud-telephony/sms-api/articles/how-to-send-via-mail2sms/#spf>`_, `DMARC <https://help.xoxzo.com/xoxzo-cloud-telephony/sms-api/articles/how-to-send-via-mail2sms/#dmarc>`_, please visit the link.
    * If you don't know the security status please leave the value as Grey. 
    * The maximum length of the email body or message length is 70 characters.
-   * **Messages sent via Mail2SMS experience a one-minute delay.**.
+   * **Messages sent via Mail2SMS experience a delay.**.
 
 Update Mail2SMS User
 ====================================
