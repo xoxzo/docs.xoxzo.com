@@ -6,8 +6,8 @@ Mail2SMS Usage
    **Step to send SMS from email using Xoxzo in summary**:
     * Signup for Xoxzo X4
     * Go to Mail2SMS page and create a Mail2SMS user 
-    * Login to the mail site (yahoo/gmail ) using user@gmail.com or user@yahoo.com and send message to the number like +819841753098@mail2sms.xoxzo.com
-    * For example if I am a user of Xoxzo , I want to send messages from my two email addresses user@gmail.com and user@yahoo.com then I will create two Mail2SMS users with the email user@gmail.com and user@yahoo.com and send sms to number
+    * Please create a new message from your email address, enter the SMS recipient's number in the subject line, and send the email to mail2sms@xoxzo.com.
+    * For example, if you want to send SMS from multiple email addresses, create the same number of Mail2SMS users and configure each email address accordingly. Once set up, send an email from each configured email address to mail2sms@xoxzo.com, with the SMS recipient's number in the subject line and the message in the email body.
 
 Signup for Xoxzo
 ====================================
@@ -35,8 +35,10 @@ We will see the following parameters
 
    * **Mail2SMS User Email** should be valid and unique
    * **Sender** should be atleast 3 characters and should be less than 10 character
-   * **DKIM**, **SPF**, **DMARC** should match with Mail2SMS user email security
-   * To know the DKIM, SPF and DKIM security status. Please send email to **verdict@acrt-mail.jp** using Mail2SMS email address
+   * To learn more about `DKIM <https://help.xoxzo.com/xoxzo-cloud-telephony/sms-api/articles/how-to-send-via-mail2sms/#dkim>`_, `SPF <https://help.xoxzo.com/xoxzo-cloud-telephony/sms-api/articles/how-to-send-via-mail2sms/#spf>`_, `DMARC <https://help.xoxzo.com/xoxzo-cloud-telephony/sms-api/articles/how-to-send-via-mail2sms/#dmarc>`_, please visit the link.
+   * If you don't know the security status please leave the value as Grey. 
+   * The maximum length of the email body or message length is 70 characters.
+   * **Messages sent via Mail2SMS experience a delay.**.
 
 Update Mail2SMS User
 ====================================
@@ -56,8 +58,8 @@ We will see the following parameters
 
 .. note::
 
-   * **Mail2SMS User Email** is not present as email of Mail2SMS user can not be updated
-   * Validation of other parameter is same to create Mail2SMS user
+   * **Mail2SMS User Email** can not be updated
+   * Validation of other parameter is same as create Mail2SMS user
 
 
 Delete Mail2SMS User
@@ -76,8 +78,9 @@ Delete Mail2SMS User
 Send Mail2SMS messages
 ====================================
 * Go to email portal by logging in with the valid Mail2SMS user (like gmail, yahoo etc)
-* Compose the email and send it the recipient like <phone-number>@mail2sms.xoxzo.com
-* For example, If I want to send sms to +819876543210 then recipient will be +819876543210@mail2sms.xoxzo.com
+* Compose the email and send it to the recipient **mail2sms@xoxzo.com**.
+* For example, If you want to send sms to +819876543210 then subject of email will be +819876543210.
+* We allow only single recipient in subject
 
 .. tip:: 
     Try adding Mail2SMS user and send sms using email.
