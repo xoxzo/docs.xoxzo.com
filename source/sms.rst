@@ -48,20 +48,20 @@ Please refer to our `K-Premium Service FAQ <https://help.xoxzo.com/xoxzo-cloud-t
 .. note::
    Notes on **message length**:
 
-   * Message length is counted by the number of parts in a message
-   * The maximum length for multi-part or long messages is 660 characters
-   * For single-part ASCII messages, the maximum length is 140 characters
-   * For single-part non-ASCII messages, the maximum length is 70 characters
-   * A multi-part or long message is a message that exceeds 140 characters for ASCII and 70 characters for non-ASCII messages
-   * Multi-part ASCII messages, can have up to 5 parts and each part can have up to 132 characters
-   * Multi-part non-ASCII messages, can have up to 10 parts and each part can have up to 66 characters
+   * Message length is counted by the total number of characters in all parts of a message.
+   * For single-part ASCII messages, the maximum length is 140 characters.
+   * For single-part non-ASCII messages, the maximum length is 70 characters.
+   * A long multi-part message is a message that exceeds 140 characters for ASCII and 70 characters for non-ASCII messages.
+   * The maximum length for multi-part messages is 660 characters.
+   * Multi-part ASCII messages can have up to 5 parts and each part can have up to 132 characters in each part.
+   * Multi-part non-ASCII messages can have up to 10 parts and each part can have up to 66 characters in each part.
 
-   ============== === === === === === === === === === ===
-   SMS part count 1   2   3   4   5   6   7   8   9   10
-   ============== === === === === === === === === === ===
-   ASCII          140 264 396 528 660                 
-   non-ASCII      70  132 198 264 330 396 462 528 594 660
-   ============== === === === === === === === === === ===
+   ==================== === === === === === === === === === ===
+   SMS part count       1   2   3   4   5   6   7   8   9   10
+   ==================== === === === === === === === === === ===
+   ASCII characters     140 264 396 528 660                 
+   non-ASCII characters 70  132 198 264 330 396 462 528 594 660
+   ==================== === === === === === === === === === ===
 
 .. note::
    Notes on the **jp_kp** and **jp_kpl** parameter:
