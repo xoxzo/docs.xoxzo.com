@@ -8,7 +8,7 @@ run('pip install virtualenv')
 
 run('virtualenv -p python3 .env')
 
-run('.env/bin/pip install setuptools==51.3.3')
+run('.env/bin/pip install setuptools==79.0.0')
 
 run('.env/bin/pip install --force-reinstall -v "pip==24.0"')
 
