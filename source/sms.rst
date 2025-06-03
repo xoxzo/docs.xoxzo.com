@@ -44,17 +44,14 @@ Please refer to our `K-Premium Service FAQ <https://help.xoxzo.com/xoxzo-cloud-t
 
    * This is the main message that you'll be sending to the recipient.
    * All messages must be encoded in UTF-8
-
-.. note::
-   Notes on **message length**:
-
    * Message length is counted by the total number of characters in all parts of a message.
    * For single-part ASCII messages, the maximum length is 140 characters.
    * For single-part non-ASCII messages, the maximum length is 70 characters.
    * A long multi-part message is a message that exceeds 140 characters for ASCII and 70 characters for non-ASCII messages.
    * The maximum length for multi-part messages is 660 characters.
-   * Multi-part ASCII messages can have up to 5 parts and each part can have up to 132 characters in each part.
-   * Multi-part non-ASCII messages can have up to 10 parts and each part can have up to 66 characters in each part.
+   * Multi-part ASCII messages can have up to 5 parts and each part can have up to 132 characters.
+   * Multi-part non-ASCII messages can have up to 10 parts and each part can have up to 66 characters.
+   * Long SMS messages are received as 1 SMS, but each part sent is counted as 1 SMS in terms of cost.
 
    ==================== === === === === === === === === === ===
    SMS part count       1   2   3   4   5   6   7   8   9   10
@@ -219,6 +216,7 @@ The response would be a JSON structure, returned with HTTP ``200 OK`` status cod
         ],
         "url": "https://api.xoxzo.com/sms/messages/<msgid>/",
         "recipient": "<recipient>",
+        "parts": 1,
         "cost": 10,
         "sent_time": "2019-03-05 00:37:44",
         "sender": "<sender>",
@@ -237,6 +235,7 @@ returned with a HTTP ``200 OK`` status code::
         "sent_time": "2015-09-13 12:47:53",
         "cost": 10,
         "msgid": "<msgid>",
+        "parts": 1,
         "recipient": "<recipient>",
         "sender": "<sender>",
         "url": "https://api.xoxzo.com/sms/messages/<msgid>/"
@@ -282,6 +281,7 @@ example of the response::
         },
         "msgid": "oxgyFO6tfwYkHLIMbURrz5smCv9QT423",
         "recipient": "+818012345678",
+        "parts": 1,
         "sender": "XOXZO",
         "sent_time": "2020-10-09 02:37:47",
         "status": "DELIVERED",
@@ -355,6 +355,7 @@ The response would be a JSON structure, returned with HTTP ``200 OK`` status cod
            "msgid": "<msgid>",
            "recipient": "<recipient>",
            "sender": "<sender>",
+           "parts": 1,
            "sent_time": null,
            "status": "QUEUED",
            "url": "https://api.xoxzo.com/sms/messages/<msgid>"
@@ -363,6 +364,7 @@ The response would be a JSON structure, returned with HTTP ``200 OK`` status cod
            "cost": 10,
            "msgid": "<msgid>",
            "recipient": "<recipient>",
+           "parts": 1,
            "sender": "<sender>",
            "sent_time": "2016-03-04 00:00:00",
            "status": "DELIVERED",
@@ -388,6 +390,7 @@ The response would be a JSON structure, returned with HTTP ``200 OK`` status cod
            "cost": 10,
            "msgid": "<msgid>",
            "recipient": "<recipient>",
+           "parts": 1,
            "sender": "<sender>",
            "sent_time": "2016-03-04 10:15:00",
            "status": "DELIVERED",
@@ -397,6 +400,7 @@ The response would be a JSON structure, returned with HTTP ``200 OK`` status cod
            "cost": 10,
            "msgid": "<msgid>",
            "recipient": "<recipient>",
+           "parts": 1,
            "sender": "<sender>",
            "sent_time": "2016-03-04 00:00:00",
            "status": "DELIVERED",
@@ -419,6 +423,7 @@ The response would be a JSON structure, returned with HTTP ``200 OK`` status cod
            "cost": 10,
            "msgid": "<msgid>",
            "recipient": "<recipient>",
+           "parts": 1,
            "sender": "<sender>",
            "sent_time": "2016-03-04 10:15:00",
            "status": "DELIVERED",
@@ -428,6 +433,7 @@ The response would be a JSON structure, returned with HTTP ``200 OK`` status cod
            "cost": 10,
            "msgid": "<msgid>",
            "recipient": "<recipient>",
+           "parts": 1,
            "sender": "<sender>",
            "sent_time": "2016-03-04 00:00:00",
            "status": "DELIVERED",
@@ -437,6 +443,7 @@ The response would be a JSON structure, returned with HTTP ``200 OK`` status cod
            "cost": 10,
            "msgid": "<msgid>",
            "recipient": "<recipient>",
+           "parts": 1,
            "sender": "<sender>",
            "sent_time": "2016-02-15 11:30:47",
            "status": "DELIVERED",
