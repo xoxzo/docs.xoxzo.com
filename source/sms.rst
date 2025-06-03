@@ -40,10 +40,29 @@ The additional parameters below are for JP specific usage and recipients:
 Please refer to our `K-Premium Service FAQ <https://help.xoxzo.com/xoxzo-cloud-telephony/articles/the-k-premium-service/>`_ for more information on the K-Premium Service.
 
 .. note::
+   Notes on the **message** parameter:
+
+   * This is the main message that you'll be sending to the recipient.
+   * All messages must be encoded in UTF-8
+   * Message length is counted by the total number of characters in all parts of a message.
+   * For single-part ASCII messages, the maximum length is 140 characters.
+   * For single-part non-ASCII messages, the maximum length is 70 characters.
+   * A long multi-part message is a message that exceeds 140 characters for ASCII and 70 characters for non-ASCII messages.
+   * The maximum length for multi-part messages is 660 characters.
+   * Multi-part ASCII messages can have up to 5 parts and each part can have up to 132 characters.
+   * Multi-part non-ASCII messages can have up to 10 parts and each part can have up to 66 characters.
+   * Long SMS messages are received as 1 SMS, but each part sent is counted as 1 SMS in terms of cost.
+
+   ==================== === === === === === === === === === ===
+   SMS part count       1   2   3   4   5   6   7   8   9   10
+   ==================== === === === === === === === === === ===
+   ASCII characters     140 264 396 528 660                 
+   non-ASCII characters 70  132 198 264 330 396 462 528 594 660
+   ==================== === === === === === === === === === ===
+
+.. note::
    Notes on the **jp_kp** and **jp_kpl** parameter:
 
-   * If the jp_kp or jp_kpl parameter is set to true, the maximum length for ASCII messages are 140 characters
-   * For non-ASCII messages, the maximum length is 70 characters
    * You cannot specify **jp_kp** and **jp_kpl** together at the same time. These are mutually exclusive.
    * The difference between **jp_kp** and **jp_kpl** is the sender id display for Softbank numbers.
      Please refer **jp_kp_sender** parameter section.
@@ -62,28 +81,21 @@ Please refer to our `K-Premium Service FAQ <https://help.xoxzo.com/xoxzo-cloud-t
    * This parameter is deprecated and can be used until Aug. 31 2020.
 
 .. note::
-   Notes on the **message** parameter:
-
-   * If the jp_kp or jp_kpl parameter is set to true, the maximum length for ASCII messages are 140 characters
-   * The maximum length for ASCII messages are 160 characters (unless you're using jp_kp or jp_kpl)
-   * For non-ASCII messages, the maximum length is 70 characters
-
-.. note::
    Notes on the **recipient** parameter:
 
-   *  Xoxzo uses the `E.164 <http://en.wikipedia.org/wiki/E.164>`_ number format
-      when specifying phone numbers.
-   *  `E.164 <http://en.wikipedia.org/wiki/E.164>`_ dictates that phone numbers must start with the + prefix and country 
-      code then followed directly by the mobile number leaving the local **0** prefix .
-   *  Example of a valid recipient is: *+818011234567* with *81* as the Japan country code and *8011234567* 
-      as the mobile number.
+   * Xoxzo uses the `E.164 <http://en.wikipedia.org/wiki/E.164>`_ number format
+     when specifying phone numbers.
+   * `E.164 <http://en.wikipedia.org/wiki/E.164>`_ dictates that phone numbers must start with the + prefix and country 
+     code then followed directly by the mobile number leaving the local **0** prefix .
+   * Example of a valid recipient is: *+818011234567* with *81* as the Japan country code and *8011234567* 
+     as the mobile number.
 
 .. note::
    Notes on the **sender** parameter:
 
-   *  The **sender** parameter does not require a + sign prefix.
-   *  You can also specify alphanumeric **sender** such as *XOXZO1* or *XOXZO* for the sender. In this case, 
-      the maximum length for the **sender** parameter is 10.
+   * The **sender** parameter does not require a + sign prefix.
+   * You can also specify alphanumeric **sender** such as *XOXZO1* or *XOXZO* for the sender. In this case, 
+     the maximum length for the **sender** parameter is 10.
    * If the **sender** parameter contains only digits, the maximum length is 15.
 
 .. warning::
@@ -91,29 +103,17 @@ Please refer to our `K-Premium Service FAQ <https://help.xoxzo.com/xoxzo-cloud-t
    the recipient's mobile as it is and maybe replaced with an arbitrary **sender**. This is dependent on the policies of the carriers, intermerdiary networks and governments, and they may not honour your request.
 
 .. note::
-   Notes on the **message** parameter:
-
-   *  This is the main message that you'll be sending to the recipient.
-   *  All messages must be encoded in UTF-8
-   *  Messages which only contains ASCII based characters will have a maximum
-      length of 160 characters, while other types of messages will have a
-      maximum length of 70 characters
-   *  For Malaysia recipient, messages which only contains ASCII based characters will have a maximum
-      length of 153 characters, while other types of messages will have a
-      maximum length of 63 characters
-
-.. note::
    Notes on the **callbackurl** parameter:
 
-   *  When this optional parameter is provided, XOXZO cloud will call this URL when the carrier network notifies us of the SMS delivery status(DLR).
-   *  XOXZO cloud call the URL with http POST method. Parameters of the callback is similar to "Check SMS status API". Please see :ref:`check-sms-status-label`.
-   *  Callback URL must return http status 200. Until then, we will retry up to a maximum of ten times.
+   * When this optional parameter is provided, XOXZO cloud will call this URL when the carrier network notifies us of the SMS delivery status(DLR).
+   * XOXZO cloud call the URL with http POST method. Parameters of the callback is similar to "Check SMS status API". Please see :ref:`check-sms-status-label`.
+   * Callback URL must return http status 200. Until then, we will retry up to a maximum of ten times.
 
 .. note::
    Notes on the **tags** parameter:
 
-   *  When this optional parameter is provided, you can put tags for each API calls and you can retrieve the tags using the check sms status API later.
-   *  You can put multiple tags separated by the comma. The leading and trailing spaces are removed from the tags.
+   * When this optional parameter is provided, you can put tags for each API calls and you can retrieve the tags using the check sms status API later.
+   * You can put multiple tags separated by the comma. The leading and trailing spaces are removed from the tags.
 
 .. note::
    Notes on the **track_link** parameter:
@@ -128,12 +128,12 @@ Please refer to our `K-Premium Service FAQ <https://help.xoxzo.com/xoxzo-cloud-t
 .. note::
    Notes on the **lt_callbackurl** parameter:
 
-   *  When this optional parameter is provided, XOXZO cloud will call this URL when the user clicks the link tracking short url.
-   *  XOXZO cloud call the URL with http POST method. Parameters of the callback is similar to "Check SMS status API"
-      and it contains the **link_tracking** key with information about when the link has been accessed.
-      Please see :ref:`check-sms-status-label`.
-   *  Callback URL must return http status 200. Until then, we will retry up to a maximum of ten times.
-   *  The URL called only once when the user clicked the short URL for the first time.
+   * When this optional parameter is provided, XOXZO cloud will call this URL when the user clicks the link tracking short url.
+   * XOXZO cloud call the URL with http POST method. Parameters of the callback is similar to "Check SMS status API"
+     and it contains the **link_tracking** key with information about when the link has been accessed.
+     Please see :ref:`check-sms-status-label`.
+   * Callback URL must return http status 200. Until then, we will retry up to a maximum of ten times.
+   * The URL called only once when the user clicked the short URL for the first time.
 
 .. warning::
     You need to put at least one ASCII white space(0x20) before and after the link
@@ -216,6 +216,7 @@ The response would be a JSON structure, returned with HTTP ``200 OK`` status cod
         ],
         "url": "https://api.xoxzo.com/sms/messages/<msgid>/",
         "recipient": "<recipient>",
+        "parts": 1,
         "cost": 10,
         "sent_time": "2019-03-05 00:37:44",
         "sender": "<sender>",
@@ -234,6 +235,7 @@ returned with a HTTP ``200 OK`` status code::
         "sent_time": "2015-09-13 12:47:53",
         "cost": 10,
         "msgid": "<msgid>",
+        "parts": 1,
         "recipient": "<recipient>",
         "sender": "<sender>",
         "url": "https://api.xoxzo.com/sms/messages/<msgid>/"
@@ -279,6 +281,7 @@ example of the response::
         },
         "msgid": "oxgyFO6tfwYkHLIMbURrz5smCv9QT423",
         "recipient": "+818012345678",
+        "parts": 1,
         "sender": "XOXZO",
         "sent_time": "2020-10-09 02:37:47",
         "status": "DELIVERED",
@@ -352,6 +355,7 @@ The response would be a JSON structure, returned with HTTP ``200 OK`` status cod
            "msgid": "<msgid>",
            "recipient": "<recipient>",
            "sender": "<sender>",
+           "parts": 1,
            "sent_time": null,
            "status": "QUEUED",
            "url": "https://api.xoxzo.com/sms/messages/<msgid>"
@@ -360,6 +364,7 @@ The response would be a JSON structure, returned with HTTP ``200 OK`` status cod
            "cost": 10,
            "msgid": "<msgid>",
            "recipient": "<recipient>",
+           "parts": 1,
            "sender": "<sender>",
            "sent_time": "2016-03-04 00:00:00",
            "status": "DELIVERED",
@@ -385,6 +390,7 @@ The response would be a JSON structure, returned with HTTP ``200 OK`` status cod
            "cost": 10,
            "msgid": "<msgid>",
            "recipient": "<recipient>",
+           "parts": 1,
            "sender": "<sender>",
            "sent_time": "2016-03-04 10:15:00",
            "status": "DELIVERED",
@@ -394,6 +400,7 @@ The response would be a JSON structure, returned with HTTP ``200 OK`` status cod
            "cost": 10,
            "msgid": "<msgid>",
            "recipient": "<recipient>",
+           "parts": 1,
            "sender": "<sender>",
            "sent_time": "2016-03-04 00:00:00",
            "status": "DELIVERED",
@@ -416,6 +423,7 @@ The response would be a JSON structure, returned with HTTP ``200 OK`` status cod
            "cost": 10,
            "msgid": "<msgid>",
            "recipient": "<recipient>",
+           "parts": 1,
            "sender": "<sender>",
            "sent_time": "2016-03-04 10:15:00",
            "status": "DELIVERED",
@@ -425,6 +433,7 @@ The response would be a JSON structure, returned with HTTP ``200 OK`` status cod
            "cost": 10,
            "msgid": "<msgid>",
            "recipient": "<recipient>",
+           "parts": 1,
            "sender": "<sender>",
            "sent_time": "2016-03-04 00:00:00",
            "status": "DELIVERED",
@@ -434,6 +443,7 @@ The response would be a JSON structure, returned with HTTP ``200 OK`` status cod
            "cost": 10,
            "msgid": "<msgid>",
            "recipient": "<recipient>",
+           "parts": 1,
            "sender": "<sender>",
            "sent_time": "2016-02-15 11:30:47",
            "status": "DELIVERED",
