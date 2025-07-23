@@ -24,6 +24,7 @@ Contents:
     din
     utilsapi
     account
+    otp
 
 .. toctree::
     :maxdepth: 1

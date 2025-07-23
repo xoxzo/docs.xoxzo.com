@@ -1,0 +1,419 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2025, Xoxzo Inc.
+# This file is distributed under the same license as the Xoxzo API Docs
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Xoxzo API Docs 1.17.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-07-23 17:53+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.17.0\n"
+
+#: ../../../source/otp.rst:3
+msgid "OTP API"
+msgstr ""
+
+#: ../../../source/otp.rst:5
+msgid ""
+"The OTP API allows you to send and verify one-time passwords (OTP) via "
+"SMS using HTTP endpoints."
+msgstr ""
+
+#: ../../../source/otp.rst:8
+msgid "Register Website API"
+msgstr ""
+
+#: ../../../source/otp.rst:9
+msgid ""
+"To register a new website domain, make a ``POST`` request to the "
+"endpoint::"
+msgstr ""
+
+#: ../../../source/otp.rst:13 ../../../source/otp.rst:46
+#: ../../../source/otp.rst:82
+msgid "with the following parameters:"
+msgstr ""
+
+#: ../../../source/otp.rst:16 ../../../source/otp.rst:49
+#: ../../../source/otp.rst:85
+msgid "Name"
+msgstr ""
+
+#: ../../../source/otp.rst:16 ../../../source/otp.rst:49
+#: ../../../source/otp.rst:85
+msgid "Description"
+msgstr ""
+
+#: ../../../source/otp.rst:16 ../../../source/otp.rst:49
+#: ../../../source/otp.rst:85
+msgid "Required"
+msgstr ""
+
+#: ../../../source/otp.rst:16 ../../../source/otp.rst:49
+#: ../../../source/otp.rst:85
+msgid "Data Type"
+msgstr ""
+
+#: ../../../source/otp.rst:16 ../../../source/otp.rst:49
+#: ../../../source/otp.rst:85
+msgid "Example"
+msgstr ""
+
+#: ../../../source/otp.rst:18 ../../../source/otp.rst:51
+#: ../../../source/otp.rst:87
+msgid "website"
+msgstr ""
+
+#: ../../../source/otp.rst:18
+msgid "Your domain name"
+msgstr ""
+
+#: ../../../source/otp.rst:18 ../../../source/otp.rst:51
+#: ../../../source/otp.rst:52 ../../../source/otp.rst:87
+#: ../../../source/otp.rst:88 ../../../source/otp.rst:89
+msgid "Yes"
+msgstr ""
+
+#: ../../../source/otp.rst:18 ../../../source/otp.rst:51
+#: ../../../source/otp.rst:87
+msgid "UTF-8"
+msgstr ""
+
+#: ../../../source/otp.rst:18 ../../../source/otp.rst:51
+#: ../../../source/otp.rst:87
+msgid "xoxzo.com"
+msgstr ""
+
+#: ../../../source/otp.rst:19
+msgid "template_id"
+msgstr ""
+
+#: ../../../source/otp.rst:19
+msgid "Optional OTP template ID"
+msgstr ""
+
+#: ../../../source/otp.rst:19
+msgid "No"
+msgstr ""
+
+#: ../../../source/otp.rst:19
+msgid "Integer"
+msgstr ""
+
+#: ../../../source/otp.rst:19
+msgid "3"
+msgstr ""
+
+#: ../../../source/otp.rst:22 ../../../source/otp.rst:55
+#: ../../../source/otp.rst:92
+msgid "Example::"
+msgstr ""
+
+#: ../../../source/otp.rst:29 ../../../source/otp.rst:65
+#: ../../../source/otp.rst:103
+msgid "Response::"
+msgstr ""
+
+#: ../../../source/otp.rst:36
+msgid "`template_id` defaults to 3 if omitted."
+msgstr ""
+
+#: ../../../source/otp.rst:37
+msgid "Your API credentials must be linked to the domain."
+msgstr ""
+
+#: ../../../source/otp.rst:41
+msgid "Request OTP API"
+msgstr ""
+
+#: ../../../source/otp.rst:42
+msgid ""
+"To send an OTP code to a phone number, make a ``POST`` request to the "
+"endpoint::"
+msgstr ""
+
+#: ../../../source/otp.rst:51 ../../../source/otp.rst:87
+msgid "Registered domain"
+msgstr ""
+
+#: ../../../source/otp.rst:52 ../../../source/otp.rst:88
+msgid "phone_number"
+msgstr ""
+
+#: ../../../source/otp.rst:52
+msgid "Recipient number in E.164 format"
+msgstr ""
+
+#: ../../../source/otp.rst:52 ../../../source/otp.rst:88
+msgid "E.164"
+msgstr ""
+
+#: ../../../source/otp.rst:52 ../../../source/otp.rst:88
+msgid "+818012345678"
+msgstr ""
+
+#: ../../../source/otp.rst:72
+msgid "``400 Bad Request`` is returned if parameters are missing or invalid."
+msgstr ""
+
+#: ../../../source/otp.rst:73
+msgid "``401 Unauthorized`` is returned for invalid API credentials."
+msgstr ""
+
+#: ../../../source/otp.rst:77
+msgid "Verify OTP API"
+msgstr ""
+
+#: ../../../source/otp.rst:78
+msgid ""
+"To verify an OTP submitted by the user, make a ``POST`` request to the "
+"endpoint::"
+msgstr ""
+
+#: ../../../source/otp.rst:88
+msgid "Recipient number"
+msgstr ""
+
+#: ../../../source/otp.rst:89
+msgid "otp"
+msgstr ""
+
+#: ../../../source/otp.rst:89
+msgid "OTP code submitted by user"
+msgstr ""
+
+#: ../../../source/otp.rst:89
+msgid "Numeric"
+msgstr ""
+
+#: ../../../source/otp.rst:89
+msgid "654321"
+msgstr ""
+
+#: ../../../source/otp.rst:113
+msgid "Invalid response::"
+msgstr ""
+
+#: ../../../source/otp.rst:120
+msgid "Only one active OTP per phone number per domain"
+msgstr ""
+
+#: ../../../source/otp.rst:121
+msgid "OTP verification requires phone number and domain match"
+msgstr ""
+
+#~ msgid ""
+#~ "The OTP API enables you to: - "
+#~ "Send OTP codes to user phone "
+#~ "numbers - Verify OTPs submitted by "
+#~ "users"
+#~ msgstr ""
+
+#~ msgid "Example:"
+#~ msgstr ""
+
+#~ msgid "Authorization: Basic <Base64(SID:TOKEN)>"
+#~ msgstr ""
+
+#~ msgid "curl -X POST https://api.xoxzo.com/otp/register-website/ \\"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "-u <SID>:<TOKEN> \\ -H \"Content-Type:"
+#~ " application/json\" \\ -d '{\"website\": "
+#~ "\"xoxzo.com\"}'"
+#~ msgstr ""
+
+#~ msgid "Response:"
+#~ msgstr ""
+
+#~ msgid "{"
+#~ msgstr ""
+
+#~ msgid "\"message\": \"Website registered successfully.\""
+#~ msgstr ""
+
+#~ msgid "}"
+#~ msgstr ""
+
+#~ msgid "curl -X POST https://api.xoxzo.com/otp/request/ \\"
+#~ msgstr ""
+
+#~ msgid "-u <SID>:<TOKEN> \\ -H \"Content-Type: application/json\" \\ -d '{"
+#~ msgstr ""
+
+#~ msgid "\"website\": \"xoxzo.com\", \"phone_number\": \"+818012345678\""
+#~ msgstr ""
+
+#~ msgid "}'"
+#~ msgstr ""
+
+#~ msgid "Response (Success):"
+#~ msgstr ""
+
+#~ msgid "\"msgid\": \"1234567890\""
+#~ msgstr ""
+
+#~ msgid "Response (Error):"
+#~ msgstr ""
+
+#~ msgid "400 Bad Request – Invalid input 401 Unauthorized – Invalid credentials"
+#~ msgstr ""
+
+#~ msgid "curl -X POST https://api.xoxzo.com/otp/verify/ \\"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "\"website\": \"xoxzo.com\", \"phone_number\": "
+#~ "\"+818012345678\", \"otp\": \"654321\""
+#~ msgstr ""
+
+#~ msgid "Response (Valid):"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "\"is_otp_valid\": true, \"user_identifier\": "
+#~ "\"user@xoxzo.com\", \"phone_number\": \"+818012345678\","
+#~ " \"website\": \"xoxzo.com\", \"msgid\": "
+#~ "\"1234567890\""
+#~ msgstr ""
+
+#~ msgid "Response (Invalid):"
+#~ msgstr ""
+
+#~ msgid "\"is_otp_valid\": false"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "This guide describes how to integrate"
+#~ " with the OTP API for sending "
+#~ "and verifying one-time passwords via "
+#~ "SMS."
+#~ msgstr ""
+
+#~ msgid "Overview"
+#~ msgstr ""
+
+#~ msgid "The OTP API enables you to:"
+#~ msgstr ""
+
+#~ msgid "Send OTP codes to user phone numbers"
+#~ msgstr ""
+
+#~ msgid "Verify OTPs submitted by users"
+#~ msgstr ""
+
+#~ msgid "All requests are authenticated using Basic Auth and scoped per website."
+#~ msgstr ""
+
+#~ msgid "Authentication"
+#~ msgstr ""
+
+#~ msgid "All requests must use Basic Auth with your API SID and TOKEN."
+#~ msgstr ""
+
+#~ msgid "Use Cases"
+#~ msgstr ""
+
+#~ msgid "Secure login using OTP"
+#~ msgstr ""
+
+#~ msgid "Sign-up confirmation"
+#~ msgstr ""
+
+#~ msgid "Two-factor authentication (2FA) for sensitive actions"
+#~ msgstr ""
+
+#~ msgid "Integration Flow"
+#~ msgstr ""
+
+#~ msgid "Register your website"
+#~ msgstr ""
+
+#~ msgid "Request OTP via `/otp/request/`"
+#~ msgstr ""
+
+#~ msgid "Verify OTP via `/otp/verify/`"
+#~ msgstr ""
+
+#~ msgid "Endpoints"
+#~ msgstr ""
+
+#~ msgid "Register Website"
+#~ msgstr ""
+
+#~ msgid "**POST /otp/register-website/**"
+#~ msgstr ""
+
+#~ msgid "Registers a new domain to use the OTP API."
+#~ msgstr ""
+
+#~ msgid "Parameters:"
+#~ msgstr ""
+
+#~ msgid "Request OTP"
+#~ msgstr ""
+
+#~ msgid "**POST /otp/request/**"
+#~ msgstr ""
+
+#~ msgid "Sends an OTP to a user’s phone number."
+#~ msgstr ""
+
+#~ msgid "Recipient phone number (E.164)"
+#~ msgstr ""
+
+#~ msgid "Response (Success)::"
+#~ msgstr ""
+
+#~ msgid "Response (Error)::"
+#~ msgstr ""
+
+#~ msgid "Verify OTP"
+#~ msgstr ""
+
+#~ msgid "**POST /otp/verify/**"
+#~ msgstr ""
+
+#~ msgid "Verifies the OTP submitted by the user."
+#~ msgstr ""
+
+#~ msgid "Recipient phone number"
+#~ msgstr ""
+
+#~ msgid "OTP code from user"
+#~ msgstr ""
+
+#~ msgid "Response (Valid)::"
+#~ msgstr ""
+
+#~ msgid "Response (Invalid)::"
+#~ msgstr ""
+
+#~ msgid "Notes"
+#~ msgstr ""
+
+#~ msgid "OTPs expire within 5–10 minutes (configurable)"
+#~ msgstr ""
+
+#~ msgid "Only one active OTP per phone number per website"
+#~ msgstr ""
+
+#~ msgid "Requests must be authenticated"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "OTP verification is strict: phone number"
+#~ " and website must match the OTP "
+#~ "context"
+#~ msgstr ""
+
