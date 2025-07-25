@@ -19,22 +19,18 @@ with the following parameters:
     template_id  Optional OTP template ID      No        Integer       3
     ===========  ============================  ========  ============  ============
 
-Example::
+The response would be a JSON structure, returned with HTTP ``201 CREATED`` status code::
 
-    curl -X POST https://api.xoxzo.com/otp/register-website/ \
-         -u <SID>:<TOKEN> \
-         -H "Content-Type: application/json" \
-         -d '{"website": "xoxzo.com"}'
-
-Response::
+    HTTP/1.1 201 CREATED
+    Content-Type: application/json
 
     {
         "message": "Website registered successfully."
     }
 
 .. note::
-   - `template_id` defaults to 3 if omitted.
-   - Your API credentials must be linked to the domain.
+   * ``template_id`` defaults to 3 if omitted.
+   * Your API credentials must be linked to the domain.
 
 
 Request OTP API
@@ -52,25 +48,19 @@ with the following parameters:
     phone_number     Recipient number in E.164 format        Yes        E.164             +818012345678        
     ===============  ======================================  =========  ================  ====================
 
-Example::
+The response would be a JSON structure, returned with HTTP ``201 CREATED`` status code::
 
-    curl -X POST https://api.xoxzo.com/otp/request/ \
-         -u <SID>:<TOKEN> \
-         -H "Content-Type: application/json" \
-         -d '{
-               "website": "xoxzo.com",
-               "phone_number": "+818012345678"
-             }'
-
-Response::
+    HTTP/1.1 201 CREATED
+    Content-Type: application/json
 
     {
         "msgid": "1234567890"
     }
 
 .. note::
-   - ``400 Bad Request`` is returned if parameters are missing or invalid.
-   - ``401 Unauthorized`` is returned for invalid API credentials.
+   * ``400 Bad Request`` is returned if parameters are missing or invalid.
+   * ``401 Unauthorized`` is returned for invalid API credentials.
+   * One active OTP per phone number per domain is enforced.
 
 
 Verify OTP API
@@ -89,18 +79,10 @@ with the following parameters:
     otp             OTP code submitted by user   Yes       Numeric       654321
     ==============  ===========================  ========  ============  =================
 
-Example::
+The response would be a JSON structure, returned with HTTP ``200 OK`` status code::
 
-    curl -X POST https://api.xoxzo.com/otp/verify/ \
-         -u <SID>:<TOKEN> \
-         -H "Content-Type: application/json" \
-         -d '{
-               "website": "xoxzo.com",
-               "phone_number": "+818012345678",
-               "otp": "654321"
-             }'
-
-Response::
+    HTTP/1.1 200 OK
+    Content-Type: application/json
 
     {
         "is_otp_valid": true,
@@ -110,12 +92,15 @@ Response::
         "msgid": "1234567890"
     }
 
-Invalid response::
+Below is an example of a failed verification::
+
+    HTTP/1.1 200 OK
+    Content-Type: application/json
 
     {
         "is_otp_valid": false
     }
 
 .. note::
-   - Only one active OTP per phone number per domain
-   - OTP verification requires phone number and domain match
+   * OTP verification requires exact match of phone number and domain.
+   * OTPs are valid for a limited time and only one active OTP is allowed per number/domain.
