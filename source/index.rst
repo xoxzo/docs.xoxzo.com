@@ -19,12 +19,12 @@ Contents:
 
     readme
     sms
+    otp
     mailsms
     voice
     din
     utilsapi
     account
-    otp
 
 .. toctree::
     :maxdepth: 1

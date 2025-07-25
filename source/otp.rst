@@ -19,6 +19,17 @@ with the following parameters:
     template_id  Optional OTP template ID      No        Integer       3
     ===========  ============================  ========  ============  ============
 
+Template id is list of templates that currently we have, these are the lists:
+
+    ============ ============================
+    template_id  Value
+    ============ ============================
+    3             あなたの確認コードは123456です。
+    ============ ============================
+
+*123456 is example of the numbers OTP
+
+
 The response would be a JSON structure, returned with HTTP ``201 CREATED`` status code::
 
     HTTP/1.1 201 CREATED
