@@ -28,6 +28,18 @@ The response would be a JSON structure, returned with HTTP ``201 CREATED`` statu
         "message": "Website registered successfully."
     }
 
+
+If the website is already registered, the following response will be returned with HTTP ``400 BAD REQUEST`` status code::
+
+    HTTP/1.1 400 BAD REQUEST
+    Content-Type: application/json
+
+    {
+        "website": [
+            "website info with this website already exists."
+        ]
+    }
+
 .. note::
    * ``template_id`` defaults to 3 if omitted.
    * Your API credentials must be linked to the domain.
@@ -87,9 +99,9 @@ The response would be a JSON structure, returned with HTTP ``200 OK`` status cod
     {
         "is_otp_valid": true,
         "user_identifier": "user@xoxzo.com",
-        "phone_number": "+818012345678",
-        "website": "xoxzo.com",
+        "phone_number": "818012345678",
         "msgid": "1234567890"
+        "website": "https://xoxzo.com",
     }
 
 Below is an example of a failed verification::
