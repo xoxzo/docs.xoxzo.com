@@ -19,6 +19,7 @@ Contents:
 
     readme
     sms
+    mailsms
     voice
     din
     utilsapi
