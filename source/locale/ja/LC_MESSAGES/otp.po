@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Xoxzo API Docs 1.17.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-07-23 17:53+0900\n"
+"POT-Creation-Date: 2025-07-25 13:07+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -38,38 +38,38 @@ msgid ""
 "endpoint::"
 msgstr ""
 
-#: ../../../source/otp.rst:13 ../../../source/otp.rst:46
-#: ../../../source/otp.rst:82
+#: ../../../source/otp.rst:13 ../../../source/otp.rst:42
+#: ../../../source/otp.rst:72
 msgid "with the following parameters:"
 msgstr ""
 
-#: ../../../source/otp.rst:16 ../../../source/otp.rst:49
-#: ../../../source/otp.rst:85
+#: ../../../source/otp.rst:16 ../../../source/otp.rst:45
+#: ../../../source/otp.rst:75
 msgid "Name"
 msgstr ""
 
-#: ../../../source/otp.rst:16 ../../../source/otp.rst:49
-#: ../../../source/otp.rst:85
+#: ../../../source/otp.rst:16 ../../../source/otp.rst:45
+#: ../../../source/otp.rst:75
 msgid "Description"
 msgstr ""
 
-#: ../../../source/otp.rst:16 ../../../source/otp.rst:49
-#: ../../../source/otp.rst:85
+#: ../../../source/otp.rst:16 ../../../source/otp.rst:45
+#: ../../../source/otp.rst:75
 msgid "Required"
 msgstr ""
 
-#: ../../../source/otp.rst:16 ../../../source/otp.rst:49
-#: ../../../source/otp.rst:85
+#: ../../../source/otp.rst:16 ../../../source/otp.rst:45
+#: ../../../source/otp.rst:75
 msgid "Data Type"
 msgstr ""
 
-#: ../../../source/otp.rst:16 ../../../source/otp.rst:49
-#: ../../../source/otp.rst:85
+#: ../../../source/otp.rst:16 ../../../source/otp.rst:45
+#: ../../../source/otp.rst:75
 msgid "Example"
 msgstr ""
 
-#: ../../../source/otp.rst:18 ../../../source/otp.rst:51
-#: ../../../source/otp.rst:87
+#: ../../../source/otp.rst:18 ../../../source/otp.rst:47
+#: ../../../source/otp.rst:77
 msgid "website"
 msgstr ""
 
@@ -77,19 +77,19 @@ msgstr ""
 msgid "Your domain name"
 msgstr ""
 
-#: ../../../source/otp.rst:18 ../../../source/otp.rst:51
-#: ../../../source/otp.rst:52 ../../../source/otp.rst:87
-#: ../../../source/otp.rst:88 ../../../source/otp.rst:89
+#: ../../../source/otp.rst:18 ../../../source/otp.rst:47
+#: ../../../source/otp.rst:48 ../../../source/otp.rst:77
+#: ../../../source/otp.rst:78 ../../../source/otp.rst:79
 msgid "Yes"
 msgstr ""
 
-#: ../../../source/otp.rst:18 ../../../source/otp.rst:51
-#: ../../../source/otp.rst:87
+#: ../../../source/otp.rst:18 ../../../source/otp.rst:47
+#: ../../../source/otp.rst:77
 msgid "UTF-8"
 msgstr ""
 
-#: ../../../source/otp.rst:18 ../../../source/otp.rst:51
-#: ../../../source/otp.rst:87
+#: ../../../source/otp.rst:18 ../../../source/otp.rst:47
+#: ../../../source/otp.rst:77
 msgid "xoxzo.com"
 msgstr ""
 
@@ -113,102 +113,110 @@ msgstr ""
 msgid "3"
 msgstr ""
 
-#: ../../../source/otp.rst:22 ../../../source/otp.rst:55
-#: ../../../source/otp.rst:92
-msgid "Example::"
+#: ../../../source/otp.rst:22 ../../../source/otp.rst:51
+msgid ""
+"The response would be a JSON structure, returned with HTTP ``201 "
+"CREATED`` status code::"
 msgstr ""
 
-#: ../../../source/otp.rst:29 ../../../source/otp.rst:65
-#: ../../../source/otp.rst:103
-msgid "Response::"
+#: ../../../source/otp.rst:32
+msgid "``template_id`` defaults to 3 if omitted."
 msgstr ""
 
-#: ../../../source/otp.rst:36
-msgid "`template_id` defaults to 3 if omitted."
-msgstr ""
-
-#: ../../../source/otp.rst:37
+#: ../../../source/otp.rst:33
 msgid "Your API credentials must be linked to the domain."
 msgstr ""
 
-#: ../../../source/otp.rst:41
+#: ../../../source/otp.rst:37
 msgid "Request OTP API"
 msgstr ""
 
-#: ../../../source/otp.rst:42
+#: ../../../source/otp.rst:38
 msgid ""
 "To send an OTP code to a phone number, make a ``POST`` request to the "
 "endpoint::"
 msgstr ""
 
-#: ../../../source/otp.rst:51 ../../../source/otp.rst:87
+#: ../../../source/otp.rst:47 ../../../source/otp.rst:77
 msgid "Registered domain"
 msgstr ""
 
-#: ../../../source/otp.rst:52 ../../../source/otp.rst:88
+#: ../../../source/otp.rst:48 ../../../source/otp.rst:78
 msgid "phone_number"
 msgstr ""
 
-#: ../../../source/otp.rst:52
+#: ../../../source/otp.rst:48
 msgid "Recipient number in E.164 format"
 msgstr ""
 
-#: ../../../source/otp.rst:52 ../../../source/otp.rst:88
+#: ../../../source/otp.rst:48 ../../../source/otp.rst:78
 msgid "E.164"
 msgstr ""
 
-#: ../../../source/otp.rst:52 ../../../source/otp.rst:88
+#: ../../../source/otp.rst:48 ../../../source/otp.rst:78
 msgid "+818012345678"
 msgstr ""
 
-#: ../../../source/otp.rst:72
+#: ../../../source/otp.rst:61
 msgid "``400 Bad Request`` is returned if parameters are missing or invalid."
 msgstr ""
 
-#: ../../../source/otp.rst:73
+#: ../../../source/otp.rst:62
 msgid "``401 Unauthorized`` is returned for invalid API credentials."
 msgstr ""
 
-#: ../../../source/otp.rst:77
+#: ../../../source/otp.rst:63
+msgid "One active OTP per phone number per domain is enforced."
+msgstr ""
+
+#: ../../../source/otp.rst:67
 msgid "Verify OTP API"
 msgstr ""
 
-#: ../../../source/otp.rst:78
+#: ../../../source/otp.rst:68
 msgid ""
 "To verify an OTP submitted by the user, make a ``POST`` request to the "
 "endpoint::"
 msgstr ""
 
-#: ../../../source/otp.rst:88
+#: ../../../source/otp.rst:78
 msgid "Recipient number"
 msgstr ""
 
-#: ../../../source/otp.rst:89
+#: ../../../source/otp.rst:79
 msgid "otp"
 msgstr ""
 
-#: ../../../source/otp.rst:89
+#: ../../../source/otp.rst:79
 msgid "OTP code submitted by user"
 msgstr ""
 
-#: ../../../source/otp.rst:89
+#: ../../../source/otp.rst:79
 msgid "Numeric"
 msgstr ""
 
-#: ../../../source/otp.rst:89
+#: ../../../source/otp.rst:79
 msgid "654321"
 msgstr ""
 
-#: ../../../source/otp.rst:113
-msgid "Invalid response::"
+#: ../../../source/otp.rst:82
+msgid ""
+"The response would be a JSON structure, returned with HTTP ``200 OK`` "
+"status code::"
 msgstr ""
 
-#: ../../../source/otp.rst:120
-msgid "Only one active OTP per phone number per domain"
+#: ../../../source/otp.rst:95
+msgid "Below is an example of a failed verification::"
 msgstr ""
 
-#: ../../../source/otp.rst:121
-msgid "OTP verification requires phone number and domain match"
+#: ../../../source/otp.rst:105
+msgid "OTP verification requires exact match of phone number and domain."
+msgstr ""
+
+#: ../../../source/otp.rst:106
+msgid ""
+"OTPs are valid for a limited time and only one active OTP is allowed per "
+"number/domain."
 msgstr ""
 
 #~ msgid ""
@@ -415,5 +423,23 @@ msgstr ""
 #~ "OTP verification is strict: phone number"
 #~ " and website must match the OTP "
 #~ "context"
+#~ msgstr ""
+
+#~ msgid "Example::"
+#~ msgstr ""
+
+#~ msgid "Response::"
+#~ msgstr ""
+
+#~ msgid "`template_id` defaults to 3 if omitted."
+#~ msgstr ""
+
+#~ msgid "Invalid response::"
+#~ msgstr ""
+
+#~ msgid "Only one active OTP per phone number per domain"
+#~ msgstr ""
+
+#~ msgid "OTP verification requires phone number and domain match"
 #~ msgstr ""
 
