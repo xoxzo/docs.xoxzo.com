@@ -19,7 +19,7 @@ with the following parameters:
     template_id  Optional OTP template ID      No        Integer       3
     ===========  ============================  ========  ============  ============
 
-Template id is list of templates that currently we have, these are the lists:
+Template id is list of templates that currently we have, currently only one template is available, these are the lists:
 
     ============ ============================
     template_id  Value
