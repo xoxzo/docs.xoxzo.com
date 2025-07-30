@@ -1,18 +1,19 @@
-# SOME DESCRIPTIVE TITLE.
+# 一部の説明的なタイトル
 # Copyright (C) 2025, Xoxzo Inc.
-# This file is distributed under the same license as the Xoxzo API Docs
-# package.
-# FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
+# このファイルは、Xoxzo API ドキュメントパッケージと同じライセンスの下で配布されます。
+# 最初の著者 <EMAIL@ADDRESS>, 2025年。
 #
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: Xoxzo API Docs 1.17.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-07-25 15:39+0900\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
+"POT-Creation-Date: 2025-07-30 17:29+0900\n"
+"PO-Revision-Date: 2025-07-29 15:49+0900\n"
+"Last-Translator: \n"
+"Language: ja\n"
+"Language-Team: \n"
+"Plural-Forms: nplurals=1; plural=0;\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -20,453 +21,230 @@ msgstr ""
 
 #: ../../../source/otp.rst:3
 msgid "OTP API"
-msgstr ""
+msgstr "OTP API"
 
 #: ../../../source/otp.rst:5
+#, fuzzy
 msgid ""
 "The OTP API allows you to send and verify one-time passwords (OTP) via "
 "SMS using HTTP endpoints."
-msgstr ""
+msgstr "OTP APIは、HTTPエンドポイントを使用して、SMS経由でワンタイムパスワード（OTP）の送信と確認を行うことができます。"
 
 #: ../../../source/otp.rst:8
 msgid "Register Website API"
-msgstr ""
+msgstr "ご利用のウェブサイトを登録するAPI"
 
 #: ../../../source/otp.rst:9
 msgid ""
 "To register a new website domain, make a ``POST`` request to the "
 "endpoint::"
-msgstr ""
+msgstr "新しいURLを登録するには、次のエンドポイントに``POST``リクエストを送信してください。"
 
 #: ../../../source/otp.rst:13 ../../../source/otp.rst:65
 #: ../../../source/otp.rst:95
 msgid "with the following parameters:"
-msgstr ""
+msgstr "次のパラメータを使用してください。"
 
 #: ../../../source/otp.rst:16 ../../../source/otp.rst:68
 #: ../../../source/otp.rst:98
 msgid "Name"
-msgstr ""
+msgstr "名前"
 
 #: ../../../source/otp.rst:16 ../../../source/otp.rst:68
 #: ../../../source/otp.rst:98
 msgid "Description"
-msgstr ""
+msgstr "説明"
 
 #: ../../../source/otp.rst:16 ../../../source/otp.rst:68
 #: ../../../source/otp.rst:98
 msgid "Required"
-msgstr ""
+msgstr "必須"
 
 #: ../../../source/otp.rst:16 ../../../source/otp.rst:68
 #: ../../../source/otp.rst:98
 msgid "Data Type"
-msgstr ""
+msgstr "データ型"
 
 #: ../../../source/otp.rst:16 ../../../source/otp.rst:68
 #: ../../../source/otp.rst:98
 msgid "Example"
-msgstr ""
+msgstr "例"
 
 #: ../../../source/otp.rst:18 ../../../source/otp.rst:70
 #: ../../../source/otp.rst:100
 msgid "website"
-msgstr ""
+msgstr "website"
 
 #: ../../../source/otp.rst:18
 msgid "Your domain name"
-msgstr ""
+msgstr "ご利用になるURL"
 
 #: ../../../source/otp.rst:18 ../../../source/otp.rst:70
 #: ../../../source/otp.rst:71 ../../../source/otp.rst:100
 #: ../../../source/otp.rst:101 ../../../source/otp.rst:102
 msgid "Yes"
-msgstr ""
+msgstr "必須"
 
 #: ../../../source/otp.rst:18 ../../../source/otp.rst:70
 #: ../../../source/otp.rst:100
 msgid "UTF-8"
-msgstr ""
+msgstr "UTF-8"
 
 #: ../../../source/otp.rst:18 ../../../source/otp.rst:70
 #: ../../../source/otp.rst:100
 msgid "xoxzo.com"
-msgstr ""
+msgstr "https://www.xoxzo.com"
 
 #: ../../../source/otp.rst:19 ../../../source/otp.rst:25
 msgid "template_id"
-msgstr ""
+msgstr "テンプレートID"
 
 #: ../../../source/otp.rst:19
 msgid "Optional OTP template ID"
-msgstr ""
+msgstr "オプションのOTPテンプレートID"
 
 #: ../../../source/otp.rst:19
 msgid "No"
-msgstr ""
+msgstr "任意"
 
 #: ../../../source/otp.rst:19
 msgid "Integer"
-msgstr ""
+msgstr "整数"
 
 #: ../../../source/otp.rst:19 ../../../source/otp.rst:27
 msgid "3"
-msgstr ""
+msgstr "3"
 
 #: ../../../source/otp.rst:22
+#, fuzzy
 msgid ""
-"Template id is list of templates that currently we have, these are the "
-"lists:"
-msgstr ""
+"Template id is list of templates that currently we have, currently only "
+"one template is available, these are the lists:"
+msgstr "テンプレートIDは現在利用可能なテンプレートのリストです。現在、ご利用可能なテンプレートは1点です："
 
 #: ../../../source/otp.rst:25
 msgid "Value"
-msgstr ""
+msgstr "値"
 
 #: ../../../source/otp.rst:27
 msgid "あなたの確認コードは123456です。"
-msgstr ""
+msgstr "あなたの確認コードは123456です。"
 
 #: ../../../source/otp.rst:30
 msgid "*123456 is example of the numbers OTP"
-msgstr ""
+msgstr "※123456は送信されるOTPの例です。"
 
 #: ../../../source/otp.rst:33 ../../../source/otp.rst:74
 msgid ""
 "The response would be a JSON structure, returned with HTTP ``201 "
 "CREATED`` status code::"
-msgstr ""
+msgstr "レスポンスはJSON構造で返され、HTTP ``201 CREATED`` ステータスコードが付与されます："
 
 #: ../../../source/otp.rst:43
 msgid ""
 "If the website is already registered, the following response will be "
 "returned with HTTP ``400 BAD REQUEST`` status code::"
 msgstr ""
+"もしウェブサイトが既に登録されている場合、以下のレスポンスが返され、HTTP ``400 BAD REQUEST`` "
+"ステータスコードが付与されます："
 
 #: ../../../source/otp.rst:55
 msgid "``template_id`` defaults to 3 if omitted."
-msgstr ""
+msgstr "``template_id``は省略すると3がデフォルト値として使用されます。"
 
 #: ../../../source/otp.rst:56
 msgid "Your API credentials must be linked to the domain."
-msgstr ""
+msgstr "API認証情報はドメインに関連付けられている必要があります。"
 
 #: ../../../source/otp.rst:60
 msgid "Request OTP API"
-msgstr ""
+msgstr "OTPをリクエストするAPI"
 
 #: ../../../source/otp.rst:61
 msgid ""
 "To send an OTP code to a phone number, make a ``POST`` request to the "
 "endpoint::"
-msgstr ""
+msgstr "電話番号にOTPコードを送信するには、次のエンドポイントに``POST``リクエストを送信してください："
 
 #: ../../../source/otp.rst:70 ../../../source/otp.rst:100
 msgid "Registered domain"
-msgstr ""
+msgstr "登録されたドメイン"
 
 #: ../../../source/otp.rst:71 ../../../source/otp.rst:101
 msgid "phone_number"
-msgstr ""
+msgstr "phone_number"
 
 #: ../../../source/otp.rst:71
 msgid "Recipient number in E.164 format"
-msgstr ""
+msgstr "E.164フォーマットの受信者番号"
 
 #: ../../../source/otp.rst:71 ../../../source/otp.rst:101
 msgid "E.164"
-msgstr ""
+msgstr "E.164"
 
 #: ../../../source/otp.rst:71 ../../../source/otp.rst:101
 msgid "+818012345678"
-msgstr ""
+msgstr "+818012345678"
 
 #: ../../../source/otp.rst:84
 msgid "``400 Bad Request`` is returned if parameters are missing or invalid."
-msgstr ""
+msgstr "パラメータが不足しているか無効な場合、``400 Bad Request``が返されます。"
 
 #: ../../../source/otp.rst:85
 msgid "``401 Unauthorized`` is returned for invalid API credentials."
-msgstr ""
+msgstr "無効なAPI認証情報の場合、``401 Unauthorized``が返されます。"
 
 #: ../../../source/otp.rst:86
 msgid "One active OTP per phone number per domain is enforced."
-msgstr ""
+msgstr "各電話番号およびドメインごとに許可されるアクティブなOTPは1つのみです。"
 
 #: ../../../source/otp.rst:90
 msgid "Verify OTP API"
-msgstr ""
+msgstr "OTPを検証するAPI"
 
 #: ../../../source/otp.rst:91
 msgid ""
 "To verify an OTP submitted by the user, make a ``POST`` request to the "
 "endpoint::"
-msgstr ""
+msgstr "ユーザーが送信したOTPを検証するには、次のエンドポイントに``POST``リクエストを送信してください。"
 
 #: ../../../source/otp.rst:101
 msgid "Recipient number"
-msgstr ""
+msgstr "受信者番号"
 
 #: ../../../source/otp.rst:102
 msgid "otp"
-msgstr ""
+msgstr "otp"
 
 #: ../../../source/otp.rst:102
 msgid "OTP code submitted by user"
-msgstr ""
+msgstr "ユーザーが送信したOTPコード"
 
 #: ../../../source/otp.rst:102
 msgid "Numeric"
-msgstr ""
+msgstr "数値"
 
 #: ../../../source/otp.rst:102
 msgid "654321"
-msgstr ""
+msgstr "654321"
 
 #: ../../../source/otp.rst:105
 msgid ""
 "The response would be a JSON structure, returned with HTTP ``200 OK`` "
 "status code::"
-msgstr ""
+msgstr "レスポンスはJSON構造で返され、HTTP ``200 OK`` ステータスコードが付与されます。"
 
 #: ../../../source/otp.rst:118
 msgid "Below is an example of a failed verification::"
-msgstr ""
+msgstr "以下は検証失敗の例です。"
 
 #: ../../../source/otp.rst:128
 msgid "OTP verification requires exact match of phone number and domain."
-msgstr ""
+msgstr "OTPの検証には、電話番号とドメインが正確に一致することが必要です。"
 
 #: ../../../source/otp.rst:129
 msgid ""
 "OTPs are valid for a limited time and only one active OTP is allowed per "
 "number/domain."
-msgstr ""
-
-#~ msgid ""
-#~ "The OTP API enables you to: - "
-#~ "Send OTP codes to user phone "
-#~ "numbers - Verify OTPs submitted by "
-#~ "users"
-#~ msgstr ""
-
-#~ msgid "Example:"
-#~ msgstr ""
-
-#~ msgid "Authorization: Basic <Base64(SID:TOKEN)>"
-#~ msgstr ""
-
-#~ msgid "curl -X POST https://api.xoxzo.com/otp/register-website/ \\"
-#~ msgstr ""
-
-#~ msgid ""
-#~ "-u <SID>:<TOKEN> \\ -H \"Content-Type:"
-#~ " application/json\" \\ -d '{\"website\": "
-#~ "\"xoxzo.com\"}'"
-#~ msgstr ""
-
-#~ msgid "Response:"
-#~ msgstr ""
-
-#~ msgid "{"
-#~ msgstr ""
-
-#~ msgid "\"message\": \"Website registered successfully.\""
-#~ msgstr ""
-
-#~ msgid "}"
-#~ msgstr ""
-
-#~ msgid "curl -X POST https://api.xoxzo.com/otp/request/ \\"
-#~ msgstr ""
-
-#~ msgid "-u <SID>:<TOKEN> \\ -H \"Content-Type: application/json\" \\ -d '{"
-#~ msgstr ""
-
-#~ msgid "\"website\": \"xoxzo.com\", \"phone_number\": \"+818012345678\""
-#~ msgstr ""
-
-#~ msgid "}'"
-#~ msgstr ""
-
-#~ msgid "Response (Success):"
-#~ msgstr ""
-
-#~ msgid "\"msgid\": \"1234567890\""
-#~ msgstr ""
-
-#~ msgid "Response (Error):"
-#~ msgstr ""
-
-#~ msgid "400 Bad Request – Invalid input 401 Unauthorized – Invalid credentials"
-#~ msgstr ""
-
-#~ msgid "curl -X POST https://api.xoxzo.com/otp/verify/ \\"
-#~ msgstr ""
-
-#~ msgid ""
-#~ "\"website\": \"xoxzo.com\", \"phone_number\": "
-#~ "\"+818012345678\", \"otp\": \"654321\""
-#~ msgstr ""
-
-#~ msgid "Response (Valid):"
-#~ msgstr ""
-
-#~ msgid ""
-#~ "\"is_otp_valid\": true, \"user_identifier\": "
-#~ "\"user@xoxzo.com\", \"phone_number\": \"+818012345678\","
-#~ " \"website\": \"xoxzo.com\", \"msgid\": "
-#~ "\"1234567890\""
-#~ msgstr ""
-
-#~ msgid "Response (Invalid):"
-#~ msgstr ""
-
-#~ msgid "\"is_otp_valid\": false"
-#~ msgstr ""
-
-#~ msgid ""
-#~ "This guide describes how to integrate"
-#~ " with the OTP API for sending "
-#~ "and verifying one-time passwords via "
-#~ "SMS."
-#~ msgstr ""
-
-#~ msgid "Overview"
-#~ msgstr ""
-
-#~ msgid "The OTP API enables you to:"
-#~ msgstr ""
-
-#~ msgid "Send OTP codes to user phone numbers"
-#~ msgstr ""
-
-#~ msgid "Verify OTPs submitted by users"
-#~ msgstr ""
-
-#~ msgid "All requests are authenticated using Basic Auth and scoped per website."
-#~ msgstr ""
-
-#~ msgid "Authentication"
-#~ msgstr ""
-
-#~ msgid "All requests must use Basic Auth with your API SID and TOKEN."
-#~ msgstr ""
-
-#~ msgid "Use Cases"
-#~ msgstr ""
-
-#~ msgid "Secure login using OTP"
-#~ msgstr ""
-
-#~ msgid "Sign-up confirmation"
-#~ msgstr ""
-
-#~ msgid "Two-factor authentication (2FA) for sensitive actions"
-#~ msgstr ""
-
-#~ msgid "Integration Flow"
-#~ msgstr ""
-
-#~ msgid "Register your website"
-#~ msgstr ""
-
-#~ msgid "Request OTP via `/otp/request/`"
-#~ msgstr ""
-
-#~ msgid "Verify OTP via `/otp/verify/`"
-#~ msgstr ""
-
-#~ msgid "Endpoints"
-#~ msgstr ""
-
-#~ msgid "Register Website"
-#~ msgstr ""
-
-#~ msgid "**POST /otp/register-website/**"
-#~ msgstr ""
-
-#~ msgid "Registers a new domain to use the OTP API."
-#~ msgstr ""
-
-#~ msgid "Parameters:"
-#~ msgstr ""
-
-#~ msgid "Request OTP"
-#~ msgstr ""
-
-#~ msgid "**POST /otp/request/**"
-#~ msgstr ""
-
-#~ msgid "Sends an OTP to a user’s phone number."
-#~ msgstr ""
-
-#~ msgid "Recipient phone number (E.164)"
-#~ msgstr ""
-
-#~ msgid "Response (Success)::"
-#~ msgstr ""
-
-#~ msgid "Response (Error)::"
-#~ msgstr ""
-
-#~ msgid "Verify OTP"
-#~ msgstr ""
-
-#~ msgid "**POST /otp/verify/**"
-#~ msgstr ""
-
-#~ msgid "Verifies the OTP submitted by the user."
-#~ msgstr ""
-
-#~ msgid "Recipient phone number"
-#~ msgstr ""
-
-#~ msgid "OTP code from user"
-#~ msgstr ""
-
-#~ msgid "Response (Valid)::"
-#~ msgstr ""
-
-#~ msgid "Response (Invalid)::"
-#~ msgstr ""
-
-#~ msgid "Notes"
-#~ msgstr ""
-
-#~ msgid "OTPs expire within 5–10 minutes (configurable)"
-#~ msgstr ""
-
-#~ msgid "Only one active OTP per phone number per website"
-#~ msgstr ""
-
-#~ msgid "Requests must be authenticated"
-#~ msgstr ""
-
-#~ msgid ""
-#~ "OTP verification is strict: phone number"
-#~ " and website must match the OTP "
-#~ "context"
-#~ msgstr ""
-
-#~ msgid "Example::"
-#~ msgstr ""
-
-#~ msgid "Response::"
-#~ msgstr ""
-
-#~ msgid "`template_id` defaults to 3 if omitted."
-#~ msgstr ""
-
-#~ msgid "Invalid response::"
-#~ msgstr ""
-
-#~ msgid "Only one active OTP per phone number per domain"
-#~ msgstr ""
-
-#~ msgid "OTP verification requires phone number and domain match"
-#~ msgstr ""
-
-#~ msgid "123456 is example of the numbers OTP"
-#~ msgstr ""
+msgstr "OTPは制限時間内で有効であり、番号/ドメインごとにアクティブなOTP１つのみが許可されます。"
 
