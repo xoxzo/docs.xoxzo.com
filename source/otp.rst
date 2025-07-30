@@ -15,20 +15,19 @@ with the following parameters:
     ===========  ============================  ========  ============  ============
     Name         Description                   Required  Data Type     Example
     ===========  ============================  ========  ============  ============
-    website      Your domain name              Yes       UTF-8         xoxzo.com
+    website      Your domain name              Yes       UTF-8         https://xoxzo.com
     template_id  Optional OTP template ID      No        Integer       3
     ===========  ============================  ========  ============  ============
 
 Template id is list of templates that currently we have, currently only one template is available, these are the lists:
 
-    ============ ============================
-    template_id  Value
-    ============ ============================
+    ============  ============================
+    template_id   Value
+    ============  ============================
     3             あなたの確認コードは123456です。
-    ============ ============================
+    ============  ============================
 
-*123456 is example of the numbers OTP
-
+``*\123456`` is an example of the numbers OTP.
 
 The response would be a JSON structure, returned with HTTP ``201 CREATED`` status code::
 
@@ -38,7 +37,6 @@ The response would be a JSON structure, returned with HTTP ``201 CREATED`` statu
     {
         "message": "Website registered successfully."
     }
-
 
 If the website is already registered, the following response will be returned with HTTP ``400 BAD REQUEST`` status code::
 
@@ -55,7 +53,6 @@ If the website is already registered, the following response will be returned wi
    * ``template_id`` defaults to 3 if omitted.
    * Your API credentials must be linked to the domain.
 
-
 Request OTP API
 ====================================
 To send an OTP code to a phone number, make a ``POST`` request to the endpoint::
@@ -65,10 +62,10 @@ To send an OTP code to a phone number, make a ``POST`` request to the endpoint::
 with the following parameters:
 
     ===============  ======================================  =========  ================  ====================
-    Name             Description                             Required   Data Type         Example              
+    Name             Description                             Required   Data Type         Example
     ===============  ======================================  =========  ================  ====================
-    website          Registered domain                       Yes        UTF-8             xoxzo.com            
-    phone_number     Recipient number in E.164 format        Yes        E.164             +818012345678        
+    website          Registered domain                       Yes        UTF-8             https://xoxzo.com
+    phone_number     Recipient number in E.164 format        Yes        E.164             +818012345678
     ===============  ======================================  =========  ================  ====================
 
 The response would be a JSON structure, returned with HTTP ``201 CREATED`` status code::
@@ -85,7 +82,6 @@ The response would be a JSON structure, returned with HTTP ``201 CREATED`` statu
    * ``401 Unauthorized`` is returned for invalid API credentials.
    * One active OTP per phone number per domain is enforced.
 
-
 Verify OTP API
 ====================================
 To verify an OTP submitted by the user, make a ``POST`` request to the endpoint::
@@ -97,7 +93,7 @@ with the following parameters:
     ==============  ===========================  ========  ============  =================
     Name            Description                  Required  Data Type     Example
     ==============  ===========================  ========  ============  =================
-    website         Registered domain            Yes       UTF-8         xoxzo.com
+    website         Registered domain            Yes       UTF-8         https://xoxzo.com
     phone_number    Recipient number             Yes       E.164         +818012345678
     otp             OTP code submitted by user   Yes       Numeric       654321
     ==============  ===========================  ========  ============  =================
@@ -110,9 +106,9 @@ The response would be a JSON structure, returned with HTTP ``200 OK`` status cod
     {
         "is_otp_valid": true,
         "user_identifier": "user@xoxzo.com",
-        "phone_number": "818012345678",
-        "msgid": "1234567890"
-        "website": "https://xoxzo.com",
+        "phone_number": "+818012345678",
+        "msgid": "1234567890",
+        "website": "https://xoxzo.com"
     }
 
 Below is an example of a failed verification::
@@ -121,7 +117,11 @@ Below is an example of a failed verification::
     Content-Type: application/json
 
     {
-        "is_otp_valid": false
+        "is_otp_valid": false,
+        "message": "OTP is invalid.",
+        "user_identifier": "engineering@xoxzo.com",
+        "phone_number": "+818073662952",
+        "website": "https://xoxzo.com"
     }
 
 .. note::
