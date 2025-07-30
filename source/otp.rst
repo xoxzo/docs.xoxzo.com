@@ -19,7 +19,7 @@ with the following parameters:
     template_id  Optional OTP template ID      No        Integer       3
     ===========  ============================  ========  ============  ============
 
-Template id is list of templates that currently we have, currently only one template is available, these are the lists:
+Template ID is a list of templates that currently we have. Currently, only one template is available:
 
     ============  ============================
     template_id   Value
@@ -27,7 +27,7 @@ Template id is list of templates that currently we have, currently only one temp
     3             あなたの確認コードは123456です。
     ============  ============================
 
-``*\123456`` is an example of the numbers OTP.
+`*123456` is an example of the numbers OTP.
 
 The response would be a JSON structure, returned with HTTP ``201 CREATED`` status code::
 
@@ -50,7 +50,7 @@ If the website is already registered, the following response will be returned wi
     }
 
 .. note::
-   * ``template_id`` defaults to 3 if omitted.
+   * `template_id` defaults to 3 if omitted.
    * Your API credentials must be linked to the domain.
 
 Request OTP API
@@ -78,9 +78,11 @@ The response would be a JSON structure, returned with HTTP ``201 CREATED`` statu
     }
 
 .. note::
-   * ``400 Bad Request`` is returned if parameters are missing or invalid.
-   * ``401 Unauthorized`` is returned for invalid API credentials.
+
+   * `400 Bad Request` is returned if parameters are missing or invalid.
+   * `401 Unauthorized` is returned for invalid API credentials.
    * One active OTP per phone number per domain is enforced.
+
 
 Verify OTP API
 ====================================
