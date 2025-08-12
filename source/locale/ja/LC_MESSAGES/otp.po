@@ -3,7 +3,6 @@
 # このファイルは、Xoxzo API ドキュメントパッケージと同じライセンスの下で配布されます。
 # 最初の著者 <EMAIL@ADDRESS>, 2025年。
 #
-#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: Xoxzo API Docs 1.17.0\n"
@@ -24,7 +23,6 @@ msgid "OTP API"
 msgstr "OTP API"
 
 #: ../../../source/otp.rst:5
-#, fuzzy
 msgid ""
 "The OTP API allows you to send and verify one-time passwords (OTP) via "
 "SMS using HTTP endpoints."
@@ -92,7 +90,6 @@ msgstr "UTF-8"
 
 #: ../../../source/otp.rst:18 ../../../source/otp.rst:67
 #: ../../../source/otp.rst:98
-#, fuzzy
 msgid "https://xoxzo.com"
 msgstr "https://www.xoxzo.com"
 
@@ -117,7 +114,6 @@ msgid "3"
 msgstr "3"
 
 #: ../../../source/otp.rst:22
-#, fuzzy
 msgid ""
 "Template ID is a list of templates that currently we have. Currently, "
 "only one template is available:"
@@ -132,7 +128,6 @@ msgid "あなたの確認コードは123456です。"
 msgstr "あなたの確認コードは123456です。"
 
 #: ../../../source/otp.rst:30
-#, fuzzy
 msgid "`*123456` is an example of the numbers OTP."
 msgstr "※123456は送信されるOTPの例です。"
 
@@ -151,7 +146,6 @@ msgstr ""
 "ステータスコードが付与されます："
 
 #: ../../../source/otp.rst:53
-#, fuzzy
 msgid "`template_id` defaults to 3 if omitted."
 msgstr "``template_id``は省略すると3がデフォルト値として使用されます。"
 
@@ -190,12 +184,10 @@ msgid "+818012345678"
 msgstr "+818012345678"
 
 #: ../../../source/otp.rst:82
-#, fuzzy
 msgid "`400 Bad Request` is returned if parameters are missing or invalid."
 msgstr "パラメータが不足しているか無効な場合、``400 Bad Request``が返されます。"
 
 #: ../../../source/otp.rst:83
-#, fuzzy
 msgid "`401 Unauthorized` is returned for invalid API credentials."
 msgstr "無効なAPI認証情報の場合、``401 Unauthorized``が返されます。"
 
