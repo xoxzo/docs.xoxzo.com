@@ -95,7 +95,7 @@ msgstr "https://www.xoxzo.com"
 
 #: ../../../source/otp.rst:19 ../../../source/otp.rst:25
 msgid "template_id"
-msgstr "テンプレートID"
+msgstr "template_id"
 
 #: ../../../source/otp.rst:19
 msgid "Optional OTP template ID"
