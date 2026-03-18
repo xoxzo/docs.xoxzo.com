@@ -85,6 +85,8 @@ with the following parameters:
 
    *  When this optional parameter is provided, you can put tags for each API calls and you can retrieve the tags using the check call status API later.
    *  You can put multiple tags separated by the comma. The leading and trailing spaces are removed from the tags.
+   *  Concurrent Call Limit (Carrier Restriction) Outbound calls may be subject to carrier trunk limits. Our current trunk allows 2 concurrent active calls and 1 CPS. If more than 2 calls are active at the same time (including dialing/ringing), additional calls may be rejected with SIP 503 (Service Unavailable) and shown as FAILED.
+   *  For multiple destinations, implement a queue so that a new call starts only when the number of active calls is below the concurrent limit. A call is considered "active" while it is dialing, ringing, or connected.
 
 .. _jp-din-caller-label:
 
