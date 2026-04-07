@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Heylo API Documentation 1.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-03-19 01:30+0900\n"
+"POT-Creation-Date: 2026-04-07 18:04+0900\n"
 "PO-Revision-Date: 2017-08-22 09:43+0900\n"
 "Last-Translator: \n"
 "Language-Team: \n"
@@ -50,63 +50,63 @@ msgid ""
 " phone, make a ``POST`` request to the endpoint::"
 msgstr "電話を発信し、相手が電話を取った時にオーディオファイルを再生するには、エンドポイントに ``POST`` リクエストを行ってください。"
 
-#: ../../../source/voice.rst:24 ../../../source/voice.rst:259
+#: ../../../source/voice.rst:24 ../../../source/voice.rst:268
 msgid "with the following parameters:"
 msgstr "下記のパラメーターを併記してください。"
 
-#: ../../../source/voice.rst:27 ../../../source/voice.rst:99
-#: ../../../source/voice.rst:155 ../../../source/voice.rst:214
-#: ../../../source/voice.rst:262 ../../../source/voice.rst:321
+#: ../../../source/voice.rst:27 ../../../source/voice.rst:108
+#: ../../../source/voice.rst:164 ../../../source/voice.rst:223
+#: ../../../source/voice.rst:271 ../../../source/voice.rst:330
 msgid "Name"
 msgstr "名称"
 
-#: ../../../source/voice.rst:27 ../../../source/voice.rst:99
-#: ../../../source/voice.rst:155 ../../../source/voice.rst:214
-#: ../../../source/voice.rst:237 ../../../source/voice.rst:262
-#: ../../../source/voice.rst:321
+#: ../../../source/voice.rst:27 ../../../source/voice.rst:108
+#: ../../../source/voice.rst:164 ../../../source/voice.rst:223
+#: ../../../source/voice.rst:246 ../../../source/voice.rst:271
+#: ../../../source/voice.rst:330
 msgid "Description"
 msgstr "詳細"
 
-#: ../../../source/voice.rst:27 ../../../source/voice.rst:99
-#: ../../../source/voice.rst:262
+#: ../../../source/voice.rst:27 ../../../source/voice.rst:108
+#: ../../../source/voice.rst:271
 msgid "Required"
 msgstr "必須"
 
-#: ../../../source/voice.rst:27 ../../../source/voice.rst:99
-#: ../../../source/voice.rst:262
+#: ../../../source/voice.rst:27 ../../../source/voice.rst:108
+#: ../../../source/voice.rst:271
 msgid "Data Type"
 msgstr "データタイプ"
 
-#: ../../../source/voice.rst:27 ../../../source/voice.rst:99
-#: ../../../source/voice.rst:262
+#: ../../../source/voice.rst:27 ../../../source/voice.rst:108
+#: ../../../source/voice.rst:271
 msgid "Example"
 msgstr "例"
 
-#: ../../../source/voice.rst:29 ../../../source/voice.rst:221
-#: ../../../source/voice.rst:264
+#: ../../../source/voice.rst:29 ../../../source/voice.rst:230
+#: ../../../source/voice.rst:273
 msgid "caller"
 msgstr ""
 
-#: ../../../source/voice.rst:29 ../../../source/voice.rst:264
+#: ../../../source/voice.rst:29 ../../../source/voice.rst:273
 msgid "Caller number"
 msgstr "発信者番号"
 
 #: ../../../source/voice.rst:29 ../../../source/voice.rst:30
-#: ../../../source/voice.rst:31 ../../../source/voice.rst:264
-#: ../../../source/voice.rst:265
+#: ../../../source/voice.rst:31 ../../../source/voice.rst:273
+#: ../../../source/voice.rst:274
 msgid "Yes"
 msgstr "○"
 
-#: ../../../source/voice.rst:29 ../../../source/voice.rst:264
+#: ../../../source/voice.rst:29 ../../../source/voice.rst:273
 msgid "Numeric"
 msgstr "数字"
 
 #: ../../../source/voice.rst:29 ../../../source/voice.rst:30
-#: ../../../source/voice.rst:264
+#: ../../../source/voice.rst:273
 msgid "+8190123456789"
 msgstr "+8190123456789"
 
-#: ../../../source/voice.rst:30 ../../../source/voice.rst:222
+#: ../../../source/voice.rst:30 ../../../source/voice.rst:231
 msgid "recipient"
 msgstr "recipient"
 
@@ -114,7 +114,7 @@ msgstr "recipient"
 msgid "Call recipient"
 msgstr "通話の受信者"
 
-#: ../../../source/voice.rst:30 ../../../source/voice.rst:265
+#: ../../../source/voice.rst:30 ../../../source/voice.rst:274
 msgid "E.164"
 msgstr "E.164"
 
@@ -143,7 +143,7 @@ msgid "Callback URL"
 msgstr "コールバックURL"
 
 #: ../../../source/voice.rst:33 ../../../source/voice.rst:34
-#: ../../../source/voice.rst:101 ../../../source/voice.rst:266
+#: ../../../source/voice.rst:110 ../../../source/voice.rst:275
 msgid "No"
 msgstr "×"
 
@@ -151,7 +151,7 @@ msgstr "×"
 msgid "http://example.com"
 msgstr ""
 
-#: ../../../source/voice.rst:34 ../../../source/voice.rst:225
+#: ../../../source/voice.rst:34 ../../../source/voice.rst:234
 msgid "tags"
 msgstr ""
 
@@ -172,7 +172,7 @@ msgid "Notes on the **recipient** parameter:"
 msgstr "**recipient** パラメーターに関する注意点"
 
 #: ../../../source/voice.rst:40 ../../../source/voice.rst:52
-#: ../../../source/voice.rst:272
+#: ../../../source/voice.rst:281
 msgid ""
 "Xoxzo uses the `E.164 <http://en.wikipedia.org/wiki/E.164>`_ number "
 "format when specifying phone numbers."
@@ -181,7 +181,7 @@ msgstr ""
 "を番号のフォーマットに指定しています。"
 
 #: ../../../source/voice.rst:42 ../../../source/voice.rst:54
-#: ../../../source/voice.rst:276
+#: ../../../source/voice.rst:285
 msgid ""
 "`E.164 <http://en.wikipedia.org/wiki/E.164>`_ dictates that phone numbers"
 " must start with the + prefix and country code then followed directly by "
@@ -198,7 +198,7 @@ msgstr ""
 "有効な受信者記載例として、 *+818011234567* と挙げられます。 *81* は日本の国番号で、 *8011234567* "
 "は携帯電話番号となります。"
 
-#: ../../../source/voice.rst:50 ../../../source/voice.rst:290
+#: ../../../source/voice.rst:50 ../../../source/voice.rst:299
 msgid "Notes on the **caller** parameter:"
 msgstr "**caller** パラメーターに関する注意点"
 
@@ -281,52 +281,78 @@ msgid ""
 "trailing spaces are removed from the tags."
 msgstr "タグは、コンマで区切ることで複数付けられます。タグの前後の空白は取り除かれます。"
 
-#: ../../../source/voice.rst:88
-msgid ""
-"Concurrent Call Limit (Carrier Restriction) Outbound calls may be subject"
-" to carrier trunk limits. Our current trunk allows 2 concurrent active "
-"calls and 1 CPS. If more than 2 calls are active at the same time "
-"(including dialing/ringing), additional calls may be rejected with SIP "
-"503 (Service Unavailable) and shown as FAILED."
-msgstr ""
-"CPSは1 です。発信処理中／呼出中もアクティブ通話に含まれるため、同時アクティブ通話数が2件の状態で3件目を開始すると SIP 503 "
-"が返却され、FAILED となる場合があります。"
+#: ../../../source/voice.rst:90
+msgid "Notes on the **Concurrent Call Limit (Carrier Restriction)**:"
+msgstr "**同時通話制限 (キャリアによる制限)** に関する注意事項:"
 
-#: ../../../source/voice.rst:89
+#: ../../../source/voice.rst:92
 msgid ""
-"For multiple destinations, implement a queue so that a new call starts "
-"only when the number of active calls is below the concurrent limit. A "
-"call is considered \"active\" while it is dialing, ringing, or connected."
+"**Carrier Trunk Limits:** Outbound calls may be subject to carrier trunk "
+"limits. Our current trunk allows **2 concurrent active calls** and **1 "
+"CPS**. If more than two calls are active at the same time, additional "
+"calls may be rejected with a ``SIP 503 (Service Unavailable)`` response "
+"and appear as ``FAILED``."
 msgstr ""
-複数宛先へ通知する場合は、アクティブ通話数が上限未満になってから次の発信を開始するキュー"
-"制御を推奨します。通話は「発信処理中」「呼び出し中」「接続中」のいずれの状態でもアクティブ"
-"通話としてカウントされます。"
+"**キャリアトランクの制限:** 外線発信はキャリアトランクの制限を受ける場合があります。現在のトランクでは、**同時アクティブ通話2件**および **1 "
+"CPS** が許可されています。同時に2件を超える通話がアクティブな場合、追加の通話は ``SIP 503 (Service Unavailable)`` "
+"レスポンスで拒否され、``FAILED`` と表示されることがあります。"
 
 #: ../../../source/voice.rst:94
+msgid ""
+"**Active Call Definition:** A call is considered **active** while it is "
+"dialing, ringing, or connected."
+msgstr ""
+"**アクティブ通話の定義:** 通話は、ダイヤル中、呼出中、または接続中の間、**アクティブ** とみなされます。"
+
+#: ../../../source/voice.rst:96
+msgid ""
+"**Ringing Duration:** The duration of the ringing state is carrier-"
+"dependent and not strictly controlled by Xoxzo. Even if a timeout is "
+"configured on our system, the actual duration may be shorter (typically "
+"**15–20 seconds** for mobile devices) depending on the receiving carrier "
+"and settings like voicemail."
+msgstr ""
+"**呼出時間:** 呼出状態の継続時間はキャリアに依存し、Xoxzoによって厳密に制御されているわけではありません。"
+"システムでタイムアウトが設定されていても、実際の時間は着信側のキャリアや留守番電話の設定などにより、"
+"それより短くなる（モバイルデバイスでは通常 **15〜20秒**）場合があります。"
+
+#: ../../../source/voice.rst:98
+msgid ""
+"**Implementation Recommendations:** For multiple destinations, it is "
+"recommended to implement a **call queue**. A new call should only be "
+"initiated when the number of current active calls is below the concurrent"
+" limit (e.g., < 2) to ensure higher delivery success rates and prevent "
+"``SIP 503`` errors."
+msgstr ""
+"**実装に関する推奨事項:** 複数の宛先を対象とする場合は、**コールキュー** の実装を推奨します。"
+"不要な ``SIP 503`` エラーを防ぎ、配信成功率を高めるために、現在のアクティブ通話数が同時制限数（例：2未満）を下回っている場合にのみ、"
+"新しい通話を開始するようにしてください。"
+
+#: ../../../source/voice.rst:103
 msgid "JP specific optional parameters"
 msgstr "JP向けのオプション・パラメーター"
 
-#: ../../../source/voice.rst:96
+#: ../../../source/voice.rst:105
 msgid "The additional parameters below are for JP specific usage and recipients:"
 msgstr "下記の追加パラメーターは日本国内での利用・受信専用です。"
 
-#: ../../../source/voice.rst:101
+#: ../../../source/voice.rst:110
 msgid "jp_din_caller"
 msgstr "jp_din_caller"
 
-#: ../../../source/voice.rst:101
+#: ../../../source/voice.rst:110
 msgid "Local caller ID"
 msgstr "ローカル発信者番号"
 
-#: ../../../source/voice.rst:101
+#: ../../../source/voice.rst:110
 msgid "The string **true**"
 msgstr "**true** の文字列"
 
-#: ../../../source/voice.rst:101
+#: ../../../source/voice.rst:110
 msgid "true"
 msgstr "true"
 
-#: ../../../source/voice.rst:104
+#: ../../../source/voice.rst:113
 msgid ""
 "Please refer to our `JP Local Caller ID service <https://help.xoxzo.com"
 "/xoxzo-cloud-telephony/articles/local-caller-id-for-dial-in-numbers/>`_ "
@@ -335,11 +361,11 @@ msgstr ""
 "詳細は `ローカル発信者番号 <https://help.xoxzo.com/ja/xoxzo-cloud-telephony/articles"
 "/local-caller-id-for-dial-in-numbers/>`_ にてご確認ください。"
 
-#: ../../../source/voice.rst:107
+#: ../../../source/voice.rst:116
 msgid "Notes on the **jp_din_caller** parameter:"
 msgstr "**jp_din_caller** パラメーターに関する注意点"
 
-#: ../../../source/voice.rst:109
+#: ../../../source/voice.rst:118
 msgid ""
 "You are required to subscribe to a Dial In Number in order to use the "
 "local caller ID functionality. Please refer to :ref:`subscribe-din-api-"
@@ -348,25 +374,25 @@ msgstr ""
 "ローカル発信者番号の機能を利用するためには、ダイアルイン番号を購読してください。詳しくは、:ref:`subscribe-din-api-ref`"
 " をご参照ください。"
 
-#: ../../../source/voice.rst:112
+#: ../../../source/voice.rst:121
 msgid "Examples"
 msgstr "例"
 
-#: ../../../source/voice.rst:114
+#: ../../../source/voice.rst:123
 msgid "Below is an example request using cURL::"
 msgstr "cURLを使ったリクエストの例は下記のとおりです。"
 
-#: ../../../source/voice.rst:124 ../../../source/voice.rst:296
+#: ../../../source/voice.rst:133 ../../../source/voice.rst:305
 msgid "Response"
 msgstr "レスポンス"
 
-#: ../../../source/voice.rst:126 ../../../source/voice.rst:298
+#: ../../../source/voice.rst:135 ../../../source/voice.rst:307
 msgid ""
 "The response would be a JSON structure, returned with HTTP ``201 "
 "CREATED`` status code::"
 msgstr "レスポンスは、JSON構造となり、ステータスコード　HTTP ``201 CREATED`` にて返されます。"
 
-#: ../../../source/voice.rst:137
+#: ../../../source/voice.rst:146
 msgid ""
 "If there's invalid parameters given, HTTP ``400 BAD REQUEST`` status code"
 " will be returned. For example, if the ``caller`` parameter is missing, "
@@ -375,20 +401,20 @@ msgstr ""
 "間違ったバラメーターが与えられた場合には、ステータスコード HTTP ``400 BAD REQUEST``　が返されます。例えば、もし "
 "``recording_url`` パラメーターがなかった場合、HTTPからの返答はこのようになります。"
 
-#: ../../../source/voice.rst:152 ../../../source/voice.rst:318
+#: ../../../source/voice.rst:161 ../../../source/voice.rst:327
 msgid "Response Data"
 msgstr "レスポンスデータ"
 
-#: ../../../source/voice.rst:157 ../../../source/voice.rst:216
-#: ../../../source/voice.rst:325
+#: ../../../source/voice.rst:166 ../../../source/voice.rst:225
+#: ../../../source/voice.rst:334
 msgid "callid"
 msgstr "callid"
 
-#: ../../../source/voice.rst:157 ../../../source/voice.rst:216
+#: ../../../source/voice.rst:166 ../../../source/voice.rst:225
 msgid "The unique call id for this call"
 msgstr "この通話固有のIDです。"
 
-#: ../../../source/voice.rst:161
+#: ../../../source/voice.rst:170
 msgid ""
 "It's faster to actually try some test code againts the API to see "
 "immediate results. `Signing up "
@@ -398,11 +424,11 @@ msgstr ""
 "実際にテストコードでAPIを叩いたほうが早く動作確認できます。 `無料登録 "
 "<https://www.xoxzo.com/ja/accounts/signup/>`_ は無料ですぐできます。"
 
-#: ../../../source/voice.rst:166
+#: ../../../source/voice.rst:175
 msgid "Using Text To Speech with Simple Playback API"
 msgstr "音声プレーバックAPIでテキスト読み上げ機能を使う"
 
-#: ../../../source/voice.rst:168
+#: ../../../source/voice.rst:177
 msgid ""
 "OPTIONAL: For an additional cost, you can use text to speech option "
 "instead of pre-recorded mp3 file when making calls using the Simple "
@@ -412,11 +438,11 @@ msgstr ""
 "追加機能：追加料金で、あらかじめ用意した音声ファイルのかわりに、テキスト読み上げ機能を音声プレーバックAPIで使うことが可能です。この機能を使うには"
 " :ref:`text-to-speech-api-ref` を参照してください。"
 
-#: ../../../source/voice.rst:175
+#: ../../../source/voice.rst:184
 msgid "Checking Call Status"
 msgstr "プレーバック発信ステータス確認"
 
-#: ../../../source/voice.rst:177
+#: ../../../source/voice.rst:186
 msgid ""
 "To check call status, make a GET request to the endpoint followed by "
 "``<callid>``. An example of using curl is below::"
@@ -424,149 +450,149 @@ msgstr ""
 "通話状態を調べるには、エンドポイントに ``<callid>`` "
 "をつけた、GETリクエストを行ってください。curlを用いた例は次のようになります。"
 
-#: ../../../source/voice.rst:182
+#: ../../../source/voice.rst:191
 msgid ""
 "Every time you make a call, you will get a response containing "
 "``<callid>``. Use this ``<callid>`` to check call status."
 msgstr "発信を行うたびに、 ``<callid>`` を含むレスポンスが得られますので、この ``<callid>`` を通話状態の確認にご利用ください。"
 
-#: ../../../source/voice.rst:185 ../../../source/voice.rst:341
+#: ../../../source/voice.rst:194 ../../../source/voice.rst:351
 msgid ""
 "The response would be a JSON structure, returned with HTTP ``200 OK`` "
 "status code::"
 msgstr "レスポンスは、JSON構造となり、ステータスコード HTTP ``200 OK`` にて返されます。"
 
-#: ../../../source/voice.rst:211
+#: ../../../source/voice.rst:220
 msgid "Response data"
 msgstr "レスポンスデータ"
 
-#: ../../../source/voice.rst:217
+#: ../../../source/voice.rst:226
 msgid "cost"
 msgstr "cost"
 
-#: ../../../source/voice.rst:217
+#: ../../../source/voice.rst:226
 msgid "The cost in credits for this call"
 msgstr "この通話にかかった料金をクレジット数で表示しています。"
 
-#: ../../../source/voice.rst:218
+#: ../../../source/voice.rst:227
 msgid "duration"
 msgstr "duration"
 
-#: ../../../source/voice.rst:218
+#: ../../../source/voice.rst:227
 msgid "The duration of the call"
 msgstr "この通話の時間を表示します。"
 
-#: ../../../source/voice.rst:219
+#: ../../../source/voice.rst:228
 msgid "start_time"
 msgstr "start_time"
 
-#: ../../../source/voice.rst:219
+#: ../../../source/voice.rst:228
 msgid "The time when the call was made (in UTC)"
 msgstr "通話が開始された時間が、UTC（協定世界時）にて表示されます。"
 
-#: ../../../source/voice.rst:220
+#: ../../../source/voice.rst:229
 msgid "end_time"
 msgstr "end_time"
 
-#: ../../../source/voice.rst:220
+#: ../../../source/voice.rst:229
 msgid "The time when the call ended (in UTC)"
 msgstr "通話が終了した時間が、UTC（協定世界時）にて表示されます。"
 
-#: ../../../source/voice.rst:221
+#: ../../../source/voice.rst:230
 msgid "The caller number"
 msgstr "この通話の発信元番号を表示します。"
 
-#: ../../../source/voice.rst:222
+#: ../../../source/voice.rst:231
 msgid "The recipient number"
 msgstr "この通話の着信番号を表示します。"
 
-#: ../../../source/voice.rst:223
+#: ../../../source/voice.rst:232
 msgid "status"
 msgstr ""
 
-#: ../../../source/voice.rst:223
+#: ../../../source/voice.rst:232
 msgid "The status of this call"
 msgstr "この通話の状態を表示します。"
 
-#: ../../../source/voice.rst:224
+#: ../../../source/voice.rst:233
 msgid "url"
 msgstr ""
 
-#: ../../../source/voice.rst:224
+#: ../../../source/voice.rst:233
 msgid "The URL of this call status"
 msgstr "この通話状態のURLを表示します。"
 
-#: ../../../source/voice.rst:225
+#: ../../../source/voice.rst:234
 msgid ""
 "The tags assigned to this call. If no tags are assigned, empty list [] "
 "will be set."
 msgstr "この通話に付けられたタグです。タグが無いときは空のリスト[]になります。"
 
-#: ../../../source/voice.rst:227
+#: ../../../source/voice.rst:236
 msgid "direction"
 msgstr ""
 
-#: ../../../source/voice.rst:227
+#: ../../../source/voice.rst:236
 msgid "The direction of this call"
 msgstr "この通話の向きを表示します。"
 
-#: ../../../source/voice.rst:228
+#: ../../../source/voice.rst:237
 msgid "call_type"
 msgstr ""
 
-#: ../../../source/voice.rst:228
+#: ../../../source/voice.rst:237
 msgid "The call type of this call"
 msgstr "この通話のタイプを表示します。"
 
-#: ../../../source/voice.rst:232
+#: ../../../source/voice.rst:241
 msgid "Common call statuses"
 msgstr "よくある通話のステータス"
 
-#: ../../../source/voice.rst:234
+#: ../../../source/voice.rst:243
 msgid "This is a list of statuses that you can find in the ``status`` data:"
 msgstr "``status`` データ内にある、ステータスのリストです。"
 
-#: ../../../source/voice.rst:237
+#: ../../../source/voice.rst:246
 msgid "Call status"
 msgstr "通話状態"
 
-#: ../../../source/voice.rst:239
+#: ../../../source/voice.rst:248
 msgid "ANSWERED"
 msgstr "ANSWERED"
 
-#: ../../../source/voice.rst:239
+#: ../../../source/voice.rst:248
 msgid "The call was answered by the recipient, or was passed to a mailbox"
 msgstr "通話は受信者が応答したか、留守番電話へとつながりました。"
 
-#: ../../../source/voice.rst:241
+#: ../../../source/voice.rst:250
 msgid "FAILED"
 msgstr "FAILED"
 
-#: ../../../source/voice.rst:241
+#: ../../../source/voice.rst:250
 msgid "The call failed to connect to the recipient"
 msgstr "この発信は、受信者へつながりませんでした。"
 
-#: ../../../source/voice.rst:242
+#: ../../../source/voice.rst:251
 msgid "IN PROGRESS"
 msgstr ""
 
-#: ../../../source/voice.rst:242
+#: ../../../source/voice.rst:251
 msgid "The call is still in progress"
 msgstr "現在通話中"
 
-#: ../../../source/voice.rst:243
+#: ../../../source/voice.rst:252
 msgid "NO ANSWER"
 msgstr "NO ANSWER"
 
-#: ../../../source/voice.rst:243
+#: ../../../source/voice.rst:252
 msgid "The call was not answered by the recipient"
 msgstr "受信者はこの発信に応答しませんでした。"
 
-#: ../../../source/voice.rst:247
+#: ../../../source/voice.rst:256
 msgid "Simple Conference API"
 msgstr "電話会議API"
 
-#: ../../../source/voice.rst:249
+#: ../../../source/voice.rst:258
 msgid ""
 "The Conference API when executed, will make a call to each of your "
 "participants and connect them automatically to a conference call when "
@@ -574,113 +600,113 @@ msgid ""
 "with multiple people at once on the phone."
 msgstr "電話会議APIを使うと、各参加者に電話をかけ、応答があると自動的に電話会議に参加させることができます。同時に複数の参加者のあいだで通話することが可能です。"
 
-#: ../../../source/voice.rst:254
+#: ../../../source/voice.rst:263
 msgid ""
 "To start a conference call, you can use the following API. make a "
 "``POST`` request to the endpoint::"
 msgstr "電話会議を開始するにには次のAPIを使います。``POST`` リクエストをこのエンドポイントに行ってください。"
 
-#: ../../../source/voice.rst:265 ../../../source/voice.rst:324
+#: ../../../source/voice.rst:274 ../../../source/voice.rst:333
 msgid "participants"
 msgstr ""
 
-#: ../../../source/voice.rst:265
+#: ../../../source/voice.rst:274
 msgid "Conference participants"
 msgstr "電話会議参加者"
 
-#: ../../../source/voice.rst:265
+#: ../../../source/voice.rst:274
 msgid "+8190123456789,+8190123456780"
 msgstr "+8190123456789"
 
-#: ../../../source/voice.rst:266
+#: ../../../source/voice.rst:275
 msgid "lang"
 msgstr ""
 
-#: ../../../source/voice.rst:266
+#: ../../../source/voice.rst:275
 msgid "Language of guidance"
 msgstr "ガイドの言語"
 
-#: ../../../source/voice.rst:266
+#: ../../../source/voice.rst:275
 msgid "ISO 639-1"
 msgstr ""
 
-#: ../../../source/voice.rst:266
+#: ../../../source/voice.rst:275
 msgid "en"
 msgstr ""
 
-#: ../../../source/voice.rst:270
+#: ../../../source/voice.rst:279
 msgid "Notes on the **participants** parameter:"
 msgstr "**participants** パラメーターに関する注意点"
 
-#: ../../../source/voice.rst:274
+#: ../../../source/voice.rst:283
 msgid ""
 "You need a minimum of 2 participants and up to a maximum of 3 "
 "participants, separated with a comma (,)"
 msgstr "参加者の数は最低２名、最高３名です。参加者はコンマ(,)で区切ります。"
 
-#: ../../../source/voice.rst:278
+#: ../../../source/voice.rst:287
 msgid ""
 "Example of a valid participants is: *+818011234567* with *81* as the "
 "Japan country code and *8011234567* as the mobile number."
 msgstr "有効な参加者の例は *+818011234567* です。 *81* は日本の国番号で、 *8011234567* は携帯電話番号となります。"
 
-#: ../../../source/voice.rst:282
+#: ../../../source/voice.rst:291
 msgid "Notes on the **lang** parameter:"
 msgstr "**lang** パラメーターに関する注意点"
 
-#: ../../../source/voice.rst:284
+#: ../../../source/voice.rst:293
 msgid ""
 "You can specify the guidance language of the beginning of the conference "
 "call with this this parameter."
 msgstr "このパラメータは電話会議開始時のガイドの言語を指定します。"
 
-#: ../../../source/voice.rst:285
+#: ../../../source/voice.rst:294
 msgid ""
 "Two letter language code of the guidance in `ISO 639-1. "
 "<https://en.wikipedia.org/wiki/ISO_639-1>`_"
 msgstr "ISO 639-1 形式の２文字の言語コード `<https://en.wikipedia.org/wiki/ISO_639-1>`_"
 
-#: ../../../source/voice.rst:286
+#: ../../../source/voice.rst:295
 msgid "This parameter is optional. The default value is **ja**."
 msgstr "このパラメータは省略可能です。デフォルトは **ja** です。"
 
-#: ../../../source/voice.rst:287
+#: ../../../source/voice.rst:296
 msgid "Currently, **en** and **ja** are accepted."
 msgstr "現在使えるのは **en** と **ja** です。"
 
-#: ../../../source/voice.rst:292
+#: ../../../source/voice.rst:301
 msgid "Please see :ref:`caller parameter<caller-parameter-label>`"
 msgstr ":ref:`caller parameter<caller-parameter-label>` を参照して下さい。"
 
-#: ../../../source/voice.rst:323
+#: ../../../source/voice.rst:332
 msgid "conferenceid"
 msgstr ""
 
-#: ../../../source/voice.rst:323
+#: ../../../source/voice.rst:332
 msgid "The unique conference id for this conference"
 msgstr "この電話会議固有のIDです。"
 
-#: ../../../source/voice.rst:324
+#: ../../../source/voice.rst:333
 msgid "A list about each participant's call"
 msgstr "各参加者に関する情報のリストです。"
 
-#: ../../../source/voice.rst:325
+#: ../../../source/voice.rst:334
 msgid "The unique call id for the participant"
 msgstr "この参加者の通話固有のID"
 
-#: ../../../source/voice.rst:326
+#: ../../../source/voice.rst:335
 msgid "participant"
 msgstr ""
 
-#: ../../../source/voice.rst:326
+#: ../../../source/voice.rst:335
 msgid "The participant number that was called"
 msgstr "この参加者の着信番号"
 
-#: ../../../source/voice.rst:330
+#: ../../../source/voice.rst:340
 msgid "Checking Conference Status"
 msgstr "電話会議ステータス確認"
 
-#: ../../../source/voice.rst:332
+#: ../../../source/voice.rst:342
 msgid ""
 "To check conference status, make a GET request to the endpoint followed "
 "by ``<conferenceid>``. An example of using curl is below::"
@@ -688,7 +714,7 @@ msgstr ""
 "電話会議のステータスを調べるには、エンドポイントに ``<conferenceid>`` "
 "をつけた、GETリクエストを行ってください。curlを用いた例は次のようになります。"
 
-#: ../../../source/voice.rst:338
+#: ../../../source/voice.rst:348
 msgid ""
 "Every time you make a canference, you will get a response containing "
 "``<conferenceid>``. Use this ``<conferenceid>`` to check call status."
@@ -696,7 +722,7 @@ msgstr ""
 "電話会議を行うたびに、 ``<conferenceid>`` を含むレスポンスが得られますので、この ``<conferenceid>`` "
 "を電話会議状態の確認にご利用ください。"
 
-#: ../../../source/voice.rst:380
+#: ../../../source/voice.rst:390
 msgid "Please see :ref:`call_status_response_label` for details."
 msgstr "詳細は :ref:`call_status_response_label` を参照してください。"
 
