@@ -4,9 +4,7 @@ import functools
 
 run = functools.partial(subprocess.call, shell=True)
 
-run('pip install virtualenv')
-
-run('virtualenv -p python3 .env')
+run("/usr/bin/python3.10 -m venv .env")
 
 run('.env/bin/pip install setuptools==79.0.0')
 
