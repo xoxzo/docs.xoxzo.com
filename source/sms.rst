@@ -101,6 +101,7 @@ Parameters
     name       Template name         Yes       UTF-8      otp_code
     body       Template body         Yes       UTF-8      Your code is {code}.
     variables  Variable definitions  Yes       Object     {"code": {"type": "string", "max_length": 6}}
+    =========  ====================  ========  =========  =============================================
 
 Example Request::
 
@@ -168,6 +169,7 @@ Path parameters
     Name  Description  Required  Data Type  Example
     ====  ===========  ========  =========  ==========
     id    Template ID  Yes       String     tpl_123456
+    ====  ===========  ========  =========  ==========
 
 Example response::
 
@@ -262,6 +264,7 @@ Path parameters::
     Name  Description  Required  Data Type  Example
     ====  ===========  ========  =========  ==========
     id    Template ID  Yes       String     tpl_123456
+    ====  ===========  ========  =========  ==========
 
 Parameters::
 
@@ -941,6 +944,7 @@ Common errors::
     403          Forbidden. The account does not have access to the requested feature.
     404          Not found. The requested resource does not exist.
     422          Unprocessable entity. Validation failed.
+    ===========  =====================================================================
 
 Example validation error::
 
