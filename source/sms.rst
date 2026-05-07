@@ -923,7 +923,7 @@ Error responses
 
 The API returns standard HTTP status codes for invalid requests or unauthorized access.
 
-Common errors::
+Common errors:
 
     ===========  =====================================================================
     Status code  Meaning
