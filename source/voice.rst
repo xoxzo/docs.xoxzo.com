@@ -86,6 +86,17 @@ with the following parameters:
    *  When this optional parameter is provided, you can put tags for each API calls and you can retrieve the tags using the check call status API later.
    *  You can put multiple tags separated by the comma. The leading and trailing spaces are removed from the tags.
 
+.. note::
+   Notes on the **Concurrent Call Limit (Carrier Restriction)**:
+
+   * **Carrier Trunk Limits:** Outbound calls may be subject to carrier trunk limits. Our current trunk allows **2 concurrent active calls** and **1 CPS**. If more than two calls are active at the same time, additional calls may be rejected with a ``SIP 503 (Service Unavailable)`` response and appear as ``FAILED``.
+   
+   * **Active Call Definition:** A call is considered **active** while it is dialing, ringing, or connected.
+   
+   * **Ringing Duration:** The duration of the ringing state is carrier-dependent and not strictly controlled by Xoxzo. Even if a timeout is configured on our system, the actual duration may be shorter (typically **15–20 seconds** for mobile devices) depending on the receiving carrier and settings like voicemail.
+   
+   * **Implementation Recommendations:** For multiple destinations, it is recommended to implement a **call queue**. A new call should only be initiated when the number of current active calls is below the concurrent limit (e.g., < 2) to ensure higher delivery success rates and prevent ``SIP 503`` errors.
+
 .. _jp-din-caller-label:
 
 JP specific optional parameters
@@ -323,6 +334,7 @@ Response Data
     callid         The unique call id for the participant
     participant    The participant number that was called
     ============== =============================================
+
 
 Checking Conference Status
 ====================================
