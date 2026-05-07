@@ -258,7 +258,7 @@ Request::
 
     POST /sms/templates/{id}/messages/
 
-Path parameters::
+Path parameters:
 
     ====  ===========  ========  =========  ==========
     Name  Description  Required  Data Type  Example
@@ -266,7 +266,7 @@ Path parameters::
     id    Template ID  Yes       String     tpl_123456
     ====  ===========  ========  =========  ==========
 
-Parameters::
+Parameters:
 
     ===============  ===========================  ========  ===================  ==============================
     Name             Description                  Required  Data Type            Example
