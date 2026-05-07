@@ -2,23 +2,276 @@
 SMS API
 ====================================
 
-The SMS API allows you to send/receive SMS to supported carriers via beautiful HTTP endpoints.
+The SMS API supports two sending modes: template SMS and freeform SMS. Template SMS is the default for standard accounts, while freeform SMS is available only to approved trusted partners.
 
-Send SMS messages API
+Template SMS uses approved message templates with validated variables. Freeform SMS allows a fully custom message body, but access is restricted.
+
+Overview
 ====================================
-To send a SMS message, make a ``POST`` request to the endpoint::
 
-    https://api.xoxzo.com/sms/messages/
+Use template SMS when you want predictable, structured messages such as OTPs, alerts, reminders, and notifications.
 
-with the following parameters:
+Use freeform SMS only when your account has been explicitly enabled for it.
 
-    ===============  ===========================  ========  ===================  ===================
+Authentication
+------------------------------------
+
+All endpoints require authentication using your account credentials.
+
+Example::
+
+    curl -u <SID>:<AUTH_TOKEN> https://api.xoxzo.com/sms/templates/
+
+Endpoints
+====================================
+
+Template management
+------------------------------------
+
+POST /sms/templates/ — Create a template.
+
+GET /sms/templates/ — List templates.
+
+GET /sms/templates/{id}/ — Retrieve a template.
+
+PATCH /sms/templates/{id}/ — Update a template.
+
+DELETE /sms/templates/{id}/ — Delete a template.
+
+Template message sending
+------------------------------------
+
+POST /sms/templates/{id}/messages/ — Send an SMS using a template.
+
+GET /sms/templates/{id}/messages/ — List messages sent using a template.
+
+Freeform message sending
+------------------------------------
+
+POST /sms/messages/ — Send a freeform SMS. This endpoint is available only to approved partners.
+
+GET /sms/messages/ — List messages
+
+Message status checking
+------------------------------------
+
+GET /sms/templates/{id}/messages/<msgid>/ — Check status of message sent using a template.
+
+GET /sms/messages/<msgid>/ — Check status of message sent using freeform SMS.
+
+Template object
+------------------------------------
+
+A template represents an approved SMS message pattern with variable placeholders.
+
+Template fields:
+
+    =========  =========================================  ========  =========  =============================================
+    Name       Description                                Required  Data Type  Example
+    =========  =========================================  ========  =========  =============================================
+    name       Template name                              Yes       UTF-8      otp_code
+    body       Template body with placeholders            Yes       UTF-8      Your code is {code}.
+    variables  Variable definitions and validation rules  Yes       Object     {"code": {"type": "string", "max_length": 6}}
+
+Template body format
+------------------------------------
+
+Template bodies use named placeholders such as {code} and {minutes}.
+
+Example::
+
+    Your verification code is {code}. It expires in {minutes} minutes.
+
+Placeholders must be defined in the template before the template can be approved for sending.
+
+Create a template
+------------------------------------
+
+Create a new SMS template.
+
+Request::
+
+    POST /sms/templates/
+
+Parameters
+
+    =========  ====================  ========  =========  =============================================
+    Name       Description           Required  Data Type  Example
+    =========  ====================  ========  =========  =============================================
+    name       Template name         Yes       UTF-8      otp_code
+    body       Template body         Yes       UTF-8      Your code is {code}.
+    variables  Variable definitions  Yes       Object     {"code": {"type": "string", "max_length": 6}}
+
+Example Request::
+
+    curl -u <SID>:<AUTH_TOKEN> \
+      -X POST \
+      --data-urlencode 'name=otp_code' \
+      --data-urlencode 'body=Your verification code is {code}. It expires in {minutes} minutes.' \
+      --data-urlencode 'variables={"code":{"type":"string","max_length":6},"minutes":{"type":"integer","min":1,"max":30}}' \
+      https://api.xoxzo.com/sms/templates/
+
+Success Response::
+
+    {
+      "id": "tpl_123456",
+      "name": "otp_code",
+      "body": "Your verification code is {code}. It expires in {minutes} minutes.",
+      "variables": {
+        "code": {
+          "type": "string",
+          "max_length": 6
+        },
+        "minutes": {
+          "type": "integer",
+          "min": 1,
+          "max": 30
+        }
+      },
+      "status": "active",
+      "created_at": "2026-05-05 09:00:00",
+      "updated_at": "2026-05-05 09:00:00"
+    }
+
+List templates
+------------------------------------
+
+Retrieve all templates for the account.
+
+Request::
+
+    GET /sms/templates/
+
+Example response::
+
+    [
+      {
+        "id": "tpl_123456",
+        "name": "otp_code",
+        "body": "Your verification code is {code}. It expires in {minutes} minutes.",
+        "status": "active"
+      }
+    ]
+
+Retrieve a template
+------------------------------------
+
+Retrieve a single template by ID.
+
+Request::
+
+    GET /sms/templates/{id}/
+
+Path parameters
+
+    ====  ===========  ========  =========  ==========
+    Name  Description  Required  Data Type  Example
+    ====  ===========  ========  =========  ==========
+    id    Template ID  Yes       String     tpl_123456
+
+Example response::
+
+    {
+      "id": "tpl_123456",
+      "name": "otp_code",
+      "body": "Your verification code is {code}. It expires in {minutes} minutes.",
+      "variables": {
+        "code": {
+          "type": "string",
+          "max_length": 6
+        },
+        "minutes": {
+          "type": "integer",
+          "min": 1,
+          "max": 30
+        }
+      },
+      "status": "active",
+      "created_at": "2026-05-05 09:00:00",
+      "updated_at": "2026-05-05 09:10:00"
+    }
+
+Update a template
+------------------------------------
+
+Update an existing template.
+
+Request::
+
+    PATCH /sms/templates/{id}/
+
+Example request::
+
+    curl -u <SID>:<AUTH_TOKEN> \
+      -X PATCH \
+      --data-urlencode 'body=Your verification code is {code}. It expires in {minutes} minutes.' \
+      --data-urlencode 'variables={"code":{"type":"string","max_length":6},"minutes":{"type":"integer","min":1,"max":15}}' \
+      https://api.xoxzo.com/sms/templates/tpl_123456/
+
+Example response::
+
+    {
+      "id": "tpl_123456",
+      "name": "otp_code",
+      "body": "Your verification code is {code}. It expires in {minutes} minutes.",
+      "variables": {
+        "code": {
+          "type": "string",
+          "max_length": 6
+        },
+        "minutes": {
+          "type": "integer",
+          "min": 1,
+          "max": 15
+        }
+      },
+      "status": "active",
+      "created_at": "2026-05-05 09:00:00",
+      "updated_at": "2026-05-05 09:15:00"
+    }
+
+Delete a template
+------------------------------------
+
+Delete a template that is no longer needed.
+
+Request::
+
+    DELETE /sms/templates/{id}/
+
+Example response::
+
+    {
+      "detail": "Template deleted."
+    }
+
+Send Templated SMS messages
+====================================
+
+Send an SMS using a specific template.
+
+The template ID is provided in the URL, and the request body must include values for the template variables.
+
+Request::
+
+    POST /sms/templates/{id}/messages/
+
+Path parameters::
+
+    ====  ===========  ========  =========  ==========
+    Name  Description  Required  Data Type  Example
+    ====  ===========  ========  =========  ==========
+    id    Template ID  Yes       String     tpl_123456
+
+Parameters::
+
+    ===============  ===========================  ========  ===================  ==============================
     Name             Description                  Required  Data Type            Example
-    ===============  ===========================  ========  ===================  ===================
-    message          Message body                 Yes       UTF-8                こんにちは
+    ===============  ===========================  ========  ===================  ==============================
     recipient        Message recipient            Yes       E.164                +8190123456789
     sender           Sender ID                    Yes       Alphanumeric         Xoxzo1
-    callbackurl      Callback URL                 No        URL                  http://example.com
+    variables        Template variable values     Yes       Object               {"code":"481992","minutes":10}
+    callbackurl      Callback URL                 No        URL                  https://example.com/callback
     tags             Tags                         No        UTF-8                tag1,tag2
     track_link       Enable link tracking         No        The string **true**  true
     lt_callbackurl   Link tracking callback URL   No        URL                  http://example.com
@@ -38,6 +291,27 @@ The additional parameters below are for JP specific usage and recipients:
     ==============  ===========================   ========    =================== ===================
 
 Please refer to our `K-Premium Service FAQ <https://help.xoxzo.com/xoxzo-cloud-telephony/articles/the-k-premium-service/>`_ for more information on the K-Premium Service.
+
+.. note::
+   Notes on the **message**, **body** and **variables** parameter:
+
+   * This is the main message that you'll be sending to the recipient.
+   * All messages must be encoded in UTF-8
+   * Message length is counted by the total number of characters in all parts of a message.
+   * For single-part ASCII messages, the maximum length is 140 characters.
+   * For single-part non-ASCII messages, the maximum length is 70 characters.
+   * A long multi-part message is a message that exceeds 140 characters for ASCII and 70 characters for non-ASCII messages.
+   * The maximum length for multi-part messages is 660 characters.
+   * Multi-part ASCII messages can have up to 5 parts and each part can have up to 132 characters.
+   * Multi-part non-ASCII messages can have up to 10 parts and each part can have up to 66 characters.
+   * Long SMS messages are received as 1 SMS, but each part sent is counted as 1 SMS in terms of cost.
+
+   ==================== === === === === === === === === === ===
+   SMS part count       1   2   3   4   5   6   7   8   9   10
+   ==================== === === === === === === === === === ===
+   ASCII characters     140 264 396 528 660                 
+   non-ASCII characters 70  132 198 264 330 396 462 528 594 660
+   ==================== === === === === === === === === === ===
 
 .. note::
    Notes on the **jp_kp** and **jp_kpl** parameter:
@@ -139,6 +413,107 @@ Please refer to our `K-Premium Service FAQ <https://help.xoxzo.com/xoxzo-cloud-t
     You need to put at least one ASCII white space(0x20) before and after the link
     in the **message** in order to link tracking work properly.
 
+Variable validation
+------------------------------------
+
+Variable values are validated against the selected template before sending.
+
+Rules:
+
+* All required variables must be present.
+* Extra variables are rejected.
+* Variable values must match the template’s expected type and format.
+* Variable values must respect length and range limits.
+* Variable values are treated as data only and cannot replace or rewrite the template body.
+* The final rendered message must remain within the approved template structure.
+
+Example request::
+
+    curl -u <SID>:<AUTH_TOKEN> \
+      -X POST \
+      --data-urlencode 'recipient=+8190123456789' \
+      --data-urlencode 'sender=Xoxzo1' \
+      --data-urlencode 'variables={"code":"481992","minutes":10}' \
+      --data-urlencode 'callbackurl=https://example.com/callback' \
+      --data-urlencode 'tags=otp,login' \
+      https://api.xoxzo.com/sms/templates/tpl_123456/messages/
+
+Success response::
+
+    {
+      "msgid": "msg_123456",
+      "url": "https://api.xoxzo.com/sms/templates/tpl_123456/messages/msg_123456/",
+      "recipient": "+8190123456789",
+      "sender": "Xoxzo1",
+      "status": "QUEUED",
+      "parts": 1,
+      "cost": 10,
+      "sent_time": "2026-05-05 09:20:00",
+      "tags": ["otp", "login"]
+    }
+
+List template messages
+------------------------------------
+
+List messages sent using a specific template.
+
+Request::
+
+    GET /sms/templates/{id}/messages/
+
+Example response::
+
+    HTTP/1.1 201 CREATED
+    Content-Type: application/json
+
+    [
+        {
+            "msgid": "<msgid>"
+        }
+    ]
+
+Send Freeform SMS messages
+====================================
+
+Freeform SMS is available only to approved partners.
+
+Use this endpoint when you need to send a custom message body without template restrictions.
+
+To send a SMS message, make a ``POST`` request to the endpoint::
+
+    POST /sms/messages/
+
+with the following parameters:
+
+    ===============  ===========================  ========  ===================  ===================
+    Name             Description                  Required  Data Type            Example
+    ===============  ===========================  ========  ===================  ===================
+    message          Message body                 Yes       UTF-8                こんにちは
+    recipient        Message recipient            Yes       E.164                +8190123456789
+    sender           Sender ID                    Yes       Alphanumeric         Xoxzo1
+    callbackurl      Callback URL                 No        URL                  http://example.com
+    tags             Tags                         No        UTF-8                tag1,tag2
+    track_link       Enable link tracking         No        The string **true**  true
+    lt_callbackurl   Link tracking callback URL   No        URL                  http://example.com
+    ===============  ===========================  ========  ===================  ===================
+
+JP specific optional parameters
+------------------------------------
+
+The additional parameters below are for JP specific usage and recipients:
+
+    ==============  ===========================   ========    =================== ===================
+    Name            Description                   Required    Data Type           Example
+    ==============  ===========================   ========    =================== ===================
+    jp_kp           K-Premium flag                No          The string **true** true
+    jp_kpl          K-Premium Lite flag           No          The string **true** true
+    jp_kp_sender    Sender ID for kddi, docomo    No          Numeric             0312341234
+    ==============  ===========================   ========    =================== ===================
+
+Please refer to our `K-Premium Service FAQ <https://help.xoxzo.com/xoxzo-cloud-telephony/articles/the-k-premium-service/>`_ for more information on the K-Premium Service.
+
+Please refer to notes and warnings in the previous section **Send Templated SMS messages** regarding parameters.
+
 Examples
 ------------------------------------
 
@@ -190,9 +565,15 @@ the HTTP response should be like this::
 Check SMS status API
 ====================================
 
-To check a message status, make a GET request to the endpoint followed by ``<msgid>``::
+To check a message status, make a GET request to the endpoint followed by ``<msgid>``
 
-    https://api.xoxzo.com/sms/messages/<msgid>/
+For Template SMS::
+
+    GET /sms/templates/<templateid>/messages/<msgid>/
+
+For Freeform SMS::
+
+    GET /sms/messages/<msgid>/
 
 Every time you send a SMS, you will get a response which contains ``<msgid>``.
 Use this ``<msgid>`` to check SMS status.
@@ -200,8 +581,9 @@ Use this ``<msgid>`` to check SMS status.
 Examples
 ------------------------------------
 
-Below is an example request using cURL::
+Below are example requests using cURL::
 
+    curl -u <SID>:<AUTH_TOKEN> https://api.xoxzo.com/sms/templates/<templateid>/messages/<msgid>/
     curl -u <SID>:<AUTH_TOKEN> https://api.xoxzo.com/sms/messages/<msgid>/
 
 The response would be a JSON structure, returned with HTTP ``200 OK`` status code::
@@ -288,9 +670,15 @@ example of the response::
 
 Sent Messages List API
 ====================================
-You can pull a list of sent messages by making a ``GET`` request to the endpoint::
+You can pull a list of sent messages by making a ``GET`` request to the endpoint.
 
-    https://api.xoxzo.com/sms/messages/
+For Template SMS::
+
+    GET /sms/templates/<templateid>/messages/
+
+For Freeform SMS::
+
+    GET /sms/messages/
 
 The sent messages results will be sorted based on their newest ``sent_time``. 
 This API is useful for creating logs.
@@ -537,3 +925,30 @@ This is a list of statuses that you can find in the ``status`` data:
     DELIVERING          Sending message in progress
     FAIL                Failed to send message
     =================== ===============================
+
+Error responses
+====================================
+
+The API returns standard HTTP status codes for invalid requests or unauthorized access.
+
+Common errors::
+
+    ===========  =====================================================================
+    Status code  Meaning
+    ===========  =====================================================================
+    400          Bad request. The request could not be processed.
+    401          Unauthorized. Authentication failed.
+    403          Forbidden. The account does not have access to the requested feature.
+    404          Not found. The requested resource does not exist.
+    422          Unprocessable entity. Validation failed.
+
+Example validation error::
+
+    {
+      "variables": {
+        "code": [
+          "This field is required."
+        ]
+      }
+    }
+

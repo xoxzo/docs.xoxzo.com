@@ -15,7 +15,7 @@ translate: translate-ja
 	make html-en
 
 view:
-	bash -c 'cd appengine/public && ../../bin/python -m http.server'
+	bash -c 'cd appengine/public && ../../bin/python -m http.server 8100'
 
 build-full: build translate
 
