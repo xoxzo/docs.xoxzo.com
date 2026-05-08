@@ -28,36 +28,58 @@ Endpoints
 Template management
 ------------------------------------
 
-POST /sms/templates/ — Create a template.
+Create a template::
 
-GET /sms/templates/ — List templates.
+    POST /sms/templates/
 
-GET /sms/templates/{id}/ — Retrieve a template.
+List templates::
 
-PATCH /sms/templates/{id}/ — Update a template.
+    GET /sms/templates/
 
-DELETE /sms/templates/{id}/ — Delete a template.
+Retrieve a template::
+
+    GET /sms/templates/<id>/
+
+Update a template::
+
+    PATCH /sms/templates/<id>/
+
+Delete a template::
+
+    DELETE /sms/templates/<id>/
 
 Template message sending
 ------------------------------------
 
-POST /sms/templates/{id}/messages/ — Send an SMS using a template.
+Send an SMS using a template::
 
-GET /sms/templates/{id}/messages/ — List messages sent using a template.
+    POST /sms/templates/<id>/messages/
+
+List messages sent using a template::
+
+    GET /sms/templates/<id>/messages/
 
 Freeform message sending
 ------------------------------------
 
-POST /sms/messages/ — Send a freeform SMS. This endpoint is available only to approved partners.
+Send a freeform SMS. This endpoint is available only to approved partners. ::
 
-GET /sms/messages/ — List messages
+    POST /sms/messages/
+
+List messages::
+
+    GET /sms/messages/
 
 Message status checking
 ------------------------------------
 
-GET /sms/templates/{id}/messages/<msgid>/ — Check status of message sent using a template.
+Check status of message sent using a template::
 
-GET /sms/messages/<msgid>/ — Check status of message sent using freeform SMS.
+    GET /sms/templates/<id>/messages/<msgid>/
+
+Check status of message sent using freeform SMS::
+
+    GET /sms/messages/<msgid>/
 
 Template object
 ------------------------------------
@@ -72,6 +94,7 @@ Template fields:
     name       Template name                              Yes       UTF-8      otp_code
     body       Template body with placeholders            Yes       UTF-8      Your code is {code}.
     variables  Variable definitions and validation rules  Yes       Object     {"code": {"type": "string", "max_length": 6}}
+    =========  =========================================  ========  =========  =============================================
 
 Template body format
 ------------------------------------
@@ -161,7 +184,7 @@ Retrieve a single template by ID.
 
 Request::
 
-    GET /sms/templates/{id}/
+    GET /sms/templates/<id>/
 
 Path parameters
 
@@ -200,7 +223,7 @@ Update an existing template.
 
 Request::
 
-    PATCH /sms/templates/{id}/
+    PATCH /sms/templates/<id>/
 
 Example request::
 
@@ -239,7 +262,7 @@ Delete a template that is no longer needed.
 
 Request::
 
-    DELETE /sms/templates/{id}/
+    DELETE /sms/templates/<id>/
 
 Example response::
 
@@ -247,8 +270,11 @@ Example response::
       "detail": "Template deleted."
     }
 
-Send Templated SMS messages
+Send SMS messages
 ====================================
+
+Send Templated SMS
+------------------------------------
 
 Send an SMS using a specific template.
 
@@ -256,7 +282,7 @@ The template ID is provided in the URL, and the request body must include values
 
 Request::
 
-    POST /sms/templates/{id}/messages/
+    POST /sms/templates/<id>/messages/
 
 Path parameters:
 
@@ -278,7 +304,8 @@ Parameters:
     tags             Tags                         No        UTF-8                tag1,tag2
     track_link       Enable link tracking         No        The string **true**  true
     lt_callbackurl   Link tracking callback URL   No        URL                  http://example.com
-    ===============  ===========================  ========  ===================  ===================
+    ===============  ===========================  ========  ===================  ==============================
+
 
 JP specific optional parameters
 ------------------------------------
@@ -434,28 +461,8 @@ Success response::
       "tags": ["otp", "login"]
     }
 
-List template messages
+Send Freeform SMS
 ------------------------------------
-
-List messages sent using a specific template.
-
-Request::
-
-    GET /sms/templates/{id}/messages/
-
-Example response::
-
-    HTTP/1.1 201 CREATED
-    Content-Type: application/json
-
-    [
-        {
-            "msgid": "<msgid>"
-        }
-    ]
-
-Send Freeform SMS messages
-====================================
 
 Freeform SMS is available only to approved partners.
 
@@ -479,22 +486,7 @@ with the following parameters:
     lt_callbackurl   Link tracking callback URL   No        URL                  http://example.com
     ===============  ===========================  ========  ===================  ===================
 
-JP specific optional parameters
-------------------------------------
-
-The additional parameters below are for JP specific usage and recipients:
-
-    ==============  ===========================   ========    =================== ===================
-    Name            Description                   Required    Data Type           Example
-    ==============  ===========================   ========    =================== ===================
-    jp_kp           K-Premium flag                No          The string **true** true
-    jp_kpl          K-Premium Lite flag           No          The string **true** true
-    jp_kp_sender    Sender ID for kddi, docomo    No          Numeric             0312341234
-    ==============  ===========================   ========    =================== ===================
-
-Please refer to our `K-Premium Service FAQ <https://help.xoxzo.com/xoxzo-cloud-telephony/articles/the-k-premium-service/>`_ for more information on the K-Premium Service.
-
-Please refer to notes and warnings in the previous section **Send Templated SMS messages** regarding parameters.
+Please refer to notes and warnings in the previous section **Send Templated SMS** regarding parameters.
 
 Examples
 ------------------------------------
@@ -551,7 +543,7 @@ To check a message status, make a GET request to the endpoint followed by ``<msg
 
 For Template SMS::
 
-    GET /sms/templates/<templateid>/messages/<msgid>/
+    GET /sms/templates/<id>/messages/<msgid>/
 
 For Freeform SMS::
 
@@ -659,7 +651,7 @@ You can pull a list of sent messages by making a ``GET`` request to the endpoint
 
 For Template SMS::
 
-    GET /sms/templates/<templateid>/messages/
+    GET /sms/templates/<id>/messages/
 
 For Freeform SMS::
 
