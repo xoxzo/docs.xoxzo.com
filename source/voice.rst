@@ -2,6 +2,8 @@
 Voice API
 ===============================================
 
+.. include:: permission_note.rst
+
 The Voice API allows you to interact with a phone via beautiful HTTP endpoints.
 
 .. warning::
