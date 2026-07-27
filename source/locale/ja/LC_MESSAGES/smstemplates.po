@@ -1,0 +1,291 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2026, Xoxzo Inc.
+# This file is distributed under the same license as the Xoxzo API Docs
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2026.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Xoxzo API Docs 1.17.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-06-08 23:25+0900\n"
+"PO-Revision-Date: 2026-06-08 20:25+0545\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: Japanese <ja@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: ja\n"
+"Generated-By: Babel 2.18.0\n"
+
+#: ../../../source/smstemplates.rst:3
+msgid "SMS Templates API"
+msgstr "SMSテンプレートAPI"
+
+#: ../../../source/smstemplates.rst:5
+msgid ""
+"The SMS Templates API allows you to create and manage reusable SMS "
+"message templates with variable placeholders. Templates must be approved "
+"before they can be used to send messages."
+msgstr ""
+"SMSテンプレートAPIを使用すると、変数のプレースホルダーを持つ再利用可能なSMS"
+"メッセージテンプレートを作成および管理できます。テンプレートを使用してメッセージ"
+"を送信する前に、承認を受ける必要があります。"
+
+#: ../../../source/smstemplates.rst:10
+msgid ""
+"CRUD operations (create, list, update, delete) are available via both the"
+" API and the web interface. Sending SMS and checking message status "
+"requires the API."
+msgstr ""
+"データの作成、一覧取得、更新、削除の操作は、APIとウェブ画面の両方から実行可能です。"
+"SMSの送信およびメッセージ状況の確認にはAPIを使用する必要があります。"
+
+#: ../../../source/smstemplates.rst:15
+msgid "List Templates API"
+msgstr "テンプレート一覧取得API"
+
+#: ../../../source/smstemplates.rst:17
+msgid ""
+"To retrieve all templates belonging to your account, make a ``GET`` "
+"request to the endpoint::"
+msgstr ""
+"アカウントに属するすべてのテンプレートを取得するには、以下のエンドポイントに"
+"``GET`` 要求を送信します::"
+
+#: ../../../source/smstemplates.rst:22 ../../../source/smstemplates.rst:95
+#: ../../../source/smstemplates.rst:122 ../../../source/smstemplates.rst:146
+#: ../../../source/smstemplates.rst:170
+msgid "Examples"
+msgstr "例"
+
+#: ../../../source/smstemplates.rst:24 ../../../source/smstemplates.rst:97
+#: ../../../source/smstemplates.rst:124 ../../../source/smstemplates.rst:148
+#: ../../../source/smstemplates.rst:172
+msgid "Below is an example request using cURL::"
+msgstr "以下はコマンドラインツールを使用した要求の例です::"
+
+#: ../../../source/smstemplates.rst:28
+msgid ""
+"The response would be a JSON structure, returned with HTTP ``200 OK`` "
+"status code::"
+msgstr ""
+"応答はJSONデータ構造となり、HTTPの ``200 OK`` ステータスコードとともに返されます::"
+
+#: ../../../source/smstemplates.rst:53
+msgid "Response data"
+msgstr "応答データ"
+
+#: ../../../source/smstemplates.rst:56 ../../../source/smstemplates.rst:88
+#: ../../../source/smstemplates.rst:139
+msgid "Name"
+msgstr "名前"
+
+#: ../../../source/smstemplates.rst:56 ../../../source/smstemplates.rst:88
+#: ../../../source/smstemplates.rst:139
+msgid "Description"
+msgstr "説明"
+
+#: ../../../source/smstemplates.rst:58
+msgid "id"
+msgstr "id"
+
+#: ../../../source/smstemplates.rst:58
+msgid "Unique template ID"
+msgstr "一意のテンプレート識別子"
+
+#: ../../../source/smstemplates.rst:59 ../../../source/smstemplates.rst:90
+#: ../../../source/smstemplates.rst:141
+msgid "name"
+msgstr "name"
+
+#: ../../../source/smstemplates.rst:59
+msgid "Template name"
+msgstr "テンプレート名"
+
+#: ../../../source/smstemplates.rst:60
+msgid "approved_content"
+msgstr "approved_content"
+
+#: ../../../source/smstemplates.rst:60
+msgid "The currently approved message content. ``null`` if not yet approved."
+msgstr "現在承認されているメッセージ内容。未承認の場合は ``null`` となります。"
+
+#: ../../../source/smstemplates.rst:61
+msgid "pending_content"
+msgstr "pending_content"
+
+#: ../../../source/smstemplates.rst:61
+msgid "Content awaiting approval. ``null`` if no pending revision."
+msgstr "承認待ちの内容。保留中の変更がない場合は ``null`` となります。"
+
+#: ../../../source/smstemplates.rst:62
+msgid "status"
+msgstr "status"
+
+#: ../../../source/smstemplates.rst:62
+msgid "Approval status: ``APPROVED`` or ``PENDING``"
+msgstr "承認状況： ``APPROVED`` または ``PENDING``"
+
+#: ../../../source/smstemplates.rst:63
+msgid "api_usage_example"
+msgstr "api_usage_example"
+
+#: ../../../source/smstemplates.rst:63
+msgid ""
+"A ready-to-use cURL command for sending SMS with this template. Only "
+"present for ``APPROVED`` templates. ``null`` for non-approved templates."
+msgstr ""
+"このテンプレートを使用してSMSを送信するための、すぐに使えるコマンドラインの例。"
+"``APPROVED`` のテンプレートにのみ存在します。未承認のテンプレートの場合は ``null`` となります。"
+
+#: ../../../source/smstemplates.rst:70
+msgid "Notes on the **api_usage_example** field:"
+msgstr "**api_usage_example** 項目に関する注意事項:"
+
+#: ../../../source/smstemplates.rst:72
+msgid "This field is only returned for ``APPROVED`` templates."
+msgstr "この項目は、 ``APPROVED`` のテンプレートに対してのみ返されます。"
+
+#: ../../../source/smstemplates.rst:73
+msgid "The value is a raw JSON string need to remove extra '/' to run it."
+msgstr "値は生のJSON文字列であり、実行するには余分な '/' を削除する必要があります。"
+
+#: ../../../source/smstemplates.rst:74
+msgid ""
+"Placeholder values such as ``Sample_name`` and ``Sample_order_number`` "
+"must be replaced with actual values before use."
+msgstr ""
+"``Sample_name`` や ``Sample_order_number`` のようなプレースホルダー値は、使用する"
+"前に実際の値に置き換える必要があります。"
+
+#: ../../../source/smstemplates.rst:79
+msgid "Create Template API"
+msgstr "テンプレート作成API"
+
+#: ../../../source/smstemplates.rst:81
+msgid "To create a new SMS template, make a ``POST`` request to the endpoint::"
+msgstr "新しいSMSテンプレートを作成するには、以下のエンドポイントに ``POST`` 要求を送信します::"
+
+#: ../../../source/smstemplates.rst:85 ../../../source/smstemplates.rst:136
+msgid "with the following parameters:"
+msgstr "以下のパラメーターを使用します:"
+
+#: ../../../source/smstemplates.rst:88 ../../../source/smstemplates.rst:139
+msgid "Required"
+msgstr "必須"
+
+#: ../../../source/smstemplates.rst:88
+msgid "Example"
+msgstr "例"
+
+#: ../../../source/smstemplates.rst:90
+msgid "A human-readable label for the template"
+msgstr "人間が読めるテンプレートのラベル"
+
+#: ../../../source/smstemplates.rst:90 ../../../source/smstemplates.rst:91
+msgid "Yes"
+msgstr "はい"
+
+#: ../../../source/smstemplates.rst:90
+msgid "Welcome SMS"
+msgstr "ウェルカムSMS"
+
+#: ../../../source/smstemplates.rst:91 ../../../source/smstemplates.rst:142
+msgid "content"
+msgstr "content"
+
+#: ../../../source/smstemplates.rst:91
+#, python-brace-format
+msgid "Message body with ``{variable}`` placeholders"
+msgstr "``{variable}`` プレースホルダーを含むメッセージ本文"
+
+#: ../../../source/smstemplates.rst:91
+#, python-brace-format
+msgid "Hello {name}, welcome to Japan!"
+msgstr "こんにちは {name} さん、日本へようこそ！"
+
+#: ../../../source/smstemplates.rst:106
+msgid "Notes on the **content** parameter:"
+msgstr "**content** パラメーターに関する注意事項:"
+
+#: ../../../source/smstemplates.rst:108
+#, python-brace-format
+msgid "Variables must be wrapped in curly braces, e.g. ``{name}``."
+msgstr "変数は ``{name}`` のように波括弧で囲む必要があります。"
+
+#: ../../../source/smstemplates.rst:109
+msgid "Variable names may only contain letters, numbers, and underscores."
+msgstr "変数名には、文字、数字、およびアンダースコアのみ使用できます。"
+
+#: ../../../source/smstemplates.rst:110
+msgid ""
+"Newly created templates start in ``PENDING`` status and must be approved "
+"before they can be used to send SMS."
+msgstr ""
+"新しく作成されたテンプレートは ``PENDING`` 状態から始まり、SMSの送信に"
+"使用する前に承認を受ける必要があります。"
+
+#: ../../../source/smstemplates.rst:115
+msgid "Retrieve Single Template API"
+msgstr "単一テンプレート取得API"
+
+#: ../../../source/smstemplates.rst:117
+msgid ""
+"To retrieve a specific template, make a ``GET`` request to the endpoint "
+"followed by ``<template_id>``::"
+msgstr ""
+"特定のテンプレートを取得するには、エンドポイントの後に ``<template_id>`` を続けて "
+"``GET`` 要求を送信します::"
+
+#: ../../../source/smstemplates.rst:130
+msgid "Update Template API"
+msgstr "テンプレート更新API"
+
+#: ../../../source/smstemplates.rst:132
+msgid ""
+"To update an existing template, make a ``PATCH`` request to the endpoint "
+"followed by ``<template_id>``::"
+msgstr ""
+"既存のテンプレートを更新するには、エンドポイントの後に ``<template_id>`` を続けて "
+"``PATCH`` 要求を送信します::"
+
+#: ../../../source/smstemplates.rst:141
+msgid "Updated template name"
+msgstr "更新されたテンプレート名"
+
+#: ../../../source/smstemplates.rst:141 ../../../source/smstemplates.rst:142
+msgid "No"
+msgstr "いいえ"
+
+#: ../../../source/smstemplates.rst:142
+msgid "Updated message content. Triggers status reset to PENDING."
+msgstr "更新されたメッセージ内容。状態が PENDING にリセットされます。"
+
+#: ../../../source/smstemplates.rst:157
+msgid ""
+"Editing the ``content`` field will automatically demote an ``APPROVED`` "
+"template back to ``PENDING`` status. The previously approved content "
+"remains available in ``approved_content`` until the new version is "
+"approved."
+msgstr ""
+"``content`` 項目を編集すると、 ``APPROVED`` のテンプレートは自動的に "
+"``PENDING`` 状態に降格します。新しい版が承認されるまで、以前に"
+"承認された内容は ``approved_content`` で引き続き利用可能です。"
+
+#: ../../../source/smstemplates.rst:163
+msgid "Delete Template API"
+msgstr "テンプレート削除API"
+
+#: ../../../source/smstemplates.rst:165
+msgid ""
+"To delete a template, make a ``DELETE`` request to the endpoint followed "
+"by ``<template_id>``::"
+msgstr ""
+"テンプレートを削除するには、エンドポイントの後に ``<template_id>`` を続けて "
+"``DELETE`` 要求を送信します::"
+
+#: ../../../source/smstemplates.rst:178
+msgid "Deleting a template is permanent and cannot be undone."
+msgstr "テンプレートの削除は永続的であり、元に戻すことはできません。"

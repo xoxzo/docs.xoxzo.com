@@ -8,32 +8,44 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Xoxzo API Docs 1.17.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-02-18 17:29+0900\n"
+"POT-Creation-Date: 2026-06-08 23:25+0900\n"
 "PO-Revision-Date: 2023-07-03 16:49+0900\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Generated-By: Babel 2.17.0\n"
+"Generated-By: Babel 2.18.0\n"
 
 #: ../../../source/mailsms.rst:3
 msgid "Mail2SMS Usage"
 msgstr "Mail2SMS ご利用方法"
 
-#: ../../../source/mailsms.rst:9
+#: ../../../source/permission_note.rst:2
+msgid "Trusted account authorization is required to use this service."
+msgstr "本サービスを利用するには、トラステッドアカウントの承認が必要です。"
+
+#: ../../../source/permission_note.rst:3
+msgid ""
+"Please contact help@xoxzo.com to request access and enable this feature "
+"for your account."
+msgstr ""
+"アクセス権の申請および本機能の有効化については、help@xoxzo.com までお問い合わせください。"
+
+
+#: ../../../source/mailsms.rst:11
 msgid "**Step to send SMS from email using Xoxzo in summary**:"
 msgstr "**Xoxzoを使ってメールからSMSを送信する方法概要**:"
 
-#: ../../../source/mailsms.rst:7
+#: ../../../source/mailsms.rst:9
 msgid "Signup for Xoxzo X4"
 msgstr "Xoxzoのアカウントを作成する"
 
-#: ../../../source/mailsms.rst:8
+#: ../../../source/mailsms.rst:10
 msgid "Go to Mail2SMS page and create a Mail2SMS user"
 msgstr "Mail2SMSのページにて、Mail2SMSユーザーを作成する"
 
-#: ../../../source/mailsms.rst:9
+#: ../../../source/mailsms.rst:11
 msgid ""
 "Please create a new message from your email address, enter the SMS "
 "recipient's number in the subject line, and send the email to "
@@ -42,7 +54,7 @@ msgstr ""
 "お使いのメールアドレスから新規メール作成を行い、SMSの送信先番号を件名に入力し、mail2sms@xoxzo.com "
 "宛へメールを送信してください。"
 
-#: ../../../source/mailsms.rst:10
+#: ../../../source/mailsms.rst:12
 msgid ""
 "For example, if you want to send SMS from multiple email addresses, "
 "create the same number of Mail2SMS users and configure each email address"
@@ -53,11 +65,11 @@ msgstr ""
 "例えば、複数のEメールからSMSを送信したい場合、その数のMail2SMSユーザーを作成して、それぞれのメールアドレスを設定してください。設定後は、各メールアドレスから、mail2sms@xoxzo.com"
 "　宛へ、SMSの送信先番号を件名に、メッセージを本文に入れて、メールを送信してください。"
 
-#: ../../../source/mailsms.rst:13
+#: ../../../source/mailsms.rst:15
 msgid "Signup for Xoxzo"
 msgstr "Xoxzoのアカウントを作成する"
 
-#: ../../../source/mailsms.rst:14
+#: ../../../source/mailsms.rst:16
 msgid ""
 "Go to `Signing up <https://www.xoxzo.com/en/accounts/signup/>`_ if you "
 "haven't already."
@@ -65,17 +77,17 @@ msgstr ""
 "`未登録の場合、`アカウント作成 <https://www.xoxzo.com/ja/accounts/signup/>`_ へア "
 "クセスして登録してください。"
 
-#: ../../../source/mailsms.rst:15
+#: ../../../source/mailsms.rst:17
 msgid ""
 "Fill out the signup form where a user need to enter email, fullname, "
 "password etc"
 msgstr "メールアドレスや氏名、パスワード等、必要な情報を入力してください。"
 
-#: ../../../source/mailsms.rst:18
+#: ../../../source/mailsms.rst:20
 msgid "Create Mail2SMS User"
 msgstr "Mail2SMSユーザーを作成する"
 
-#: ../../../source/mailsms.rst:19
+#: ../../../source/mailsms.rst:21
 msgid ""
 "Login to Xoxzo and go to `Mail2SMS User "
 "<https://www.xoxzo.com/en/you/mailsmsprofile/>`_  page"
@@ -83,7 +95,7 @@ msgstr ""
 "`Mail2SMS ユーザー <https://www.xoxzo.com/en/you/mailsmsprofile/>`_ ページにて "
 "Mail2SMS ユーザを表示する"
 
-#: ../../../source/mailsms.rst:20
+#: ../../../source/mailsms.rst:22
 msgid ""
 "Click on the `Add Mail2SMS "
 "<https://www.xoxzo.com/en/you/mailsmsuser/create/>`_ button"
@@ -91,116 +103,116 @@ msgstr ""
 "Xoxzoへログイン後 `Mail2SMS ユーザー "
 "<https://www.xoxzo.com/ja/you/mailsmsprofile/>`_  ページへアクセスする"
 
-#: ../../../source/mailsms.rst:22 ../../../source/mailsms.rst:48
+#: ../../../source/mailsms.rst:24 ../../../source/mailsms.rst:50
 msgid "We will see the following parameters"
 msgstr "次のパラメータが表示されます"
 
-#: ../../../source/mailsms.rst:25 ../../../source/mailsms.rst:51
+#: ../../../source/mailsms.rst:27 ../../../source/mailsms.rst:53
 msgid "Name"
 msgstr "氏名"
 
-#: ../../../source/mailsms.rst:25 ../../../source/mailsms.rst:51
+#: ../../../source/mailsms.rst:27 ../../../source/mailsms.rst:53
 msgid "Description"
 msgstr "詳細"
 
-#: ../../../source/mailsms.rst:25 ../../../source/mailsms.rst:51
+#: ../../../source/mailsms.rst:27 ../../../source/mailsms.rst:53
 msgid "Required"
 msgstr "必須"
 
-#: ../../../source/mailsms.rst:25 ../../../source/mailsms.rst:51
+#: ../../../source/mailsms.rst:27 ../../../source/mailsms.rst:53
 msgid "Data Type"
 msgstr "データタイプ"
 
-#: ../../../source/mailsms.rst:25 ../../../source/mailsms.rst:51
+#: ../../../source/mailsms.rst:27 ../../../source/mailsms.rst:53
 msgid "Example"
 msgstr "例"
 
-#: ../../../source/mailsms.rst:27
+#: ../../../source/mailsms.rst:29
 msgid "Mail2SMS User Email"
 msgstr "Mail2SMSユーザメール"
 
-#: ../../../source/mailsms.rst:27 ../../../source/mailsms.rst:28
 #: ../../../source/mailsms.rst:29 ../../../source/mailsms.rst:30
-#: ../../../source/mailsms.rst:31 ../../../source/mailsms.rst:53
-#: ../../../source/mailsms.rst:54 ../../../source/mailsms.rst:55
-#: ../../../source/mailsms.rst:56
+#: ../../../source/mailsms.rst:31 ../../../source/mailsms.rst:32
+#: ../../../source/mailsms.rst:33 ../../../source/mailsms.rst:55
+#: ../../../source/mailsms.rst:56 ../../../source/mailsms.rst:57
+#: ../../../source/mailsms.rst:58
 msgid "Yes"
 msgstr "はい"
 
-#: ../../../source/mailsms.rst:27
+#: ../../../source/mailsms.rst:29
 msgid "email"
 msgstr "Eメールアドレス"
 
-#: ../../../source/mailsms.rst:27
+#: ../../../source/mailsms.rst:29
 msgid "krishna@xoxzo.com"
 msgstr "example@xoxzo.com"
 
-#: ../../../source/mailsms.rst:28 ../../../source/mailsms.rst:53
+#: ../../../source/mailsms.rst:30 ../../../source/mailsms.rst:55
 msgid "Sender"
 msgstr "送信者"
 
-#: ../../../source/mailsms.rst:28 ../../../source/mailsms.rst:53
+#: ../../../source/mailsms.rst:30 ../../../source/mailsms.rst:55
 msgid "SMS Sender"
 msgstr "送信者"
 
-#: ../../../source/mailsms.rst:28 ../../../source/mailsms.rst:29
 #: ../../../source/mailsms.rst:30 ../../../source/mailsms.rst:31
-#: ../../../source/mailsms.rst:53 ../../../source/mailsms.rst:54
+#: ../../../source/mailsms.rst:32 ../../../source/mailsms.rst:33
 #: ../../../source/mailsms.rst:55 ../../../source/mailsms.rst:56
+#: ../../../source/mailsms.rst:57 ../../../source/mailsms.rst:58
 msgid "string"
 msgstr "string"
 
-#: ../../../source/mailsms.rst:28 ../../../source/mailsms.rst:53
+#: ../../../source/mailsms.rst:30 ../../../source/mailsms.rst:55
 msgid "XoxzoAPI"
 msgstr "XoxzoAPI"
 
-#: ../../../source/mailsms.rst:29 ../../../source/mailsms.rst:54
+#: ../../../source/mailsms.rst:31 ../../../source/mailsms.rst:56
 msgid "DKIM"
 msgstr "DKIM"
 
-#: ../../../source/mailsms.rst:29 ../../../source/mailsms.rst:54
+#: ../../../source/mailsms.rst:31 ../../../source/mailsms.rst:56
 msgid "DKIM email security"
 msgstr "DKIM メールセキュリティ"
 
-#: ../../../source/mailsms.rst:29 ../../../source/mailsms.rst:54
+#: ../../../source/mailsms.rst:31 ../../../source/mailsms.rst:56
 msgid "PASS"
 msgstr "PASS"
 
-#: ../../../source/mailsms.rst:30 ../../../source/mailsms.rst:55
+#: ../../../source/mailsms.rst:32 ../../../source/mailsms.rst:57
 msgid "SPF"
 msgstr "SPF"
 
-#: ../../../source/mailsms.rst:30 ../../../source/mailsms.rst:55
+#: ../../../source/mailsms.rst:32 ../../../source/mailsms.rst:57
 msgid "SPF email security"
 msgstr "SPFメールセキュリティ"
 
-#: ../../../source/mailsms.rst:30 ../../../source/mailsms.rst:55
+#: ../../../source/mailsms.rst:32 ../../../source/mailsms.rst:57
 msgid "GRAY"
 msgstr "GRAY"
 
-#: ../../../source/mailsms.rst:31 ../../../source/mailsms.rst:56
+#: ../../../source/mailsms.rst:33 ../../../source/mailsms.rst:58
 msgid "DMARC"
 msgstr "DMARC"
 
-#: ../../../source/mailsms.rst:31 ../../../source/mailsms.rst:56
+#: ../../../source/mailsms.rst:33 ../../../source/mailsms.rst:58
 msgid "DMARC email security"
 msgstr "DMARCメールセキュリティ"
 
-#: ../../../source/mailsms.rst:31 ../../../source/mailsms.rst:56
+#: ../../../source/mailsms.rst:33 ../../../source/mailsms.rst:58
 msgid "FAIL"
 msgstr "FAIL"
 
-#: ../../../source/mailsms.rst:36
+#: ../../../source/mailsms.rst:38
 msgid "**Mail2SMS User Email** should be valid and unique"
 msgstr "**Mail2SMS ユーザメール** は有効かつ一意のメールアドレス"
 
-#: ../../../source/mailsms.rst:37
+#: ../../../source/mailsms.rst:39
 msgid ""
 "**Sender** should be atleast 3 characters and should be less than 10 "
 "character"
 msgstr "**送信者** は、最短3文字から最長10文字の文字列にしてください"
 
-#: ../../../source/mailsms.rst:38
+#: ../../../source/mailsms.rst:40
 msgid ""
 "To learn more about `DKIM <https://help.xoxzo.com/xoxzo-cloud-telephony"
 "/sms-api/articles/how-to-send-via-mail2sms/#dkim>`_, `SPF "
@@ -215,23 +227,23 @@ msgstr ""
 "send-via-mail2sms/#spf>`_, `DMARC <https://help.xoxzo.com/xoxzo-cloud-"
 "telephony/sms-api/articles/how-to-send-via-mail2sms/#dmarc>`_"
 
-#: ../../../source/mailsms.rst:39
+#: ../../../source/mailsms.rst:41
 msgid "If you don't know the security status please leave the value as Grey."
 msgstr "セキュリティステータスが不明な場合は、GREYとしてください。"
 
-#: ../../../source/mailsms.rst:40
+#: ../../../source/mailsms.rst:42
 msgid "The maximum length of the email body or message length is 70 characters."
 msgstr "メール本文またはメッセージの最大文字数は70文字です"
 
-#: ../../../source/mailsms.rst:41
+#: ../../../source/mailsms.rst:43
 msgid "**Messages sent via Mail2SMS experience a delay.**."
 msgstr "**Mail2SMSより送信されたメッセージは遅延が発生します。**"
 
-#: ../../../source/mailsms.rst:44
+#: ../../../source/mailsms.rst:46
 msgid "Update Mail2SMS User"
 msgstr "Mail2SMS ユーザを変更する"
 
-#: ../../../source/mailsms.rst:45
+#: ../../../source/mailsms.rst:47
 msgid ""
 "`Mail2SMS User <https://www.xoxzo.com/en/you/mailsmsprofile/>`_  page "
 "list all Mail2SMS user"
@@ -239,25 +251,25 @@ msgstr ""
 "`Mail2SMS ユーザー <https://www.xoxzo.com/en/you/mailsmsprofile/>`_ ページにて "
 "Mail2SMS ユーザを全て表示する"
 
-#: ../../../source/mailsms.rst:46
+#: ../../../source/mailsms.rst:48
 msgid ""
 "In this list we will see the Edit option, after clicking that we will go "
 "to specific Mail2SMS user edit page"
 msgstr "Mail2SMSユーザーの編集には、各ユーザーに表示されている 編集 ボタンをクリックしてください。"
 
-#: ../../../source/mailsms.rst:61
+#: ../../../source/mailsms.rst:63
 msgid "**Mail2SMS User Email** can not be updated"
 msgstr "**Mail2SMS**のユーザーメールアドレス**は、変更不可となっています。"
 
-#: ../../../source/mailsms.rst:62
+#: ../../../source/mailsms.rst:64
 msgid "Validation of other parameter is same as create Mail2SMS user"
 msgstr "パラメータの検証内容の編集については、ユーザ作成時と同様です。"
 
-#: ../../../source/mailsms.rst:66
+#: ../../../source/mailsms.rst:68
 msgid "Delete Mail2SMS User"
 msgstr "Mail2SMS ユーザを削除する"
 
-#: ../../../source/mailsms.rst:67
+#: ../../../source/mailsms.rst:69
 msgid ""
 "List of Mail2SMS user will be displayed in `Mail2SMS User "
 "<https://www.xoxzo.com/en/you/mailsmsprofile/>`_ page"
@@ -265,56 +277,56 @@ msgstr ""
 "`Mail2SMS ユーザー <https://www.xoxzo.com/en/you/mailsmsprofile/>`_ ページにて "
 "Mail2SMS ユーザを表示する"
 
-#: ../../../source/mailsms.rst:68
+#: ../../../source/mailsms.rst:70
 msgid ""
 "In this list, we will see the delete option, clicking on that will delete"
 " Mail2SMS User"
 msgstr "Mail2SMSユーザーの編集には、各ユーザーに表示されている 編集 ボタンをクリックしてください。"
 
-#: ../../../source/mailsms.rst:71
+#: ../../../source/mailsms.rst:73
 msgid "**How delete Mail2SMS user works ?**"
 msgstr "**Mail2SMSユーザの削除はどのように作用する？**"
 
-#: ../../../source/mailsms.rst:73
+#: ../../../source/mailsms.rst:75
 msgid "Delete only acts as a soft delete of Mail2SMS user"
 msgstr "Mail2SMS ユーザーを仮削除します。"
 
-#: ../../../source/mailsms.rst:74
+#: ../../../source/mailsms.rst:76
 msgid "If the owner add the deleted Mail2SMS user we reactivate the Mail2SMS user"
 msgstr "Mail2SMSユーザーを復活させることができます。"
 
-#: ../../../source/mailsms.rst:75
+#: ../../../source/mailsms.rst:77
 msgid ""
 "If the user try to add Mail2SMS user which is already exist under other "
 "user then the system will through the duplicate error as we are "
 "maintaining unique Mail2SMS user"
 msgstr "他のMail2SMSユーザーとしてこのメールアドレスを登録しようとすると、重複のためエラーとなります。"
 
-#: ../../../source/mailsms.rst:79
+#: ../../../source/mailsms.rst:81
 msgid "Send Mail2SMS messages"
 msgstr "Mail2SMS メッセージを送信する"
 
-#: ../../../source/mailsms.rst:80
+#: ../../../source/mailsms.rst:82
 msgid ""
 "Go to email portal by logging in with the valid Mail2SMS user (like "
 "gmail, yahoo etc)"
 msgstr "Mail2SMSユーザーとして登録したメールを使うメールクライアントやポータルを使います。"
 
-#: ../../../source/mailsms.rst:81
+#: ../../../source/mailsms.rst:83
 msgid "Compose the email and send it to the recipient **mail2sms@xoxzo.com**."
 msgstr "新規メールを作成し、**mail2sms@xoxzo.com** 宛へ送信してください"
 
-#: ../../../source/mailsms.rst:82
+#: ../../../source/mailsms.rst:84
 msgid ""
 "For example, If you want to send sms to +819876543210 then subject of "
 "email will be +819876543210."
 msgstr "090-8765-4321　宛へSMSを送信したい場合、メールの件名には +819087654321 と入力してください。"
 
-#: ../../../source/mailsms.rst:83
+#: ../../../source/mailsms.rst:85
 msgid "We allow only single recipient in subject"
 msgstr "件名に入力できる送信先番号は、1件のみです"
 
-#: ../../../source/mailsms.rst:86
+#: ../../../source/mailsms.rst:88
 msgid ""
 "Try adding Mail2SMS user and send sms using email. `Signing up "
 "<https://www.xoxzo.com/en/accounts/signup/>`_ takes only a few minutes "

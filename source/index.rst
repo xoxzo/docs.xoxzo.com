@@ -19,6 +19,8 @@ Contents:
 
     readme
     sms
+    smstemplates
+    otp
     mailsms
     voice
     din
