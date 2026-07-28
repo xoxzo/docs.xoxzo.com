@@ -483,7 +483,7 @@ the sent messages:
    * All dates are based on UTC.
 
 .. warning::
-   * This API call is limited to use up to 3 requests/hour.
+   * This API call is limited to use up to 1 request/hour.
 
 Examples of response data
 --------------------------
