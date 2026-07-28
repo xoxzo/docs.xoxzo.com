@@ -2,6 +2,8 @@
 Mail2SMS Usage
 ============================================
 
+.. include:: permission_note.rst
+
 .. note::
    **Step to send SMS from email using Xoxzo in summary**:
     * Signup for Xoxzo X4

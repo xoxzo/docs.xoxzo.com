@@ -2,13 +2,151 @@
 SMS API
 ====================================
 
-The SMS API allows you to send/receive SMS to supported carriers via beautiful HTTP endpoints.
+The SMS API supports two sending modes: template SMS and freeform SMS. Template SMS is the default for standard accounts, while freeform SMS is available only to approved trusted partners.
 
 Send SMS messages API
+Template SMS uses approved message templates with validated variables. Freeform SMS allows a fully custom message body, but access is restricted.
+
+Overview
 ====================================
+
+Use template SMS when you want predictable, structured messages such as OTPs, alerts, reminders, and notifications.
+
+Use freeform SMS only when your account has been explicitly enabled for it.
+
+Authentication
+------------------------------------
+
+All endpoints require authentication using your account credentials.
+
+Example::
+
+    curl -u <SID>:<AUTH_TOKEN> https://api.xoxzo.com/sms/templates/
+
+
+Template management
+------------------------------------
+For template CRUD operations and management, check the following documentation:
+
+Please refer to the :doc:`/smstemplates` for detailed information on template management.
+
+Template message sending
+------------------------------------
+
+Send SMS via Template API
+====================================
+
+To send an SMS using an approved template, make a ``POST`` request to the endpoint
+followed by ``<template_id>``::
+
+    https://api.xoxzo.com/sms/templates/<template_id>/messages/
+
+with the following parameters:
+
+    =========  ================================================================  ========  =================
+    Name       Description                                                       Required  Example          
+    =========  ================================================================  ========  =================
+    sender     Sender ID (alphanumeric max 10 chars; numeric only max 15 chars)  Yes       TestSender       
+    recipient  Recipient phone number in E.164 format                            Yes       +81987654321     
+    variables  JSON object mapping each placeholder name to its value            Yes       {"name": "Alice"}
+    =========  ================================================================  ========  =================
+
+.. note::
+
+   Only ``APPROVED`` templates can be used for sending. Attempting to send with a
+   ``PENDING`` template will return an error.
+
+Examples
+------------------------------------
+
+Below is an example request using cURL::
+
+    curl -u <SID>:<AUTH_TOKEN> -X POST \
+      https://api.xoxzo.com/sms/templates/<template_id>/messages/ \
+      -H "Content-Type: application/json" \
+      -d '{
+        "sender": "TestSender",
+        "recipient": "+81987654321",
+        "variables": {
+          "name": "Sample_name",
+          "salary": "Sample_salary"
+        }
+      }'
+
+.. tip::
+    To use other parameters like link tracking, callback url.
+    Please see the :ref:`SMS Parameters Table <send-freeform-sms-parameters>` for more details.
+    
+
+The response would be a JSON structure, returned with HTTP ``201 CREATED`` status code::
+
+    HTTP/1.1 201 CREATED
+    Content-Type: application/json
+
+    [
+        {
+            "msgid": "<msgid>"
+        }
+    ]
+
+.. note::
+
+   Notes on the **variables** parameter:
+
+   * All variable keys must match the placeholder names defined in the template
+     content exactly.
+   * Missing or extra keys may result in an error or unresolved placeholders in
+     the sent message.
+
+
+Check Template Message Status API
+====================================
+
+All messages sent for a template
+------------------------------------
+
+To check the status of all SMS messages sent through a specific template,
+make a ``GET`` request to the endpoint::
+
+    https://api.xoxzo.com/sms/templates/<template_id>/messages/
+
+Below is an example request using cURL::
+
+    curl -u <SID>:<AUTH_TOKEN> \
+      https://api.xoxzo.com/sms/templates/<template_id>/messages/
+
+Single message by message ID
+------------------------------------
+
+To check the status of a specific message sent via a template,
+make a ``GET`` request to the endpoint followed by ``<msg_id>``::
+
+    https://api.xoxzo.com/sms/templates/messages/<msg_id>/
+
+Below is an example request using cURL::
+
+    curl -u <SID>:<AUTH_TOKEN> \
+      https://api.xoxzo.com/sms/templates/messages/<msg_id>/
+
+.. tip::
+
+   Response fields are equivalent to the standard Check SMS status API — including
+   ``status``, ``cost``, ``msgid``, ``recipient``, ``sender``, ``sent_time``, and ``url``.
+   Please see :ref:`check-sms-status-label`.
+
+Send Freeform SMS
+------------------------------------
+
+Freeform SMS is available only to approved partners.
+
+Use this endpoint when you need to send a custom message body without template restrictions.
+
 To send a SMS message, make a ``POST`` request to the endpoint::
 
-    https://api.xoxzo.com/sms/messages/
+    POST /sms/messages/
+
+.. _send-freeform-sms-parameters:
+
 
 with the following parameters:
 
@@ -139,6 +277,8 @@ Please refer to our `K-Premium Service FAQ <https://help.xoxzo.com/ja/xoxzo-clou
     You need to put at least one ASCII white space(0x20) before and after the link
     in the **message** in order to link tracking work properly.
 
+Please refer to notes and warnings in the previous section **Send Templated SMS** regarding parameters.
+
 Examples
 ------------------------------------
 
@@ -190,9 +330,15 @@ the HTTP response should be like this::
 Check SMS status API
 ====================================
 
-To check a message status, make a GET request to the endpoint followed by ``<msgid>``::
+To check a message status, make a GET request to the endpoint followed by ``<msgid>``
 
-    https://api.xoxzo.com/sms/messages/<msgid>/
+For Template SMS::
+
+    GET /sms/templates/<id>/messages/<msgid>/
+
+For Freeform SMS::
+
+    GET /sms/messages/<msgid>/
 
 Every time you send a SMS, you will get a response which contains ``<msgid>``.
 Use this ``<msgid>`` to check SMS status.
@@ -200,8 +346,9 @@ Use this ``<msgid>`` to check SMS status.
 Examples
 ------------------------------------
 
-Below is an example request using cURL::
+Below are example requests using cURL::
 
+    curl -u <SID>:<AUTH_TOKEN> https://api.xoxzo.com/sms/templates/<templateid>/messages/<msgid>/
     curl -u <SID>:<AUTH_TOKEN> https://api.xoxzo.com/sms/messages/<msgid>/
 
 The response would be a JSON structure, returned with HTTP ``200 OK`` status code::
@@ -291,9 +438,15 @@ example of the response::
 
 Sent Messages List API
 ====================================
-You can pull a list of sent messages by making a ``GET`` request to the endpoint::
+You can pull a list of sent messages by making a ``GET`` request to the endpoint.
 
-    https://api.xoxzo.com/sms/messages/
+For Template SMS::
+
+    GET /sms/templates/<id>/messages/
+
+For Freeform SMS::
+
+    GET /sms/messages/
 
 The sent messages results will be sorted based on their newest ``sent_time``. 
 This API is useful for creating logs.
@@ -547,3 +700,31 @@ This is a list of statuses that you can find in the ``status`` data:
     DELIVERING          Sending message in progress
     FAIL                Failed to send message
     =================== ===============================
+
+Error responses
+====================================
+
+The API returns standard HTTP status codes for invalid requests or unauthorized access.
+
+Common errors:
+
+    ===========  =====================================================================
+    Status code  Meaning
+    ===========  =====================================================================
+    400          Bad request. The request could not be processed.
+    401          Unauthorized. Authentication failed.
+    403          Forbidden. The account does not have access to the requested feature.
+    404          Not found. The requested resource does not exist.
+    422          Unprocessable entity. Validation failed.
+    ===========  =====================================================================
+
+Example validation error::
+
+    {
+      "variables": {
+        "code": [
+          "This field is required."
+        ]
+      }
+    }
+
