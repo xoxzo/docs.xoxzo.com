@@ -162,6 +162,121 @@ with the following parameters:
     lt_callbackurl   Link tracking callback URL   No        URL                  http://example.com
     ===============  ===========================  ========  ===================  ===================
 
+JP specific optional parameters
+------------------------------------
+
+The additional parameters below are for JP specific usage and recipients:
+
+    ==============  ===========================   ========    =================== ===================
+    Name            Description                   Required    Data Type           Example
+    ==============  ===========================   ========    =================== ===================
+    jp_kp           K-Premium flag                No          The string **true** true
+    jp_kpl          K-Premium Lite flag           No          The string **true** true
+    jp_kp_sender    Sender ID for kddi, docomo    No          Numeric             0312341234
+    ==============  ===========================   ========    =================== ===================
+
+Please refer to our `K-Premium Service FAQ <https://help.xoxzo.com/xoxzo-cloud-telephony/articles/the-k-premium-service/>`_ for more information on the K-Premium Service.
+
+.. note::
+   Notes on the **message** parameter:
+
+   * This is the main message that you'll be sending to the recipient.
+   * All messages must be encoded in UTF-8
+   * Message length is counted by the total number of characters in all parts of a message.
+   * For single-part ASCII messages, the maximum length is 140 characters.
+   * For single-part non-ASCII messages, the maximum length is 70 characters.
+   * A long multi-part message is a message that exceeds 140 characters for ASCII and 70 characters for non-ASCII messages.
+   * The maximum length for multi-part messages is 660 characters.
+   * Multi-part ASCII messages can have up to 5 parts and each part can have up to 132 characters.
+   * Multi-part non-ASCII messages can have up to 10 parts and each part can have up to 66 characters.
+   * Long SMS messages are received as 1 SMS, but each part sent is counted as 1 SMS in terms of cost.
+
+   ==================== === === === === === === === === === ===
+   SMS part count       1   2   3   4   5   6   7   8   9   10
+   ==================== === === === === === === === === === ===
+   ASCII characters     140 264 396 528 660                 
+   non-ASCII characters 70  132 198 264 330 396 462 528 594 660
+   ==================== === === === === === === === === === ===
+
+.. note::
+   Notes on the **jp_kp** and **jp_kpl** parameter:
+
+   * You cannot specify **jp_kp** and **jp_kpl** together at the same time. These are mutually exclusive.
+   * The difference between **jp_kp** and **jp_kpl** is the sender id display for Softbank numbers.
+     Please refer **jp_kp_sender** parameter section.
+
+.. note::
+   Notes on the **jp_kp_sender** parameter:
+
+   * If the jp_kp or jp_kpl parameter is set to true, you must specify this parameter with your pre-registered number for KDDI/docomo.
+   * If the recipient is KDDI/docomo, the value specified for this parameter will be shown on the recipient's mobile.
+   * If the **jp_kp** is set and the recipient is Softbank, a fixed number will be shown on the the recipient's mobile instead.
+   * If the **jp_kpl** is set and the recipient is Softbank, **sender** will be shown on the the recipient's mobile instead.
+
+.. note::
+   Notes on the **jp_kddi_sender** parameter:
+
+   * This parameter is deprecated and can be used until Aug. 31 2020.
+
+.. note::
+   Notes on the **recipient** parameter:
+
+   * Xoxzo uses the `E.164 <http://en.wikipedia.org/wiki/E.164>`_ number format
+     when specifying phone numbers.
+   * `E.164 <http://en.wikipedia.org/wiki/E.164>`_ dictates that phone numbers must start with the + prefix and country 
+     code then followed directly by the mobile number leaving the local **0** prefix .
+   * Example of a valid recipient is: *+818011234567* with *81* as the Japan country code and *8011234567* 
+     as the mobile number.
+
+.. note::
+   Notes on the **sender** parameter:
+
+   * The **sender** parameter does not require a + sign prefix.
+   * You can also specify alphanumeric **sender** such as *XOXZO1* or *XOXZO* for the sender. In this case, 
+     the maximum length for the **sender** parameter is 10.
+   * If the **sender** parameter contains only digits, the maximum length is 15.
+
+.. warning::
+   The **sender** is sent as through a best effort method and is not guaranteed to be shown on
+   the recipient's mobile as it is and maybe replaced with an arbitrary **sender**. This is dependent on the policies of the carriers, intermerdiary networks and governments, and they may not honour your request.
+
+.. note::
+   Notes on the **callbackurl** parameter:
+
+   * When this optional parameter is provided, XOXZO cloud will call this URL when the carrier network notifies us of the SMS delivery status(DLR).
+   * XOXZO cloud call the URL with http POST method. Parameters of the callback is similar to "Check SMS status API". Please see :ref:`check-sms-status-label`.
+   * Callback URL must return http status 200. Until then, we will retry up to a maximum of ten times.
+
+.. note::
+   Notes on the **tags** parameter:
+
+   * When this optional parameter is provided, you can put tags for each API calls and you can retrieve the tags using the check sms status API later.
+   * You can put multiple tags separated by the comma. The leading and trailing spaces are removed from the tags.
+
+.. note::
+   Notes on the **track_link** parameter:
+
+   * When this optional parameter is provided, link tracking function is enabled. The first URL/domain name
+     in the **message** will be replaced with our private short url and you can get the information
+     if the user has clicked the link on the mobile terminal. In order to get this information, you have to use
+     the :ref:`check-sms-status-label`.
+   * Additional credit will be deducted when this parameter is used. Please consult with the `pricing information <https://www.xoxzo.com/about/pricing/>`_.
+   * The shortlink will expire in 90 days after it is generated.
+
+.. note::
+   Notes on the **lt_callbackurl** parameter:
+
+   * When this optional parameter is provided, XOXZO cloud will call this URL when the user clicks the link tracking short url.
+   * XOXZO cloud call the URL with http POST method. Parameters of the callback is similar to "Check SMS status API"
+     and it contains the **link_tracking** key with information about when the link has been accessed.
+     Please see :ref:`check-sms-status-label`.
+   * Callback URL must return http status 200. Until then, we will retry up to a maximum of ten times.
+   * The URL called only once when the user clicked the short URL for the first time.
+
+.. warning::
+    You need to put at least one ASCII white space(0x20) before and after the link
+    in the **message** in order to link tracking work properly.
+
 Please refer to notes and warnings in the previous section **Send Templated SMS** regarding parameters.
 
 Examples
