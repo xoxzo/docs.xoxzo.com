@@ -10,3 +10,4 @@ parts
 .DS_Store
 .idea
 .env/
+.venv/

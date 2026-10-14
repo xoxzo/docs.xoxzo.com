@@ -3,7 +3,7 @@
 
 # You can set these variables from the command line.
 SPHINXOPTS    =
-SPHINXBUILD   = ./bin/sphinx-build
+SPHINXBUILD   ?= $(if $(wildcard ./bin/sphinx-build),./bin/sphinx-build,sphinx-build)
 PAPER         =
 BUILDDIR      = appengine/public
 SOURCEDIR     = source
@@ -20,7 +20,7 @@ ALLSPHINXOPTS   = -d $(BUILDDIR)/doctrees $(PAPEROPT_$(PAPER)) $(SPHINXOPTS) $(S
 # the i18n builder cannot share the environment and doctrees with the others
 I18NSPHINXOPTS  = $(PAPEROPT_$(PAPER)) $(SPHINXOPTS) $(SOURCEDIR)
 
-.PHONY: help clean html dirhtml singlehtml pickle json htmlhelp qthelp devhelp epub latex latexpdf text man changes linkcheck doctest coverage gettext
+.PHONY: help clean html dirhtml singlehtml pickle json htmlhelp qthelp devhelp epub latex latexpdf text man changes linkcheck doctest coverage gettext site
 
 help:
 	@echo "Please use \`make <target>' where <target> is one of"
@@ -200,6 +200,7 @@ static: mkdirhtml
 	cp index.html $(BUILDDIR)/html/
 	cp robots.txt $(BUILDDIR)/html/
 	cp sitemap.xml $(BUILDDIR)/html/
+	touch $(BUILDDIR)/html/.nojekyll
 
 html-ja: static
 	$(SPHINXBUILD) -b html $(ALLSPHINXOPTS) -D language='ja' $(BUILDDIR)/html/ja
@@ -211,7 +212,9 @@ html-en: static
 	@echo
 	@echo "Build finished. The HTML pages are in $(BUILDDIR)/html/en."
 
-serve: html-en html-ja
+site: html-en html-ja
+
+serve: site
 	cd $(BUILDDIR)/html && ../../../bin/python -m http.server
 
 
