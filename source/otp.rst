@@ -12,22 +12,11 @@ To register a new website domain, make a ``POST`` request to the endpoint::
 
 with the following parameters:
 
-    ===========  ============================  ========  ============  ============
-    Name         Description                   Required  Data Type     Example
-    ===========  ============================  ========  ============  ============
-    website      Your domain name              Yes       UTF-8         https://xoxzo.com
-    template_id  Optional OTP template ID      No        Integer       3
-    ===========  ============================  ========  ============  ============
-
-Template ID is a list of templates that currently we have. Currently, only one template is available:
-
-    ============  ============================
-    template_id   Value
-    ============  ============================
-    3             あなたの確認コードは123456です。
-    ============  ============================
-
-`*123456` is an example of the numbers OTP.
+    ===========  ==============================================================  ========  ============  =================
+    Name         Description                                                     Required  Data Type     Example
+    ===========  ==============================================================  ========  ============  =================
+    website      Your domain name (localhost and 127.0.0.1 are not allowed)      Yes       UTF-8         https://xoxzo.com
+    ===========  ==============================================================  ========  ============  =================
 
 The response would be a JSON structure, returned with HTTP ``201 CREATED`` status code::
 
@@ -50,7 +39,7 @@ If the website is already registered, the following response will be returned wi
     }
 
 .. note::
-   * `template_id` defaults to 3 if omitted.
+   * Local and loopback domains such as ``localhost`` and ``127.0.0.1`` are forbidden.
    * Your API credentials must be linked to the domain.
 
 Request OTP API
